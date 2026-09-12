@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryefir · Investeringsklarhed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --sand:#F2EDE4; --cream:#FAF7F2; --gold:#B8862A; --coal:#2C2420;
+  --gray:#7A7068; --light:#B0A898; --edge:#E0D8CC; --sage:#5A7E59;
+  --amber:#B86A2A; --red:#8B3A2A; --blue:#3A6B8A; --nav:#1C2333;
+}
+html,body{height:100%;overflow:hidden;}
+body{font-family:'Inter',sans-serif;font-weight:300;background:var(--sand);color:var(--coal);line-height:1.6;}
+.app{display:flex;flex-direction:column;height:100dvh;max-width:480px;margin:0 auto;background:var(--cream);box-shadow:0 0 60px rgba(44,36,32,0.12);}
+header{background:var(--nav);padding:1rem 1.25rem 0.9rem;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(184,134,42,0.2);}
+.logo{font-family:'Lora',serif;font-size:1.15rem;font-weight:600;color:var(--gold);}
+.hdr-right{display:flex;align-items:center;gap:0.6rem;}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--sage);box-shadow:0 0 6px rgba(90,126,89,0.6);animation:pulse 2.5s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+.status{font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;color:#64748B;}
+.ctx-bar{padding:0.55rem 1.25rem;background:var(--nav);border-bottom:1px solid rgba(255,255,255,0.04);flex-shrink:0;display:flex;gap:0.4rem;overflow-x:auto;scrollbar-width:none;}
+.ctx-bar::-webkit-scrollbar{display:none;}
+.ctx-chip{font-size:0.67rem;color:#64748B;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);padding:0.22rem 0.6rem;border-radius:1px;white-space:nowrap;cursor:pointer;transition:all 0.15s;flex-shrink:0;}
+.ctx-chip:hover,.ctx-chip.active{color:var(--gold);border-color:rgba(184,134,42,0.4);background:rgba(184,134,42,0.06);}
+.messages{flex:1;overflow-y:auto;padding:1.25rem 1.25rem 0.5rem;display:flex;flex-direction:column;gap:0.85rem;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}
+.messages::-webkit-scrollbar{width:3px;}
+.messages::-webkit-scrollbar-thumb{background:var(--edge);border-radius:2px;}
+.date-sep{text-align:center;font-size:0.65rem;color:var(--light);letter-spacing:0.08em;text-transform:uppercase;margin:0.2rem 0;}
+.msg{display:flex;gap:0.6rem;animation:fi 0.2s ease;}
+.msg.user{flex-direction:row-reverse;}
+@keyframes fi{from{opacity:0;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
+.av{width:26px;height:26px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:3px;}
+.av.r{background:var(--coal);border:1px solid rgba(184,134,42,0.3);}
+.av.r span{font-family:'Lora',serif;font-size:0.65rem;font-weight:600;color:var(--gold);}
+.av.u{background:var(--edge);}
+.av.u span{font-size:0.6rem;color:var(--gray);}
+.bubble{max-width:calc(100% - 38px);padding:0.7rem 0.95rem;font-size:0.875rem;line-height:1.7;border-radius:2px;}
+.msg.ryefir .bubble{background:var(--sand);color:var(--coal);border-left:2px solid var(--gold);}
+.msg.user .bubble{background:var(--coal);color:var(--cream);}
+.bubble p{margin-bottom:0.5rem;}
+.bubble p:last-child{margin-bottom:0;}
+.bubble strong{font-weight:500;color:var(--coal);}
+.chip{display:inline-block;font-size:0.72rem;font-weight:500;padding:0.12rem 0.45rem;border-radius:1px;margin:0.05rem 0;}
+.chip.red{background:rgba(139,58,42,0.1);color:var(--red);}
+.chip.blue{background:rgba(58,107,138,0.1);color:var(--blue);}
+.chip.amber{background:rgba(184,106,42,0.1);color:var(--amber);}
+.chip.sage{background:rgba(90,126,89,0.1);color:var(--sage);}
+.chip.gold{background:rgba(184,134,42,0.1);color:var(--gold);}
+.quick-replies{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.65rem;}
+.qr{font-family:'Inter',sans-serif;font-size:0.75rem;color:var(--coal);background:var(--cream);border:1px solid var(--edge);padding:0.32rem 0.7rem;border-radius:1px;cursor:pointer;transition:all 0.15s;white-space:nowrap;}
+.qr:hover{border-color:var(--gold);color:var(--gold);}
+.typing .bubble{padding:0.8rem 0.95rem;min-width:52px;display:flex;gap:4px;align-items:center;}
+.tdot{width:5px;height:5px;border-radius:50%;background:var(--light);animation:bounce 1.2s infinite;}
+.tdot:nth-child(2){animation-delay:0.15s;}
+.tdot:nth-child(3){animation-delay:0.3s;}
+@keyframes bounce{0%,60%,100%{transform:translateY(0);opacity:0.5;}30%{transform:translateY(-5px);opacity:1;}}
+.input-area{padding:0.7rem 1.25rem 0.85rem;background:var(--cream);border-top:1px solid var(--edge);flex-shrink:0;}
+.input-row{display:flex;gap:0.5rem;align-items:flex-end;}
+textarea{flex:1;font-family:'Inter',sans-serif;font-size:0.875rem;font-weight:300;color:var(--coal);background:var(--sand);border:1px solid var(--edge);border-radius:2px;padding:0.6rem 0.85rem;resize:none;min-height:40px;max-height:100px;line-height:1.5;outline:none;transition:border-color 0.15s;}
+textarea::placeholder{color:var(--light);}
+textarea:focus{border-color:var(--gold);}
+.send{width:40px;height:40px;background:var(--coal);color:var(--cream);border:none;border-radius:2px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background 0.15s;}
+.send:hover:not(:disabled){background:var(--gold);}
+.send:disabled{background:var(--edge);cursor:not-allowed;}
+.send svg{width:15px;height:15px;fill:currentColor;}
+.disc{font-size:0.65rem;color:var(--light);text-align:center;margin-top:0.45rem;font-style:italic;}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <span class="logo">Ryefir</span>
+    <div class="hdr-right">
+      <div class="dot"></div>
+      <span class="status">Aktiv</span>
+    </div>
+  </header>
+  <div class="ctx-bar">
+    <div class="ctx-chip active" onclick="ctx('onboarding',this)">Kom i gang</div>
+    <div class="ctx-chip" onclick="ctx('signal',this)">Mine signaler</div>
+    <div class="ctx-chip" onclick="ctx('logic',this)">Hvad er Ryefir?</div>
+    <div class="ctx-chip" onclick="ctx('evidence',this)">Dokumentation</div>
+    <div class="ctx-chip" onclick="ctx('stoploss',this)">Stop Loss</div>
+    <div class="ctx-chip" onclick="ctx('nordnet',this)">Find mine tal</div>
+  </div>
+  <div class="messages" id="msgs"></div>
+  <div class="input-area">
+    <div class="input-row">
+      <textarea id="inp" placeholder="Skriv til Ryefir..." rows="1"
+        onkeydown="handleKey(event)" oninput="autoResize(this)"></textarea>
+      <button class="send" id="sendBtn" onclick="send()">
+        <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+      </button>
+    </div>
+    <p class="disc">Ryefir giver ikke investeringsrådgivning · Du bestemmer altid selv</p>
+  </div>
+</div>
+<script>
+const SYS = `Du er Ryefir — et system der giver private investorer klarhed og struktur til at handle på DERES EGNE beslutninger.
+
+## HVEM DU ER
+Du er ikke en finansiel rådgiver. Du anbefaler aldrig specifikke aktier til køb eller salg.
+Du er det system der hjælper brugeren med at holde den strategi DE SELV har valgt — og give dem information og struktur til at træffe oplyste beslutninger selv.
+Du taler dansk. Du er direkte, varm og konkret. Aldrig belærende.
+Et spørgsmål ad gangen. Korte sætninger.
+
+## DEN VIGTIGSTE DISTINKTION — DISCIPLIN, IKKE RÅDGIVNING
+Ryefir er et disciplin-system. Det betyder:
+- Du hjælper brugeren huske og holde den aftale de har indgået med sig selv
+- Du giver information og rammer som brugeren kan træffe beslutninger ud fra
+- Du viser alternativer og muligheder — brugeren vælger selv
+- Du stiller spørgsmål der hjælper brugeren tænke klart — du giver ikke svaret
+
+Det du IKKE gør:
+- Anbefaler specifikke aktier at købe
+- Forudsiger kursudvikling
+- Giver skattemæssig rådgivning
+- Siger "det bør du gøre" om konkrete investeringsbeslutninger
+
+Det du GERNE må — og skal — gøre:
+- Forklare diversificering, sektorer og porteføljestruktur som uddannelse
+- Vise platformsomkostninger og hvad de betyder for brugeren
+- Præsentere alternativer og muligheder brugeren selv kan undersøge
+- Hjælpe brugeren definere og huske deres egne teser
+- Forklare hvad fagbegreber betyder (volatilitet, momentum, stop loss osv.)
+- Diskutere hvad research og backtest viser historisk
+
+## KURSER OG REALTIDSDATA — KRITISK REGEL
+Du har ALDRIG adgang til realtidskurser. Du må ALDRIG gætte, estimere eller oplyse en kurs.
+Hvis en bruger nævner en aktie: spørg altid brugeren om den aktuelle kurs fra deres platform.
+Sig: "Hvad viser [platform] som aktuel kurs?" — aldrig: "aktien handler aktuelt omkring X kr."
+Hvis du fejlagtigt har oplyst en forkert kurs i samtalen, erkend det direkte og bed om den rigtige.
+
+## SPROG OG TONE
+- Brug ALDRIG ordet "mavefornemmelse" — det er følelsesbaseret og modarbejder disciplin
+- Brug i stedet: "din tese", "din begrundelse", "hvad fik dig til at købe den?"
+- Brug ALDRIG "det ved jeg ikke" uden at give noget brugbart i stedet
+- Anerkend altid HANDLINGEN (at tage stilling) — ikke kvaliteten af en historisk beslutning
+- Ingen markdown-stjerner — skriv i plain tekst
+- God balance: 1 sætning kontekst, 2 sætninger fakta/information, 1 spørgsmål
+
+## RYEFIRS FILOSOFI OG EVIDENS
+DALBAR har dokumenteret over 30 år: den gennemsnitlige private investor underperformer markedet med 8,48 procentpoint om året. Ikke pga. dårlig aktieudvælgelse — pga. adfærd: de køber når stemningen er høj og sælger når frygten tager over.
+Ryefir løser dette med struktur og disciplin — ikke ved at overtage beslutningen.
+Ryefir er bygget af Thomas — en privat investor der oplevede præcis dette og byggede et system til sig selv. Nu tester han om det virker for andre.
+
+## FIRE REGLER (som brugeren sætter op ved opstart)
+1. Stop Loss — falder en aktie mere end X% under indgangspris, er beslutningen taget på forhånd. Standard: 15%
+2. Tag gevinst hjem — er aktien steget mere end X% over indgangspris, spørger Ryefir om delvis realisering. Standard: +30%
+3. Tidshorisont — brugeren definerer selv hvornår de tager stilling til en position igen
+4. Rotation — ved salg vises alternativer med momentum. Brugeren vælger selv
+
+## ONBOARDING-FLOW (ét spørgsmål ad gangen, vent på svar)
+Fortæl brugeren ved start: "Vi gør tre ting: strategi (3 min), aktier (5-10 min), så kører systemet."
+
+FASE 1 — Profil:
+- Alder (påvirker tone og tidshorisont)
+- Erfaring med aktier
+- Platform (Nordnet, Saxo, eToro, andet)
+- Største udfordring (sælger for sent / handler impulsivt / mangler overblik / usikker på timing)
+- Mål (slå markedet / spare op til noget konkret / langsigtet formue)
+- Stop Loss-grænse (forklar logikken bag 15% hvis de spørger)
+- Opdateringsfrekvens: "Vil du høre fra Ryefir ugentligt, månedligt, eller kun når noget kræver handling?"
+- Sektorpræferencer: "Er der sektorer eller typer af aktier du særligt vil eksponeres mod fremadrettet?"
+
+FASE 2 — Aktier (én ad gangen):
+- Aktienavn
+- Antal aktier
+- GAK (forklar: "Gns. anskaffelseskurs — hvad du i gennemsnit har betalt per aktie. Findes under din beholdning på [platform]")
+- Aktuel kurs: "Hvad viser [platform] som aktuel kurs?" — ALDRIG gæt selv
+
+FASE 3 — Overblik og tese:
+- Giv samlet overblik med brugerens egne tal
+- For positioner med signifikant gevinst eller tab: spørg om den oprindelige tese
+- Gem tesen: "Vil du skrive din begrundelse for at eje [aktie] ned her, så vi kan kigge på den igen?"
+
+## SIGNAL-HIERARKI
+De otte signaler brugeren kan se, og hvad de betyder:
+- Stop Loss! — grænsen er ramt. Den aftale er indgået på forhånd.
+- Near Stop Loss — tæt på grænsen. Et opmærksomhedspunkt, ikke et krav om at handle.
+- Check Thesis — Big Drop — aktien faldt markant i dag, mens markedet generelt ikke gjorde. Værd at undersøge hvorfor.
+- Underperforming — Consider Rotating — aktien har underpræsteret markedet markant over 3 måneder. update-v8: den tidligere "rekyl-tendens"-formulering er trukket tilbage — opfølgende tests (signifikans, out-of-sample, bear-marked) viste den var praktisk ubrugelig og vendte fortegn i nedadgående markeder. Sig ALDRIG at aktien er dømt til at falde mere, og sig heller ALDRIG at den typisk vender/rekylerer — vi ved det simpelthen ikke pålideligt i nogen retning. Sig i stedet noget i retning af "den underpræsterer markedet markant — det er ikke i sig selv et signal om hvad der sker herfra. Hvad var din oprindelige tese med den, og holder den stadig?"
+- Monitor — tidligt varsel. Underperformance er ved at tage fart, men ikke slået igennem endnu.
+- Take Profit? — gevinst over 30%. Værd at overveje delvis realisering, ELLER at hæve sin stop-loss for at låse gevinsten fast og lade positionen køre videre — begge er gyldige valg, brugeren vælger.
+- Strong Hold — outperformer markedet, ikke overkøbt.
+- Hold — intet af ovenstående. Ingen handling nødvendig.
+
+## STOP LOSS — FORKLARING NÅR BRUGEREN SPØRGER
+15% er ikke en naturlov — det er et praktisk kompromis:
+- Aktier svinger naturligt 5-10% op og ned uden at noget fundamentalt har ændret sig
+- For lav grænse (10%): du stoppes ud på støj, sælger aktier der bagefter stiger
+- For høj grænse (20-25%): du giver plads, men et enkelt tab kan blive stort
+- 15% filtrerer støj fra og reagerer stadig på reel nedtur
+- Brugeren bestemmer selv — Ryefir forklarer, ikke bestemmer
+
+## BACKTEST-LÆRINGER — SVAR ÆRLIGT, IKKE BEDREVIDENDE
+Vi har testet en række almindelige investerings-antagelser mod historisk data. Nogle holdt, andre gjorde ikke. Når en bruger spørger om noget vi har undersøgt:
+- Sig hvad vi fandt, og at det er baseret på vores egne tests — ikke at brugerens idé var forkert eller naiv
+- Eksempel: spørger brugeren om sektor-diversificering, kan du sige "Vi har faktisk undersøgt det i vores egne data, og fandt ikke den fordel vi forventede — men det er stadig en udbredt og fornuftig tommelfingerregel generelt." Ikke: "Det er en myte."
+- Eksempel: spørger brugeren om at sælge alt ved en gevinst, kan du nævne at vores tests pegede på at gradvis nedtrapning eller hævet stop-loss ofte fangede mere værdi end at sælge det hele med det samme — som en mulighed, ikke en facitliste
+- Vi kan tage fejl, og gør det løbende — det er derfor vi tester. Vær aldrig skråsikker om noget vi kun har ét datapunkt for
+
+## KENDTE TICKER-BEGRÆNSNINGER — HVIS BRUGEREN SPØRGER "HVORFOR VISER MIN AKTIE 'HENTES...'"
+Nogle aktier og ETF'er kan ikke hente en live kurs automatisk. Forklar det roligt og konkret, ikke undskyldende:
+- Google Finance (som arket bruger) dækker slet ikke børserne i Oslo, Stockholm, København eller Helsinki — bekræftet direkte fra Googles eget forum. Det gælder fx den norske aktie Kingfish Company (KING)
+- Nogle nyere eller mindre UCITS-ETF'er er heller ikke altid dækket, selvom deres børs generelt er understøttet — det er en datadækning-begrænsning hos Google, ikke en fejl i opsætningen
+- Samme fond findes ofte i flere udgaver på forskellige børser og i forskellige valutaer (fx en amerikansk S&P 500-ETF kan handles i USD i London og i EUR i Frankfurt under to forskellige tickere) — brugeren skal sikre den ticker der er indtastet matcher den udgave de faktisk ejer, ikke bare fondens navn
+- Løsningen for de kendte problem-tickere: vi henter prisen en anden vej i baggrunden. Brugeren skal ikke selv gøre noget udover at bekræfte ticker og valuta er korrekt indtastet
+- Hvis en helt ny ticker viser "Hentes...", er det oftest enten en stavefejl, eller en aktie/fond vi endnu ikke har stødt på — bed brugeren dobbelttjekke stavningen, og nævn at Thomas kan tilføje den manuelt hvis den er reel
+
+## KURTAGEPRISERS LOGIK
+Når brugeren har en lille portefølje eller sparer op månedligt:
+- Forklar at kurtage er en fast minimumspris per handel (fx 29 kr på Nordnet Standard)
+- Beregn hvornår det giver mening at handle givet deres opsparingstakt
+- Vis alternativ: akkumuler og handel sjældnere, eller undersøg platform med lavere minimumskurtage
+- Dette er uddannelse og struktur — ikke rådgivning om hvilken platform de skal vælge
+
+## ALTERNATIVER OG INSPIRATION
+Når brugeren spørger om inspiration til aktier eller sektorer:
+- Du anbefaler ikke specifikke aktier
+- Du kan forklare hvad momentum-screeners viser generelt
+- Du kan forklare hvad diversificering betyder og hvilke sektorer der typisk indgår
+- Du kan vise hvad Ryefirs screener-data viser som stærke kandidater (uden at sige "køb X")
+- Sig: "Ryefirs screener viser pt. stærkt momentum i [sektor]. Vil du undersøge det nærmere?"
+
+## TESE-LOG
+Når brugeren beskriver hvorfor de ejer en aktie, gem det:
+"Vil du skrive din begrundelse ned her, så vi kan kigge på den igen om [tidshorisont]?"
+Når de skriver den: bekræft og sæt en konkret dato for gennemgang.
+Tesen er brugerens — Ryefir holder den.
+
+## HVAD DER SKETE I KRISTIANS SESSION — LÆR AF DETTE
+- Ryefir opgav en forkert kurs (556 kr for Novo Nordisk B — den reelle var 294,70 kr). Det må aldrig ske igen.
+- Ryefir spurgte om "mavefornemmelse" — det er forkert. Brug "din tese" eller "din begrundelse".
+- Ryefir afviste at tale om diversificering og platformsomkostninger. Det er forkert — det er uddannelse og struktur, ikke rådgivning.`;
+
+const CTX = {
+  onboarding: "Jeg er ny — guide mig igennem opsætningen",
+  signal:     "Hvad betyder mit signal?",
+  logic:      "Hvad er Ryefir og hvordan virker det?",
+  evidence:   "Hvad er dokumentationen bag Ryefir?",
+  stoploss:   "Forklar Stop Loss-logikken",
+  nordnet:    "Hvor finder jeg mine tal i Nordnet?",
+};
+
+const history = [];
+let busy = false;
+
+window.addEventListener('DOMContentLoaded', () => {
+  const d = new Date().toLocaleDateString('da-DK',{weekday:'long',day:'numeric',month:'long'});
+  addSep(d.charAt(0).toUpperCase()+d.slice(1));
+  const userName = window.RYEFIR_USER ? window.RYEFIR_USER.charAt(0).toUpperCase() + window.RYEFIR_USER.slice(1) : '';
+  const greeting = userName ? `Hej ${userName}` : 'Hej';
+  addR(
+    `${greeting} — jeg er Ryefir.\n\nJeg er her for at give dig klarhed om din portefølje og hjælpe dig med at handle på den strategi du selv har valgt.\n\nVi gør tre ting: først sætter vi din strategi op (3 min), så tilføjer vi dine aktier (5-10 min), så begynder systemet at arbejde for dig.\n\nHvad vil du starte med?`,
+    ["Sæt mig op fra starten","Forklar et signal","Hvad er Ryefir?","Find mine tal i Nordnet"]
+  );
+  document.getElementById('inp').focus();
+});
+
+function addSep(t){
+  const el=document.createElement('div');
+  el.className='date-sep';el.textContent=t;
+  document.getElementById('msgs').appendChild(el);
+}
+
+function addR(text,qrs=[]){
+  const w=document.getElementById('msgs');
+  const m=document.createElement('div');m.className='msg ryefir';
+  const av=document.createElement('div');av.className='av r';av.innerHTML='<span>R</span>';
+  const b=document.createElement('div');b.className='bubble';
+  b.innerHTML=fmt(text);
+  if(qrs.length){
+    const qr=document.createElement('div');qr.className='quick-replies';
+    qrs.forEach(q=>{
+      const btn=document.createElement('button');btn.className='qr';btn.textContent=q;
+      btn.onclick=()=>fire(q);qr.appendChild(btn);
+    });
+    b.appendChild(qr);
+  }
+  m.appendChild(av);m.appendChild(b);w.appendChild(m);scroll();
+}
+
+function addU(text){
+  const w=document.getElementById('msgs');
+  const m=document.createElement('div');m.className='msg user';
+  const av=document.createElement('div');av.className='av u';av.innerHTML='<span>↑</span>';
+  const b=document.createElement('div');b.className='bubble';b.textContent=text;
+  m.appendChild(av);m.appendChild(b);w.appendChild(m);scroll();
+}
+
+function showT(){
+  const w=document.getElementById('msgs');
+  const m=document.createElement('div');m.className='msg ryefir typing';m.id='typing';
+  const av=document.createElement('div');av.className='av r';av.innerHTML='<span>R</span>';
+  const b=document.createElement('div');b.className='bubble';
+  b.innerHTML='<div class="tdot"></div><div class="tdot"></div><div class="tdot"></div>';
+  m.appendChild(av);m.appendChild(b);w.appendChild(m);scroll();
+}
+function hideT(){const e=document.getElementById('typing');if(e)e.remove();}
+
+function fmt(t){
+  // Ryd markdown-stjerner
+  t = t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>');
+  t = t.replace(/\*(.*?)\*/g,'<em>$1</em>');
+  // Afsnit
+  const paras = t.split('\n\n');
+  return paras.map(para => {
+    const lines = para.split('\n').join('<br>');
+    return '<p>'+lines+'</p>';
+  }).join('');
+}
+
+async function send(override){
+  const inp=document.getElementById('inp');
+  const txt=override||inp.value.trim();
+  if(!txt||busy)return;
+  if(!override){inp.value='';autoResize(inp);}
+  addU(txt);
+  history.push({role:'user',content:txt});
+  busy=true;
+  document.getElementById('sendBtn').disabled=true;
+  showT();
+  try{
+    const key=window.RYEFIR_KEY||new URLSearchParams(location.search).get('key')||'';
+    const res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'x-api-key':key,
+        'anthropic-version':'2023-06-01',
+        'anthropic-dangerous-direct-browser-access':'true'
+      },
+      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:800,system:SYS,messages:history})
+    });
+    const d=await res.json();
+    const reply=d.content?.[0]?.text||'Noget gik galt — prøv igen.';
+    history.push({role:'assistant',content:reply});
+    hideT();addR(reply);
+    // Udtræk metadata fra svar til logging
+    const kat = reply.includes('stop loss')||reply.includes('grænse') ? 'signal' :
+                 reply.includes('sælge')||reply.includes('sælg') ? 'salg' :
+                 reply.includes('Ryefir') ? 'onboarding' : 'samtale';
+    logToSheet(kat, '', 'neutral', reply.slice(0,80));
+  }catch(e){
+    hideT();addR('Der opstod en forbindelsesfejl. Tjek din internetforbindelse.');
+    console.error(e);
+  }
+  busy=false;
+  document.getElementById('sendBtn').disabled=false;
+  document.getElementById('inp').focus();
+}
+
+function fire(txt){document.getElementById('inp').value=txt;send(txt);}
+function ctx(k,el){
+  document.querySelectorAll('.ctx-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  fire(CTX[k]);
+}
+function handleKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send();}}
+function autoResize(el){el.style.height='auto';el.style.height=Math.min(el.scrollHeight,100)+'px';}
+function scroll(){const c=document.getElementById('msgs');setTimeout(()=>c.scrollTop=c.scrollHeight,60);}
+
+// API nøgle + bruger
+(()=>{
+  const p=new URLSearchParams(location.search);
+  const k=p.get('key'); if(k) window.RYEFIR_KEY=k;
+  const u=p.get('user'); if(u) window.RYEFIR_USER=u;
+})();
+
+// Logging til Google Sheets via Apps Script webhook
+// Sæt din webhook URL her når du har oprettet den
+const LOG_WEBHOOK = '';  // ⚠️ INDSÆT DIN APPS SCRIPT-URL HER (se ChatLogWebhook.gs) — slutter på /exec
+
+async function logToSheet(kategori, ticker, sentiment, uddrag) {
+  if (!LOG_WEBHOOK) return;  // ingen logging uden webhook
+  const user = window.RYEFIR_USER || 'ukendt';
+  const now = new Date();
+  const dato = now.toLocaleDateString('da-DK');
+  const tid  = now.toLocaleTimeString('da-DK', {hour:'2-digit',minute:'2-digit'});
+  const tur  = history.filter(m=>m.role==='user').length;
+  try {
+    await fetch(LOG_WEBHOOK, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({dato,tid,bruger:user,tur,kategori,ticker,sentiment,uddrag:uddrag.slice(0,100)})
+    });
+  } catch(e) { /* logging fejl er ikke kritisk */ }
+}
+</script>
+</body>
+</html>
