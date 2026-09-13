@@ -192,7 +192,7 @@ def fetch_stock(ticker, bm_close=None):
         vol=("High sell volume" if hsd>=THRESH_VOL_HIGH else
              "Elevated sell vol" if hsd>=THRESH_VOL_ELEV else "Normal volume")
         # Fundamental data — best-effort, None if unavailable
-        roic=None; fcf_margin=None; fwd_pe=None; market_cap=None; sector_gics=None
+        roic=None; fcf_margin=None; fwd_pe=None; market_cap=None; sector_gics=None; industry_gics=None
         try:
             info=yf.Ticker(get_yf(ticker)).info
             # Forward P/E
@@ -217,6 +217,7 @@ def fetch_stock(ticker, bm_close=None):
             mc=info.get("marketCap")
             if mc: market_cap=float(mc)
             sector_gics=info.get("sector")
+            industry_gics=info.get("industry")
         except: pass
         ipo_flag = len(hist) < 90  # less than ~4 months = no reliable RS3M
         result={"price":clean(price),"perf_1w":clean(perf(5)),"perf_1m":clean(perf(21)),
@@ -228,7 +229,7 @@ def fetch_stock(ticker, bm_close=None):
                 "days_above_momentum":days_above_momentum,
                 "confirmed_state":confirmed_state,"raw_direction":raw_direction,
                 "roic":roic,"fcf_margin":fcf_margin,"fwd_pe":fwd_pe,
-                "market_cap":market_cap,"sector":sector_gics}
+                "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics}
         if result["price"]==0.0: return None
         return result
     except Exception as e:
