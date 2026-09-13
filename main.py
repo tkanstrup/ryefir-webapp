@@ -52,4 +52,6 @@ def get_ticker_signal(ticker: str, avg_cost: float = None, stop_loss: float = No
         "perf_3m": data.get("perf_3m"),
         "direction": data.get("raw_direction"),
         "confirmed_state": data.get("confirmed_state"),
+        "sector": data.get("sector"),
+        "industry": data.get("industry"),
     }
