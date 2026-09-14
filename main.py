@@ -55,4 +55,10 @@ def get_ticker_signal(ticker: str, avg_cost: float = None, stop_loss: float = No
         "sector": data.get("sector"),
         "industry": data.get("industry"),
         "name": data.get("name"),
+        "high_52w": data.get("high_52w"),
+        "low_52w": data.get("low_52w"),
+        "roic": data.get("roic"),
+        "fcf_margin": data.get("fcf_margin"),
+        "fwd_pe": data.get("fwd_pe"),
+        "rs3m_vs_bm": data.get("perf_3m") - _idx_perf.get("m3"),
     }
