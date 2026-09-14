@@ -10,10 +10,27 @@ Lokal test:  uvicorn main:app --reload
 Herefter:    åbn http://127.0.0.1:8000/api/signal/MSFT i browseren
 """
 
+import time
+
+import requests
 from fastapi import FastAPI, HTTPException
 from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal
 
 app = FastAPI(title="Ryefir Signal API", version="0.1")
+
+# update-note (screener-cron): den åbne screener (715 tickers) scannes IKKE
+# live her — det ville tage minutter og er for langsomt til et webkald.
+# I stedet kører en separat daglig Render "Cron Job"-service (screener_job.py),
+# som gemmer resultatet som JSON på en dedikeret git-branch (`data/screener-cache`,
+# bevidst IKKE `main`, så det ikke trigger en re-deploy af hele webappen hver
+# dag). Dette endpoint henter og cacher den JSON i hukommelsen — se TASKS.md,
+# afsnit "Screener cron-job", for den fulde arkitektur og Render-opsætning.
+SCREENER_CACHE_URL = (
+    "https://raw.githubusercontent.com/tkanstrup/ryefir-webapp/"
+    "data/screener-cache/data/screener_cache.json"
+)
+SCREENER_CACHE_TTL_SEC = 600  # 10 min — nyt nok, uden at hamre GitHub ved hvert besøg
+_screener_cache = {"data": None, "fetched_at": 0}
 
 # update-note: benchmark hentes ved opstart og genbruges — at hente det for
 # hvert enkelt ticker-kald ville være unødigt langsomt og belaste yfinance
@@ -24,7 +41,8 @@ _idx_perf, _bm_close = fetch_benchmark()
 
 @app.get("/")
 def root():
-    return {"status": "Ryefir Signal API kører", "endpoints": ["/api/signal/{ticker}"]}
+    return {"status": "Ryefir Signal API kører",
+            "endpoints": ["/api/signal/{ticker}", "/api/screener"]}
 
 
 @app.get("/api/signal/{ticker}")
@@ -62,3 +80,32 @@ def get_ticker_signal(ticker: str, avg_cost: float = None, stop_loss: float = No
         "fwd_pe": data.get("fwd_pe"),
         "rs3m_vs_bm": data.get("perf_3m") - _idx_perf.get("m3"),
     }
+
+
+@app.get("/api/screener")
+def get_screener():
+    """
+    Serverer det cachede resultat af den daglige åbne screening (715 tickers).
+    Scanner IKKE live — se update-note ovenfor. Cacher i hukommelsen
+    SCREENER_CACHE_TTL_SEC ad gangen; falder tilbage til sidste kendte gode
+    kopi hvis GitHub-hentningen fejler (fx et forbigående netværksproblem).
+    """
+    now = time.time()
+    if _screener_cache["data"] is not None and now - _screener_cache["fetched_at"] < SCREENER_CACHE_TTL_SEC:
+        return _screener_cache["data"]
+
+    try:
+        resp = requests.get(SCREENER_CACHE_URL, timeout=10)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        if _screener_cache["data"] is not None:
+            return _screener_cache["data"]
+        raise HTTPException(
+            status_code=503,
+            detail=f"Screener-cache kunne ikke hentes, og ingen tidligere kopi findes i hukommelsen: {e}",
+        )
+
+    _screener_cache["data"] = data
+    _screener_cache["fetched_at"] = now
+    return data

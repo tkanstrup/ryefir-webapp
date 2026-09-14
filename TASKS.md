@@ -55,6 +55,84 @@ repo — forkert repo, ikke forkert arbejde.
   `fetch_stock()` til screeneren, men aldrig eksponeret udadtil før).
   Koordineret med en `ryefir-frontend`-session der bruger felterne til
   Kontroltårnets sektor-grupperede swimlanes.
+- 2026-09-14: `/api/signal/{ticker}` udvidet med `high_52w`, `low_52w`,
+  `roic`, `fcf_margin`, `fwd_pe`, `rs3m_vs_bm` — alle allerede beregnet
+  internt i `fetch_stock()`/`get_signal()`, bare ikke eksponeret før.
+- 2026-09-14: ny `/api/screener`-endpoint + screener cron-job. Se afsnit
+  "Screener cron-job" nedenfor for fuld arkitektur og Render-opsætning —
+  **Render Cron Job-servicen skal oprettes manuelt i dashboardet, det
+  kunne ikke gøres herfra.**
+
+## Screener cron-job (åben scanning, 715 tickers)
+
+**Princip:** den åbne screener scanner IKKE live ved hvert besøg på
+`/api/screener` — det ville tage minutter (715 tickers, to-trins
+yfinance-hentning) og er for langsomt til et webkald. I stedet kører
+scanningen som en separat, daglig **Render Cron Job**-service
+(`screener_job.py`), adskilt fra web-servicen (`main.py`).
+
+**Filer:**
+- [`broad_universe.py`](broad_universe.py) — `BROAD_UNIVERSE`-dict, 715
+  tickers (486 USA S&P 500 + 229 Europa), genbrugt fra det oprindelige
+  Stock System v9. Kun statisk metadata (navn/industri/region) — ingen
+  live-data.
+- [`screener_job.py`](screener_job.py) — selve batch-jobbet. Genbruger
+  `fetch_broad_technical_batch()` (trin 1, billig teknisk batch-hentning
+  for hele universet) og `broad_universe_shortlist()` (filtrerer til
+  kandidater over RS3M-tærsklen, maks `BROAD_SHORTLIST_CAP=200`), begge
+  allerede i `ryefir_signal_engine.py`. Trin 2 (dyre nøgletal for
+  kandidaterne) genbruger `fetch_stock()` — samme funktion som
+  `/api/signal/{ticker}` allerede bruger, ingen duplikeret logik.
+
+**Deling af resultatet mellem de to Render-services:** Render deler
+IKKE lokalt filsystem mellem to separate services på gratis-niveau, og
+persistente diske (a) kræver en betalt plan og (b) understøtter
+alligevel ikke deling mellem to services (verificeret via websøgning
+2026-09-14 — Render-diske er eksklusive til én service). Løsningen:
+jobbet committer resultat-JSON'en til en **dedikeret git-branch**,
+`data/screener-cache` (**ikke** `main` — en daglig commit på `main`
+ville trigge en unødvendig re-deploy af hele webappen hver dag).
+Web-servicen henter JSON'en via GitHub's raw-content-URL og cacher den
+i hukommelsen i 10 minutter (`SCREENER_CACHE_TTL_SEC` i `main.py`).
+
+**Render-opsætning (manuel, skal gøres i dashboardet):**
+1. New → Cron Job, samme GitHub-repo (`tkanstrup/ryefir-webapp`),
+   branch `main`.
+2. Build command: `pip install -r requirements.txt`
+3. Command: `python3 screener_job.py`
+4. Schedule: fx `0 6 * * *` (06:00 UTC dagligt, før europæisk
+   markedsåbning).
+5. Environment variable `GITHUB_TOKEN` — et **fine-grained GitHub
+   Personal Access Token**, scoped kun til `ryefir-webapp`-repoet, med
+   `Contents: Read and write`-rettighed. Oprettes under GitHub →
+   Settings → Developer settings → Fine-grained tokens. **Kun brugeren
+   selv kan oprette dette token** (kræver login på GitHub-kontoen).
+   Uden `GITHUB_TOKEN` skriver jobbet kun lokalt og skipper push (ses i
+   logs som "GITHUB_TOKEN ikke sat").
+
+**Lokal test uden at pushe:**
+```
+python3 screener_job.py --no-push
+```
+
+**Verificeret 2026-09-14:** `data/screener-cache`-branchen er seedet
+med et smoke-test-resultat (6 kandidater fra en 16-ticker delmængde,
+IKKE en fuld scanning) for at bekræfte at hele kæden virker end-to-end
+— `/api/screener` blev testet og henter/cacher korrekt fra branchen.
+Den rigtige daglige cron (når Render-servicen er oprettet, se ovenfor)
+overskriver den med det fulde 715-ticker-scan ved første kørsel.
+
+**Kendte tekniske begrænsninger, ikke stødt på endnu, hold øje med:**
+- Render Cron Jobs er gratis (indgår i de 750 gratis instans-timer/md.)
+  — en daglig kørsel på nogle minutter er langt under det. Ingen
+  request-timeout-begrænsning her, da det er et baggrundsjob, ikke et
+  webkald.
+- Hukommelse: jobbet processerer tickers batch-vis/sekventielt (ikke
+  alle 715 i hukommelsen samtidig), bør være fint inden for gratis-
+  niveauets RAM. Ikke stress-testet på fuld 715-liste endnu — hvis
+  Render-jobbet fejler på hukommelse/tid ved første rigtige kørsel, er
+  oplagte nedskaleringer: sænk `BROAD_SHORTLIST_CAP`, eller reducér
+  `batch_size` i `fetch_broad_technical_batch()`.
 
 ---
-*Sidst opdateret: 2026-09-13.*
+*Sidst opdateret: 2026-09-14.*
