@@ -10,6 +10,8 @@ Alle tærskler og selve signal-logikken er identiske med den validerede,
 backtestede udgave i update.py — ingen genimplementering, ren udtrækning.
 """
 
+import time
+
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -98,6 +100,71 @@ SCOUT_CCY = {
 FX_FALLBACK = {"USD":6.43,"EUR":7.47,"SEK":0.70,"GBP":8.12,"NOK":0.65,"DKK":1.0,"CAD":4.85,"CHF":7.82,"JPY":0.044,"KRW":0.0047,"HKD":0.82}
 
 def get_yf(t): return TICKER_MAP.get(t,t)
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# FUNDAMENTALS-CACHE (sector/industry/navn/nøgletal)
+# ══════════════════════════════════════════════════════════════════════════
+# update-note (sector-collapse-fix): sector/industry/navn/roic/fcf_margin/
+# fwd_pe/market_cap kom hidtil alle fra ét enkelt yf.Ticker(...).info-kald,
+# genhentet PR HVERT ENKELT API-kald — dvs. hver gang en bruger genindlæser
+# forsiden, sender frontend'en et .info-kald for hver eneste position igen.
+# .info er tungt og rate-limit-følsomt hos Yahoo; nok samtidige/gentagne
+# kald fik det jævnligt til at fejle (fanget af except-blokken nedenfor),
+# hvilket viste sig som Kontroltårnets sektor-swimlanes der kollapsede til
+# "Andet" for hele porteføljen — selv efter frontend'en begyndte at batche
+# sine kald (se ryefir-frontend, fetchPortfolio). Sector/industry/navn og
+# nøgletal ændrer sig reelt sjældent fra dag til dag, så de behøver ikke
+# genhentes ved hvert opslag: en simpel in-memory-cache med lang TTL
+# reducerer antallet af .info-kald drastisk (kun ét pr. ticker pr. døgn,
+# uanset hvor mange brugere/sidevisninger), og ved fejl bruges sidste
+# kendte gode værdi i stedet for at lade positionen falde til "ingen data"
+# uden grund. Nulstilles ved hver Render-genstart/deploy — acceptabelt,
+# det betyder blot at første opslag pr. ticker efter en genstart er
+# uden cache, ligesom hidtil.
+_FUNDAMENTALS_CACHE = {}
+FUNDAMENTALS_CACHE_TTL_SEC = 24 * 60 * 60
+
+def _fetch_fundamentals(ticker):
+    cached = _FUNDAMENTALS_CACHE.get(ticker)
+    now = time.time()
+    if cached and now - cached["fetched_at"] < FUNDAMENTALS_CACHE_TTL_SEC:
+        return cached["data"]
+
+    fresh = {"roic": None, "fcf_margin": None, "fwd_pe": None, "market_cap": None,
+             "sector": None, "industry": None, "name": None}
+    try:
+        info = yf.Ticker(get_yf(ticker)).info
+        fwd_pe_raw = info.get("forwardPE") or info.get("trailingPE")
+        if fwd_pe_raw and 0 < fwd_pe_raw < 500:
+            fresh["fwd_pe"] = round(float(fwd_pe_raw), 1)
+        fcf = info.get("freeCashflow"); rev = info.get("totalRevenue")
+        if fcf and rev and rev > 0:
+            fresh["fcf_margin"] = round(fcf / rev * 100, 1)
+        ebit = info.get("ebit") or info.get("operatingIncome")
+        tax = info.get("effectiveTaxRate", 0.25)
+        equity = info.get("totalStockholderEquity") or info.get("bookValue", 0)
+        debt = info.get("totalDebt", 0)
+        if ebit and (equity or debt):
+            invested = (float(equity) if equity else 0) + float(debt)
+            if invested > 0:
+                fresh["roic"] = round(float(ebit) * (1 - float(tax)) / invested * 100, 1)
+        mc = info.get("marketCap")
+        if mc:
+            fresh["market_cap"] = float(mc)
+        fresh["sector"] = info.get("sector")
+        fresh["industry"] = info.get("industry")
+        fresh["name"] = info.get("longName") or info.get("shortName")
+        _FUNDAMENTALS_CACHE[ticker] = {"data": fresh, "fetched_at": now}
+        return fresh
+    except Exception:
+        # .info fejlede (rate-limit/netværk) — brug sidste kendte gode
+        # værdi frem for at lade positionen falde til "ingen sektor" uden
+        # reel grund. Ingen tidligere cache findes (fx allerførste opslag
+        # efter en genstart) → fresh (alt None), som hidtil.
+        if cached:
+            return cached["data"]
+        return fresh
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -191,35 +258,13 @@ def fetch_stock(ticker, bm_close=None):
                 if r["Close"]<r["Open"] and (r["Volume"]/vol20 if vol20>0 else 0)>=THRESH_VOL_RATIO)
         vol=("High sell volume" if hsd>=THRESH_VOL_HIGH else
              "Elevated sell vol" if hsd>=THRESH_VOL_ELEV else "Normal volume")
-        # Fundamental data — best-effort, None if unavailable
-        roic=None; fcf_margin=None; fwd_pe=None; market_cap=None; sector_gics=None; industry_gics=None; company_name=None
-        try:
-            info=yf.Ticker(get_yf(ticker)).info
-            # Forward P/E
-            fwd_pe_raw=info.get("forwardPE") or info.get("trailingPE")
-            if fwd_pe_raw and 0<fwd_pe_raw<500:
-                fwd_pe=round(float(fwd_pe_raw),1)
-            # FCF margin: freeCashflow / totalRevenue
-            fcf=info.get("freeCashflow"); rev=info.get("totalRevenue")
-            if fcf and rev and rev>0:
-                fcf_margin=round(fcf/rev*100,1)
-            # ROIC: operatingIncome*(1-taxRate) / (totalStockholderEquity + totalDebt)
-            ebit=info.get("ebit") or info.get("operatingIncome")
-            tax=info.get("effectiveTaxRate",0.25)
-            equity=info.get("totalStockholderEquity") or info.get("bookValue",0)
-            debt=info.get("totalDebt",0)
-            if ebit and (equity or debt):
-                invested=(float(equity) if equity else 0)+float(debt)
-                if invested>0:
-                    roic=round(float(ebit)*(1-float(tax))/invested*100,1)
-            # Market cap (update-65) — bruges til dynamisk large/mid/small-klassificering
-            # i den åbne screener, i stedet for kun at stole på DEFAULT_CONFIG's statiske mcap.
-            mc=info.get("marketCap")
-            if mc: market_cap=float(mc)
-            sector_gics=info.get("sector")
-            industry_gics=info.get("industry")
-            company_name=info.get("longName") or info.get("shortName")
-        except: pass
+        # Fundamental data — cachet (se _fetch_fundamentals ovenfor), best-effort,
+        # falder tilbage til sidste kendte gode værdi hvis .info fejler.
+        fundamentals=_fetch_fundamentals(ticker)
+        roic=fundamentals["roic"]; fcf_margin=fundamentals["fcf_margin"]
+        fwd_pe=fundamentals["fwd_pe"]; market_cap=fundamentals["market_cap"]
+        sector_gics=fundamentals["sector"]; industry_gics=fundamentals["industry"]
+        company_name=fundamentals["name"]
         ipo_flag = len(hist) < 90  # less than ~4 months = no reliable RS3M
         result={"price":clean(price),"perf_1w":clean(perf(5)),"perf_1m":clean(perf(21)),
                 "perf_1d":clean(perf(1)),"perf_3m":clean(perf(63)),"perf_6m":clean(perf(126)),"perf_12m":clean(perf(252)),
