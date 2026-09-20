@@ -14,9 +14,21 @@ import time
 
 import requests
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import JSONResponse
 from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal
 
-app = FastAPI(title="Ryefir Signal API", version="0.1")
+
+# Starlettes JSONResponse sætter "application/json" uden charset som
+# standard — JSON er UTF-8 pr. spec (RFC 8259), så det virker fint for
+# klienter der parser med en rigtig JSON-parser (fx fetch().json() i
+# frontend'en), men en browser der åbner URL'en direkte kan falde tilbage
+# til Latin-1/Windows-1252, hvilket viser "kører" som "kÃ¸rer" og "↑" som
+# "â†‘". Eksplicit charset i Content-Type-headeren fjerner den tvetydighed.
+class UTF8JSONResponse(JSONResponse):
+    media_type = "application/json; charset=utf-8"
+
+
+app = FastAPI(title="Ryefir Signal API", version="0.1", default_response_class=UTF8JSONResponse)
 
 # update-note (screener-cron): den åbne screener (715 tickers) scannes IKKE
 # live her — det ville tage minutter og er for langsomt til et webkald.
