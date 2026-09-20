@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T01:06:30.576261+00:00",
+  "generated_at": "2026-09-20T01:11:34.002089+00:00",
   "universe_size": 715,
   "scanned": 710,
   "shortlisted": 156,
@@ -102,7 +102,7 @@
       "roic": null,
       "fcf_margin": 11.7,
       "fwd_pe": 21.9,
-      "market_cap": 13274270720.0
+      "market_cap": 13393518592.0
     },
     {
       "ticker": "HPQ",
@@ -462,7 +462,7 @@
       "roic": null,
       "fcf_margin": -21.1,
       "fwd_pe": 7.3,
-      "market_cap": 25286266880.0
+      "market_cap": 25680777216.0
     },
     {
       "ticker": "DGX",
@@ -1137,7 +1137,7 @@
       "rs3m_vs_bm": 17.29,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 237.1403,
+      "high_52w": 237.1404,
       "low_52w": 134.6109,
       "roic": null,
       "fcf_margin": 16.0,
@@ -1402,7 +1402,7 @@
       "roic": null,
       "fcf_margin": 13.6,
       "fwd_pe": 24.9,
-      "market_cap": 52854173696.0
+      "market_cap": 52853166080.0
     },
     {
       "ticker": "FTNT",
@@ -1642,7 +1642,7 @@
       "roic": null,
       "fcf_margin": 21.9,
       "fwd_pe": 11.4,
-      "market_cap": 33527404544.0
+      "market_cap": 33528168448.0
     },
     {
       "ticker": "CTAS",
@@ -2037,7 +2037,7 @@
       "rs3m_vs_bm": 11.82,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
-      "high_52w": 372.5275,
+      "high_52w": 372.5274,
       "low_52w": 251.6712,
       "roic": null,
       "fcf_margin": 0.6,
@@ -2098,7 +2098,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 516.3225,
-      "low_52w": 313.9404,
+      "low_52w": 313.9403,
       "roic": null,
       "fcf_margin": 27.4,
       "fwd_pe": 15.3,
@@ -2157,7 +2157,7 @@
       "rs3m_vs_bm": 10.56,
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
-      "high_52w": 315.7112,
+      "high_52w": 315.7113,
       "low_52w": 217.5587,
       "roic": null,
       "fcf_margin": 43.1,
@@ -2338,7 +2338,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 29.02,
-      "low_52w": 22.0533,
+      "low_52w": 22.0534,
       "roic": null,
       "fcf_margin": 19.6,
       "fwd_pe": 9.5,
