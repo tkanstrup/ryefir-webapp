@@ -62,6 +62,20 @@ repo — forkert repo, ikke forkert arbejde.
   "Screener cron-job" nedenfor for fuld arkitektur og Render-opsætning —
   **Render Cron Job-servicen skal oprettes manuelt i dashboardet, det
   kunne ikke gøres herfra.**
+- 2026-09-21/22: **sector/industry/navn/nøgletal kollapsede gentagne
+  gange til "Andet"/tomt** på `ryefir-frontend`s Kontroltårn, selv efter
+  frontend'en begyndte at batche sine samtidige kald. Rodårsag fundet:
+  al den data kom fra ét `yf.Ticker(...).info`-kald, genhentet FRA BUNDEN
+  ved hvert eneste API-kald (uanset at data som sector/navn stort set
+  aldrig ændrer sig), og en tavs `except: pass` uden fallback — én fejlet
+  `.info`-fetch (rate-limit/netværk hos Yahoo) gav "ingen sektor" for
+  hele opslaget. Rettet (`425a32f`): `_fetch_fundamentals()` cacher nu i
+  hukommelsen (24 t TTL) og falder tilbage til sidste kendte gode værdi
+  ved fejl, i stedet for at returnere `None`. Reducerer samtidig det
+  samlede antal `.info`-kald til Yahoo drastisk. **Ikke selv verificeret
+  live** (ingen netværksadgang til Render/Yahoo fra denne sandbox) —
+  brugeren bekræfter i `ryefir-frontend`s samtale/TASKS.md om det virker
+  efter deploy.
 
 ## Screener cron-job (åben scanning, 715 tickers)
 
