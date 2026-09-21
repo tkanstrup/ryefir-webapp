@@ -46,6 +46,7 @@ SCREENER_CACHE_TTL_SEC = 600  # 10 min — nyt nok, uden at hamre GitHub ved hve
 _screener_cache = {"data": None, "fetched_at": 0}
 
 FX_CACHE_TTL_SEC = 6 * 60 * 60  # 6 t — kurser til værdiansættelse, ikke handel i realtid
+FX_FALLBACK_CACHE_TTL_SEC = 3 * 60  # kort, så faste kurser ikke hænger efter Yahoo er tilbage
 _fx_cache = {"data": None, "fetched_at": 0}
 
 # update-note: benchmark hentes ved opstart og genbruges — at hente det for
@@ -137,8 +138,10 @@ def get_fx_rates():
     værdier og listes i "fallbacks_used", så det aldrig sker tavst.
     """
     now = time.time()
-    if _fx_cache["data"] is not None and now - _fx_cache["fetched_at"] < FX_CACHE_TTL_SEC:
-        return _fx_cache["data"]
+    if _fx_cache["data"] is not None:
+        ttl = FX_FALLBACK_CACHE_TTL_SEC if _fx_cache["data"]["fallbacks_used"] else FX_CACHE_TTL_SEC
+        if now - _fx_cache["fetched_at"] < ttl:
+            return _fx_cache["data"]
     try:
         rates, fallbacks_used = fetch_fx_rates()
     except Exception as e:
