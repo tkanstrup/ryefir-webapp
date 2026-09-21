@@ -81,8 +81,8 @@ repo — forkert repo, ikke forkert arbejde.
   `_fetch_fundamentals()`). Nyt `GET /api/fx-rates` (kurser til DKK for USD,
   EUR, SEK, GBP, NOK, CAD; 6 t cache). Logikken er `fetch_fx_rates()` fra
   `update.py` (kun i Downloads/files-3, findes ikke i dette repo), udvidet
-  med CAD. CAD-fallbacken (4.70) er et groft skøn; brugte fallbacks
-  listes i svaret under `fallbacks_used`.
+  med CAD. CAD-fallbacken er 4.65 (bekræftet via flere valutakilder
+  21/9-2026); brugte fallbacks listes i svaret under `fallbacks_used`.
 
 ## Screener cron-job (åben scanning, 715 tickers)
 

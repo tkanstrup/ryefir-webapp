@@ -283,12 +283,14 @@ def fetch_stock(ticker, bm_close=None):
         print(f"  {ticker} error: {e}"); return None
 
 
-# Valutakurser til DKK — samme logik som fetch_fx_rates() i update.py (versionen
-# i files-3/), udvidet med CAD som update.py ikke havde. Fallback-værdier bruges
-# kun hvis Yahoo fejler for et enkelt par; CAD-fallbacken er et groft skøn (ny).
+# Kopieret fra update.py (stock_system_v7-repoet) d. 20/9-2026, ikke automatisk
+# synkroniseret. Tilføjes en ny valuta i det oprindelige system, skal den
+# tilføjes her manuelt også.
+# Udvidet med CAD, som update.py ikke havde. Fallback-værdier bruges kun hvis
+# Yahoo fejler for et enkelt par.
 FX_PAIRS = {"USD":"USDDKK=X","EUR":"EURDKK=X","SEK":"SEKDKK=X",
             "GBP":"GBPDKK=X","NOK":"NOKDKK=X","CAD":"CADDKK=X"}
-FX_FALLBACK = {"USD":6.43,"EUR":7.47,"SEK":0.70,"GBP":8.12,"NOK":0.65,"CAD":4.70,"DKK":1.0}
+FX_FALLBACK = {"USD":6.43,"EUR":7.47,"SEK":0.70,"GBP":8.12,"NOK":0.65,"CAD":4.65,"DKK":1.0}
 
 def fetch_fx_rates():
     """Returnerer (rates, fallbacks_used): rates = valuta -> kurs i DKK."""
