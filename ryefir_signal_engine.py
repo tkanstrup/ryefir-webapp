@@ -132,7 +132,7 @@ def _fetch_fundamentals(ticker):
         return cached["data"]
 
     fresh = {"roic": None, "fcf_margin": None, "fwd_pe": None, "market_cap": None,
-             "sector": None, "industry": None, "name": None}
+             "sector": None, "industry": None, "name": None, "currency": None}
     try:
         info = yf.Ticker(get_yf(ticker)).info
         fwd_pe_raw = info.get("forwardPE") or info.get("trailingPE")
@@ -155,6 +155,7 @@ def _fetch_fundamentals(ticker):
         fresh["sector"] = info.get("sector")
         fresh["industry"] = info.get("industry")
         fresh["name"] = info.get("longName") or info.get("shortName")
+        fresh["currency"] = info.get("currency")
         _FUNDAMENTALS_CACHE[ticker] = {"data": fresh, "fetched_at": now}
         return fresh
     except Exception:
@@ -264,7 +265,7 @@ def fetch_stock(ticker, bm_close=None):
         roic=fundamentals["roic"]; fcf_margin=fundamentals["fcf_margin"]
         fwd_pe=fundamentals["fwd_pe"]; market_cap=fundamentals["market_cap"]
         sector_gics=fundamentals["sector"]; industry_gics=fundamentals["industry"]
-        company_name=fundamentals["name"]
+        company_name=fundamentals["name"]; currency=fundamentals["currency"]
         ipo_flag = len(hist) < 90  # less than ~4 months = no reliable RS3M
         result={"price":clean(price),"perf_1w":clean(perf(5)),"perf_1m":clean(perf(21)),
                 "perf_1d":clean(perf(1)),"perf_3m":clean(perf(63)),"perf_6m":clean(perf(126)),"perf_12m":clean(perf(252)),
@@ -275,12 +276,31 @@ def fetch_stock(ticker, bm_close=None):
                 "days_above_momentum":days_above_momentum,
                 "confirmed_state":confirmed_state,"raw_direction":raw_direction,
                 "roic":roic,"fcf_margin":fcf_margin,"fwd_pe":fwd_pe,
-                "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics,"name":company_name}
+                "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics,"name":company_name,"currency":currency}
         if result["price"]==0.0: return None
         return result
     except Exception as e:
         print(f"  {ticker} error: {e}"); return None
 
+
+# Valutakurser til DKK — samme logik som fetch_fx_rates() i update.py (versionen
+# i files-3/), udvidet med CAD som update.py ikke havde. Fallback-værdier bruges
+# kun hvis Yahoo fejler for et enkelt par; CAD-fallbacken er et groft skøn (ny).
+FX_PAIRS = {"USD":"USDDKK=X","EUR":"EURDKK=X","SEK":"SEKDKK=X",
+            "GBP":"GBPDKK=X","NOK":"NOKDKK=X","CAD":"CADDKK=X"}
+FX_FALLBACK = {"USD":6.43,"EUR":7.47,"SEK":0.70,"GBP":8.12,"NOK":0.65,"CAD":4.70,"DKK":1.0}
+
+def fetch_fx_rates():
+    """Returnerer (rates, fallbacks_used): rates = valuta -> kurs i DKK."""
+    rates = {"DKK": 1.0}; fallbacks_used = []
+    for ccy, pair in FX_PAIRS.items():
+        try:
+            hist = yf.Ticker(pair).history(period="2d")
+            if hist.empty: raise ValueError("tom historik")
+            rates[ccy] = round(float(hist["Close"].iloc[-1]), 4)
+        except Exception:
+            rates[ccy] = FX_FALLBACK[ccy]; fallbacks_used.append(ccy)
+    return rates, fallbacks_used
 
 BENCHMARK_TICKERS = ["URTH","ACWI","VT","IWDA.L","^GSPC"]
 BENCHMARK_FALLBACK_VALS = {"m1":2.2,"m3":3.9,"m6":6.0,"m12":17.9,"m5d":-0.7,"m30d":2.2,"m90d":3.9,"m3_5d_ago":3.5,"d1":0.0}

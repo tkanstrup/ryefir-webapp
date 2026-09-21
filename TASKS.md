@@ -77,6 +77,13 @@ repo — forkert repo, ikke forkert arbejde.
   brugeren bekræfter i `ryefir-frontend`s samtale/TASKS.md om det virker
   efter deploy.
 
+- 2026-09-21: `/api/signal/{ticker}` har nu `currency` (via det cachede
+  `_fetch_fundamentals()`). Nyt `GET /api/fx-rates` (kurser til DKK for USD,
+  EUR, SEK, GBP, NOK, CAD; 6 t cache). Logikken er `fetch_fx_rates()` fra
+  `update.py` (kun i Downloads/files-3, findes ikke i dette repo), udvidet
+  med CAD. CAD-fallbacken (4.70) er et groft skøn; brugte fallbacks
+  listes i svaret under `fallbacks_used`.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på

@@ -11,11 +11,12 @@ Herefter:    åbn http://127.0.0.1:8000/api/signal/MSFT i browseren
 """
 
 import time
+from datetime import datetime, timezone
 
 import requests
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal
+from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal, fetch_fx_rates
 
 
 # Starlettes JSONResponse sætter "application/json" uden charset som
@@ -44,6 +45,9 @@ SCREENER_CACHE_URL = (
 SCREENER_CACHE_TTL_SEC = 600  # 10 min — nyt nok, uden at hamre GitHub ved hvert besøg
 _screener_cache = {"data": None, "fetched_at": 0}
 
+FX_CACHE_TTL_SEC = 6 * 60 * 60  # 6 t — kurser til værdiansættelse, ikke handel i realtid
+_fx_cache = {"data": None, "fetched_at": 0}
+
 # update-note: benchmark hentes ved opstart og genbruges — at hente det for
 # hvert enkelt ticker-kald ville være unødigt langsomt og belaste yfinance
 # mere end nødvendigt. Simpel udgave nu; kan gøres tidsbaseret (fx cache i
@@ -54,7 +58,7 @@ _idx_perf, _bm_close = fetch_benchmark()
 @app.get("/")
 def root():
     return {"status": "Ryefir Signal API kører",
-            "endpoints": ["/api/signal/{ticker}", "/api/screener"]}
+            "endpoints": ["/api/signal/{ticker}", "/api/screener", "/api/fx-rates"]}
 
 
 @app.get("/api/signal/{ticker}")
@@ -85,6 +89,7 @@ def get_ticker_signal(ticker: str, avg_cost: float = None, stop_loss: float = No
         "sector": data.get("sector"),
         "industry": data.get("industry"),
         "name": data.get("name"),
+        "currency": data.get("currency"),
         "high_52w": data.get("high_52w"),
         "low_52w": data.get("low_52w"),
         "roic": data.get("roic"),
@@ -120,4 +125,28 @@ def get_screener():
 
     _screener_cache["data"] = data
     _screener_cache["fetched_at"] = now
+    return data
+
+
+@app.get("/api/fx-rates")
+def get_fx_rates():
+    """
+    Valutakurser til DKK (1 enhed valuta = X DKK). Cachet i hukommelsen
+    FX_CACHE_TTL_SEC ad gangen. Falder tilbage til sidste kendte kopi hvis
+    en ny hentning fejler totalt; enkelte fejlede par bruger faste fallback-
+    værdier og listes i "fallbacks_used", så det aldrig sker tavst.
+    """
+    now = time.time()
+    if _fx_cache["data"] is not None and now - _fx_cache["fetched_at"] < FX_CACHE_TTL_SEC:
+        return _fx_cache["data"]
+    try:
+        rates, fallbacks_used = fetch_fx_rates()
+    except Exception as e:
+        if _fx_cache["data"] is not None:
+            return _fx_cache["data"]
+        raise HTTPException(status_code=503, detail=f"Valutakurser kunne ikke hentes: {e}")
+    data = {"base": "DKK",
+            "fetched_at": datetime.now(timezone.utc).isoformat(),
+            "rates": rates, "fallbacks_used": fallbacks_used}
+    _fx_cache["data"] = data; _fx_cache["fetched_at"] = now
     return data
