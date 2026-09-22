@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T21:31:22.859903+00:00",
+  "generated_at": "2026-09-22T21:36:25.944172+00:00",
   "universe_size": 715,
   "scanned": 710,
   "shortlisted": 124,
@@ -28,8 +28,8 @@
       "ticker": "VEEV",
       "name": "Veeva Systems Inc.",
       "region": "USA",
-      "sector": "Healthcare",
-      "industry": "Health Information Services",
+      "sector": null,
+      "industry": "Healthcare",
       "price": 260.9100036621094,
       "signal": "Check Thesis — Big Drop",
       "rsi": 28.4,
@@ -40,7 +40,7 @@
       "high_52w": 306.22,
       "low_52w": 151.43,
       "roic": null,
-      "fcf_margin": 36.4,
+      "fcf_margin": null,
       "fwd_pe": 25.5,
       "market_cap": 42243637248.0
     },
@@ -958,7 +958,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 338.614,
-      "low_52w": 244.1703,
+      "low_52w": 244.1702,
       "roic": null,
       "fcf_margin": 6.2,
       "fwd_pe": 15.7,
@@ -1662,7 +1662,7 @@
       "roic": null,
       "fcf_margin": 5.4,
       "fwd_pe": 14.7,
-      "market_cap": 5619899392.0
+      "market_cap": 5618744832.0
     },
     {
       "ticker": "INGA.AS",
@@ -1818,7 +1818,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 193.9,
-      "low_52w": 111.9601,
+      "low_52w": 111.96,
       "roic": null,
       "fcf_margin": 6.6,
       "fwd_pe": 23.7,
