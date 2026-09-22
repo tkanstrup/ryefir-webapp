@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T21:26:23.196451+00:00",
+  "generated_at": "2026-09-22T21:31:22.859903+00:00",
   "universe_size": 715,
   "scanned": 710,
   "shortlisted": 124,
@@ -8,8 +8,8 @@
       "ticker": "WDAY",
       "name": "Workday, Inc.",
       "region": "USA",
-      "sector": "Technology",
-      "industry": "Software - Application",
+      "sector": null,
+      "industry": "AI & Technology",
       "price": 188.22999572753906,
       "signal": "Check Thesis — Big Drop",
       "rsi": 42.6,
@@ -20,9 +20,9 @@
       "high_52w": 247.69,
       "low_52w": 112.5,
       "roic": null,
-      "fcf_margin": 30.0,
-      "fwd_pe": 14.2,
-      "market_cap": 45363429376.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "VEEV",
@@ -538,7 +538,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 313.55,
-      "low_52w": 187.4598,
+      "low_52w": 187.4597,
       "roic": null,
       "fcf_margin": 25.5,
       "fwd_pe": 14.0,
@@ -1337,7 +1337,7 @@
       "rs3m_vs_bm": 13.36,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 162.7066,
+      "high_52w": 162.7065,
       "low_52w": 106.6712,
       "roic": null,
       "fcf_margin": 4.5,
@@ -1697,7 +1697,7 @@
       "rs3m_vs_bm": 11.48,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 993.5342,
+      "high_52w": 993.5343,
       "low_52w": 694.2667,
       "roic": null,
       "fcf_margin": 1.7,
@@ -1818,7 +1818,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 193.9,
-      "low_52w": 111.96,
+      "low_52w": 111.9601,
       "roic": null,
       "fcf_margin": 6.6,
       "fwd_pe": 23.7,
@@ -2002,7 +2002,7 @@
       "roic": null,
       "fcf_margin": null,
       "fwd_pe": 10.8,
-      "market_cap": 137626533888.0
+      "market_cap": 137800613888.0
     },
     {
       "ticker": "PFE",
