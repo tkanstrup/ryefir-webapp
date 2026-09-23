@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-23T06:41:42.614700+00:00",
+  "generated_at": "2026-09-23T06:46:33.202813+00:00",
   "universe_size": 715,
   "scanned": 710,
   "shortlisted": 146,
   "candidates": [
     {
       "ticker": "BP.L",
-      "name": "BP",
+      "name": "BP p.l.c.",
       "region": "Europe",
-      "sector": null,
-      "industry": "Energy",
+      "sector": "Energy",
+      "industry": "Oil & Gas Integrated",
       "price": 542.2999877929688,
       "signal": "Strong Hold",
       "rsi": 50.0,
@@ -20,9 +20,9 @@
       "high_52w": 606.1579,
       "low_52w": 410.2447,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.0,
+      "fwd_pe": 9.6,
+      "market_cap": 83796484096.0
     }
   ]
 }
