@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T21:01:35.026430+00:00",
+  "generated_at": "2026-09-23T21:06:23.019164+00:00",
   "universe_size": 715,
   "scanned": 710,
   "shortlisted": 122,
@@ -126,10 +126,10 @@
     },
     {
       "ticker": "CRL",
-      "name": "Charles River Laboratories",
+      "name": "Charles River Laboratories International, Inc.",
       "region": "USA",
-      "sector": null,
-      "industry": "Healthcare",
+      "sector": "Healthcare",
+      "industry": "Diagnostics & Research",
       "price": 277.3299865722656,
       "signal": "Strong Hold",
       "rsi": 45.6,
@@ -140,9 +140,9 @@
       "high_52w": 298.58,
       "low_52w": 145.57,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.7,
+      "fwd_pe": 21.8,
+      "market_cap": 13239420928.0
     },
     {
       "ticker": "CTSH",
@@ -248,8 +248,8 @@
       "ticker": "HPQ",
       "name": "HP Inc.",
       "region": "USA",
-      "sector": null,
-      "industry": "AI & Technology",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
       "price": 32.15999984741211,
       "signal": "Strong Hold",
       "rsi": 53.9,
@@ -260,16 +260,16 @@
       "high_52w": 35.48,
       "low_52w": 17.5237,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.7,
+      "fwd_pe": 10.2,
+      "market_cap": 29001596928.0
     },
     {
       "ticker": "PANW",
-      "name": "Palo Alto Networks",
+      "name": "Palo Alto Networks, Inc.",
       "region": "USA",
-      "sector": null,
-      "industry": "AI & Technology",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
       "price": 393.29998779296875,
       "signal": "Strong Hold",
       "rsi": 61.0,
@@ -280,9 +280,9 @@
       "high_52w": 396.0,
       "low_52w": 141.67,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 36.9,
+      "fwd_pe": 80.6,
+      "market_cap": 321719402496.0
     },
     {
       "ticker": "OCDO.L",
@@ -326,10 +326,10 @@
     },
     {
       "ticker": "COIN",
-      "name": "Coinbase",
+      "name": "Coinbase Global, Inc.",
       "region": "USA",
-      "sector": null,
-      "industry": "Financials",
+      "sector": "Financial Services",
+      "industry": "Financial Data & Stock Exchanges",
       "price": 198.1300048828125,
       "signal": "Strong Hold",
       "rsi": 59.4,
@@ -340,9 +340,9 @@
       "high_52w": 387.27,
       "low_52w": 141.09,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 44.2,
+      "fwd_pe": 69.9,
+      "market_cap": 52274012160.0
     },
     {
       "ticker": "FOXA",
@@ -366,10 +366,10 @@
     },
     {
       "ticker": "GPN",
-      "name": "Global Payments",
+      "name": "Global Payments Inc.",
       "region": "USA",
-      "sector": null,
-      "industry": "Financials",
+      "sector": "Industrials",
+      "industry": "Specialty Business Services",
       "price": 84.0,
       "signal": "Strong Hold",
       "rsi": 35.6,
@@ -380,9 +380,9 @@
       "high_52w": 94.5623,
       "low_52w": 62.0556,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 77.1,
+      "fwd_pe": 5.3,
+      "market_cap": 22227943424.0
     },
     {
       "ticker": "EVO.ST",
@@ -1486,10 +1486,10 @@
     },
     {
       "ticker": "JYSK.CO",
-      "name": "Jyske Bank",
+      "name": "Jyske Bank A/S",
       "region": "Europe",
-      "sector": null,
-      "industry": "Financials",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
       "price": 1101.0,
       "signal": "Strong Hold",
       "rsi": 51.8,
@@ -1501,8 +1501,8 @@
       "low_52w": 673.8541,
       "roic": null,
       "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fwd_pe": 11.6,
+      "market_cap": 61908500480.0
     },
     {
       "ticker": "WAT",
@@ -1977,7 +1977,7 @@
       "rs3m_vs_bm": 11.16,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 993.5343,
+      "high_52w": 993.5342,
       "low_52w": 694.2667,
       "roic": null,
       "fcf_margin": 1.7,
@@ -2158,7 +2158,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 395.8665,
-      "low_52w": 257.6324,
+      "low_52w": 257.6325,
       "roic": null,
       "fcf_margin": 30.2,
       "fwd_pe": 11.9,
