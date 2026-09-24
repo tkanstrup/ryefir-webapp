@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-24T01:21:36.698549+00:00",
+  "generated_at": "2026-09-24T01:26:29.221708+00:00",
   "universe_size": 715,
   "scanned": 710,
   "shortlisted": 131,
   "candidates": [
     {
       "ticker": "BBVA.MC",
-      "name": "BBVA",
+      "name": "Banco Bilbao Vizcaya Argentaria, S.A.",
       "region": "Europe",
-      "sector": null,
-      "industry": "Financials",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
       "price": 24.8799991607666,
       "signal": "Strong Hold",
       "rsi": 42.0,
@@ -21,8 +21,8 @@
       "low_52w": 14.9382,
       "roic": null,
       "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fwd_pe": 10.8,
+      "market_cap": 137469100032.0
     }
   ]
 }
