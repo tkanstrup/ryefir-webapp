@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T12:56:16.221469+00:00",
+  "generated_at": "2026-09-26T13:01:15.518925+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 88,
@@ -8,8 +8,8 @@
       "ticker": "VEEV",
       "name": "Veeva Systems Inc.",
       "region": "USA",
-      "sector": null,
-      "industry": "Healthcare",
+      "sector": "Healthcare",
+      "industry": "Health Information Services",
       "price": 280.67999267578125,
       "signal": "Strong Hold",
       "rsi": 55.8,
@@ -20,7 +20,7 @@
       "high_52w": 306.22,
       "low_52w": 151.43,
       "roic": null,
-      "fcf_margin": null,
+      "fcf_margin": 36.4,
       "fwd_pe": 27.4,
       "market_cap": 45444575232.0
     },
