@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-26T03:31:19.469473+00:00",
+  "generated_at": "2026-09-26T03:36:15.352408+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 85,
   "candidates": [
     {
       "ticker": "VEEV",
-      "name": "Veeva Systems Inc.",
+      "name": "Veeva Systems",
       "region": "USA",
-      "sector": "Healthcare",
-      "industry": "Health Information Services",
+      "sector": null,
+      "industry": "Healthcare",
       "price": 280.67999267578125,
       "signal": "Strong Hold",
       "rsi": 55.8,
@@ -20,16 +20,16 @@
       "high_52w": 306.22,
       "low_52w": 151.43,
       "roic": null,
-      "fcf_margin": 36.4,
-      "fwd_pe": 27.4,
-      "market_cap": 45444575232.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "MPC",
-      "name": "Marathon Petroleum Corporation",
+      "name": "Marathon Petroleum",
       "region": "USA",
-      "sector": "Energy",
-      "industry": "Oil & Gas Refining & Marketing",
+      "sector": null,
+      "industry": "Energy",
       "price": 393.5199890136719,
       "signal": "Strong Hold",
       "rsi": 52.5,
@@ -40,16 +40,16 @@
       "high_52w": 424.89,
       "low_52w": 160.7636,
       "roic": null,
-      "fcf_margin": 6.0,
-      "fwd_pe": 8.3,
-      "market_cap": 114882904064.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "WDAY",
       "name": "Workday, Inc.",
       "region": "USA",
-      "sector": "Technology",
-      "industry": "Software - Application",
+      "sector": null,
+      "industry": "AI & Technology",
       "price": 189.4499969482422,
       "signal": "Check Thesis — Big Drop",
       "rsi": 44.3,
@@ -60,9 +60,9 @@
       "high_52w": 247.69,
       "low_52w": 112.5,
       "roic": null,
-      "fcf_margin": 30.0,
-      "fwd_pe": 14.3,
-      "market_cap": 45657448448.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "VLO",
