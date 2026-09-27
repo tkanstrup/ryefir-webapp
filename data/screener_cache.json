@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-27T02:04:08.749928+00:00",
+  "generated_at": "2026-09-27T02:10:56.023318+00:00",
   "universe_size": 715,
-  "scanned": 687,
-  "shortlisted": 85,
+  "scanned": 700,
+  "shortlisted": 87,
   "candidates": [
     {
       "ticker": "VEEV",
@@ -765,26 +765,6 @@
       "market_cap": 6290880000.0
     },
     {
-      "ticker": "LDOS",
-      "name": "Leidos Holdings, Inc.",
-      "region": "USA",
-      "sector": "Technology",
-      "industry": "Information Technology Services",
-      "price": 123.61000061035156,
-      "signal": "Strong Hold",
-      "rsi": 33.6,
-      "perf_3m": 21.87,
-      "rs3m_vs_bm": 16.11,
-      "direction": "→ Stable",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 197.2656,
-      "low_52w": 99.6763,
-      "roic": null,
-      "fcf_margin": 6.5,
-      "fwd_pe": 9.7,
-      "market_cap": 15548341248.0
-    },
-    {
       "ticker": "SGE.L",
       "name": "The Sage Group plc",
       "region": "Europe",
@@ -1265,6 +1245,26 @@
       "market_cap": 9712238592.0
     },
     {
+      "ticker": "DSY.PA",
+      "name": "Dassault Systèmes SE",
+      "region": "Europe",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "price": 21.06999969482422,
+      "signal": "Check Thesis — Big Drop",
+      "rsi": 57.9,
+      "perf_3m": 18.27,
+      "rs3m_vs_bm": 12.51,
+      "direction": "→ Stable",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 29.868,
+      "low_52w": 15.748,
+      "roic": null,
+      "fcf_margin": 20.4,
+      "fwd_pe": 15.0,
+      "market_cap": 27687116800.0
+    },
+    {
       "ticker": "BP.L",
       "name": "BP p.l.c.",
       "region": "Europe",
@@ -1283,6 +1283,26 @@
       "fcf_margin": 6.0,
       "fwd_pe": 9.4,
       "market_cap": 86299721728.0
+    },
+    {
+      "ticker": "BBY",
+      "name": "Best Buy Co., Inc.",
+      "region": "USA",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "price": 90.51000213623047,
+      "signal": "Check Thesis — Big Drop",
+      "rsi": 52.6,
+      "perf_3m": 17.69,
+      "rs3m_vs_bm": 11.93,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 94.82,
+      "low_52w": 54.2219,
+      "roic": null,
+      "fcf_margin": 3.3,
+      "fwd_pe": 12.5,
+      "market_cap": 18982453248.0
     },
     {
       "ticker": "EL",
@@ -1563,6 +1583,26 @@
       "fcf_margin": 7.5,
       "fwd_pe": 27.3,
       "market_cap": 84466008064.0
+    },
+    {
+      "ticker": "BBVA.MC",
+      "name": "Banco Bilbao Vizcaya Argentaria, S.A.",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "industry": "Banks - Diversified",
+      "price": 25.200000762939453,
+      "signal": "Strong Hold",
+      "rsi": 47.5,
+      "perf_3m": 15.23,
+      "rs3m_vs_bm": 9.47,
+      "direction": "→ Stable",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 25.41,
+      "low_52w": 14.9382,
+      "roic": null,
+      "fcf_margin": null,
+      "fwd_pe": 10.9,
+      "market_cap": 139237195776.0
     },
     {
       "ticker": "GDDY",
