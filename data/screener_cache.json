@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-28T23:46:26.683417+00:00",
+  "generated_at": "2026-09-28T23:51:19.810006+00:00",
   "universe_size": 715,
   "scanned": 709,
-  "shortlisted": 116,
+  "shortlisted": 115,
   "candidates": [
     {
       "ticker": "WDAY",
@@ -657,7 +657,7 @@
       "rs3m_vs_bm": 17.91,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
-      "high_52w": 243.1211,
+      "high_52w": 243.1212,
       "low_52w": 141.0042,
       "roic": null,
       "fcf_margin": 2.8,
@@ -1158,7 +1158,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
       "high_52w": 254.7377,
-      "low_52w": 146.4909,
+      "low_52w": 146.4908,
       "roic": null,
       "fcf_margin": 8.2,
       "fwd_pe": 26.4,
@@ -1437,7 +1437,7 @@
       "rs3m_vs_bm": 8.71,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 177.7256,
+      "high_52w": 177.7255,
       "low_52w": 124.6913,
       "roic": null,
       "fcf_margin": 11.3,
