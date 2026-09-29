@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T20:16:25.837179+00:00",
+  "generated_at": "2026-09-29T20:21:28.640060+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 110,
@@ -210,11 +210,11 @@
       "region": "USA",
       "sector": "Technology",
       "industry": "Communication Equipment",
-      "price": 61.5,
+      "price": 61.4900016784668,
       "signal": "Strong Hold",
-      "rsi": 54.7,
-      "perf_3m": 36.68,
-      "rs3m_vs_bm": 34.67,
+      "rsi": 54.6,
+      "perf_3m": 36.66,
+      "rs3m_vs_bm": 34.65,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 63.52,
@@ -222,7 +222,7 @@
       "roic": null,
       "fcf_margin": 11.3,
       "fwd_pe": 13.4,
-      "market_cap": 81639088128.0
+      "market_cap": 81625817088.0
     },
     {
       "ticker": "REP.MC",
@@ -430,11 +430,11 @@
       "region": "USA",
       "sector": "Technology",
       "industry": "Computer Hardware",
-      "price": 539.6900024414062,
+      "price": 539.5900268554688,
       "signal": "Strong Hold",
-      "rsi": 50.8,
-      "perf_3m": 25.29,
-      "rs3m_vs_bm": 23.28,
+      "rsi": 50.7,
+      "perf_3m": 25.27,
+      "rs3m_vs_bm": 23.26,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 588.4,
@@ -442,7 +442,7 @@
       "roic": null,
       "fcf_margin": 4.0,
       "fwd_pe": 18.5,
-      "market_cap": 343141777408.0
+      "market_cap": 343078207488.0
     },
     {
       "ticker": "SHEL.L",
@@ -510,11 +510,11 @@
       "region": "USA",
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
-      "price": 204.38999938964844,
+      "price": 204.3800048828125,
       "signal": "Strong Hold",
       "rsi": 36.0,
-      "perf_3m": 24.38,
-      "rs3m_vs_bm": 22.37,
+      "perf_3m": 24.37,
+      "rs3m_vs_bm": 22.36,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 217.77,
@@ -522,7 +522,7 @@
       "roic": null,
       "fcf_margin": 10.5,
       "fwd_pe": 15.1,
-      "market_cap": 400932110336.0
+      "market_cap": 400912482304.0
     },
     {
       "ticker": "ICE",
@@ -690,11 +690,11 @@
       "region": "USA",
       "sector": "Consumer Defensive",
       "industry": "Discount Stores",
-      "price": 156.4499969482422,
+      "price": 156.42999267578125,
       "signal": "Strong Hold",
-      "rsi": 47.9,
-      "perf_3m": 20.7,
-      "rs3m_vs_bm": 18.69,
+      "rsi": 47.8,
+      "perf_3m": 20.69,
+      "rs3m_vs_bm": 18.68,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 169.89,
@@ -702,7 +702,7 @@
       "roic": null,
       "fcf_margin": 3.2,
       "fwd_pe": 16.4,
-      "market_cap": 71073898496.0
+      "market_cap": 71064805376.0
     },
     {
       "ticker": "GETI-B.ST",
@@ -830,11 +830,11 @@
       "region": "USA",
       "sector": "Communication Services",
       "industry": "Telecom Services",
-      "price": 24.5,
+      "price": 24.479999542236328,
       "signal": "Strong Hold",
-      "rsi": 43.0,
-      "perf_3m": 19.94,
-      "rs3m_vs_bm": 17.93,
+      "rsi": 42.8,
+      "perf_3m": 19.84,
+      "rs3m_vs_bm": 17.83,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 28.4181,
@@ -842,7 +842,7 @@
       "roic": null,
       "fcf_margin": 8.0,
       "fwd_pe": 9.5,
-      "market_cap": 167883456512.0
+      "market_cap": 167746404352.0
     },
     {
       "ticker": "WKL.AS",
@@ -930,11 +930,11 @@
       "region": "USA",
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
-      "price": 161.38999938964844,
+      "price": 161.35000610351562,
       "signal": "Strong Hold",
       "rsi": 44.7,
-      "perf_3m": 18.81,
-      "rs3m_vs_bm": 16.8,
+      "perf_3m": 18.78,
+      "rs3m_vs_bm": 16.77,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 169.32,
@@ -942,7 +942,7 @@
       "roic": null,
       "fcf_margin": 5.7,
       "fwd_pe": 14.5,
-      "market_cap": 663621468160.0
+      "market_cap": 663457038336.0
     },
     {
       "ticker": "UHS",
@@ -1090,11 +1090,11 @@
       "region": "USA",
       "sector": "Healthcare",
       "industry": "Drug Manufacturers - General",
-      "price": 149.32000732421875,
+      "price": 149.27999877929688,
       "signal": "Strong Hold",
-      "rsi": 57.9,
-      "perf_3m": 16.89,
-      "rs3m_vs_bm": 14.88,
+      "rsi": 57.8,
+      "perf_3m": 16.86,
+      "rs3m_vs_bm": 14.85,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 155.5319,
@@ -1102,7 +1102,7 @@
       "roic": null,
       "fcf_margin": 22.8,
       "fwd_pe": 15.7,
-      "market_cap": 368398073856.0
+      "market_cap": 368299376640.0
     },
     {
       "ticker": "TTE.PA",
@@ -1298,7 +1298,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 193.9,
-      "low_52w": 111.96,
+      "low_52w": 111.9601,
       "roic": null,
       "fcf_margin": 6.6,
       "fwd_pe": 23.6,
@@ -1750,11 +1750,11 @@
       "region": "USA",
       "sector": "Healthcare",
       "industry": "Medical Devices",
-      "price": 100.95999908447266,
+      "price": 100.94999694824219,
       "signal": "Strong Hold",
       "rsi": 29.8,
-      "perf_3m": 12.06,
-      "rs3m_vs_bm": 10.05,
+      "perf_3m": 12.05,
+      "rs3m_vs_bm": 10.04,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 131.5494,
@@ -1762,7 +1762,7 @@
       "roic": null,
       "fcf_margin": 15.5,
       "fwd_pe": 16.6,
-      "market_cap": 175853453312.0
+      "market_cap": 175836037120.0
     },
     {
       "ticker": "TRMB",
@@ -1810,11 +1810,11 @@
       "region": "USA",
       "sector": "Basic Materials",
       "industry": "Specialty Chemicals",
-      "price": 58.189998626708984,
+      "price": 58.18000030517578,
       "signal": "Hold",
       "rsi": 27.1,
-      "perf_3m": 11.66,
-      "rs3m_vs_bm": 9.65,
+      "perf_3m": 11.64,
+      "rs3m_vs_bm": 9.63,
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
       "high_52w": 80.6941,
@@ -1822,7 +1822,7 @@
       "roic": null,
       "fcf_margin": 3.9,
       "fwd_pe": 9.2,
-      "market_cap": 18797578240.0
+      "market_cap": 18794348544.0
     },
     {
       "ticker": "BLK",
@@ -1898,7 +1898,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 177.7256,
-      "low_52w": 124.6912,
+      "low_52w": 124.6913,
       "roic": null,
       "fcf_margin": 11.3,
       "fwd_pe": 15.9,
@@ -1950,11 +1950,11 @@
       "region": "USA",
       "sector": "Technology",
       "industry": "Software - Infrastructure",
-      "price": 94.03500366210938,
+      "price": 94.05999755859375,
       "signal": "Strong Hold",
       "rsi": 50.5,
-      "perf_3m": 10.79,
-      "rs3m_vs_bm": 8.78,
+      "perf_3m": 10.82,
+      "rs3m_vs_bm": 8.81,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 141.67,
@@ -1962,7 +1962,7 @@
       "roic": null,
       "fcf_margin": 23.6,
       "fwd_pe": 8.5,
-      "market_cap": 11909317632.0
+      "market_cap": 11912482816.0
     },
     {
       "ticker": "MOWI.OL",
@@ -2118,7 +2118,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
       "high_52w": 254.7377,
-      "low_52w": 146.4909,
+      "low_52w": 146.4908,
       "roic": null,
       "fcf_margin": 8.2,
       "fwd_pe": 26.1,
@@ -2170,11 +2170,11 @@
       "region": "USA",
       "sector": "Industrials",
       "industry": "Specialty Industrial Machinery",
-      "price": 157.27999877929688,
+      "price": 157.24000549316406,
       "signal": "Hold",
-      "rsi": 62.5,
-      "perf_3m": 10.24,
-      "rs3m_vs_bm": 8.23,
+      "rsi": 62.4,
+      "perf_3m": 10.22,
+      "rs3m_vs_bm": 8.21,
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
       "high_52w": 163.8244,
@@ -2182,7 +2182,7 @@
       "roic": null,
       "fcf_margin": 19.9,
       "fwd_pe": 21.7,
-      "market_cap": 88092524544.0
+      "market_cap": 88070119424.0
     },
     {
       "ticker": "BAX",
