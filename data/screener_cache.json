@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-29T23:46:29.504110+00:00",
+  "generated_at": "2026-09-29T23:51:26.999511+00:00",
   "universe_size": 715,
   "scanned": 709,
-  "shortlisted": 115,
+  "shortlisted": 117,
   "candidates": [
     {
       "ticker": "WDAY",
@@ -183,6 +183,26 @@
       "fcf_margin": 11.3,
       "fwd_pe": 13.4,
       "market_cap": 81625817088.0
+    },
+    {
+      "ticker": "REP.MC",
+      "name": "Repsol, S.A.",
+      "region": "Europe",
+      "sector": "Energy",
+      "industry": "Oil & Gas Integrated",
+      "price": 29.799999237060547,
+      "signal": "Strong Hold",
+      "rsi": 56.3,
+      "perf_3m": 35.98,
+      "rs3m_vs_bm": 33.97,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 31.54,
+      "low_52w": 13.5056,
+      "roic": null,
+      "fcf_margin": 0.6,
+      "fwd_pe": 7.9,
+      "market_cap": 31751362560.0
     },
     {
       "ticker": "CRL",
@@ -978,7 +998,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 193.9,
-      "low_52w": 111.96,
+      "low_52w": 111.9601,
       "roic": null,
       "fcf_margin": 6.6,
       "fwd_pe": 23.6,
@@ -1305,6 +1325,26 @@
       "market_cap": 13370531840.0
     },
     {
+      "ticker": "LOGN.SW",
+      "name": "Logitech International S.A.",
+      "region": "Europe",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "price": 83.81999969482422,
+      "signal": "Hold",
+      "rsi": 61.5,
+      "perf_3m": 11.66,
+      "rs3m_vs_bm": 9.65,
+      "direction": "↑ Accelerating",
+      "confirmed_state": "Hold",
+      "high_52w": 99.4938,
+      "low_52w": 65.5489,
+      "roic": null,
+      "fcf_margin": 14.7,
+      "fwd_pe": 16.8,
+      "market_cap": 12002045952.0
+    },
+    {
       "ticker": "LYB",
       "name": "LyondellBasell Industries N.V.",
       "region": "USA",
@@ -1378,7 +1418,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 177.7256,
-      "low_52w": 124.6913,
+      "low_52w": 124.6912,
       "roic": null,
       "fcf_margin": 11.3,
       "fwd_pe": 15.9,
