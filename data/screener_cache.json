@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T20:16:19.821942+00:00",
+  "generated_at": "2026-09-30T20:21:14.516475+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 92,
@@ -302,7 +302,7 @@
       "roic": null,
       "fcf_margin": 4.0,
       "fwd_pe": 18.5,
-      "market_cap": 342270705664.0
+      "market_cap": 342035464192.0
     },
     {
       "ticker": "OMV.VI",
@@ -390,19 +390,19 @@
       "region": "USA",
       "sector": "Energy",
       "industry": "Oil & Gas Integrated",
-      "price": 204.41000366210938,
+      "price": 204.2100067138672,
       "signal": "Strong Hold",
-      "rsi": 37.2,
-      "perf_3m": 24.45,
-      "rs3m_vs_bm": 22.4,
+      "rsi": 36.9,
+      "perf_3m": 24.32,
+      "rs3m_vs_bm": 22.27,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 217.77,
       "low_52w": 142.7634,
       "roic": null,
       "fcf_margin": 10.5,
-      "fwd_pe": 15.1,
-      "market_cap": 400971333632.0
+      "fwd_pe": 15.0,
+      "market_cap": 400579035136.0
     },
     {
       "ticker": "NEM",
@@ -870,19 +870,19 @@
       "region": "USA",
       "sector": "Healthcare",
       "industry": "Drug Manufacturers - General",
-      "price": 145.3800048828125,
+      "price": 145.30999755859375,
       "signal": "Strong Hold",
-      "rsi": 54.2,
-      "perf_3m": 16.65,
-      "rs3m_vs_bm": 14.6,
+      "rsi": 54.0,
+      "perf_3m": 16.59,
+      "rs3m_vs_bm": 14.54,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 155.5319,
       "low_52w": 80.1369,
       "roic": null,
       "fcf_margin": 22.8,
-      "fwd_pe": 15.3,
-      "market_cap": 358677413888.0
+      "fwd_pe": 15.2,
+      "market_cap": 358504693760.0
     },
     {
       "ticker": "FOXA",
@@ -910,11 +910,11 @@
       "region": "USA",
       "sector": "Basic Materials",
       "industry": "Copper",
-      "price": 69.95999908447266,
+      "price": 70.0,
       "signal": "Strong Hold",
-      "rsi": 44.8,
-      "perf_3m": 15.86,
-      "rs3m_vs_bm": 13.81,
+      "rsi": 44.9,
+      "perf_3m": 15.93,
+      "rs3m_vs_bm": 13.88,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 79.91,
@@ -922,7 +922,7 @@
       "roic": null,
       "fcf_margin": 8.3,
       "fwd_pe": 16.8,
-      "market_cap": 100463788032.0
+      "market_cap": 100521230336.0
     },
     {
       "ticker": "OXY",
@@ -1430,11 +1430,11 @@
       "region": "USA",
       "sector": "Industrials",
       "industry": "Specialty Industrial Machinery",
-      "price": 155.1300048828125,
+      "price": 155.10000610351562,
       "signal": "Strong Hold",
-      "rsi": 62.1,
-      "perf_3m": 11.57,
-      "rs3m_vs_bm": 9.52,
+      "rsi": 62.0,
+      "perf_3m": 11.54,
+      "rs3m_vs_bm": 9.49,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 163.8244,
@@ -1442,7 +1442,7 @@
       "roic": null,
       "fcf_margin": 19.9,
       "fwd_pe": 21.4,
-      "market_cap": 86888308736.0
+      "market_cap": 86871506944.0
     },
     {
       "ticker": "NWSA",
@@ -1537,8 +1537,8 @@
       "rs3m_vs_bm": 9.23,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
-      "high_52w": 993.5342,
-      "low_52w": 723.5999,
+      "high_52w": 993.5343,
+      "low_52w": 723.6,
       "roic": null,
       "fcf_margin": 1.7,
       "fwd_pe": 16.9,
@@ -1710,11 +1710,11 @@
       "region": "USA",
       "sector": "Basic Materials",
       "industry": "Specialty Chemicals",
-      "price": 57.459999084472656,
+      "price": 57.470001220703125,
       "signal": "Hold",
       "rsi": 26.2,
-      "perf_3m": 10.41,
-      "rs3m_vs_bm": 8.36,
+      "perf_3m": 10.43,
+      "rs3m_vs_bm": 8.38,
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
       "high_52w": 80.6941,
@@ -1722,7 +1722,7 @@
       "roic": null,
       "fcf_margin": 3.9,
       "fwd_pe": 9.1,
-      "market_cap": 18561761280.0
+      "market_cap": 18564990976.0
     },
     {
       "ticker": "ROST",
