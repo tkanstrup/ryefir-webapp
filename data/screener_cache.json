@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-30T00:46:43.129104+00:00",
+  "generated_at": "2026-09-30T00:51:27.681521+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 118,
   "candidates": [
     {
       "ticker": "REP.MC",
-      "name": "Repsol",
+      "name": "Repsol, S.A.",
       "region": "Europe",
-      "sector": null,
-      "industry": "Energy",
+      "sector": "Energy",
+      "industry": "Oil & Gas Integrated",
       "price": 29.799999237060547,
       "signal": "Strong Hold",
       "rsi": 56.3,
@@ -20,16 +20,16 @@
       "high_52w": 31.54,
       "low_52w": 13.5056,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 0.6,
+      "fwd_pe": 7.9,
+      "market_cap": 31751362560.0
     },
     {
       "ticker": "LOGN.SW",
-      "name": "Logitech",
+      "name": "Logitech International S.A.",
       "region": "Europe",
-      "sector": null,
-      "industry": "AI & Technology",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
       "price": 83.81999969482422,
       "signal": "Hold",
       "rsi": 61.5,
@@ -40,9 +40,9 @@
       "high_52w": 99.4938,
       "low_52w": 65.5489,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 14.7,
+      "fwd_pe": 16.8,
+      "market_cap": 12002045952.0
     }
   ]
 }
