@@ -104,6 +104,8 @@ def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale)
         # Sektor/branche/navn/valuta/nøgletal kan være en sidst kendt værdi (op til 7 dage gammel)
         # hvis Yahoo ikke svarede; fundamentals_as_of = hvornår de blev hentet (null = ingen data).
         "fundamentals_stale": data.get("fundamentals_stale", False),
+        # "live" = frisk .info, "cache" = sidst kendte værdi, "static" = GitHub-genereret fil, null = ingen data
+        "fundamentals_source": data.get("fundamentals_source"),
         "fundamentals_as_of": _iso(data["fundamentals_as_of"]) if data.get("fundamentals_as_of") else None,
     }
 

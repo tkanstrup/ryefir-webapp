@@ -11,6 +11,7 @@ backtestede udgave i update.py — ingen genimplementering, ren udtrækning.
 """
 
 import time
+from datetime import datetime
 
 import yfinance as yf
 import pandas as pd
@@ -135,6 +136,40 @@ _FUNDAMENTAL_FIELDS = ("roic", "fcf_margin", "fwd_pe", "market_cap", "sector", "
 _IDENTITY_KEYS = ("sector", "industry", "longName", "shortName", "currency")
 
 
+# Sidste fallback: data/fundamentals_static.json (navn/sektor/branche/valuta), bygget af en GitHub
+# Action (tools/build_fundamentals_static.py) fra GitHubs IP'er — Yahoo svarer ikke på .info fra
+# Render. Ligger på en dedikeret branch (ikke main → ingen Render-redeploy), hentes via raw-URL.
+FUNDAMENTALS_STATIC_URL = ("https://raw.githubusercontent.com/tkanstrup/ryefir-webapp/"
+                           "data/fundamentals-static/data/fundamentals_static.json")
+STATIC_CACHE_TTL_SEC = 6 * 60 * 60
+STATIC_RETRY_COOLDOWN_SEC = 5 * 60
+_STATIC_CACHE = {"tickers": None, "fetched_at": 0.0, "failed_at": 0.0}
+_STATIC_FIELDS = ("name", "sector", "industry", "currency")
+
+
+def _fetch_static_file():
+    import requests
+    resp = requests.get(FUNDAMENTALS_STATIC_URL, timeout=10)
+    resp.raise_for_status()
+    return resp.json().get("tickers", {})
+
+
+def _static_fundamentals(ticker):
+    """Statisk post for tickeren ({name, sector, industry, currency, as_of}) eller None.
+    Filen caches i hukommelsen; fejl logges og giver None (aldrig en undtagelse)."""
+    now = time.time()
+    c = _STATIC_CACHE
+    if c["tickers"] is None or now - c["fetched_at"] >= STATIC_CACHE_TTL_SEC:
+        if now - c["failed_at"] >= STATIC_RETRY_COOLDOWN_SEC:
+            try:
+                c["tickers"] = _fetch_static_file(); c["fetched_at"] = now
+            except Exception as e:
+                c["failed_at"] = now
+                ts = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+                print(f"STATIC_FUNDAMENTALS_FAIL {ts} | {type(e).__name__}: {e}", flush=True)
+    return (c["tickers"] or {}).get(ticker)
+
+
 _FUNDAMENTALS_LAST_FAIL = {}  # ticker -> {"at": tidspunkt, "detail": rå årsag} — vises af /api/debug/fundamentals
 
 
@@ -166,8 +201,8 @@ def probe_info(ticker):
     return out
 
 
-def _fundamentals_result(data, fetched_at, stale):
-    return {**data, "stale": stale, "as_of": fetched_at}
+def _fundamentals_result(data, fetched_at, stale, source=None):
+    return {**data, "stale": stale, "as_of": fetched_at, "source": source}
 
 
 def _fetch_fundamentals(ticker):
@@ -182,12 +217,27 @@ def _fetch_fundamentals(ticker):
     now = time.time()
     cached = _FUNDAMENTALS_CACHE.get(ticker)
     if cached and now - cached["fetched_at"] < FUNDAMENTALS_CACHE_TTL_SEC:
-        return _fundamentals_result(cached["data"], cached["fetched_at"], False)
+        return _fundamentals_result(cached["data"], cached["fetched_at"], False, "live")
 
     def fallback():
-        if cached and now - cached["fetched_at"] < FUNDAMENTALS_STALE_MAX_AGE_SEC:
-            return _fundamentals_result(cached["data"], cached["fetched_at"], True)
-        return _fundamentals_result({k: None for k in _FUNDAMENTAL_FIELDS}, None, False)
+        """Live fejlede: 1) sidst kendte gode værdi (op til 7 dage), 2) udfyld huller / erstat med den
+        statiske fil, 3) ellers tomt."""
+        use_cache = bool(cached) and now - cached["fetched_at"] < FUNDAMENTALS_STALE_MAX_AGE_SEC
+        data = dict(cached["data"]) if use_cache else {k: None for k in _FUNDAMENTAL_FIELDS}
+        fetched_at = cached["fetched_at"] if use_cache else None
+        source = "cache" if use_cache else None
+        static = _static_fundamentals(ticker)
+        if static and any(data.get(k) is None and static.get(k) for k in _STATIC_FIELDS):
+            for k in _STATIC_FIELDS:
+                if data.get(k) is None and static.get(k):
+                    data[k] = static[k]
+            if not use_cache:
+                source = "static"
+                try:
+                    fetched_at = datetime.fromisoformat(static["as_of"]).timestamp()
+                except Exception:
+                    fetched_at = None
+        return _fundamentals_result(data, fetched_at, source is not None, source)
 
     if now - _FUNDAMENTALS_FAILED_AT.get(ticker, 0) < FUNDAMENTALS_RETRY_COOLDOWN_SEC:
         return fallback()
@@ -224,7 +274,7 @@ def _fetch_fundamentals(ticker):
                     fresh[k] = cached["data"].get(k)
         _FUNDAMENTALS_CACHE[ticker] = {"data": fresh, "fetched_at": now}
         _FUNDAMENTALS_FAILED_AT.pop(ticker, None)
-        return _fundamentals_result(fresh, now, False)
+        return _fundamentals_result(fresh, now, False, "live")
     except Exception as e:
         _FUNDAMENTALS_FAILED_AT[ticker] = now
         _log_fundamentals_fail(ticker, f"{type(e).__name__}: {e}")
@@ -363,7 +413,8 @@ def fetch_stock(ticker, bm_close=None):
                 "confirmed_state":confirmed_state,"raw_direction":raw_direction,
                 "roic":roic,"fcf_margin":fcf_margin,"fwd_pe":fwd_pe,
                 "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics,"name":company_name,"currency":currency,
-                "fundamentals_stale":fundamentals.get("stale",False),"fundamentals_as_of":fundamentals.get("as_of")}
+                "fundamentals_stale":fundamentals.get("stale",False),"fundamentals_as_of":fundamentals.get("as_of"),
+                "fundamentals_source":fundamentals.get("source")}
         if result["price"]==0.0:
             log_fetch_failure(ticker, f"pris er 0/NaN — sidste bar ({hist.index[-1].date()}) har Close={hist['Close'].iloc[-1]}")
             return None
