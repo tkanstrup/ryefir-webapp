@@ -122,6 +122,18 @@ repo — forkert repo, ikke forkert arbejde.
   kører `.info` på Render og viser det rå udfald (ok/fejl/tom, yfinance-version, sidste
   `FUNDAMENTALS_FAIL`); højst ét opslag pr. 30 sek. Fjernes når årsagen er fundet.
 
+- 2026-10-04: **statisk fundamentals-fallback** (navn/sektor/branche/valuta), fordi `.info` ikke
+  svarer fra Render. `tools/build_fundamentals_static.py` + `.github/workflows/fundamentals-static.yml`
+  henter `.info` fra GitHubs runnere (virker: 741/744 ved første kørsel) ugentligt (søndag 04:30 UTC) og
+  committer `data/fundamentals_static.json` til branchen `data/fundamentals-static` (ikke main → ingen
+  Render-redeploy). API'et bruger den som sidste trin: live `.info` → sidst kendte værdi (7 dage) →
+  statisk fil → tom. Svaret har `fundamentals_source` (`live`/`cache`/`static`/null). Nøgletal (ROIC,
+  FCF, P/E) er IKKE i filen. Universet = BROAD_UNIVERSE + TICKER_MAP + GitHub-variablen
+  **`EXTRA_TICKERS`** (Settings > Secrets and variables > Actions > Variables, kommasepareret;
+  eller `gh workflow run fundamentals-static.yml -f extra_tickers=...`). Brugerens egne tickers
+  (fx ACN, SAP.DE, MC.PA) ligger IKKE i universet og skal tilføjes dér. Repoet er offentligt:
+  tickers i EXTRA_TICKERS ender i den offentlige datafil (ingen mængder/brugere, kun tickersymboler).
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på
