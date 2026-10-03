@@ -45,6 +45,10 @@ def clean_nan(v, default=0):
 # regel i backtest, uden dokumenteret gevinst fra RS6M/volumen-nuancer/den alternative
 # take-profit-vej. THRESH_VOL_* står tilbage kun som informationsvisning (Dashboard),
 # driver ikke længere signalet.
+# Signalmotorens version, vises i /api/signal så v9 kan se hvilken version der svarede.
+# v2 = Big Drop-tærsklerne i procent (okt. 2026). Hæv ved ændringer af signal-logik/tærskler.
+ENGINE_VERSION = "v2"
+
 THRESH_RS3M_STRONG = 5
 THRESH_SL_PROXIMITY = 10
 THRESH_BIG_DROP     = -10.0  # Single-day fall in PERCENT (perf() returns %, not fraction) — rettet i update-101 (var -0.10 = kun 0,1%)

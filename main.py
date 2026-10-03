@@ -10,13 +10,14 @@ Lokal test:  uvicorn main:app --reload
 Herefter:    åbn http://127.0.0.1:8000/api/signal/MSFT i browseren
 """
 
+import os
 import time
 from datetime import datetime, timezone
 
 import requests
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal, fetch_fx_rates
+from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal, fetch_fx_rates, ENGINE_VERSION
 
 
 # Starlettes JSONResponse sætter "application/json" uden charset som
@@ -59,6 +60,9 @@ _idx_perf, _bm_close = fetch_benchmark()
 @app.get("/")
 def root():
     return {"status": "Ryefir Signal API kører",
+            "engine_version": ENGINE_VERSION,
+            # Render sætter RENDER_GIT_COMMIT automatisk — viser hvilken commit der kører (null lokalt)
+            "commit": os.environ.get("RENDER_GIT_COMMIT"),
             "endpoints": ["/api/signal/{ticker}", "/api/screener", "/api/fx-rates"]}
 
 
@@ -94,6 +98,7 @@ def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale)
         "fcf_margin": data.get("fcf_margin"),
         "fwd_pe": data.get("fwd_pe"),
         "rs3m_vs_bm": data.get("perf_3m") - _idx_perf.get("m3"),
+        "engine_version": ENGINE_VERSION,
         "stale": stale,
         "as_of": _iso(fetched_at),
     }
