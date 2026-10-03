@@ -194,6 +194,17 @@ def probe_info(ticker):
                        has_currency=bool(info.get("currency")), keys_sample=sorted(info)[:15])
     except Exception as e:
         out.update(ok=False, exception_type=type(e).__name__, exception_message=str(e)[:400])
+    # Anden kodesti til name/currency: kursopslagets metadata + fast_info (ikke .info)
+    try:
+        tk = yf.Ticker(sym); h = tk.history(period="5d"); meta = tk.history_metadata or {}
+        out["history"] = {"rows": len(h), "meta_currency": meta.get("currency"),
+                          "meta_name": meta.get("longName") or meta.get("shortName")}
+    except Exception as e:
+        out["history"] = {"error": f"{type(e).__name__}: {str(e)[:200]}"}
+    try:
+        out["fast_info_currency"] = yf.Ticker(sym).fast_info.get("currency")
+    except Exception as e:
+        out["fast_info_currency"] = f"FEJL {type(e).__name__}: {str(e)[:120]}"
     out["seconds"] = round(time.time() - t0, 2)
     cached = _FUNDAMENTALS_CACHE.get(ticker)
     out["cache_as_of"] = cached["fetched_at"] if cached else None
