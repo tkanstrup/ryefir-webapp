@@ -33,6 +33,9 @@ def yahoo(monkeypatch):
 
     monkeypatch.setattr(eng.yf, "Ticker", FakeTicker)
     monkeypatch.setattr(eng.time, "time", lambda: state["now"])
+    state["static"] = {}
+    monkeypatch.setattr(eng, "_fetch_static_file", lambda: state["static"])  # aldrig netværk i tests
+    eng._STATIC_CACHE.update(tickers=None, fetched_at=0.0, failed_at=0.0)
     eng._FUNDAMENTALS_CACHE.clear()
     eng._FUNDAMENTALS_FAILED_AT.clear()
     yield state
@@ -109,6 +112,58 @@ def test_fejl_logges_med_ticker_og_aarsag(yahoo, capsys):
     assert "FUNDAMENTALS_FAIL" in out and "ticker=T" in out and "ConnectionError" in out
 
 
+STATIC_ENTRY = {"name": "Static Inc.", "sector": "Energy", "industry": "Oil", "currency": "EUR",
+                "as_of": "2026-10-04T05:00:00+00:00"}
+
+
+def test_statisk_fil_bruges_naar_info_er_nede_og_ingen_cache(yahoo):
+    yahoo["info"] = ConnectionError("429")
+    yahoo["static"] = {"T": STATIC_ENTRY}
+    r = eng._fetch_fundamentals("T")
+    assert fields(r) == {"sector": "Energy", "industry": "Oil", "name": "Static Inc.", "currency": "EUR"}
+    assert r["source"] == "static" and r["stale"] is True and r["as_of"] is not None
+
+
+def test_cache_har_forrang_over_statisk_fil(yahoo):
+    eng._fetch_fundamentals("T")
+    yahoo["info"] = ConnectionError("429")
+    yahoo["static"] = {"T": STATIC_ENTRY}
+    yahoo["now"] += eng.FUNDAMENTALS_CACHE_TTL_SEC + 1
+    r = eng._fetch_fundamentals("T")
+    assert r["sector"] == "Technology" and r["source"] == "cache"
+
+
+def test_statisk_fil_udfylder_huller_i_cache(yahoo):
+    yahoo["info"] = {"longName": "Test Inc.", "currency": "USD"}  # ingen sektor/branche
+    eng._fetch_fundamentals("T")
+    yahoo["info"] = ConnectionError("429")
+    yahoo["static"] = {"T": STATIC_ENTRY}
+    yahoo["now"] += eng.FUNDAMENTALS_CACHE_TTL_SEC + 1
+    r = eng._fetch_fundamentals("T")
+    assert r["sector"] == "Energy" and r["name"] == "Test Inc." and r["source"] == "cache"
+
+
+def test_ticker_der_ikke_er_i_statisk_fil_giver_tomt(yahoo):
+    yahoo["info"] = ConnectionError("429")
+    yahoo["static"] = {"ANDEN": STATIC_ENTRY}
+    r = eng._fetch_fundamentals("T")
+    assert all(v is None for v in fields(r).values()) and r["source"] is None
+
+
+def test_statisk_fil_der_ikke_kan_hentes_giver_tomt_uden_undtagelse(yahoo, monkeypatch, capsys):
+    def boom():
+        raise ConnectionError("github nede")
+    monkeypatch.setattr(eng, "_fetch_static_file", boom)
+    yahoo["info"] = ConnectionError("429")
+    r = eng._fetch_fundamentals("T")
+    assert all(v is None for v in fields(r).values())
+    assert "STATIC_FUNDAMENTALS_FAIL" in capsys.readouterr().out
+
+
+def test_frisk_info_har_source_live(yahoo):
+    assert eng._fetch_fundamentals("T")["source"] == "live"
+
+
 def test_valuta_og_navn_fra_kursopslag_naar_info_er_nede(monkeypatch):
     """fetch_stock skal ikke vise ukendt valuta bare fordi .info fejler."""
     import numpy as np
@@ -126,6 +181,6 @@ def test_valuta_og_navn_fra_kursopslag_naar_info_er_nede(monkeypatch):
 
     monkeypatch.setattr(eng.yf, "Ticker", FakeTicker)
     monkeypatch.setattr(eng, "_fetch_fundamentals", lambda t: {**{k: None for k in eng._FUNDAMENTAL_FIELDS},
-                                                                "stale": False, "as_of": None})
+                                                                "stale": False, "as_of": None, "source": None})
     d = eng.fetch_stock("SAP.DE", bm_close=None)
     assert d["currency"] == "EUR" and d["name"] == "SAP SE"
