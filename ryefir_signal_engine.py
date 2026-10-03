@@ -171,10 +171,18 @@ def _fetch_fundamentals(ticker):
 # ══════════════════════════════════════════════════════════════════════════
 # DATAHENTNING
 # ══════════════════════════════════════════════════════════════════════════
+def log_fetch_failure(ticker, reason, exc=None):
+    """Én linje pr. fejlet hentning til Renders logs: UTC-tid, ticker, Yahoo-symbol,
+    undtagelsestype+besked (hvis der var en) eller årsag. Søg på "FETCH_FAIL"."""
+    ts = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    detail = f"{type(exc).__name__}: {exc}" if exc is not None else reason
+    print(f"FETCH_FAIL {ts} ticker={ticker} yf={get_yf(ticker)} | {detail}", flush=True)
+
 def fetch_stock(ticker, bm_close=None):
     try:
         hist=yf.Ticker(get_yf(ticker)).history(period="13mo").sort_index()
-        if hist.empty or len(hist)<20: return None
+        if hist.empty or len(hist)<20:
+            log_fetch_failure(ticker, f"for lidt historik fra Yahoo (rækker={len(hist)})"); return None
         price=float(hist["Close"].iloc[-1])
         def perf(d):
             if len(hist)<d+1: return 0.0
@@ -277,10 +285,12 @@ def fetch_stock(ticker, bm_close=None):
                 "confirmed_state":confirmed_state,"raw_direction":raw_direction,
                 "roic":roic,"fcf_margin":fcf_margin,"fwd_pe":fwd_pe,
                 "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics,"name":company_name,"currency":currency}
-        if result["price"]==0.0: return None
+        if result["price"]==0.0:
+            log_fetch_failure(ticker, f"pris er 0/NaN — sidste bar ({hist.index[-1].date()}) har Close={hist['Close'].iloc[-1]}")
+            return None
         return result
     except Exception as e:
-        print(f"  {ticker} error: {e}"); return None
+        log_fetch_failure(ticker, "", exc=e); return None
 
 
 # Kopieret fra update.py (stock_system_v7-repoet) d. 20/9-2026, ikke automatisk
