@@ -1,6 +1,6 @@
 fastapi
 uvicorn[standard]
-yfinance
+yfinance==1.7.0
 pandas
 numpy
 requests

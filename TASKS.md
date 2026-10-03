@@ -134,6 +134,11 @@ repo — forkert repo, ikke forkert arbejde.
   (fx ACN, SAP.DE, MC.PA) ligger IKKE i universet og skal tilføjes dér. Repoet er offentligt:
   tickers i EXTRA_TICKERS ender i den offentlige datafil (ingen mængder/brugere, kun tickersymboler).
 
+- 2026-10-04: `yfinance` er låst til `==1.7.0` i `requirements.txt` (den version GitHub-Action'en
+  brugte, hvor `.info` virker). Før var den ulåst, så Render kunne få en anden version end
+  den, der var testet. Rodendpointet `/` viser `yfinance_version`. Opgradér bevidst (test først),
+  ikke ved et tilfælde.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på

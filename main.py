@@ -15,6 +15,7 @@ import time
 from datetime import datetime, timezone
 
 import requests
+import yfinance
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal, fetch_fx_rates, ENGINE_VERSION, probe_info, _FUNDAMENTALS_LAST_FAIL
@@ -61,6 +62,7 @@ _idx_perf, _bm_close = fetch_benchmark()
 def root():
     return {"status": "Ryefir Signal API kører",
             "engine_version": ENGINE_VERSION,
+            "yfinance_version": yfinance.__version__,
             # Render sætter RENDER_GIT_COMMIT automatisk — viser hvilken commit der kører (null lokalt)
             "commit": os.environ.get("RENDER_GIT_COMMIT"),
             "endpoints": ["/api/signal/{ticker}", "/api/screener", "/api/fx-rates"]}
