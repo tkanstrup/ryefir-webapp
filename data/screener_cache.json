@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-03T00:46:24.356400+00:00",
+  "generated_at": "2026-10-03T00:51:21.847502+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 78,
   "candidates": [
     {
       "ticker": "LOGN.SW",
-      "name": "Logitech",
+      "name": "Logitech International S.A.",
       "region": "Europe",
-      "sector": null,
-      "industry": "AI & Technology",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
       "price": 86.4000015258789,
       "signal": "Strong Hold",
       "rsi": 63.3,
@@ -20,9 +20,9 @@
       "high_52w": 99.4938,
       "low_52w": 65.5489,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 14.7,
+      "fwd_pe": 17.3,
+      "market_cap": 12371472384.0
     }
   ]
 }
