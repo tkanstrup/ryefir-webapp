@@ -127,18 +127,50 @@ def get_yf(t): return TICKER_MAP.get(t,t)
 # det betyder blot at første opslag pr. ticker efter en genstart er
 # uden cache, ligesom hidtil.
 _FUNDAMENTALS_CACHE = {}
-FUNDAMENTALS_CACHE_TTL_SEC = 24 * 60 * 60
+_FUNDAMENTALS_FAILED_AT = {}
+FUNDAMENTALS_CACHE_TTL_SEC = 24 * 60 * 60        # hvor ofte vi forsøger at hente friske værdier
+FUNDAMENTALS_STALE_MAX_AGE_SEC = 7 * 24 * 60 * 60  # ældste sidst-kendte værdi vi stadig viser (som stale)
+FUNDAMENTALS_RETRY_COOLDOWN_SEC = 5 * 60         # pause efter fejl, så vi ikke hamrer Yahoo (rate-limit)
+_FUNDAMENTAL_FIELDS = ("roic", "fcf_margin", "fwd_pe", "market_cap", "sector", "industry", "name", "currency")
+_IDENTITY_KEYS = ("sector", "industry", "longName", "shortName", "currency")
+
+
+def _log_fundamentals_fail(ticker, detail):
+    ts = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    print(f"FUNDAMENTALS_FAIL {ts} ticker={ticker} yf={get_yf(ticker)} | {detail}", flush=True)
+
+
+def _fundamentals_result(data, fetched_at, stale):
+    return {**data, "stale": stale, "as_of": fetched_at}
+
 
 def _fetch_fundamentals(ticker):
-    cached = _FUNDAMENTALS_CACHE.get(ticker)
+    """Sector/industry/navn/valuta/nøgletal fra yf.Ticker(...).info, cachet.
+    Returnerer felterne plus "stale" (bool) og "as_of" (epoch-sekunder, None hvis ingen data).
+    - Frisk værdi hentes højst hvert FUNDAMENTALS_CACHE_TTL_SEC.
+    - Svarer Yahoo med en fejl ELLER en tom/ufuldstændig .info (ses ved rate-limit på delt IP,
+      uden undtagelse), caches det IKKE som succes: sidst kendte gode værdi returneres som
+      stale i op til FUNDAMENTALS_STALE_MAX_AGE_SEC, og der ventes FUNDAMENTALS_RETRY_COOLDOWN_SEC
+      før næste forsøg. Fejlen logges som FUNDAMENTALS_FAIL.
+    - Felter som en ny delvis respons mangler, beholdes fra sidst kendte gode værdi."""
     now = time.time()
+    cached = _FUNDAMENTALS_CACHE.get(ticker)
     if cached and now - cached["fetched_at"] < FUNDAMENTALS_CACHE_TTL_SEC:
-        return cached["data"]
+        return _fundamentals_result(cached["data"], cached["fetched_at"], False)
 
-    fresh = {"roic": None, "fcf_margin": None, "fwd_pe": None, "market_cap": None,
-             "sector": None, "industry": None, "name": None, "currency": None}
+    def fallback():
+        if cached and now - cached["fetched_at"] < FUNDAMENTALS_STALE_MAX_AGE_SEC:
+            return _fundamentals_result(cached["data"], cached["fetched_at"], True)
+        return _fundamentals_result({k: None for k in _FUNDAMENTAL_FIELDS}, None, False)
+
+    if now - _FUNDAMENTALS_FAILED_AT.get(ticker, 0) < FUNDAMENTALS_RETRY_COOLDOWN_SEC:
+        return fallback()
+
     try:
         info = yf.Ticker(get_yf(ticker)).info
+        if not isinstance(info, dict) or not any(info.get(k) for k in _IDENTITY_KEYS):
+            raise ValueError(f"tom/ufuldstændig .info fra Yahoo (nøgler={len(info) if isinstance(info, dict) else type(info).__name__})")
+        fresh = {k: None for k in _FUNDAMENTAL_FIELDS}
         fwd_pe_raw = info.get("forwardPE") or info.get("trailingPE")
         if fwd_pe_raw and 0 < fwd_pe_raw < 500:
             fresh["fwd_pe"] = round(float(fwd_pe_raw), 1)
@@ -160,16 +192,17 @@ def _fetch_fundamentals(ticker):
         fresh["industry"] = info.get("industry")
         fresh["name"] = info.get("longName") or info.get("shortName")
         fresh["currency"] = info.get("currency")
-        _FUNDAMENTALS_CACHE[ticker] = {"data": fresh, "fetched_at": now}
-        return fresh
-    except Exception:
-        # .info fejlede (rate-limit/netværk) — brug sidste kendte gode
-        # værdi frem for at lade positionen falde til "ingen sektor" uden
-        # reel grund. Ingen tidligere cache findes (fx allerførste opslag
-        # efter en genstart) → fresh (alt None), som hidtil.
         if cached:
-            return cached["data"]
-        return fresh
+            for k in _FUNDAMENTAL_FIELDS:
+                if fresh[k] is None:
+                    fresh[k] = cached["data"].get(k)
+        _FUNDAMENTALS_CACHE[ticker] = {"data": fresh, "fetched_at": now}
+        _FUNDAMENTALS_FAILED_AT.pop(ticker, None)
+        return _fundamentals_result(fresh, now, False)
+    except Exception as e:
+        _FUNDAMENTALS_FAILED_AT[ticker] = now
+        _log_fundamentals_fail(ticker, f"{type(e).__name__}: {e}")
+        return fallback()
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -184,7 +217,8 @@ def log_fetch_failure(ticker, reason, exc=None):
 
 def fetch_stock(ticker, bm_close=None):
     try:
-        hist=yf.Ticker(get_yf(ticker)).history(period="13mo").sort_index()
+        yf_ticker=yf.Ticker(get_yf(ticker))
+        hist=yf_ticker.history(period="13mo").sort_index()
         # Yahoo leverer indimellem en sidste bar med Volume men OHLC=NaN (set på
         # europæiske børser, okt. 2026). Uden dropna blev prisen til 0 → None → 404.
         hist=hist.dropna(subset=["Close"])
@@ -281,6 +315,17 @@ def fetch_stock(ticker, bm_close=None):
         fwd_pe=fundamentals["fwd_pe"]; market_cap=fundamentals["market_cap"]
         sector_gics=fundamentals["sector"]; industry_gics=fundamentals["industry"]
         company_name=fundamentals["name"]; currency=fundamentals["currency"]
+        # Navn og valuta følger også med selve kursopslaget (history_metadata, intet ekstra kald) —
+        # bruges hvis .info mangler, så valuta aldrig er ukendt bare fordi .info fejler.
+        if not currency or not company_name:
+            try:
+                meta=yf_ticker.history_metadata or {}
+                currency=currency or meta.get("currency")
+                company_name=company_name or meta.get("longName") or meta.get("shortName")
+            except Exception: pass
+        if not currency:
+            try: currency=yf_ticker.fast_info.get("currency")
+            except Exception: pass
         ipo_flag = len(hist) < 90  # less than ~4 months = no reliable RS3M
         result={"price":clean(price),"perf_1w":clean(perf(5)),"perf_1m":clean(perf(21)),
                 "perf_1d":clean(perf(1)),"perf_3m":clean(perf(63)),"perf_6m":clean(perf(126)),"perf_12m":clean(perf(252)),
@@ -291,7 +336,8 @@ def fetch_stock(ticker, bm_close=None):
                 "days_above_momentum":days_above_momentum,
                 "confirmed_state":confirmed_state,"raw_direction":raw_direction,
                 "roic":roic,"fcf_margin":fcf_margin,"fwd_pe":fwd_pe,
-                "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics,"name":company_name,"currency":currency}
+                "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics,"name":company_name,"currency":currency,
+                "fundamentals_stale":fundamentals.get("stale",False),"fundamentals_as_of":fundamentals.get("as_of")}
         if result["price"]==0.0:
             log_fetch_failure(ticker, f"pris er 0/NaN — sidste bar ({hist.index[-1].date()}) har Close={hist['Close'].iloc[-1]}")
             return None
