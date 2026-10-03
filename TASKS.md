@@ -126,6 +126,12 @@ repo — forkert repo, ikke forkert arbejde.
   viser `engine_version` og `commit` (fra Renders `RENDER_GIT_COMMIT`), så man kan se
   hvilken commit der kører i produktion.
 
+- 2026-10-04: efter 386fb91 er `name`/`currency` udfyldt (fra kursopslagets history_metadata), men
+  sector/industry/nøgletal er stadig null og `fundamentals_as_of` er null → `.info` er aldrig lykkedes
+  fra Render siden deploy. **MIDLERTIDIGT** diagnose-endpoint `GET /api/debug/fundamentals/{ticker}`
+  kører `.info` på Render og viser det rå udfald (ok/fejl/tom, yfinance-version, sidste
+  `FUNDAMENTALS_FAIL`); højst ét opslag pr. 30 sek. Fjernes når årsagen er fundet.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på

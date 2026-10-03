@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 import requests
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal, fetch_fx_rates, ENGINE_VERSION
+from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal, fetch_fx_rates, ENGINE_VERSION, probe_info, _FUNDAMENTALS_LAST_FAIL
 
 
 # Starlettes JSONResponse sætter "application/json" uden charset som
@@ -104,6 +104,8 @@ def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale)
         # Sektor/branche/navn/valuta/nøgletal kan være en sidst kendt værdi (op til 7 dage gammel)
         # hvis Yahoo ikke svarede; fundamentals_as_of = hvornår de blev hentet (null = ingen data).
         "fundamentals_stale": data.get("fundamentals_stale", False),
+        # "live" = frisk .info, "cache" = sidst kendte værdi, "static" = GitHub-genereret fil, null = ingen data
+        "fundamentals_source": data.get("fundamentals_source"),
         "fundamentals_as_of": _iso(data["fundamentals_as_of"]) if data.get("fundamentals_as_of") else None,
     }
 
@@ -192,3 +194,20 @@ def get_fx_rates():
             "rates": rates, "fallbacks_used": fallbacks_used}
     _fx_cache["data"] = data; _fx_cache["fetched_at"] = now
     return data
+
+
+# MIDLERTIDIG diagnose (fjernes når årsagen til tomme fundamentals er fundet): kører .info
+# direkte på Render og viser det rå udfald. Højst ét live-opslag pr. 30 sek. i alt, så
+# endpointet ikke kan bruges til at hamre Yahoo.
+_probe_state = {"last": 0.0}
+
+
+@app.get("/api/debug/fundamentals/{ticker}")
+def debug_fundamentals(ticker: str):
+    ticker = ticker.upper().strip()
+    now = time.time()
+    if now - _probe_state["last"] < 30:
+        return {"ticker": ticker, "throttled": True, "retry_in_sec": int(30 - (now - _probe_state["last"])) + 1,
+                "last_fundamentals_fail": _FUNDAMENTALS_LAST_FAIL.get(ticker)}
+    _probe_state["last"] = now
+    return probe_info(ticker)
