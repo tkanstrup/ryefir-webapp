@@ -101,6 +101,10 @@ def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale)
         "engine_version": ENGINE_VERSION,
         "stale": stale,
         "as_of": _iso(fetched_at),
+        # Sektor/branche/navn/valuta/nøgletal kan være en sidst kendt værdi (op til 7 dage gammel)
+        # hvis Yahoo ikke svarede; fundamentals_as_of = hvornår de blev hentet (null = ingen data).
+        "fundamentals_stale": data.get("fundamentals_stale", False),
+        "fundamentals_as_of": _iso(data["fundamentals_as_of"]) if data.get("fundamentals_as_of") else None,
     }
 
 

@@ -104,6 +104,18 @@ repo — forkert repo, ikke forkert arbejde.
   cache, FETCH_FAIL-log, dropna-fix, currency og fx-rates) og må IKKE kopieres
   ind som den er; den ville bryde importen i `main.py`.
 
+- 2026-10-03 (aften): **sector/industry/name/currency/roic/fcf_margin/fwd_pe = null for ALLE
+  tickers i live-svar.** Motorfilen var intakt (aldrig erstattet i sin helhed). Årsag:
+  `_fetch_fundamentals()` behandlede enhver `.info`-respons som succes — svarer Yahoo uden fejl men
+  med en tom/ufuldstændig `.info` (rate-limit på Renders delte IP), blev de tomme felter cachet i 24 t
+  for hver ticker. Rettet: tom/ufuldstændig `.info` tæller som fejl og caches ikke; sidst kendte gode
+  værdi returneres i op til 7 dage med `fundamentals_stale: true` + `fundamentals_as_of`; 5 min pause
+  efter fejl; felter en delvis respons mangler beholdes fra sidst kendte værdi; fejl logges som
+  `FUNDAMENTALS_FAIL` (søg i Renders logs). `currency`/`name` falder desuden tilbage til kursopslagets
+  `history_metadata` (intet ekstra kald), så valuta ikke er ukendt bare fordi `.info` fejler.
+  **Ikke verificeret på Render** (kun simuleret lokalt) — `FUNDAMENTALS_FAIL`-linjen i loggen viser
+  den rå årsag. Sektor/branche/nøgletal har ingen anden kilde end `.info`: er den nede uden cache, er de null.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på
