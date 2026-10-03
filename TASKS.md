@@ -104,6 +104,17 @@ repo — forkert repo, ikke forkert arbejde.
   cache, FETCH_FAIL-log, dropna-fix, currency og fx-rates) og må IKKE kopieres
   ind som den er; den ville bryde importen i `main.py`.
 
+- 2026-10-03: **Facit-test for signalmotoren** (`tests/`, kør `python3 -m pytest tests`;
+  kræver `pip install -r requirements-dev.txt`). Tilfældene ligger i
+  `tests/signal_facit.json` (ren data, genbrugelig i v9-repoet), Yahoo mockes.
+  Kører i GitHub Actions ved hvert push (`.github/workflows/tests.yml`). Ændrer du en
+  tærskel eller signal-logik: opdatér facit-filen bevidst, og hæv `ENGINE_VERSION`.
+  En rød test stopper ikke i sig selv en Render-deploy — det kræver branch protection
+  på `main` (påkrævet check "facit") og/eller Render "After CI Checks Pass".
+- 2026-10-03: `/api/signal/{ticker}` har `engine_version` (nu `"v2"`); rodendpointet `/`
+  viser `engine_version` og `commit` (fra Renders `RENDER_GIT_COMMIT`), så man kan se
+  hvilken commit der kører i produktion.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på
