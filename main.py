@@ -62,23 +62,20 @@ def root():
             "endpoints": ["/api/signal/{ticker}", "/api/screener", "/api/fx-rates"]}
 
 
-@app.get("/api/signal/{ticker}")
-def get_ticker_signal(ticker: str, avg_cost: float = None, stop_loss: float = None):
-    """
-    Henter live signal for én ticker.
-    avg_cost/stop_loss er valgfrie query-parametre (?avg_cost=430&stop_loss=365.5)
-    — uden dem beregnes kun de regime-uafhængige signaler (Underperforming/
-    Monitor/Strong Hold/Hold), IKKE Stop Loss/Take Profit, som kræver
-    testerens egen indgangspris (samme skel som Kategori E vs. P i
-    arkitektur-dokumentet).
-    """
-    ticker = ticker.upper().strip()
-    data = fetch_stock(ticker, bm_close=_bm_close)
-    if data is None:
-        raise HTTPException(status_code=404, detail=f"Kunne ikke hente data for '{ticker}' — tjek stavning/ticker-format")
+# Seneste VELLYKKEDE fetch_stock()-resultat pr. ticker. Bruges kun hvis en ny
+# hentning fejler: så returneres det gemte resultat markeret "stale": true i
+# stedet for en fejl. Udløber efter 24 t, så intet gammelt vises uden at sige det.
+# Ligger i hukommelsen — tabes ved genstart/dvale af Render-instansen.
+STALE_MAX_AGE_SEC = 24 * 60 * 60
+_last_good = {}  # ticker -> {"data": ..., "fetched_at": epoch-sekunder}
 
+
+def _iso(epoch):
+    return datetime.fromtimestamp(epoch, timezone.utc).isoformat()
+
+
+def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale):
     signal = get_signal(data, _idx_perf, avg_cost=avg_cost, stop_loss=stop_loss)
-
     return {
         "ticker": ticker,
         "price": data["price"],
@@ -97,7 +94,40 @@ def get_ticker_signal(ticker: str, avg_cost: float = None, stop_loss: float = No
         "fcf_margin": data.get("fcf_margin"),
         "fwd_pe": data.get("fwd_pe"),
         "rs3m_vs_bm": data.get("perf_3m") - _idx_perf.get("m3"),
+        "stale": stale,
+        "as_of": _iso(fetched_at),
     }
+
+
+@app.get("/api/signal/{ticker}")
+def get_ticker_signal(ticker: str, avg_cost: float = None, stop_loss: float = None):
+    """
+    Henter live signal for én ticker.
+    avg_cost/stop_loss er valgfrie query-parametre (?avg_cost=430&stop_loss=365.5)
+    — uden dem beregnes kun de regime-uafhængige signaler (Underperforming/
+    Monitor/Strong Hold/Hold), IKKE Stop Loss/Take Profit, som kræver
+    testerens egen indgangspris (samme skel som Kategori E vs. P i
+    arkitektur-dokumentet).
+
+    Svaret har altid "stale" og "as_of". Fejler hentningen, men der findes et
+    vellykket resultat yngre end 24 t, returneres det med "stale": true og
+    "as_of" = tidspunktet det blev hentet. Signalet genberegnes med de aktuelle
+    avg_cost/stop_loss. Først uden brugbar cache gives 404.
+    """
+    ticker = ticker.upper().strip()
+    now = time.time()
+    data = fetch_stock(ticker, bm_close=_bm_close)
+    if data is not None:
+        _last_good[ticker] = {"data": data, "fetched_at": now}
+        return _build_signal_response(ticker, data, avg_cost, stop_loss, now, stale=False)
+
+    cached = _last_good.get(ticker)
+    if cached is not None and now - cached["fetched_at"] < STALE_MAX_AGE_SEC:
+        age_min = int((now - cached["fetched_at"]) / 60)
+        print(f"STALE_SERVED ticker={ticker} alder={age_min} min", flush=True)
+        return _build_signal_response(ticker, cached["data"], avg_cost, stop_loss,
+                                      cached["fetched_at"], stale=True)
+    raise HTTPException(status_code=404, detail=f"Kunne ikke hente data for '{ticker}' — tjek stavning/ticker-format")
 
 
 @app.get("/api/screener")

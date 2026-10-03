@@ -84,6 +84,19 @@ repo — forkert repo, ikke forkert arbejde.
   med CAD. CAD-fallbacken er 4.65 (bekræftet via flere valutakilder
   21/9-2026); brugte fallbacks listes i svaret under `fallbacks_used`.
 
+- 2026-10-03: **"Kunne ikke hente data" på europæiske tickers (XUSE, EUNN.DE,
+  HEALTH.HE, MC.PA, SAP.DE) — rodårsag fundet.** Yahoo leverer indimellem en
+  sidste bar med Volume men Open/High/Low/Close = NaN (kun europæiske børser
+  set). Prisen blev til NaN → 0 → `fetch_stock()` returnerede `None` → 404,
+  uden undtagelse og uden log. Rettet: `hist.dropna(subset=["Close"])` i
+  `fetch_stock()`. Alle fejlveje logger nu en `FETCH_FAIL`-linje (UTC-tid,
+  ticker, Yahoo-symbol, årsag) — søg på det i Renders logs.
+  Nyt: `/api/signal/{ticker}` har altid `stale` og `as_of`. Fejler en ny
+  hentning, returneres sidste vellykkede resultat (maks 24 t gammelt) med
+  `stale: true` og `as_of` = hentetidspunkt; signalet genberegnes med de
+  aktuelle avg_cost/stop_loss. Cachen ligger i hukommelsen (tabes ved
+  genstart/dvale af Render). Serveret-stale logges som `STALE_SERVED`.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på

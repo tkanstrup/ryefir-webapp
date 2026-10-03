@@ -181,6 +181,9 @@ def log_fetch_failure(ticker, reason, exc=None):
 def fetch_stock(ticker, bm_close=None):
     try:
         hist=yf.Ticker(get_yf(ticker)).history(period="13mo").sort_index()
+        # Yahoo leverer indimellem en sidste bar med Volume men OHLC=NaN (set på
+        # europæiske børser, okt. 2026). Uden dropna blev prisen til 0 → None → 404.
+        hist=hist.dropna(subset=["Close"])
         if hist.empty or len(hist)<20:
             log_fetch_failure(ticker, f"for lidt historik fra Yahoo (rækker={len(hist)})"); return None
         price=float(hist["Close"].iloc[-1])
