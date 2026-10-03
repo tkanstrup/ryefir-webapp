@@ -47,8 +47,8 @@ def clean_nan(v, default=0):
 # driver ikke længere signalet.
 THRESH_RS3M_STRONG = 5
 THRESH_SL_PROXIMITY = 10
-THRESH_BIG_DROP     = -0.10  # Single-day fall triggering immediate Check Thesis signal
-THRESH_BIG_DROP_BM  = -0.03  # If benchmark falls this much same day = macro, ignore
+THRESH_BIG_DROP     = -10.0  # Single-day fall in PERCENT (perf() returns %, not fraction) — rettet i update-101 (var -0.10 = kun 0,1%)
+THRESH_BIG_DROP_BM  = -3.0   # In PERCENT: if benchmark falls this much same day = macro, ignore
 THRESH_RSI_OB          = 70
 THRESH_TAKE_PROFIT_PCT = 30    # +30% over avg cost → Tag noget hjem?
 THRESH_RS3M_PREWARNING = -5    # Pre-warning zone (-5% til -10%)

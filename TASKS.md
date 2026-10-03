@@ -97,6 +97,13 @@ repo — forkert repo, ikke forkert arbejde.
   aktuelle avg_cost/stop_loss. Cachen ligger i hukommelsen (tabes ved
   genstart/dvale af Render). Serveret-stale logges som `STALE_SERVED`.
 
+- 2026-10-03: **"Check Thesis — Big Drop" udløstes ved et dagsfald på 0,1 %.**
+  `THRESH_BIG_DROP`/`_BM` var `-0.10`/`-0.03` (brøker), men `perf()` returnerer
+  procent. Rettet til `-10.0`/`-3.0`. Kun de to tærskler er ændret — brief-filen
+  `ryefir_signal_engine_v2.py` er bygget på en ældre motor (uden fundamentals-
+  cache, FETCH_FAIL-log, dropna-fix, currency og fx-rates) og må IKKE kopieres
+  ind som den er; den ville bryde importen i `main.py`.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på
