@@ -116,6 +116,12 @@ repo — forkert repo, ikke forkert arbejde.
   **Ikke verificeret på Render** (kun simuleret lokalt) — `FUNDAMENTALS_FAIL`-linjen i loggen viser
   den rå årsag. Sektor/branche/nøgletal har ingen anden kilde end `.info`: er den nede uden cache, er de null.
 
+- 2026-10-04: efter 386fb91 er `name`/`currency` udfyldt (fra kursopslagets history_metadata), men
+  sector/industry/nøgletal er stadig null og `fundamentals_as_of` er null → `.info` er aldrig lykkedes
+  fra Render siden deploy. **MIDLERTIDIGT** diagnose-endpoint `GET /api/debug/fundamentals/{ticker}`
+  kører `.info` på Render og viser det rå udfald (ok/fejl/tom, yfinance-version, sidste
+  `FUNDAMENTALS_FAIL`); højst ét opslag pr. 30 sek. Fjernes når årsagen er fundet.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på
