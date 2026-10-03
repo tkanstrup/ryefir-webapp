@@ -127,5 +127,17 @@ def test_nan_bar_paa_sidste_dag_giver_stadig_signal(mock_yahoo):
     assert data is not None and data["price"] == 100.0
 
 
+@pytest.mark.parametrize("last_day_pct", [-2.7, -0.1, 3.4])
+def test_perf_returnerer_procent_ikke_broek(mock_yahoo, last_day_pct):
+    """perf() returnerer procent: -2,7 betyder -2,7 %, ikke -0,027. Big Drop-enhedsfejlen
+    (grænser som brøk, afkast som procent) opstod præcis her."""
+    closes = build_closes({"kind": "flat", "price": 100, "last_day_pct": last_day_pct}, DEFAULT_DAYS)
+    mock_yahoo["hist"] = to_hist(closes)
+    data = eng.fetch_stock("TEST", bm_close=None)
+    assert data["perf_1d"] == pytest.approx(last_day_pct, abs=0.01)
+    assert data["perf_3m"] == pytest.approx(last_day_pct, abs=0.01)
+    assert abs(data["perf_1d"]) > 0.05 or last_day_pct == -0.1  # ikke en brøk (-0,027)
+
+
 def test_motorversion_er_sat():
     assert isinstance(eng.ENGINE_VERSION, str) and eng.ENGINE_VERSION
