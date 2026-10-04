@@ -147,14 +147,17 @@ repo — forkert repo, ikke forkert arbejde.
 
 - 2026-10-04: **stop-loss-kilde i `/api/signal` (ENGINE_VERSION v3).** Efter KING/MC.PA-forskellen
   (v9 = Stop Loss!, webapp = Underperforming; `get_signal()` er identisk, men v9 henter stop fra
-  Positions Config, og webappen kender kun det, kalderen sender). Svaret ekkoer nu `avg_cost`,
-  `stop_loss` (den værdi der blev brugt) og `stop_loss_source`: `"bruger"` (stop sendt med),
-  `"standard"` (kun avg_cost sendt → `DEFAULT_STOP_LOSS_PCT` = 15 % under avg_cost; **procedurevalg,
-  ikke backtestet**; v9 har intet tilsvarende) eller `"mangler"` (ingen af dem). Ved `"mangler"` er
-  `signal` = `"Stop-loss mangler"` (ligner bevidst ikke et normalt signal; `signal_complete: false`,
-  `warning` forklarer hvorfor) og markedssignalet ligger i `market_signal`. Ved `"standard"` er
-  `warning` sat. **Frontend skal håndtere `signal_complete: false`** — også for tickers uden position
-  (fx watchlist), som før fik et normalt markedssignal. Logikken ligger i `evaluate_signal()` i motoren.
+  Positions Config, og webappen kender kun det, kalderen sender). Svaret ekkoer `avg_cost`,
+  `stop_loss` (den værdi der blev brugt), `stop_loss_source` og `har_position` (= avg_cost sendt):
+  - **Watchlist** (ingen avg_cost): normalt markedssignal, `har_position: false`, intet stop brugt
+    (`stop_loss_source: "mangler"` = intet stop anvendt), `signal_complete: true`.
+  - **Position uden eget stop** (kun avg_cost): `DEFAULT_STOP_LOSS_PCT` = 15 % under avg_cost bruges,
+    `stop_loss_source: "standard"`, `signal_complete: false` + `warning`. **Procedurevalg, ikke
+    backtestet**; v9 har intet tilsvarende.
+  - **Position med eget stop**: `stop_loss_source: "bruger"`, `signal_complete: true`.
+  `signal_complete: false` gælder altså kun positioner uden brugerens stop. Logikken ligger i
+  `evaluate_signal()` i motoren. (En kort mellemversion samme dag brugte signalet "Stop-loss mangler" til
+  tickers uden position; det er fjernet igen.)
 
 ## Screener cron-job (åben scanning, 715 tickers)
 
