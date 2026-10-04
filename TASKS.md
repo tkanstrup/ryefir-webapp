@@ -193,6 +193,33 @@ repo — forkert repo, ikke forkert arbejde.
   Diagnose-endpointet `/api/debug/fundamentals` er fjernet igen. Screener-resultatet (`/api/screener`) har
   fwd_pe for 90/90 kandidater, så `.info` virker der, hvor jobbet kører.
 
+- 2026-10-04 (nat): **FX udvidet** med CHF, JPY og HKD (nu USD, EUR, SEK, GBP, NOK, CAD, CHF, JPY, HKD + DKK).
+  KRW er bevidst ikke med (Yahoo har ikke KRWDKK=X; ingen ticker bruger den). Kurser afrundes til 6 decimaler
+  (JPY er ~0,042). Fallbacks: CAD 4,65 (bekræftet af Thomas); CHF 8,01 / JPY 0,0421 / HKD 0,846 er Yahoos live-
+  kurser 4/10 (ikke bekræftet fra flere kilder). En skjult dublet af `FX_FALLBACK` (CAD 4,85) er fjernet; en test
+  sikrer, at den kun defineres én gang. **GBp** (pence, 33 tickers) har ingen egen kurs: frontend dividerer
+  kursen med 100 og bruger GBP.
+
+## BACKLOG / åbne punkter (4/10-2026) — se også Project-status
+- **Thomas, Render:** ret screener-cronjobbets schedule til `0 6 * * *` (kører i dag hvert 5. minut: ~4.200 commits
+  siden 19/9). Kan også være årsag til Yahoos blokering af `.info` fra Render (hypotese, ikke bevist).
+- **Take Profit-grænse pr. position** (`?take_profit_pct=`, ENGINE v5, ca. 1 t): AFVENTER Thomas' beslutning om v9
+  skal kunne det samme (ellers divergerer v9 og webapp). Alternativ: ret matrixens "din gevinstgrænse" til "+30 %".
+- **Nøgletal** (`fwd_pe`, `fcf_margin`, `market_cap`) er null i `/api/signal` fra Render; kunne lægges i den statiske
+  fil (ugentligt, markeret stale). Lav prioritet. `roic` er null overalt (felterne findes ikke i `.info`).
+- **Frontend (ikke dette repo):** sende `avg_cost`/`stop_loss`; håndtere `har_position`, `signal_complete`,
+  `stop_loss_source`, `stop_loss_status`, `kraever_stillingtagen`; overskrift "Hjemland" for `country` (+ "Ukendt"-gruppe);
+  gemme `engine_version` i `signal_history`; GBp ÷ 100; slette falsk Big Drop-historik og testrækker i Supabase
+  (kun efter Thomas' ja, liste først).
+- **Målepunkter** (succeskriterier): tæller `ACTION_SIGNALS` (Stop Loss!, Sikr din gevinst, Take Profit?, Check Thesis —
+  Big Drop); selve tællingen/historikken ligger i frontend/Supabase.
+- **Små oprydninger:** `market_signal` er i v4 identisk med `signal` (beholdt for kompatibilitet — kan fjernes);
+  stale-cachen i `main.py` har ingen automatisk test (main.py henter data ved import — kræver refaktorering);
+  tilføj nye positioner/tickers i GitHub-variablen `EXTRA_TICKERS`, så de kommer i den statiske fil;
+  yfinance er låst til 1.7.0 — opgradér bevidst og test først.
+- **Gjort/bekræftet:** facit-tests (CI på hvert push, Render "After CI Checks Pass"), matrix v3, v4-motor,
+  statisk fundamentals-fallback, stale-cache, FX-cache/CAD, yfinance-lås.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på

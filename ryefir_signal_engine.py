@@ -106,8 +106,6 @@ SCOUT_CCY = {
     "IXUA":"EUR","NAS":"NOK","ASML":"USD","NVDA":"USD","ZAL":"EUR",
     "NKE":"USD","NOW":"USD","CRM":"USD","SAP":"USD","TSM":"USD","CSU":"CAD","VSURE":"EUR",
 }
-FX_FALLBACK = {"USD":6.43,"EUR":7.47,"SEK":0.70,"GBP":8.12,"NOK":0.65,"DKK":1.0,"CAD":4.85,"CHF":7.82,"JPY":0.044,"KRW":0.0047,"HKD":0.82}
-
 def get_yf(t): return TICKER_MAP.get(t,t)
 
 
@@ -405,11 +403,16 @@ def fetch_stock(ticker, bm_close=None):
 # Kopieret fra update.py (stock_system_v7-repoet) d. 20/9-2026, ikke automatisk
 # synkroniseret. Tilføjes en ny valuta i det oprindelige system, skal den
 # tilføjes her manuelt også.
-# Udvidet med CAD, som update.py ikke havde. Fallback-værdier bruges kun hvis
-# Yahoo fejler for et enkelt par.
-FX_PAIRS = {"USD":"USDDKK=X","EUR":"EURDKK=X","SEK":"SEKDKK=X",
-            "GBP":"GBPDKK=X","NOK":"NOKDKK=X","CAD":"CADDKK=X"}
-FX_FALLBACK = {"USD":6.43,"EUR":7.47,"SEK":0.70,"GBP":8.12,"NOK":0.65,"CAD":4.65,"DKK":1.0}
+# Udvidet med CAD, CHF, JPY og HKD, som update.py ikke havde (4/10-2026; behov set i tickeruniverset:
+# .SW-aktier er CHF). KRW er bevidst IKKE med: Yahoo har ikke KRWDKK=X, og ingen ticker i universet bruger den.
+# GBp (pence, London-aktier) har ingen egen kurs: frontend dividerer kursen med 100 og bruger GBP.
+# Fallback-værdier bruges kun hvis Yahoo fejler for et enkelt par. CAD 4,65 er bekræftet af Thomas;
+# CHF/JPY/HKD er taget fra Yahoos live-kurser 4/10-2026 (ikke bekræftet fra flere kilder).
+# FX_FALLBACK må kun defineres ÉN gang (en tidligere dublet i filen blev overskrevet tavst — se tests).
+FX_PAIRS = {"USD":"USDDKK=X","EUR":"EURDKK=X","SEK":"SEKDKK=X","GBP":"GBPDKK=X","NOK":"NOKDKK=X",
+            "CAD":"CADDKK=X","CHF":"CHFDKK=X","JPY":"JPYDKK=X","HKD":"HKDDKK=X"}
+FX_FALLBACK = {"USD":6.43,"EUR":7.47,"SEK":0.70,"GBP":8.12,"NOK":0.65,"CAD":4.65,"DKK":1.0,
+               "CHF":8.01,"JPY":0.0421,"HKD":0.846}
 
 def fetch_fx_rates():
     """Returnerer (rates, fallbacks_used): rates = valuta -> kurs i DKK."""
@@ -418,7 +421,7 @@ def fetch_fx_rates():
         try:
             hist = yf.Ticker(pair).history(period="2d")
             if hist.empty: raise ValueError("tom historik")
-            rates[ccy] = round(float(hist["Close"].iloc[-1]), 4)
+            rates[ccy] = round(float(hist["Close"].iloc[-1]), 6)  # 6 decimaler: JPY er ~0,042 DKK
         except Exception:
             rates[ccy] = FX_FALLBACK[ccy]; fallbacks_used.append(ccy)
     return rates, fallbacks_used
