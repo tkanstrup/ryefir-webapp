@@ -18,7 +18,7 @@ import requests
 import yfinance
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from ryefir_signal_engine import fetch_stock, fetch_benchmark, get_signal, fetch_fx_rates, ENGINE_VERSION, probe_info, _FUNDAMENTALS_LAST_FAIL
+from ryefir_signal_engine import fetch_stock, fetch_benchmark, evaluate_signal, fetch_fx_rates, ENGINE_VERSION, probe_info, _FUNDAMENTALS_LAST_FAIL
 
 
 # Starlettes JSONResponse sætter "application/json" uden charset som
@@ -81,11 +81,21 @@ def _iso(epoch):
 
 
 def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale):
-    signal = get_signal(data, _idx_perf, avg_cost=avg_cost, stop_loss=stop_loss)
+    ev = evaluate_signal(data, _idx_perf, avg_cost=avg_cost, stop_loss=stop_loss)
     return {
         "ticker": ticker,
         "price": data["price"],
-        "signal": signal,
+        "signal": ev["signal"],
+        # Ekko af hvad signalet blev beregnet ud fra, så et manglende/standard-stop aldrig er tavst:
+        # stop_loss_source = "bruger" | "standard" (DEFAULT_STOP_LOSS_PCT under avg_cost) | "mangler".
+        # Ved "mangler" er signal = "Stop-loss mangler" og markedssignalet ligger i market_signal.
+        "market_signal": ev["market_signal"],
+        "signal_complete": ev["signal_complete"],
+        "avg_cost": ev["avg_cost"],
+        "stop_loss": ev["stop_loss"],
+        "stop_loss_source": ev["stop_loss_source"],
+        "stop_loss_default_pct": ev["stop_loss_default_pct"],
+        "warning": ev["warning"],
         "rsi": data.get("rsi"),
         "perf_3m": data.get("perf_3m"),
         "direction": data.get("raw_direction"),
