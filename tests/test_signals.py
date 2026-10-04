@@ -154,7 +154,7 @@ def test_hvert_signal_i_motoren_er_daekket():
     expected = {c["expected"] for k in ("path_cases", "signal_cases") for c in FACIT[k]}
     engine_signals = {"Stop Loss!", "Near Stop Loss", "Check Thesis — Big Drop",
                       "Underperforming — Consider Rotating", "Monitor", "Take Profit?",
-                      "Strong Hold", "Hold", "New — No Signal History"}
+                      "Strong Hold", "Hold", "New — No Signal History", "Sikr din gevinst"}
     assert engine_signals <= expected, f"mangler facit for: {engine_signals - expected}"
 
 
@@ -197,3 +197,42 @@ def test_watchlist_signal_er_identisk_med_markedssignalet():
     for confirmed in ("Hold", "Strong Hold", "Monitor", "Underperforming"):
         data = {**BASE_DATA, "confirmed_state": confirmed}
         assert eng.evaluate_signal(data, dict(BASE_IDX))["signal"] == eng.get_signal(data, dict(BASE_IDX))
+
+
+ALLE_SIGNALER = {"Stop Loss!", "Sikr din gevinst", "Near Stop Loss", "Check Thesis — Big Drop",
+                 "Underperforming — Consider Rotating", "Monitor", "Take Profit?", "Strong Hold", "Hold",
+                 "New — No Signal History"}
+MATRIX_STILLINGTAGEN = {"Stop Loss!", "Sikr din gevinst", "Take Profit?", "Check Thesis — Big Drop"}
+
+
+def test_signaler_der_kraever_stillingtagen():
+    """Thomas 4/10-2026: kun disse fire. IKKE Underperforming, Near Stop Loss, Monitor."""
+    assert set(eng.ACTION_SIGNALS) == MATRIX_STILLINGTAGEN
+    for sig in ALLE_SIGNALER:
+        assert (sig in eng.ACTION_SIGNALS) == (sig in MATRIX_STILLINGTAGEN), sig
+
+
+@pytest.mark.parametrize("case", FACIT["path_cases"] + FACIT["signal_cases"], ids=lambda c: c["id"])
+def test_facit_bruger_kun_signalnavne_fra_handlingsmatrixen(case):
+    """Alle forventede signaler i facit-filen skal være navne fra 07_handlingsmatrix_v2.md."""
+    expected = case["expected"]
+    assert expected in ALLE_SIGNALER, f"{expected!r} er ikke et signal i handlingsmatrixen"
+
+
+def test_evaluate_signal_kraever_stillingtagen_felt():
+    ev = lambda **kw: eng.evaluate_signal({**BASE_DATA, "price": kw.pop("price", 100.0)}, dict(BASE_IDX), **kw)
+    assert ev(avg_cost=100, stop_loss=105, price=104)["kraever_stillingtagen"] is True       # Sikr din gevinst
+    assert ev(avg_cost=100, stop_loss=85, price=84)["kraever_stillingtagen"] is True         # Stop Loss!
+    assert ev(avg_cost=100, price=135)["kraever_stillingtagen"] is True                      # Take Profit?
+    assert ev(price=100)["kraever_stillingtagen"] is False                                   # Hold
+    assert ev(avg_cost=100, stop_loss=85, price=94.4)["kraever_stillingtagen"] is False      # Near Stop Loss
+    big = eng.evaluate_signal({**BASE_DATA, "perf_1d": -12}, dict(BASE_IDX))
+    assert big["signal"] == "Check Thesis — Big Drop" and big["kraever_stillingtagen"] is True
+    under = eng.evaluate_signal({**BASE_DATA, "confirmed_state": "Underperforming"}, dict(BASE_IDX))
+    assert under["kraever_stillingtagen"] is False
+
+
+def test_stop_loss_status_kun_for_positioner_uden_eget_stop():
+    ev = lambda **kw: eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), **kw)["stop_loss_status"]
+    assert ev(avg_cost=100) == "Stop-loss mangler"
+    assert ev() is None and ev(avg_cost=100, stop_loss=90) is None and ev(stop_loss=90) is None

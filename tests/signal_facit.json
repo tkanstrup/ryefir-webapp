@@ -7,7 +7,8 @@
     "Kursforløb: 'flat' = alle dage på samme kurs, evt. med et dagsskift i procent på sidste dag. 'steady' = jævn op-/nedgang, så 63-dages afkast er konstant lig rel_63d_pct for hver dag.",
     "Benchmark: 'last_day_pct' = benchmarkets dagsændring på sidste dag (ellers fladt). 'follows_stock' = benchmark følger samme kurs som aktien (relativ styrke 0).",
     "Grænser i procent (som i motoren): Big Drop <= -10 (ignoreres hvis benchmark <= -3), Stop Loss ved kurs <= stop-loss, Near Stop Loss inden for 10 % over stop, Take Profit? ved >= +30 % over købskurs, Underperforming under -10 relativ 3M, Monitor under -5 med faldende retning, Strong Hold over +5 og RSI under 70.",
-    "stop_cases: kilden til stop-loss. har_position = avg_cost sendt. Watchlist (ingen avg_cost, intet stop): normalt markedssignal, intet stop brugt, signal_complete=true. Position med kun avg_cost: stop = 15 % under avg_cost (procedurevalg, ikke backtestet), signal_complete=false. Position med eget stop: signal_complete=true."
+    "stop_cases: kilden til stop-loss. har_position = avg_cost sendt. Watchlist (ingen avg_cost, intet stop): normalt markedssignal, intet stop brugt, signal_complete=true. Position med kun avg_cost: stop = 15 % under avg_cost (procedurevalg, ikke backtestet), signal_complete=false. Position med eget stop: signal_complete=true.",
+    "Sikr din gevinst: kurs <= et stop, brugeren selv har haevet OVER købskurs, mens kursen stadig er over købskurs (stadig i plus). Gappet til/under købskurs trods haevet stop, eller købskurs ukendt = Stop Loss! (reelt tab). Kræver stillingtagen: Stop Loss!, Sikr din gevinst, Take Profit?, Check Thesis — Big Drop."
   ],
   "path_cases": [
     {
@@ -208,7 +209,7 @@
     },
     {
       "id": "takeprofit_laast_naar_stop_over_koebskurs",
-      "beskrivelse": "Kurs 135 (+35 %), men stop-loss er hævet til 105 (over købskurs) = gevinsten er låst. Ingen Take Profit?.",
+      "beskrivelse": "Kurs 135 (+35 %), men stop-loss er haevet til 105 (over købskurs) = gevinsten er låst. Ingen Take Profit?.",
       "path": {
         "kind": "flat",
         "price": 135
@@ -318,6 +319,94 @@
       "avg_cost": 100,
       "stop_loss": 85,
       "expected": "Stop Loss!"
+    },
+    {
+      "id": "sikr_gevinst_kurs_faldet_til_haevet_stop",
+      "beskrivelse": "Købskurs 100, du har haevet stoppet til 105. Kursen er faldet til 104: stadig i plus. Sikr din gevinst.",
+      "path": {
+        "kind": "flat",
+        "price": 104
+      },
+      "expected": "Sikr din gevinst",
+      "avg_cost": 100,
+      "stop_loss": 105
+    },
+    {
+      "id": "sikr_gevinst_praecis_paa_haevet_stop",
+      "beskrivelse": "Købskurs 100, haevet stop 105, kurs præcis 105,0. Sikr din gevinst.",
+      "path": {
+        "kind": "flat",
+        "price": 105
+      },
+      "expected": "Sikr din gevinst",
+      "avg_cost": 100,
+      "stop_loss": 105
+    },
+    {
+      "id": "sikr_gevinst_lige_over_haevet_stop_er_near_stop",
+      "beskrivelse": "Købskurs 100, haevet stop 105, kurs 105,1 (lige over stoppet). Endnu ikke udløst: Near Stop Loss.",
+      "path": {
+        "kind": "flat",
+        "price": 105.1
+      },
+      "expected": "Near Stop Loss",
+      "avg_cost": 100,
+      "stop_loss": 105
+    },
+    {
+      "id": "sikr_gevinst_gap_under_koebskurs_er_stop_loss",
+      "beskrivelse": "Købskurs 100, haevet stop 105, men kursen er gappet ned til 99 (under købskurs = reelt tab). Stop Loss!, ikke Sikr din gevinst.",
+      "path": {
+        "kind": "flat",
+        "price": 99
+      },
+      "expected": "Stop Loss!",
+      "avg_cost": 100,
+      "stop_loss": 105
+    },
+    {
+      "id": "sikr_gevinst_kurs_lig_koebskurs_er_stop_loss",
+      "beskrivelse": "Købskurs 100, haevet stop 105, kurs præcis 100 (ikke i plus). Stop Loss!.",
+      "path": {
+        "kind": "flat",
+        "price": 100
+      },
+      "expected": "Stop Loss!",
+      "avg_cost": 100,
+      "stop_loss": 105
+    },
+    {
+      "id": "sikr_gevinst_uden_koebskurs_er_stop_loss",
+      "beskrivelse": "Kun stop 105 sendt, købskurs ukendt, kurs 104: kan ikke vide om det er i plus. Stop Loss!.",
+      "path": {
+        "kind": "flat",
+        "price": 104
+      },
+      "expected": "Stop Loss!",
+      "stop_loss": 105
+    },
+    {
+      "id": "sikr_gevinst_ikke_naar_stop_er_under_koebskurs",
+      "beskrivelse": "Købskurs 100, normalt stop 85, kurs 84: reelt tab. Stop Loss!, ikke Sikr din gevinst.",
+      "path": {
+        "kind": "flat",
+        "price": 84
+      },
+      "expected": "Stop Loss!",
+      "avg_cost": 100,
+      "stop_loss": 85
+    },
+    {
+      "id": "sikr_gevinst_ny_aktie",
+      "beskrivelse": "Ny aktie (60 dages historik), købskurs 100, haevet stop 105, kurs 104. Sikr din gevinst gælder også her.",
+      "path": {
+        "kind": "flat",
+        "price": 104,
+        "days": 60
+      },
+      "expected": "Sikr din gevinst",
+      "avg_cost": 100,
+      "stop_loss": 105
     }
   ],
   "signal_cases": [
@@ -570,6 +659,28 @@
         "ipo_flag": true
       },
       "expected": "New — No Signal History"
+    },
+    {
+      "id": "sig_sikr_gevinst_slaar_underperforming",
+      "beskrivelse": "Hævet stop 105 er nået (kurs 104, købskurs 100), markedet siger Underperforming. Sikr din gevinst går forud.",
+      "data": {
+        "price": 104,
+        "confirmed_state": "Underperforming"
+      },
+      "avg_cost": 100,
+      "stop_loss": 105,
+      "expected": "Sikr din gevinst"
+    },
+    {
+      "id": "sig_sikr_gevinst_slaar_big_drop",
+      "beskrivelse": "Hævet stop nået og dagsfald -12 %: Sikr din gevinst går forud for Big Drop (stop er højeste prioritet).",
+      "data": {
+        "price": 104,
+        "perf_1d": -12
+      },
+      "avg_cost": 100,
+      "stop_loss": 105,
+      "expected": "Sikr din gevinst"
     }
   ],
   "stop_cases": [
