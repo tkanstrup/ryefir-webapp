@@ -115,6 +115,16 @@ repo — forkert repo, ikke forkert arbejde.
   `history_metadata` (intet ekstra kald), så valuta ikke er ukendt bare fordi `.info` fejler.
   **Ikke verificeret på Render** (kun simuleret lokalt) — `FUNDAMENTALS_FAIL`-linjen i loggen viser
   den rå årsag. Sektor/branche/nøgletal har ingen anden kilde end `.info`: er den nede uden cache, er de null.
+- 2026-10-03: **Facit-test for signalmotoren** (`tests/`, kør `python3 -m pytest tests`;
+  kræver `pip install -r requirements-dev.txt`). Tilfældene ligger i
+  `tests/signal_facit.json` (ren data, genbrugelig i v9-repoet), Yahoo mockes.
+  Kører i GitHub Actions ved hvert push (`.github/workflows/tests.yml`). Ændrer du en
+  tærskel eller signal-logik: opdatér facit-filen bevidst, og hæv `ENGINE_VERSION`.
+  En rød test stopper ikke i sig selv en Render-deploy — det kræver branch protection
+  på `main` (påkrævet check "facit") og/eller Render "After CI Checks Pass".
+- 2026-10-03: `/api/signal/{ticker}` har `engine_version` (nu `"v2"`); rodendpointet `/`
+  viser `engine_version` og `commit` (fra Renders `RENDER_GIT_COMMIT`), så man kan se
+  hvilken commit der kører i produktion.
 
 - 2026-10-04: efter 386fb91 er `name`/`currency` udfyldt (fra kursopslagets history_metadata), men
   sector/industry/nøgletal er stadig null og `fundamentals_as_of` er null → `.info` er aldrig lykkedes
