@@ -11,7 +11,7 @@ import pytest
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 import ryefir_signal_engine as eng  # noqa: E402
 
-GOOD_INFO = {"sector": "Technology", "industry": "Software", "longName": "Test Inc.",
+GOOD_INFO = {"country": "Ireland", "sector": "Technology", "industry": "Software", "longName": "Test Inc.",
              "currency": "USD", "forwardPE": 20.0, "marketCap": 1e9}
 FIELDS = ("sector", "industry", "name", "currency")
 
@@ -45,6 +45,10 @@ def yahoo(monkeypatch):
 
 def fields(r):
     return {k: r[k] for k in FIELDS}
+
+
+def test_country_hentes_med(yahoo):
+    assert eng._fetch_fundamentals("T")["country"] == "Ireland"
 
 
 def test_normal_hentning(yahoo):
@@ -112,7 +116,7 @@ def test_fejl_logges_med_ticker_og_aarsag(yahoo, capsys):
     assert "FUNDAMENTALS_FAIL" in out and "ticker=T" in out and "ConnectionError" in out
 
 
-STATIC_ENTRY = {"name": "Static Inc.", "sector": "Energy", "industry": "Oil", "currency": "EUR",
+STATIC_ENTRY = {"country": "Norway", "name": "Static Inc.", "sector": "Energy", "industry": "Oil", "currency": "EUR",
                 "as_of": "2026-10-04T05:00:00+00:00"}
 
 
@@ -122,6 +126,7 @@ def test_statisk_fil_bruges_naar_info_er_nede_og_ingen_cache(yahoo):
     r = eng._fetch_fundamentals("T")
     assert fields(r) == {"sector": "Energy", "industry": "Oil", "name": "Static Inc.", "currency": "EUR"}
     assert r["source"] == "static" and r["stale"] is True and r["as_of"] is not None
+    assert r["country"] == "Norway"
 
 
 def test_cache_har_forrang_over_statisk_fil(yahoo):
