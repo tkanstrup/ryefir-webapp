@@ -234,5 +234,17 @@ def test_evaluate_signal_kraever_stillingtagen_felt():
 
 def test_stop_loss_status_kun_for_positioner_uden_eget_stop():
     ev = lambda **kw: eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), **kw)["stop_loss_status"]
-    assert ev(avg_cost=100) == "Stop-loss mangler"
+    assert ev(avg_cost=100) == "Standardgrænse brugt (−15 %)"
     assert ev() is None and ev(avg_cost=100, stop_loss=90) is None and ev(stop_loss=90) is None
+
+
+def test_stop_loss_status_tekst_foelger_konstanten(monkeypatch):
+    monkeypatch.setattr(eng, "DEFAULT_STOP_LOSS_PCT", 20)
+    assert eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), avg_cost=100)["stop_loss_status"] == "Standardgrænse brugt (−20 %)"
+
+
+def test_stop_loss_status_aendrer_ikke_signalet():
+    """KING-situationen: position uden eget stop, kurs -33 %: signalet er Stop Loss!, status er kun en note."""
+    r = eng.evaluate_signal({**BASE_DATA, "price": 67, "confirmed_state": "Underperforming"}, dict(BASE_IDX), avg_cost=100)
+    assert r["signal"] == "Stop Loss!" and r["kraever_stillingtagen"] is True
+    assert r["stop_loss_status"] == "Standardgrænse brugt (−15 %)"

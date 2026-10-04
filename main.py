@@ -96,7 +96,7 @@ def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale)
         "har_position": ev["har_position"],
         # True for Stop Loss!, Sikr din gevinst, Take Profit?, Check Thesis — Big Drop (ACTION_SIGNALS i motoren)
         "kraever_stillingtagen": ev["kraever_stillingtagen"],
-        # "Stop-loss mangler" for positioner uden eget stop (standard-stop brugt), ellers null
+        # "Standardgrænse brugt (−15 %)" for positioner uden eget stop (standard-stop brugt, kun en note), ellers null
         "stop_loss_status": ev["stop_loss_status"],
         "signal_complete": ev["signal_complete"],
         "avg_cost": ev["avg_cost"],

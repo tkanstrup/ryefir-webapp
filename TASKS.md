@@ -176,9 +176,10 @@ repo — forkert repo, ikke forkert arbejde.
   stadig "Stop Loss!" (reelt tab). **Kræver stillingtagen** (`kraever_stillingtagen: true`, konstanten
   `ACTION_SIGNALS`, også listet i rodendpointet): Stop Loss!, Sikr din gevinst, Take Profit?, Check Thesis —
   Big Drop. IKKE: Underperforming — Consider Rotating, Near Stop Loss, Monitor (Thomas 4/10). Svaret har
-  desuden `stop_loss_status: "Stop-loss mangler"` for positioner uden brugerens eget stop (standard-stop
-  brugt; signalet ændres ikke). **Matrixen (07) mangler stadig rækken "Stop-loss mangler"**, og
-  "Sikr din gevinst" er i matrixen markeret som nyt.
+  desuden `stop_loss_status: "Standardgrænse brugt (−15 %)"` (tallet følger `DEFAULT_STOP_LOSS_PCT`) for
+  positioner uden brugerens eget stop — kun en note ved siden af signalet, ikke et signal; signalet ændres ikke
+  (KING = Stop Loss!). Handlingsmatrix v3 har rækken "Standardgrænse brugt". "Sikr din gevinst"-fortolkningen
+  er bekræftet af Thomas (4/10).
 
 - 2026-10-04 (aften): **ÅRSAG FUNDET til tomme sector/industry/country/nøgletal.** Render-svaret fra
   `/api/debug/fundamentals/ACN` (commit 20be265, yfinance 1.7.0): `.info` returnerer en **stub med én nøgle**

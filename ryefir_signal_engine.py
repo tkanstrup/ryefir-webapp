@@ -648,9 +648,10 @@ def get_signal(data, idx, avg_cost=None, stop_loss=None):
 STOP_SOURCE_USER = "bruger"
 STOP_SOURCE_DEFAULT = "standard"
 STOP_SOURCE_MISSING = "mangler"
-# Status-navn i handlingsmatrixen: position uden brugerens eget stop (standard-stop er brugt). Ændrer ikke
-# signalet — Stop Loss! osv. beregnes stadig ud fra standard-stoppet; feltet stop_loss_status markerer det.
-SIGNAL_STOP_MISSING = "Stop-loss mangler"
+# Status (note ved siden af signalet, IKKE et signal) i handlingsmatrix v3: position uden brugerens eget stop,
+# standard-stop er brugt. Ændrer ikke signalet — Stop Loss! osv. beregnes stadig ud fra standard-stoppet.
+def stop_status_default():
+    return f"Standardgrænse brugt (−{DEFAULT_STOP_LOSS_PCT} %)"
 
 
 def resolve_stop_loss(avg_cost, stop_loss):
@@ -681,7 +682,7 @@ def evaluate_signal(data, idx, avg_cost=None, stop_loss=None):
                    "indgangspris er brugt (procedurevalg, ikke brugerens eget stop).")
     return {"signal": signal, "market_signal": signal, "signal_complete": complete, "har_position": har_position,
             "kraever_stillingtagen": signal in ACTION_SIGNALS,
-            "stop_loss_status": SIGNAL_STOP_MISSING if (har_position and source == STOP_SOURCE_DEFAULT) else None,
+            "stop_loss_status": stop_status_default() if (har_position and source == STOP_SOURCE_DEFAULT) else None,
             "avg_cost": avg_cost, "stop_loss": used, "stop_loss_source": source,
             "stop_loss_default_pct": DEFAULT_STOP_LOSS_PCT if source == STOP_SOURCE_DEFAULT else None,
             "warning": warning}
