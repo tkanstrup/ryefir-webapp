@@ -47,8 +47,8 @@ def clean_nan(v, default=0):
 # take-profit-vej. THRESH_VOL_* står tilbage kun som informationsvisning (Dashboard),
 # driver ikke længere signalet.
 # Signalmotorens version, vises i /api/signal så v9 kan se hvilken version der svarede.
-# v2 = Big Drop-tærsklerne i procent (okt. 2026). Hæv ved ændringer af signal-logik/tærskler.
-ENGINE_VERSION = "v2"
+# v2 = Big Drop-tærsklerne i procent (okt. 2026). v3 = standard-stop (DEFAULT_STOP_LOSS_PCT) + "Stop-loss mangler". Hæv ved ændringer af signal-logik/tærskler.
+ENGINE_VERSION = "v3"
 
 THRESH_RS3M_STRONG = 5
 THRESH_SL_PROXIMITY = 10
@@ -58,6 +58,10 @@ THRESH_RSI_OB          = 70
 THRESH_TAKE_PROFIT_PCT = 30    # +30% over avg cost → Tag noget hjem?
 THRESH_RS3M_PREWARNING = -5    # Pre-warning zone (-5% til -10%)
 THRESH_RS3M_SELL       = -10   # Justeret fra -8% til -10% (backtest-evidens)
+# Standard stop-loss når brugeren har sendt avg_cost men intet stop_loss: dette % under avg_cost.
+# PROCEDUREVALG — hverken backtestet eller evidensbaseret (til forskel fra tærsklerne ovenfor).
+# v9 har intet tilsvarende: dér kommer stop-loss altid fra Positions Config.
+DEFAULT_STOP_LOSS_PCT = 15
 THRESH_VOL_HIGH    = 6
 THRESH_VOL_ELEV    = 3
 THRESH_VOL_RATIO   = 1.5
@@ -657,6 +661,42 @@ def get_signal(data, idx, avg_cost=None, stop_loss=None):
         return "Strong Hold"   # outperformer, ikke overkøbt
     return "Hold"
 
+
+
+STOP_SOURCE_USER = "bruger"
+STOP_SOURCE_DEFAULT = "standard"
+STOP_SOURCE_MISSING = "mangler"
+SIGNAL_INCOMPLETE = "Stop-loss mangler"
+
+
+def resolve_stop_loss(avg_cost, stop_loss):
+    """(stop_loss_brugt, kilde). Brugerens stop vinder; ellers DEFAULT_STOP_LOSS_PCT under avg_cost;
+    ellers (ingen af dem) (None, "mangler"). Værdier <= 0 tæller som ikke sendt."""
+    if stop_loss is not None and stop_loss > 0:
+        return stop_loss, STOP_SOURCE_USER
+    if avg_cost is not None and avg_cost > 0:
+        return avg_cost * (100 - DEFAULT_STOP_LOSS_PCT) / 100, STOP_SOURCE_DEFAULT
+    return None, STOP_SOURCE_MISSING
+
+
+def evaluate_signal(data, idx, avg_cost=None, stop_loss=None):
+    """Signal + hvor stop-loss kom fra. Mangler både avg_cost og stop_loss, kan Stop Loss!,
+    Near Stop Loss og Take Profit? ikke vurderes: "signal" bliver da SIGNAL_INCOMPLETE (ligner
+    bevidst ikke et normalt signal), og markedssignalet ligger i "market_signal"."""
+    used, source = resolve_stop_loss(avg_cost, stop_loss)
+    signal = market_signal = get_signal(data, idx, avg_cost=avg_cost, stop_loss=used)
+    warning = None
+    if source == STOP_SOURCE_MISSING:
+        signal = SIGNAL_INCOMPLETE
+        warning = ("Hverken stop-loss eller indgangspris (avg_cost) er sendt med. Stop Loss!, Near Stop "
+                   "Loss og Take Profit? kan ikke vurderes. market_signal viser kun markedssignalet.")
+    elif source == STOP_SOURCE_DEFAULT:
+        warning = (f"Stop-loss er ikke sendt med; standardværdien {DEFAULT_STOP_LOSS_PCT} % under "
+                   "indgangspris er brugt (procedurevalg, ikke brugerens eget stop).")
+    return {"signal": signal, "market_signal": market_signal, "signal_complete": source != STOP_SOURCE_MISSING,
+            "avg_cost": avg_cost, "stop_loss": used, "stop_loss_source": source,
+            "stop_loss_default_pct": DEFAULT_STOP_LOSS_PCT if source == STOP_SOURCE_DEFAULT else None,
+            "warning": warning}
 
 
 def signal_strength(sig, pnl_p=0, sl_dist_pct=None, tab_dkk=0):
