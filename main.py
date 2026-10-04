@@ -113,6 +113,7 @@ def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale)
         "name": data.get("name"),
         "currency": data.get("currency"),
         "country": data.get("country"),
+        "quoteType": data.get("quoteType"),  # Yahoo: "EQUITY", "ETF", ... eller null (aldrig et gæt)
         "high_52w": data.get("high_52w"),
         "low_52w": data.get("low_52w"),
         "roic": data.get("roic"),

@@ -189,3 +189,54 @@ def test_valuta_og_navn_fra_kursopslag_naar_info_er_nede(monkeypatch):
                                                                 "stale": False, "as_of": None, "source": None})
     d = eng.fetch_stock("SAP.DE", bm_close=None)
     assert d["currency"] == "EUR" and d["name"] == "SAP SE"
+
+
+# ── quoteType (ETF-lane i kontroltårnet): Yahoos egen værdi, aldrig et gæt ──────────────────────────────────
+def _hist(n=300):
+    import numpy as np
+    import pandas as pd
+    idx = pd.bdate_range(end="2026-10-02", periods=n)
+    c = pd.Series(np.full(n, 100.0), index=idx)
+    return pd.DataFrame({"Open": c, "High": c, "Low": c, "Close": c, "Volume": 1e6}, index=idx)
+
+
+@pytest.mark.parametrize("ticker,quote_type", [("EUNN.DE", "ETF"), ("ACN", "EQUITY")])
+def test_quotetype_etf_og_aktie(monkeypatch, ticker, quote_type):
+    """En kendt ETF giver "ETF", en kendt aktie "EQUITY" — også når .info er nede (kursopslagets metadata)."""
+    class FakeTicker:
+        def __init__(self, symbol):
+            pass
+        history_metadata = {"currency": "EUR", "longName": "X", "instrumentType": quote_type}
+        def history(self, period=None, **kw):
+            return _hist()
+    monkeypatch.setattr(eng.yf, "Ticker", FakeTicker)
+    nothing = {**{k: None for k in eng._FUNDAMENTAL_FIELDS}, "stale": False, "as_of": None, "source": None}
+    monkeypatch.setattr(eng, "_fetch_fundamentals", lambda t: dict(nothing))                       # .info nede
+    assert eng.fetch_stock(ticker, bm_close=None)["quoteType"] == quote_type
+    monkeypatch.setattr(eng, "_fetch_fundamentals", lambda t: {**nothing, "quoteType": quote_type})  # .info virker
+    assert eng.fetch_stock(ticker, bm_close=None)["quoteType"] == quote_type
+
+
+def test_quotetype_er_none_naar_den_mangler(monkeypatch):
+    class FakeTicker:
+        def __init__(self, symbol):
+            pass
+        history_metadata = {"currency": "EUR"}  # ingen instrumentType
+        def history(self, period=None, **kw):
+            return _hist()
+    monkeypatch.setattr(eng.yf, "Ticker", FakeTicker)
+    monkeypatch.setattr(eng, "_fetch_fundamentals", lambda t: {**{k: None for k in eng._FUNDAMENTAL_FIELDS},
+                                                                "stale": False, "as_of": None, "source": None})
+    assert eng.fetch_stock("EUNN.DE", bm_close=None)["quoteType"] is None   # aldrig et gæt ud fra navn/ticker
+
+
+def test_quotetype_i_fundamentals_cache_og_statisk_fallback(yahoo):
+    yahoo["info"] = {**GOOD_INFO, "quoteType": "ETF"}
+    assert eng._fetch_fundamentals("T")["quoteType"] == "ETF"
+    yahoo["info"] = ConnectionError("429")
+    yahoo["now"] += eng.FUNDAMENTALS_CACHE_TTL_SEC + 1
+    assert eng._fetch_fundamentals("T")["quoteType"] == "ETF"                  # sidst kendte værdi
+    eng._FUNDAMENTALS_CACHE.clear(); eng._FUNDAMENTALS_FAILED_AT.clear()
+    eng._STATIC_CACHE.update(tickers=None, fetched_at=0.0, failed_at=0.0)
+    yahoo["static"] = {"T": {**STATIC_ENTRY, "quoteType": "EQUITY"}}
+    assert eng._fetch_fundamentals("T")["quoteType"] == "EQUITY"               # statisk fil

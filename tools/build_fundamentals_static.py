@@ -48,7 +48,8 @@ def fetch_identity(ticker, retries=2):
             if isinstance(info, dict) and any(info.get(k) for k in IDENTITY_KEYS):
                 return {"name": info.get("longName") or info.get("shortName"),
                         "sector": info.get("sector"), "industry": info.get("industry"),
-                        "currency": info.get("currency"), "country": info.get("country")}, None
+                        "currency": info.get("currency"), "country": info.get("country"),
+                        "quoteType": info.get("quoteType")}, None
             last = f"tom/ufuldstændig .info (nøgler={len(info) if isinstance(info, dict) else type(info).__name__})"
         except Exception as e:
             last = f"{type(e).__name__}: {e}"

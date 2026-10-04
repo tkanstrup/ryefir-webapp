@@ -200,6 +200,11 @@ repo — forkert repo, ikke forkert arbejde.
   sikrer, at den kun defineres én gang. **GBp** (pence, 33 tickers) har ingen egen kurs: frontend dividerer
   kursen med 100 og bruger GBP.
 
+- 2026-10-04 (nat): **`quoteType` i `/api/signal`**, fundamentals-cachen, den statiske fil og screener-resultatet (til
+  ETF-lanen i kontroltårnet; frontend skal ikke gætte ud fra navn/ticker). Yahoos egen værdi (`"EQUITY"`, `"ETF"`, ...)
+  fra `.info`, med kursopslagets `instrumentType` som fallback (virker også når `.info` er blokeret på Render);
+  mangler begge, er den `null` — aldrig et gæt. Signalmotor, grænser og facit-tests er uændrede.
+
 ## BACKLOG / åbne punkter (4/10-2026) — se også Project-status
 - **Thomas, Render:** ret screener-cronjobbets schedule til `0 6 * * *` (kører i dag hvert 5. minut: ~4.200 commits
   siden 19/9). Kan også være årsag til Yahoos blokering af `.info` fra Render (hypotese, ikke bevist).
