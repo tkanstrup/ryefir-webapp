@@ -7,7 +7,7 @@
     "Kursforløb: 'flat' = alle dage på samme kurs, evt. med et dagsskift i procent på sidste dag. 'steady' = jævn op-/nedgang, så 63-dages afkast er konstant lig rel_63d_pct for hver dag.",
     "Benchmark: 'last_day_pct' = benchmarkets dagsændring på sidste dag (ellers fladt). 'follows_stock' = benchmark følger samme kurs som aktien (relativ styrke 0).",
     "Grænser i procent (som i motoren): Big Drop <= -10 (ignoreres hvis benchmark <= -3), Stop Loss ved kurs <= stop-loss, Near Stop Loss inden for 10 % over stop, Take Profit? ved >= +30 % over købskurs, Underperforming under -10 relativ 3M, Monitor under -5 med faldende retning, Strong Hold over +5 og RSI under 70.",
-    "stop_cases: kilden til stop-loss. Kun avg_cost sendt -> stop = 15 % under avg_cost (procedurevalg, ikke backtestet). Hverken avg_cost eller stop_loss -> signal 'Stop-loss mangler', markedssignal i market_signal."
+    "stop_cases: kilden til stop-loss. har_position = avg_cost sendt. Watchlist (ingen avg_cost, intet stop): normalt markedssignal, intet stop brugt, signal_complete=true. Position med kun avg_cost: stop = 15 % under avg_cost (procedurevalg, ikke backtestet), signal_complete=false. Position med eget stop: signal_complete=true."
   ],
   "path_cases": [
     {
@@ -585,7 +585,8 @@
       "expected_market_signal": "Hold",
       "expected_source": "bruger",
       "expected_stop_loss": 85,
-      "expected_complete": true
+      "expected_complete": true,
+      "expected_har_position": true
     },
     {
       "id": "stop_standard_kun_avg_cost_hold",
@@ -598,7 +599,8 @@
       "expected_market_signal": "Hold",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
       "id": "stop_standard_near_stop_lige_over",
@@ -611,7 +613,8 @@
       "expected_market_signal": "Near Stop Loss",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
       "id": "stop_standard_stop_loss_lige_under",
@@ -624,7 +627,8 @@
       "expected_market_signal": "Stop Loss!",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
       "id": "stop_standard_praecis_paa_stop",
@@ -637,7 +641,8 @@
       "expected_market_signal": "Stop Loss!",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
       "id": "stop_standard_near_lige_inden_for_10pct",
@@ -650,7 +655,8 @@
       "expected_market_signal": "Near Stop Loss",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
       "id": "stop_standard_near_lige_uden_for_10pct",
@@ -663,7 +669,8 @@
       "expected_market_signal": "Hold",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
       "id": "stop_standard_take_profit_ikke_laast",
@@ -676,7 +683,8 @@
       "expected_market_signal": "Take Profit?",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
       "id": "stop_bruger_over_koebskurs_laaser_gevinst",
@@ -690,7 +698,8 @@
       "expected_market_signal": "Hold",
       "expected_source": "bruger",
       "expected_stop_loss": 105,
-      "expected_complete": true
+      "expected_complete": true,
+      "expected_har_position": true
     },
     {
       "id": "stop_standard_slaar_underperforming",
@@ -704,7 +713,8 @@
       "expected_market_signal": "Stop Loss!",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
       "id": "stop_bruger_overstyrer_standard",
@@ -718,7 +728,8 @@
       "expected_market_signal": "Hold",
       "expected_source": "bruger",
       "expected_stop_loss": 50,
-      "expected_complete": true
+      "expected_complete": true,
+      "expected_har_position": true
     },
     {
       "id": "stop_kun_stop_loss_uden_avg_cost",
@@ -731,44 +742,48 @@
       "expected_market_signal": "Stop Loss!",
       "expected_source": "bruger",
       "expected_stop_loss": 90,
-      "expected_complete": true
+      "expected_complete": true,
+      "expected_har_position": false
     },
     {
-      "id": "stop_mangler_begge_underperforming",
-      "beskrivelse": "Hverken avg_cost eller stop_loss, markedet siger Underperforming: signal = 'Stop-loss mangler' (ikke et normalt signal), markedssignalet i market_signal.",
+      "id": "watchlist_underperforming_er_normalt_signal",
+      "beskrivelse": "Ingen avg_cost og intet stop (watchlist), markedet siger Underperforming: signalet er det normale 'Underperforming — Consider Rotating', har_position false, ingen advarsel.",
       "data": {
         "price": 100,
         "confirmed_state": "Underperforming"
       },
-      "expected_signal": "Stop-loss mangler",
+      "expected_signal": "Underperforming — Consider Rotating",
       "expected_market_signal": "Underperforming — Consider Rotating",
       "expected_source": "mangler",
       "expected_stop_loss": null,
-      "expected_complete": false
+      "expected_complete": true,
+      "expected_har_position": false
     },
     {
-      "id": "stop_mangler_begge_hold",
-      "beskrivelse": "Hverken avg_cost eller stop_loss, markedet siger Hold: signal = 'Stop-loss mangler'.",
+      "id": "watchlist_hold_er_normalt_signal",
+      "beskrivelse": "Watchlist-ticker, markedet siger Hold: normalt signal Hold, har_position false.",
       "data": {
         "price": 100
       },
-      "expected_signal": "Stop-loss mangler",
+      "expected_signal": "Hold",
       "expected_market_signal": "Hold",
       "expected_source": "mangler",
       "expected_stop_loss": null,
-      "expected_complete": false
+      "expected_complete": true,
+      "expected_har_position": false
     },
     {
-      "id": "stop_mangler_begge_selv_ved_lav_kurs",
-      "beskrivelse": "Hverken avg_cost eller stop_loss og en kurs på 1: Stop Loss! kan ikke vurderes, så 'Stop-loss mangler'.",
+      "id": "watchlist_lav_kurs_giver_ikke_stop_loss",
+      "beskrivelse": "Watchlist-ticker med kurs 1: der er intet stop, så Stop Loss! kan ikke opstå. Normalt markedssignal (Hold).",
       "data": {
         "price": 1
       },
-      "expected_signal": "Stop-loss mangler",
+      "expected_signal": "Hold",
       "expected_market_signal": "Hold",
       "expected_source": "mangler",
       "expected_stop_loss": null,
-      "expected_complete": false
+      "expected_complete": true,
+      "expected_har_position": false
     },
     {
       "id": "stop_nul_er_ikke_sendt",
@@ -782,33 +797,36 @@
       "expected_market_signal": "Hold",
       "expected_source": "standard",
       "expected_stop_loss": 85.0,
-      "expected_complete": true
+      "expected_complete": false,
+      "expected_har_position": true
     },
     {
-      "id": "stop_negativ_er_ikke_sendt",
-      "beskrivelse": "stop_loss -5 og ingen avg_cost: tæller som ikke sendt -> 'Stop-loss mangler'.",
+      "id": "watchlist_negativt_stop_taeller_ikke",
+      "beskrivelse": "stop_loss -5 og ingen avg_cost: tæller som ikke sendt -> watchlist, normalt markedssignal.",
       "data": {
         "price": 100
       },
       "stop_loss": -5,
-      "expected_signal": "Stop-loss mangler",
+      "expected_signal": "Hold",
       "expected_market_signal": "Hold",
       "expected_source": "mangler",
       "expected_stop_loss": null,
-      "expected_complete": false
+      "expected_complete": true,
+      "expected_har_position": false
     },
     {
-      "id": "stop_avg_cost_nul_er_ikke_sendt",
-      "beskrivelse": "avg_cost 0 og intet stop: tæller som ikke sendt -> 'Stop-loss mangler'.",
+      "id": "watchlist_avg_cost_nul_er_ikke_en_position",
+      "beskrivelse": "avg_cost 0 og intet stop: ingen position -> watchlist, normalt markedssignal.",
       "data": {
         "price": 100
       },
       "avg_cost": 0,
-      "expected_signal": "Stop-loss mangler",
+      "expected_signal": "Hold",
       "expected_market_signal": "Hold",
       "expected_source": "mangler",
       "expected_stop_loss": null,
-      "expected_complete": false
+      "expected_complete": true,
+      "expected_har_position": false
     }
   ]
 }

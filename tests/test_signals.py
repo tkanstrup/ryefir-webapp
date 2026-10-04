@@ -116,6 +116,7 @@ def test_stop_loss_kilde(case):
     assert r["market_signal"] == case["expected_market_signal"], case["beskrivelse"]
     assert r["stop_loss_source"] == case["expected_source"], case["beskrivelse"]
     assert r["signal_complete"] is case["expected_complete"], case["beskrivelse"]
+    assert r["har_position"] is case["expected_har_position"], case["beskrivelse"]
     assert r["stop_loss"] == case["expected_stop_loss"], case["beskrivelse"]
 
 
@@ -131,11 +132,12 @@ def test_standard_stop_bruger_konstanten(monkeypatch):
     assert eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), avg_cost=100)["stop_loss"] == 80
 
 
-def test_advarsel_kun_ved_standard_og_mangler():
+def test_advarsel_kun_ved_standard_stop():
     ev = lambda **kw: eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), **kw)
     assert ev(avg_cost=100, stop_loss=90)["warning"] is None
     assert "standardværdien" in ev(avg_cost=100)["warning"]
-    assert "Hverken stop-loss eller indgangspris" in ev()["warning"]
+    assert ev(stop_loss=90)["warning"] is None
+    assert ev()["warning"] is None  # watchlist: ingen advarsel
 
 
 def test_standard_stop_gennem_kursforloeb(mock_yahoo):
@@ -180,3 +182,18 @@ def test_perf_returnerer_procent_ikke_broek(mock_yahoo, last_day_pct):
 
 def test_motorversion_er_sat():
     assert isinstance(eng.ENGINE_VERSION, str) and eng.ENGINE_VERSION
+
+
+def test_signal_complete_false_kun_for_positioner_uden_eget_stop():
+    ev = lambda **kw: eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), **kw)
+    assert ev()["signal_complete"] is True and ev()["har_position"] is False          # watchlist
+    assert ev(stop_loss=90)["signal_complete"] is True                                 # kun stop
+    assert ev(avg_cost=100, stop_loss=90)["signal_complete"] is True                   # position + eget stop
+    assert ev(avg_cost=100)["signal_complete"] is False and ev(avg_cost=100)["har_position"] is True
+
+
+def test_watchlist_signal_er_identisk_med_markedssignalet():
+    """Uden position må evaluate_signal ikke ændre signalet i forhold til get_signal."""
+    for confirmed in ("Hold", "Strong Hold", "Monitor", "Underperforming"):
+        data = {**BASE_DATA, "confirmed_state": confirmed}
+        assert eng.evaluate_signal(data, dict(BASE_IDX))["signal"] == eng.get_signal(data, dict(BASE_IDX))
