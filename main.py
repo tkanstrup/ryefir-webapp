@@ -87,9 +87,12 @@ def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale)
         "price": data["price"],
         "signal": ev["signal"],
         # Ekko af hvad signalet blev beregnet ud fra, så et manglende/standard-stop aldrig er tavst:
-        # stop_loss_source = "bruger" | "standard" (DEFAULT_STOP_LOSS_PCT under avg_cost) | "mangler".
-        # Ved "mangler" er signal = "Stop-loss mangler" og markedssignalet ligger i market_signal.
+        # har_position = avg_cost sendt. Watchlist (ingen position): normalt markedssignal, intet stop brugt.
+        # stop_loss_source = "bruger" | "standard" (DEFAULT_STOP_LOSS_PCT under avg_cost) | "mangler"
+        # ("mangler" = intet stop anvendt, kun for tickers uden position).
+        # signal_complete=false kun for positioner uden brugerens eget stop (standard-stop brugt).
         "market_signal": ev["market_signal"],
+        "har_position": ev["har_position"],
         "signal_complete": ev["signal_complete"],
         "avg_cost": ev["avg_cost"],
         "stop_loss": ev["stop_loss"],

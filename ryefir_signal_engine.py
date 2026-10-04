@@ -47,7 +47,7 @@ def clean_nan(v, default=0):
 # take-profit-vej. THRESH_VOL_* står tilbage kun som informationsvisning (Dashboard),
 # driver ikke længere signalet.
 # Signalmotorens version, vises i /api/signal så v9 kan se hvilken version der svarede.
-# v2 = Big Drop-tærsklerne i procent (okt. 2026). v3 = standard-stop (DEFAULT_STOP_LOSS_PCT) + "Stop-loss mangler". Hæv ved ændringer af signal-logik/tærskler.
+# v2 = Big Drop-tærsklerne i procent (okt. 2026). v3 = standard-stop (DEFAULT_STOP_LOSS_PCT) + stop_loss_source/har_position. Hæv ved ændringer af signal-logik/tærskler.
 ENGINE_VERSION = "v3"
 
 THRESH_RS3M_STRONG = 5
@@ -666,34 +666,35 @@ def get_signal(data, idx, avg_cost=None, stop_loss=None):
 STOP_SOURCE_USER = "bruger"
 STOP_SOURCE_DEFAULT = "standard"
 STOP_SOURCE_MISSING = "mangler"
-SIGNAL_INCOMPLETE = "Stop-loss mangler"
 
 
 def resolve_stop_loss(avg_cost, stop_loss):
-    """(stop_loss_brugt, kilde). Brugerens stop vinder; ellers DEFAULT_STOP_LOSS_PCT under avg_cost;
-    ellers (ingen af dem) (None, "mangler"). Værdier <= 0 tæller som ikke sendt."""
+    """(stop_loss_brugt, kilde, har_position). Brugerens stop vinder; ellers DEFAULT_STOP_LOSS_PCT under
+    avg_cost; ellers (watchlist) (None, "mangler"). Værdier <= 0 tæller som ikke sendt.
+    har_position = avg_cost er sendt (> 0)."""
+    har_position = avg_cost is not None and avg_cost > 0
     if stop_loss is not None and stop_loss > 0:
-        return stop_loss, STOP_SOURCE_USER
-    if avg_cost is not None and avg_cost > 0:
-        return avg_cost * (100 - DEFAULT_STOP_LOSS_PCT) / 100, STOP_SOURCE_DEFAULT
-    return None, STOP_SOURCE_MISSING
+        return stop_loss, STOP_SOURCE_USER, har_position
+    if har_position:
+        return avg_cost * (100 - DEFAULT_STOP_LOSS_PCT) / 100, STOP_SOURCE_DEFAULT, har_position
+    return None, STOP_SOURCE_MISSING, har_position
 
 
 def evaluate_signal(data, idx, avg_cost=None, stop_loss=None):
-    """Signal + hvor stop-loss kom fra. Mangler både avg_cost og stop_loss, kan Stop Loss!,
-    Near Stop Loss og Take Profit? ikke vurderes: "signal" bliver da SIGNAL_INCOMPLETE (ligner
-    bevidst ikke et normalt signal), og markedssignalet ligger i "market_signal"."""
-    used, source = resolve_stop_loss(avg_cost, stop_loss)
-    signal = market_signal = get_signal(data, idx, avg_cost=avg_cost, stop_loss=used)
+    """Signal + hvor stop-loss kom fra.
+    - Watchlist (ingen avg_cost): markedssignalet som normalt, har_position=False, intet stop brugt
+      (stop_loss_source "mangler" betyder her bare "intet stop anvendt"), signal_complete=True.
+    - Position (avg_cost sendt) uden brugerens stop: DEFAULT_STOP_LOSS_PCT bruges, kilde "standard",
+      signal_complete=False + warning (signalet er beregnet ud fra et stand-in-stop, ikke brugerens eget).
+    - Position med brugerens stop: kilde "bruger", signal_complete=True."""
+    used, source, har_position = resolve_stop_loss(avg_cost, stop_loss)
+    signal = get_signal(data, idx, avg_cost=avg_cost, stop_loss=used)
+    complete = not (har_position and source != STOP_SOURCE_USER)
     warning = None
-    if source == STOP_SOURCE_MISSING:
-        signal = SIGNAL_INCOMPLETE
-        warning = ("Hverken stop-loss eller indgangspris (avg_cost) er sendt med. Stop Loss!, Near Stop "
-                   "Loss og Take Profit? kan ikke vurderes. market_signal viser kun markedssignalet.")
-    elif source == STOP_SOURCE_DEFAULT:
-        warning = (f"Stop-loss er ikke sendt med; standardværdien {DEFAULT_STOP_LOSS_PCT} % under "
+    if har_position and source == STOP_SOURCE_DEFAULT:
+        warning = (f"Stop-loss er ikke sendt med for positionen; standardværdien {DEFAULT_STOP_LOSS_PCT} % under "
                    "indgangspris er brugt (procedurevalg, ikke brugerens eget stop).")
-    return {"signal": signal, "market_signal": market_signal, "signal_complete": source != STOP_SOURCE_MISSING,
+    return {"signal": signal, "market_signal": signal, "signal_complete": complete, "har_position": har_position,
             "avg_cost": avg_cost, "stop_loss": used, "stop_loss_source": source,
             "stop_loss_default_pct": DEFAULT_STOP_LOSS_PCT if source == STOP_SOURCE_DEFAULT else None,
             "warning": warning}
