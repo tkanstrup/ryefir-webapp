@@ -174,46 +174,9 @@ def _static_fundamentals(ticker):
     return (c["tickers"] or {}).get(ticker)
 
 
-_FUNDAMENTALS_LAST_FAIL = {}  # ticker -> {"at": tidspunkt, "detail": rå årsag} — vises af /api/debug/fundamentals
-
-
 def _log_fundamentals_fail(ticker, detail):
     ts = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    _FUNDAMENTALS_LAST_FAIL[ticker] = {"at": ts, "detail": detail}
     print(f"FUNDAMENTALS_FAIL {ts} ticker={ticker} yf={get_yf(ticker)} | {detail}", flush=True)
-
-
-def probe_info(ticker):
-    """MIDLERTIDIG diagnose: kalder yf.Ticker(...).info direkte og returnerer det rå udfald
-    (fejl / tom / ok), så man kan se hvad Yahoo svarer fra den maskine koden kører på."""
-    t0 = time.time(); sym = get_yf(ticker)
-    out = {"ticker": ticker, "yf_symbol": sym, "yfinance_version": getattr(yf, "__version__", None)}
-    try:
-        info = yf.Ticker(sym).info
-        out.update(ok=True, info_type=type(info).__name__,
-                   key_count=len(info) if isinstance(info, dict) else None)
-        if isinstance(info, dict):
-            out.update(has_sector=bool(info.get("sector")), has_industry=bool(info.get("industry")),
-                       has_name=bool(info.get("longName") or info.get("shortName")),
-                       has_currency=bool(info.get("currency")), keys_sample=sorted(info)[:15])
-    except Exception as e:
-        out.update(ok=False, exception_type=type(e).__name__, exception_message=str(e)[:400])
-    # Anden kodesti til name/currency: kursopslagets metadata + fast_info (ikke .info)
-    try:
-        tk = yf.Ticker(sym); h = tk.history(period="5d"); meta = tk.history_metadata or {}
-        out["history"] = {"rows": len(h), "meta_currency": meta.get("currency"),
-                          "meta_name": meta.get("longName") or meta.get("shortName")}
-    except Exception as e:
-        out["history"] = {"error": f"{type(e).__name__}: {str(e)[:200]}"}
-    try:
-        out["fast_info_currency"] = yf.Ticker(sym).fast_info.get("currency")
-    except Exception as e:
-        out["fast_info_currency"] = f"FEJL {type(e).__name__}: {str(e)[:120]}"
-    out["seconds"] = round(time.time() - t0, 2)
-    cached = _FUNDAMENTALS_CACHE.get(ticker)
-    out["cache_as_of"] = cached["fetched_at"] if cached else None
-    out["last_fundamentals_fail"] = _FUNDAMENTALS_LAST_FAIL.get(ticker)
-    return out
 
 
 def _fundamentals_result(data, fetched_at, stale, source=None):

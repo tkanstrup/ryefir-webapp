@@ -180,6 +180,18 @@ repo — forkert repo, ikke forkert arbejde.
   brugt; signalet ændres ikke). **Matrixen (07) mangler stadig rækken "Stop-loss mangler"**, og
   "Sikr din gevinst" er i matrixen markeret som nyt.
 
+- 2026-10-04 (aften): **ÅRSAG FUNDET til tomme sector/industry/country/nøgletal.** Render-svaret fra
+  `/api/debug/fundamentals/ACN` (commit 20be265, yfinance 1.7.0): `.info` returnerer en **stub med én nøgle**
+  (`{"trailingPegRatio": None}`) UDEN undtagelse, mens kursdata (`history`) og `fast_info` virker. Yahoo
+  nægter altså `.info` (quoteSummary) til Renders web-IP; det er ikke yfinance-versionen og ikke koden.
+  Vagten i `_fetch_fundamentals()` fanger stubben (ingen cache-forgiftning), og den statiske fil
+  (GitHub-IP'er) udfylder: verificeret live på Render for ACN, KING og MC.PA —
+  `fundamentals_source: "static"`, sector/industry/name/currency/country udfyldt. **Stadig null i
+  `/api/signal` på Render:** `fwd_pe`, `fcf_margin`, `roic`, `market_cap` (kun `.info` har dem; lav prioritet).
+  `roic` er i øvrigt null for alle tickers, også i screeneren (felterne til beregningen findes ikke i `.info`).
+  Diagnose-endpointet `/api/debug/fundamentals` er fjernet igen. Screener-resultatet (`/api/screener`) har
+  fwd_pe for 90/90 kandidater, så `.info` virker der, hvor jobbet kører.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på
