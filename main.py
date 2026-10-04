@@ -18,7 +18,7 @@ import requests
 import yfinance
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from ryefir_signal_engine import fetch_stock, fetch_benchmark, evaluate_signal, fetch_fx_rates, ENGINE_VERSION, probe_info, _FUNDAMENTALS_LAST_FAIL
+from ryefir_signal_engine import fetch_stock, fetch_benchmark, evaluate_signal, ACTION_SIGNALS, fetch_fx_rates, ENGINE_VERSION, probe_info, _FUNDAMENTALS_LAST_FAIL
 
 
 # Starlettes JSONResponse sætter "application/json" uden charset som
@@ -63,6 +63,7 @@ def root():
     return {"status": "Ryefir Signal API kører",
             "engine_version": ENGINE_VERSION,
             "yfinance_version": yfinance.__version__,
+            "action_signals": sorted(ACTION_SIGNALS),
             # Render sætter RENDER_GIT_COMMIT automatisk — viser hvilken commit der kører (null lokalt)
             "commit": os.environ.get("RENDER_GIT_COMMIT"),
             "endpoints": ["/api/signal/{ticker}", "/api/screener", "/api/fx-rates"]}
@@ -93,6 +94,10 @@ def _build_signal_response(ticker, data, avg_cost, stop_loss, fetched_at, stale)
         # signal_complete=false kun for positioner uden brugerens eget stop (standard-stop brugt).
         "market_signal": ev["market_signal"],
         "har_position": ev["har_position"],
+        # True for Stop Loss!, Sikr din gevinst, Take Profit?, Check Thesis — Big Drop (ACTION_SIGNALS i motoren)
+        "kraever_stillingtagen": ev["kraever_stillingtagen"],
+        # "Stop-loss mangler" for positioner uden eget stop (standard-stop brugt), ellers null
+        "stop_loss_status": ev["stop_loss_status"],
         "signal_complete": ev["signal_complete"],
         "avg_cost": ev["avg_cost"],
         "stop_loss": ev["stop_loss"],

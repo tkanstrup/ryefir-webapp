@@ -47,8 +47,8 @@ def clean_nan(v, default=0):
 # take-profit-vej. THRESH_VOL_* står tilbage kun som informationsvisning (Dashboard),
 # driver ikke længere signalet.
 # Signalmotorens version, vises i /api/signal så v9 kan se hvilken version der svarede.
-# v2 = Big Drop-tærsklerne i procent (okt. 2026). v3 = standard-stop (DEFAULT_STOP_LOSS_PCT) + stop_loss_source/har_position. Hæv ved ændringer af signal-logik/tærskler.
-ENGINE_VERSION = "v3"
+# v2 = Big Drop-tærsklerne i procent (okt. 2026). v3 = standard-stop (DEFAULT_STOP_LOSS_PCT) + stop_loss_source/har_position. v4 = "Sikr din gevinst" + ACTION_SIGNALS. Hæv ved ændringer af signal-logik/tærskler.
+ENGINE_VERSION = "v4"
 
 THRESH_RS3M_STRONG = 5
 THRESH_SL_PROXIMITY = 10
@@ -603,6 +603,29 @@ def macro_signal(d, idx):
 # SIGNAL-LOGIK — kernen. Bekræftet Tier 1 (Smoothed+Confirmed), se
 # ryefir_architecture_narrative.md for fuld evidens-gennemgang.
 # ══════════════════════════════════════════════════════════════════════════
+SIGNAL_SECURE_GAIN = "Sikr din gevinst"
+# Signaler der kræver stillingtagen (bestemt af Thomas 4/10-2026; navne efter 07_handlingsmatrix_v2.md).
+# IKKE med: Underperforming — Consider Rotating, Near Stop Loss, Monitor.
+ACTION_SIGNALS = frozenset({"Stop Loss!", SIGNAL_SECURE_GAIN, "Take Profit?", "Check Thesis — Big Drop"})
+
+
+def _stop_signal(price, avg_cost, stop_loss):
+    """Stop-relaterede signaler (højeste prioritet), eller None.
+    - kurs <= stop: "Sikr din gevinst" hvis stoppet er hævet over indgangsprisen OG kursen stadig er over
+      indgangsprisen (stadig i plus, handlingsmatrix v2); ellers "Stop Loss!" (reelt tab — også hvis kursen
+      er gappet under indgangsprisen trods et hævet stop, eller indgangsprisen ikke kendes).
+    - ellers inden for THRESH_SL_PROXIMITY % over stoppet: "Near Stop Loss"."""
+    if not (stop_loss and stop_loss > 0 and price > 0):
+        return None
+    if price <= stop_loss:
+        if avg_cost and avg_cost > 0 and stop_loss > avg_cost and price > avg_cost:
+            return SIGNAL_SECURE_GAIN
+        return "Stop Loss!"
+    if (price - stop_loss) / price * 100 <= THRESH_SL_PROXIMITY:
+        return "Near Stop Loss"
+    return None
+
+
 def get_signal(data, idx, avg_cost=None, stop_loss=None):
     # update-70: ét samlet signalflow — ingen pos_type-forgrening (MOMENTUM/VALUE/
     # CONVICTION fjernet), ingen volumen-tiers, RS6M fjernet. Se Operation Cynicism
@@ -610,10 +633,8 @@ def get_signal(data, idx, avg_cost=None, stop_loss=None):
     # IPO flag — less than 90 days of history, no reliable RS3M signal
     if data.get("ipo_flag", False):
         price=data["price"]
-        if stop_loss and stop_loss>0 and price>0:
-            if price<=stop_loss: return "Stop Loss!"
-            sl_dist=(price-stop_loss)/price*100
-            if sl_dist<=THRESH_SL_PROXIMITY: return "Near Stop Loss"
+        stop_sig = _stop_signal(price, avg_cost, stop_loss)
+        if stop_sig: return stop_sig
         return "New — No Signal History"
     idx_m3 = clean_nan(idx.get("m3"), 0)
     perf_3m = clean_nan(data.get("perf_3m"), 0)
@@ -622,10 +643,8 @@ def get_signal(data, idx, avg_cost=None, stop_loss=None):
     daily_ret = clean_nan(data.get("perf_1d", 0), 0)  # today's single-day return
     bm_daily  = clean_nan(idx.get("d1", 0), 0)         # benchmark single-day return
     # Stop-loss: always highest priority
-    if stop_loss and stop_loss>0 and price>0:
-        if price<=stop_loss: return "Stop Loss!"
-        sl_dist=(price-stop_loss)/price*100
-        if sl_dist<=THRESH_SL_PROXIMITY: return "Near Stop Loss"
+    stop_sig = _stop_signal(price, avg_cost, stop_loss)
+    if stop_sig: return stop_sig
     # Big single-day drop — immediate signal, macro-adjusted
     # Exception: if benchmark also fell hard, it's macro-driven (ignore)
     if (daily_ret <= THRESH_BIG_DROP and
@@ -666,6 +685,9 @@ def get_signal(data, idx, avg_cost=None, stop_loss=None):
 STOP_SOURCE_USER = "bruger"
 STOP_SOURCE_DEFAULT = "standard"
 STOP_SOURCE_MISSING = "mangler"
+# Status-navn i handlingsmatrixen: position uden brugerens eget stop (standard-stop er brugt). Ændrer ikke
+# signalet — Stop Loss! osv. beregnes stadig ud fra standard-stoppet; feltet stop_loss_status markerer det.
+SIGNAL_STOP_MISSING = "Stop-loss mangler"
 
 
 def resolve_stop_loss(avg_cost, stop_loss):
@@ -695,6 +717,8 @@ def evaluate_signal(data, idx, avg_cost=None, stop_loss=None):
         warning = (f"Stop-loss er ikke sendt med for positionen; standardværdien {DEFAULT_STOP_LOSS_PCT} % under "
                    "indgangspris er brugt (procedurevalg, ikke brugerens eget stop).")
     return {"signal": signal, "market_signal": signal, "signal_complete": complete, "har_position": har_position,
+            "kraever_stillingtagen": signal in ACTION_SIGNALS,
+            "stop_loss_status": SIGNAL_STOP_MISSING if (har_position and source == STOP_SOURCE_DEFAULT) else None,
             "avg_cost": avg_cost, "stop_loss": used, "stop_loss_source": source,
             "stop_loss_default_pct": DEFAULT_STOP_LOSS_PCT if source == STOP_SOURCE_DEFAULT else None,
             "warning": warning}

@@ -169,6 +169,17 @@ repo — forkert repo, ikke forkert arbejde.
   `evaluate_signal()` i motoren. (En kort mellemversion samme dag brugte signalet "Stop-loss mangler" til
   tickers uden position; det er fjernet igen.)
 
+- 2026-10-04 (aften): **ENGINE_VERSION v4 — "Sikr din gevinst" og signaler der kræver stillingtagen.**
+  Signalnavne følger `07_handlingsmatrix_v2.md`. Nyt signal **"Sikr din gevinst"**: kurs <= et stop, som
+  brugeren selv har hævet OVER indgangsprisen, mens kursen stadig er over indgangsprisen (= stadig i plus).
+  Er kursen gappet til/under indgangsprisen trods et hævet stop, eller kendes indgangsprisen ikke, er det
+  stadig "Stop Loss!" (reelt tab). **Kræver stillingtagen** (`kraever_stillingtagen: true`, konstanten
+  `ACTION_SIGNALS`, også listet i rodendpointet): Stop Loss!, Sikr din gevinst, Take Profit?, Check Thesis —
+  Big Drop. IKKE: Underperforming — Consider Rotating, Near Stop Loss, Monitor (Thomas 4/10). Svaret har
+  desuden `stop_loss_status: "Stop-loss mangler"` for positioner uden brugerens eget stop (standard-stop
+  brugt; signalet ændres ikke). **Matrixen (07) mangler stadig rækken "Stop-loss mangler"**, og
+  "Sikr din gevinst" er i matrixen markeret som nyt.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på
