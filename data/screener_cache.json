@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T22:16:20.582500+00:00",
+  "generated_at": "2026-10-04T22:21:20.063820+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 90,
@@ -922,7 +922,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 193.9,
-      "low_52w": 111.96,
+      "low_52w": 111.9601,
       "roic": null,
       "fcf_margin": 6.6,
       "fwd_pe": 24.1,
@@ -1123,7 +1123,7 @@
       "low_52w": 80.1369,
       "roic": null,
       "fcf_margin": 22.8,
-      "fwd_pe": 15.1,
+      "fwd_pe": 15.2,
       "market_cap": 356012851200.0
     },
     {
@@ -1537,7 +1537,7 @@
       "rs3m_vs_bm": 9.8,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 243.1212,
+      "high_52w": 243.1211,
       "low_52w": 141.0042,
       "roic": null,
       "fcf_margin": 2.8,
@@ -1758,7 +1758,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 177.7256,
-      "low_52w": 124.6913,
+      "low_52w": 124.6912,
       "roic": null,
       "fcf_margin": 11.3,
       "fwd_pe": 15.8,
