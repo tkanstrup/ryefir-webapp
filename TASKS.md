@@ -139,6 +139,12 @@ repo — forkert repo, ikke forkert arbejde.
   den, der var testet. Rodendpointet `/` viser `yfinance_version`. Opgradér bevidst (test først),
   ikke ved et tilfælde.
 
+- 2026-10-04: `country` tilføjet til `/api/signal/{ticker}`, fundamentals-cachen, den statiske
+  fundamentals-fil og screener-resultatet (til region-fordeling i frontend). Værdien er Yahoos
+  `info.country` = **domicilland** (ACN = "Ireland", ikke USA), ikke hvor omsætningen kommer fra.
+  ETF'er har ofte ingen (null). Den eksisterende statiske fil mangler `country` indtil
+  Action'en `fundamentals-static` er kørt igen.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på
