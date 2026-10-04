@@ -63,6 +63,7 @@ def compute_screener_data():
             "region": meta.get("region"),
             "sector": data.get("sector"),
             "country": data.get("country"),
+            "quoteType": data.get("quoteType"),
             "industry": data.get("industry") or meta.get("industry"),
             "price": data.get("price"),
             "signal": signal,
