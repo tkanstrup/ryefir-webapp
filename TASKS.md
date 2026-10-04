@@ -132,6 +132,29 @@ repo — forkert repo, ikke forkert arbejde.
   kører `.info` på Render og viser det rå udfald (ok/fejl/tom, yfinance-version, sidste
   `FUNDAMENTALS_FAIL`); højst ét opslag pr. 30 sek. Fjernes når årsagen er fundet.
 
+- 2026-10-04: **statisk fundamentals-fallback** (navn/sektor/branche/valuta), fordi `.info` ikke
+  svarer fra Render. `tools/build_fundamentals_static.py` + `.github/workflows/fundamentals-static.yml`
+  henter `.info` fra GitHubs runnere (virker: 741/744 ved første kørsel) ugentligt (søndag 04:30 UTC) og
+  committer `data/fundamentals_static.json` til branchen `data/fundamentals-static` (ikke main → ingen
+  Render-redeploy). API'et bruger den som sidste trin: live `.info` → sidst kendte værdi (7 dage) →
+  statisk fil → tom. Svaret har `fundamentals_source` (`live`/`cache`/`static`/null). Nøgletal (ROIC,
+  FCF, P/E) er IKKE i filen. Universet = BROAD_UNIVERSE + TICKER_MAP + GitHub-variablen
+  **`EXTRA_TICKERS`** (Settings > Secrets and variables > Actions > Variables, kommasepareret;
+  eller `gh workflow run fundamentals-static.yml -f extra_tickers=...`). Brugerens egne tickers
+  (fx ACN, SAP.DE, MC.PA) ligger IKKE i universet og skal tilføjes dér. Repoet er offentligt:
+  tickers i EXTRA_TICKERS ender i den offentlige datafil (ingen mængder/brugere, kun tickersymboler).
+
+- 2026-10-04: `yfinance` er låst til `==1.7.0` i `requirements.txt` (den version GitHub-Action'en
+  brugte, hvor `.info` virker). Før var den ulåst, så Render kunne få en anden version end
+  den, der var testet. Rodendpointet `/` viser `yfinance_version`. Opgradér bevidst (test først),
+  ikke ved et tilfælde.
+
+- 2026-10-04: `country` tilføjet til `/api/signal/{ticker}`, fundamentals-cachen, den statiske
+  fundamentals-fil og screener-resultatet (til region-fordeling i frontend). Værdien er Yahoos
+  `info.country` = **domicilland** (ACN = "Ireland", ikke USA), ikke hvor omsætningen kommer fra.
+  ETF'er har ofte ingen (null). Den eksisterende statiske fil mangler `country` indtil
+  Action'en `fundamentals-static` er kørt igen.
+
 ## Screener cron-job (åben scanning, 715 tickers)
 
 **Princip:** den åbne screener scanner IKKE live ved hvert besøg på

@@ -132,7 +132,7 @@ _FUNDAMENTALS_FAILED_AT = {}
 FUNDAMENTALS_CACHE_TTL_SEC = 24 * 60 * 60        # hvor ofte vi forsøger at hente friske værdier
 FUNDAMENTALS_STALE_MAX_AGE_SEC = 7 * 24 * 60 * 60  # ældste sidst-kendte værdi vi stadig viser (som stale)
 FUNDAMENTALS_RETRY_COOLDOWN_SEC = 5 * 60         # pause efter fejl, så vi ikke hamrer Yahoo (rate-limit)
-_FUNDAMENTAL_FIELDS = ("roic", "fcf_margin", "fwd_pe", "market_cap", "sector", "industry", "name", "currency")
+_FUNDAMENTAL_FIELDS = ("roic", "fcf_margin", "fwd_pe", "market_cap", "sector", "industry", "name", "currency", "country")
 _IDENTITY_KEYS = ("sector", "industry", "longName", "shortName", "currency")
 
 
@@ -144,7 +144,7 @@ FUNDAMENTALS_STATIC_URL = ("https://raw.githubusercontent.com/tkanstrup/ryefir-w
 STATIC_CACHE_TTL_SEC = 6 * 60 * 60
 STATIC_RETRY_COOLDOWN_SEC = 5 * 60
 _STATIC_CACHE = {"tickers": None, "fetched_at": 0.0, "failed_at": 0.0}
-_STATIC_FIELDS = ("name", "sector", "industry", "currency")
+_STATIC_FIELDS = ("name", "sector", "industry", "currency", "country")
 
 
 def _fetch_static_file():
@@ -194,6 +194,17 @@ def probe_info(ticker):
                        has_currency=bool(info.get("currency")), keys_sample=sorted(info)[:15])
     except Exception as e:
         out.update(ok=False, exception_type=type(e).__name__, exception_message=str(e)[:400])
+    # Anden kodesti til name/currency: kursopslagets metadata + fast_info (ikke .info)
+    try:
+        tk = yf.Ticker(sym); h = tk.history(period="5d"); meta = tk.history_metadata or {}
+        out["history"] = {"rows": len(h), "meta_currency": meta.get("currency"),
+                          "meta_name": meta.get("longName") or meta.get("shortName")}
+    except Exception as e:
+        out["history"] = {"error": f"{type(e).__name__}: {str(e)[:200]}"}
+    try:
+        out["fast_info_currency"] = yf.Ticker(sym).fast_info.get("currency")
+    except Exception as e:
+        out["fast_info_currency"] = f"FEJL {type(e).__name__}: {str(e)[:120]}"
     out["seconds"] = round(time.time() - t0, 2)
     cached = _FUNDAMENTALS_CACHE.get(ticker)
     out["cache_as_of"] = cached["fetched_at"] if cached else None
@@ -268,6 +279,7 @@ def _fetch_fundamentals(ticker):
         fresh["industry"] = info.get("industry")
         fresh["name"] = info.get("longName") or info.get("shortName")
         fresh["currency"] = info.get("currency")
+        fresh["country"] = info.get("country")  # domicil ifølge Yahoo (ACN = Ireland), ikke salgsregion
         if cached:
             for k in _FUNDAMENTAL_FIELDS:
                 if fresh[k] is None:
@@ -412,7 +424,7 @@ def fetch_stock(ticker, bm_close=None):
                 "days_above_momentum":days_above_momentum,
                 "confirmed_state":confirmed_state,"raw_direction":raw_direction,
                 "roic":roic,"fcf_margin":fcf_margin,"fwd_pe":fwd_pe,
-                "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics,"name":company_name,"currency":currency,
+                "market_cap":market_cap,"sector":sector_gics,"industry":industry_gics,"name":company_name,"currency":currency,"country":fundamentals.get("country"),
                 "fundamentals_stale":fundamentals.get("stale",False),"fundamentals_as_of":fundamentals.get("as_of"),
                 "fundamentals_source":fundamentals.get("source")}
         if result["price"]==0.0:
