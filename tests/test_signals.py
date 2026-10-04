@@ -108,6 +108,45 @@ def test_signal_direkte(case):
     assert signal == case["expected"], case["beskrivelse"]
 
 
+@pytest.mark.parametrize("case", FACIT["stop_cases"], ids=lambda c: c["id"])
+def test_stop_loss_kilde(case):
+    data = {**BASE_DATA, **case["data"]}
+    r = eng.evaluate_signal(data, dict(BASE_IDX), avg_cost=case.get("avg_cost"), stop_loss=case.get("stop_loss"))
+    assert r["signal"] == case["expected_signal"], case["beskrivelse"]
+    assert r["market_signal"] == case["expected_market_signal"], case["beskrivelse"]
+    assert r["stop_loss_source"] == case["expected_source"], case["beskrivelse"]
+    assert r["signal_complete"] is case["expected_complete"], case["beskrivelse"]
+    assert r["stop_loss"] == case["expected_stop_loss"], case["beskrivelse"]
+
+
+def test_standard_stop_er_en_navngiven_konstant():
+    assert eng.DEFAULT_STOP_LOSS_PCT == 15
+    r = eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), avg_cost=200)
+    assert r["stop_loss"] == 200 * (100 - eng.DEFAULT_STOP_LOSS_PCT) / 100
+    assert r["stop_loss_default_pct"] == eng.DEFAULT_STOP_LOSS_PCT
+
+
+def test_standard_stop_bruger_konstanten(monkeypatch):
+    monkeypatch.setattr(eng, "DEFAULT_STOP_LOSS_PCT", 20)
+    assert eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), avg_cost=100)["stop_loss"] == 80
+
+
+def test_advarsel_kun_ved_standard_og_mangler():
+    ev = lambda **kw: eng.evaluate_signal(dict(BASE_DATA), dict(BASE_IDX), **kw)
+    assert ev(avg_cost=100, stop_loss=90)["warning"] is None
+    assert "standardværdien" in ev(avg_cost=100)["warning"]
+    assert "Hverken stop-loss eller indgangspris" in ev()["warning"]
+
+
+def test_standard_stop_gennem_kursforloeb(mock_yahoo):
+    """Hele vejen: kursforløb -> fetch_stock -> evaluate_signal, kun avg_cost sendt."""
+    closes = build_closes({"kind": "flat", "price": 84.9}, DEFAULT_DAYS)
+    mock_yahoo["hist"] = to_hist(closes)
+    data = eng.fetch_stock("TEST", bm_close=pd.Series(closes, index=mock_yahoo["hist"].index))
+    r = eng.evaluate_signal(data, benchmark_idx(closes), avg_cost=100)
+    assert (r["signal"], r["stop_loss_source"]) == ("Stop Loss!", "standard")
+
+
 def test_hvert_signal_i_motoren_er_daekket():
     """Hvert signal motoren kan returnere skal have mindst ét facit-tilfælde."""
     expected = {c["expected"] for k in ("path_cases", "signal_cases") for c in FACIT[k]}
