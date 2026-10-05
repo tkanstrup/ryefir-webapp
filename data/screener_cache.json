@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T22:16:19.495138+00:00",
+  "generated_at": "2026-10-05T22:21:22.277713+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 73,
@@ -1251,8 +1251,8 @@
       "rs3m_vs_bm": 10.84,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
-      "high_52w": 993.5342,
-      "low_52w": 723.5999,
+      "high_52w": 993.5343,
+      "low_52w": 723.6,
       "roic": null,
       "fcf_margin": 1.7,
       "fwd_pe": 18.2,
