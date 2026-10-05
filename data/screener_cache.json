@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T20:16:19.646340+00:00",
+  "generated_at": "2026-10-05T20:21:17.553679+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 76,
@@ -78,11 +78,11 @@
       "country": "United States",
       "quoteType": "EQUITY",
       "industry": "Health Information Services",
-      "price": 283.4700012207031,
+      "price": 283.45001220703125,
       "signal": "Strong Hold",
       "rsi": 64.3,
-      "perf_3m": 47.41,
-      "rs3m_vs_bm": 44.74,
+      "perf_3m": 47.4,
+      "rs3m_vs_bm": 44.73,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 306.22,
@@ -90,7 +90,7 @@
       "roic": null,
       "fcf_margin": 36.4,
       "fwd_pe": 27.7,
-      "market_cap": 45896302592.0
+      "market_cap": 45893066752.0
     },
     {
       "ticker": "MAERSK-B.CO",
@@ -232,11 +232,11 @@
       "country": "United States",
       "quoteType": "EQUITY",
       "industry": "Computer Hardware",
-      "price": 552.0599975585938,
+      "price": 552.2899780273438,
       "signal": "Strong Hold",
-      "rsi": 52.1,
-      "perf_3m": 32.52,
-      "rs3m_vs_bm": 29.85,
+      "rsi": 52.2,
+      "perf_3m": 32.57,
+      "rs3m_vs_bm": 29.9,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 588.4,
@@ -244,7 +244,7 @@
       "roic": null,
       "fcf_margin": 4.0,
       "fwd_pe": 19.0,
-      "market_cap": 351006785536.0
+      "market_cap": 351152996352.0
     },
     {
       "ticker": "WDAY",
@@ -408,11 +408,11 @@
       "country": "United States",
       "quoteType": "EQUITY",
       "industry": "Copper",
-      "price": 72.63999938964844,
+      "price": 72.5999984741211,
       "signal": "Strong Hold",
-      "rsi": 61.5,
-      "perf_3m": 22.73,
-      "rs3m_vs_bm": 20.06,
+      "rsi": 61.4,
+      "perf_3m": 22.66,
+      "rs3m_vs_bm": 19.99,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 79.91,
@@ -420,7 +420,7 @@
       "roic": null,
       "fcf_margin": 8.3,
       "fwd_pe": 17.4,
-      "market_cap": 104312315904.0
+      "market_cap": 104254873600.0
     },
     {
       "ticker": "EVO.ST",
@@ -826,11 +826,11 @@
       "country": "United States",
       "quoteType": "EQUITY",
       "industry": "Diagnostics & Research",
-      "price": 440.20001220703125,
+      "price": 440.1199951171875,
       "signal": "Strong Hold",
-      "rsi": 63.5,
-      "perf_3m": 17.41,
-      "rs3m_vs_bm": 14.74,
+      "rsi": 63.4,
+      "perf_3m": 17.39,
+      "rs3m_vs_bm": 14.72,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 443.26,
@@ -838,7 +838,7 @@
       "roic": null,
       "fcf_margin": -3.1,
       "fwd_pe": 26.6,
-      "market_cap": 43221413888.0
+      "market_cap": 43213557760.0
     },
     {
       "ticker": "SEB-A.ST",
@@ -878,7 +878,7 @@
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 194.12,
-      "low_52w": 111.9601,
+      "low_52w": 111.96,
       "roic": null,
       "fcf_margin": 6.6,
       "fwd_pe": 24.3,
@@ -892,7 +892,7 @@
       "country": "United States",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 164.00999450683594,
+      "price": 164.0,
       "signal": "Strong Hold",
       "rsi": 38.3,
       "perf_3m": 16.5,
@@ -904,7 +904,7 @@
       "roic": null,
       "fcf_margin": 5.7,
       "fwd_pe": 14.5,
-      "market_cap": 674394669056.0
+      "market_cap": 674353577984.0
     },
     {
       "ticker": "T",
@@ -1090,11 +1090,11 @@
       "country": "Switzerland",
       "quoteType": "EQUITY",
       "industry": "Scientific & Technical Instruments",
-      "price": 285.5400085449219,
+      "price": 285.5199890136719,
       "signal": "Strong Hold",
       "rsi": 57.4,
-      "perf_3m": 15.27,
-      "rs3m_vs_bm": 12.6,
+      "perf_3m": 15.26,
+      "rs3m_vs_bm": 12.59,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 311.952,
@@ -1102,7 +1102,7 @@
       "roic": null,
       "fcf_margin": 13.6,
       "fwd_pe": 25.9,
-      "market_cap": 55068164096.0
+      "market_cap": 55064301568.0
     },
     {
       "ticker": "COIN",
