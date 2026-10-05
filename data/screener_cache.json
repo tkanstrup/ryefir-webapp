@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-05T23:31:11.194573+00:00",
+  "generated_at": "2026-10-05T23:36:06.649005+00:00",
   "universe_size": 715,
   "scanned": 709,
-  "shortlisted": 71,
+  "shortlisted": 70,
   "candidates": [
     {
       "ticker": "MPC",
@@ -1301,28 +1301,6 @@
       "fcf_margin": 9.4,
       "fwd_pe": 30.0,
       "market_cap": 183938449408.0
-    },
-    {
-      "ticker": "LOGN.SW",
-      "name": "Logitech International S.A.",
-      "region": "Europe",
-      "sector": "Technology",
-      "country": "Switzerland",
-      "quoteType": "EQUITY",
-      "industry": "Computer Hardware",
-      "price": 86.4000015258789,
-      "signal": "Strong Hold",
-      "rsi": 63.3,
-      "perf_3m": 12.84,
-      "rs3m_vs_bm": 10.17,
-      "direction": "↑ Accelerating",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 99.4938,
-      "low_52w": 65.5489,
-      "roic": null,
-      "fcf_margin": 14.7,
-      "fwd_pe": 17.0,
-      "market_cap": 12099414016.0
     },
     {
       "ticker": "CME",
