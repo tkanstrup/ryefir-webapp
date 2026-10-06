@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T00:16:13.823069+00:00",
+  "generated_at": "2026-10-06T00:21:09.017812+00:00",
   "universe_size": 715,
   "scanned": 709,
   "shortlisted": 67,
@@ -177,7 +177,7 @@
       "low_52w": 52.0477,
       "roic": null,
       "fcf_margin": 11.2,
-      "fwd_pe": 16.9,
+      "fwd_pe": 16.8,
       "market_cap": 12620565504.0
     },
     {
@@ -925,7 +925,7 @@
       "low_52w": 111.9601,
       "roic": null,
       "fcf_margin": 6.6,
-      "fwd_pe": 24.3,
+      "fwd_pe": 24.2,
       "market_cap": 25233778688.0
     },
     {
@@ -1343,7 +1343,7 @@
       "low_52w": 217.5587,
       "roic": null,
       "fcf_margin": 43.1,
-      "fwd_pe": 20.9,
+      "fwd_pe": 20.8,
       "market_cap": 97097187328.0
     },
     {
