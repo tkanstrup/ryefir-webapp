@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T02:31:37.776154+00:00",
+  "generated_at": "2026-10-07T02:36:19.661066+00:00",
   "universe_size": 715,
   "scanned": 708,
   "shortlisted": 73,
@@ -988,7 +988,7 @@
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 194.12,
-      "low_52w": 111.9601,
+      "low_52w": 111.96,
       "roic": null,
       "fcf_margin": null,
       "fwd_pe": null,
@@ -1119,8 +1119,8 @@
       "rs3m_vs_bm": 11.7,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 177.7255,
-      "low_52w": 124.6913,
+      "high_52w": 177.7256,
+      "low_52w": 124.6912,
       "roic": null,
       "fcf_margin": null,
       "fwd_pe": null,
@@ -1427,8 +1427,8 @@
       "rs3m_vs_bm": 9.02,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 993.5342,
-      "low_52w": 723.5999,
+      "high_52w": 993.5343,
+      "low_52w": 723.6,
       "roic": null,
       "fcf_margin": null,
       "fwd_pe": null,
@@ -1518,9 +1518,9 @@
       "high_52w": 173.314,
       "low_52w": 122.5027,
       "roic": null,
-      "fcf_margin": 34.4,
-      "fwd_pe": 17.4,
-      "market_cap": 86168444928.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "ADSK",
@@ -1540,9 +1540,9 @@
       "high_52w": 323.43,
       "low_52w": 187.72,
       "roic": null,
-      "fcf_margin": 40.5,
-      "fwd_pe": 16.3,
-      "market_cap": 48337518592.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "ABNB",
@@ -1562,9 +1562,9 @@
       "high_52w": 190.5,
       "low_52w": 111.54,
       "roic": null,
-      "fcf_margin": 24.4,
-      "fwd_pe": 25.9,
-      "market_cap": 96039231488.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "GLEN.L",
@@ -1584,9 +1584,9 @@
       "high_52w": 629.0,
       "low_52w": 334.9279,
       "roic": null,
-      "fcf_margin": 1.0,
-      "fwd_pe": 12.4,
-      "market_cap": 67246829568.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "SWED-A.ST",
@@ -1607,8 +1607,8 @@
       "low_52w": 256.0,
       "roic": null,
       "fcf_margin": null,
-      "fwd_pe": 16.1,
-      "market_cap": 460161155072.0
+      "fwd_pe": null,
+      "market_cap": null
     }
   ]
 }
