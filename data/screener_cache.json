@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:46:17.921849+00:00",
+  "generated_at": "2026-10-07T22:51:18.408201+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 91,
@@ -1232,9 +1232,9 @@
       "high_52w": 155.5319,
       "low_52w": 80.1369,
       "roic": null,
-      "fcf_margin": 22.8,
-      "fwd_pe": 15.1,
-      "market_cap": 352287424512.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "DVN",
