@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:46:19.458650+00:00",
+  "generated_at": "2026-10-07T23:51:16.859831+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 90,
@@ -506,9 +506,9 @@
       "high_52w": 251.0,
       "low_52w": 176.2718,
       "roic": null,
-      "fcf_margin": 8.3,
-      "fwd_pe": 22.9,
-      "market_cap": 68092391424.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "SGE.L",
@@ -1207,8 +1207,8 @@
       "rs3m_vs_bm": 12.53,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 993.5342,
-      "low_52w": 723.5999,
+      "high_52w": 993.5343,
+      "low_52w": 723.6,
       "roic": null,
       "fcf_margin": 1.7,
       "fwd_pe": 18.1,
@@ -1427,12 +1427,12 @@
       "rs3m_vs_bm": 10.86,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
-      "high_52w": 315.7113,
+      "high_52w": 315.7112,
       "low_52w": 217.5587,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 43.1,
+      "fwd_pe": 20.9,
+      "market_cap": 97183481856.0
     },
     {
       "ticker": "FDS",
