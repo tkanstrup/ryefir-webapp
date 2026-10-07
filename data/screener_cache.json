@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-07T05:31:24.133545+00:00",
+  "generated_at": "2026-10-07T05:36:16.612672+00:00",
   "universe_size": 715,
-  "scanned": 696,
-  "shortlisted": 71,
+  "scanned": 708,
+  "shortlisted": 73,
   "candidates": [
     {
       "ticker": "MPC",
@@ -423,6 +423,28 @@
       "market_cap": 31722534912.0
     },
     {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "region": "USA",
+      "sector": "Basic Materials",
+      "country": "United States",
+      "quoteType": "EQUITY",
+      "industry": "Gold",
+      "price": 116.38999938964844,
+      "signal": "Strong Hold",
+      "rsi": 39.2,
+      "perf_3m": 25.14,
+      "rs3m_vs_bm": 21.46,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 134.8593,
+      "low_52w": 77.8994,
+      "roic": null,
+      "fcf_margin": 34.2,
+      "fwd_pe": 11.4,
+      "market_cap": 122639245312.0
+    },
+    {
       "ticker": "RAND.AS",
       "name": "Randstad N.V.",
       "region": "Europe",
@@ -815,7 +837,7 @@
       "low_52w": 83.042,
       "roic": null,
       "fcf_margin": 11.9,
-      "fwd_pe": 13.0,
+      "fwd_pe": 12.9,
       "market_cap": 155393015808.0
     },
     {
@@ -1273,7 +1295,7 @@
       "rs3m_vs_bm": 9.65,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 243.1211,
+      "high_52w": 243.1212,
       "low_52w": 141.0042,
       "roic": null,
       "fcf_margin": 2.8,
@@ -1389,6 +1411,28 @@
       "fcf_margin": null,
       "fwd_pe": 10.7,
       "market_cap": 88593375232.0
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson Corporation",
+      "region": "USA",
+      "sector": "Healthcare",
+      "country": "United States",
+      "quoteType": "EQUITY",
+      "industry": "Medical Distribution",
+      "price": 921.6699829101562,
+      "signal": "Strong Hold",
+      "rsi": 61.3,
+      "perf_3m": 12.7,
+      "rs3m_vs_bm": 9.02,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 993.5342,
+      "low_52w": 723.5999,
+      "roic": null,
+      "fcf_margin": 1.7,
+      "fwd_pe": 18.3,
+      "market_cap": 107457839104.0
     },
     {
       "ticker": "DXCM",
