@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:16:20.808847+00:00",
+  "generated_at": "2026-10-07T23:22:12.288417+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 90,
@@ -1427,7 +1427,7 @@
       "rs3m_vs_bm": 10.86,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
-      "high_52w": 315.7112,
+      "high_52w": 315.7113,
       "low_52w": 217.5587,
       "roic": null,
       "fcf_margin": 43.1,
@@ -1538,7 +1538,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 338.614,
-      "low_52w": 244.1703,
+      "low_52w": 244.1702,
       "roic": null,
       "fcf_margin": 6.2,
       "fwd_pe": 15.7,
@@ -1937,8 +1937,8 @@
       "low_52w": 28.0842,
       "roic": null,
       "fcf_margin": null,
-      "fwd_pe": 9.1,
-      "market_cap": 18961496064.0
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "SHL.DE",
