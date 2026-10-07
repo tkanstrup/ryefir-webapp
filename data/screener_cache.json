@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T20:51:19.261070+00:00",
+  "generated_at": "2026-10-07T20:56:17.319219+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 84,
@@ -22,9 +22,9 @@
       "high_52w": 442.26,
       "low_52w": 160.7636,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.0,
+      "fwd_pe": 8.7,
+      "market_cap": 129111900160.0
     },
     {
       "ticker": "MAERSK-B.CO",
@@ -44,9 +44,9 @@
       "high_52w": 24540.0,
       "low_52w": 11680.6084,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.8,
+      "fwd_pe": 22.0,
+      "market_cap": 353290158080.0
     },
     {
       "ticker": "VLO",
@@ -441,7 +441,7 @@
       "low_52w": 219.6053,
       "roic": null,
       "fcf_margin": 25.9,
-      "fwd_pe": 9.5,
+      "fwd_pe": 9.6,
       "market_cap": 955941912576.0
     },
     {
@@ -592,7 +592,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 190.8744,
-      "low_52w": 135.2883,
+      "low_52w": 135.2882,
       "roic": null,
       "fcf_margin": 19.9,
       "fwd_pe": 13.5,
@@ -1538,7 +1538,7 @@
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 194.12,
-      "low_52w": 111.9601,
+      "low_52w": 111.96,
       "roic": null,
       "fcf_margin": 6.6,
       "fwd_pe": 23.7,
