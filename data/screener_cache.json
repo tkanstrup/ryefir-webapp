@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T13:11:24.752591+00:00",
+  "generated_at": "2026-10-08T13:16:25.605205+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 76,
@@ -254,11 +254,11 @@
       "country": "France",
       "quoteType": "EQUITY",
       "industry": "Specialty Business Services",
-      "price": 71.87999725341797,
+      "price": 71.80000305175781,
       "signal": "Strong Hold",
-      "rsi": 56.5,
-      "perf_3m": 29.47,
-      "rs3m_vs_bm": 27.05,
+      "rsi": 56.3,
+      "perf_3m": 29.32,
+      "rs3m_vs_bm": 26.9,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 73.7,
@@ -266,7 +266,7 @@
       "roic": null,
       "fcf_margin": 11.6,
       "fwd_pe": 5.1,
-      "market_cap": 4178645248.0
+      "market_cap": 4173995008.0
     },
     {
       "ticker": "DELL",
@@ -320,11 +320,11 @@
       "country": "United Kingdom",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 125.0999984741211,
+      "price": 125.02249908447266,
       "signal": "Strong Hold",
-      "rsi": 47.6,
-      "perf_3m": 27.97,
-      "rs3m_vs_bm": 25.55,
+      "rsi": 47.4,
+      "perf_3m": 27.89,
+      "rs3m_vs_bm": 25.47,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 131.75,
@@ -332,7 +332,7 @@
       "roic": null,
       "fcf_margin": 12.8,
       "fwd_pe": 12.5,
-      "market_cap": 28982237184.0
+      "market_cap": 28964282368.0
     },
     {
       "ticker": "TMO",
@@ -364,11 +364,11 @@
       "country": "United Kingdom",
       "quoteType": "EQUITY",
       "industry": "Software - Application",
-      "price": 1030.5,
+      "price": 1029.0,
       "signal": "Strong Hold",
-      "rsi": 57.7,
-      "perf_3m": 24.31,
-      "rs3m_vs_bm": 21.89,
+      "rsi": 57.3,
+      "perf_3m": 24.13,
+      "rs3m_vs_bm": 21.71,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 1174.7328,
@@ -376,7 +376,7 @@
       "roic": null,
       "fcf_margin": 24.0,
       "fwd_pe": 17.9,
-      "market_cap": 9280149504.0
+      "market_cap": 9266640896.0
     },
     {
       "ticker": "IQV",
@@ -496,11 +496,11 @@
       "country": "Norway",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 413.3999938964844,
+      "price": 413.5,
       "signal": "Strong Hold",
-      "rsi": 46.8,
-      "perf_3m": 20.73,
-      "rs3m_vs_bm": 18.31,
+      "rsi": 46.9,
+      "perf_3m": 20.76,
+      "rs3m_vs_bm": 18.34,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 423.8,
@@ -508,7 +508,7 @@
       "roic": null,
       "fcf_margin": 25.9,
       "fwd_pe": 9.8,
-      "market_cap": 979396198400.0
+      "market_cap": 979633111040.0
     },
     {
       "ticker": "BP.L",
@@ -518,11 +518,11 @@
       "country": "United Kingdom",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 580.9199829101562,
+      "price": 580.9000244140625,
       "signal": "Strong Hold",
       "rsi": 59.7,
-      "perf_3m": 20.38,
-      "rs3m_vs_bm": 17.96,
+      "perf_3m": 20.37,
+      "rs3m_vs_bm": 17.95,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 606.1579,
@@ -530,7 +530,7 @@
       "roic": null,
       "fcf_margin": 6.0,
       "fwd_pe": 9.1,
-      "market_cap": 89772752896.0
+      "market_cap": 89769672704.0
     },
     {
       "ticker": "BDX",
@@ -595,7 +595,7 @@
       "low_52w": 77.8994,
       "roic": null,
       "fcf_margin": 34.2,
-      "fwd_pe": 11.1,
+      "fwd_pe": 11.2,
       "market_cap": 119636221952.0
     },
     {
@@ -804,11 +804,11 @@
       "country": "Portugal",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 22.639999389648438,
+      "price": 22.65999984741211,
       "signal": "Strong Hold",
-      "rsi": 57.3,
-      "perf_3m": 15.89,
-      "rs3m_vs_bm": 13.47,
+      "rsi": 57.5,
+      "perf_3m": 15.99,
+      "rs3m_vs_bm": 13.57,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 23.18,
@@ -816,7 +816,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 11.3,
-      "market_cap": 17683623936.0
+      "market_cap": 17699246080.0
     },
     {
       "ticker": "EVO.ST",
@@ -826,11 +826,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Gambling",
-      "price": 808.5999755859375,
+      "price": 808.7999877929688,
       "signal": "Strong Hold",
-      "rsi": 28.2,
-      "perf_3m": 15.85,
-      "rs3m_vs_bm": 13.43,
+      "rsi": 28.3,
+      "perf_3m": 15.87,
+      "rs3m_vs_bm": 13.45,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 900.0,
@@ -838,7 +838,7 @@
       "roic": null,
       "fcf_margin": 44.6,
       "fwd_pe": 11.3,
-      "market_cap": 147246891008.0
+      "market_cap": 147283312640.0
     },
     {
       "ticker": "WAT",
@@ -1259,28 +1259,6 @@
       "market_cap": 47081697280.0
     },
     {
-      "ticker": "EDEN.PA",
-      "name": "Edenred SE",
-      "region": "Europe",
-      "sector": "Financial Services",
-      "country": "France",
-      "quoteType": "EQUITY",
-      "industry": "Credit Services",
-      "price": 27.68000030517578,
-      "signal": "Strong Hold",
-      "rsi": 43.3,
-      "perf_3m": 12.61,
-      "rs3m_vs_bm": 10.19,
-      "direction": "↓ Declining",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 30.53,
-      "low_52w": 14.4507,
-      "roic": null,
-      "fcf_margin": 36.1,
-      "fwd_pe": 11.3,
-      "market_cap": 6341280768.0
-    },
-    {
       "ticker": "LH",
       "name": "Labcorp Holdings Inc.",
       "region": "USA",
@@ -1303,6 +1281,28 @@
       "market_cap": 25300766720.0
     },
     {
+      "ticker": "EDEN.PA",
+      "name": "Edenred SE",
+      "region": "Europe",
+      "sector": "Financial Services",
+      "country": "France",
+      "quoteType": "EQUITY",
+      "industry": "Credit Services",
+      "price": 27.65999984741211,
+      "signal": "Strong Hold",
+      "rsi": 43.2,
+      "perf_3m": 12.53,
+      "rs3m_vs_bm": 10.11,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 30.53,
+      "low_52w": 14.4507,
+      "roic": null,
+      "fcf_margin": 36.1,
+      "fwd_pe": 11.3,
+      "market_cap": 6336698880.0
+    },
+    {
       "ticker": "SEB-A.ST",
       "name": "Skandinaviska Enskilda Banken AB (publ)",
       "region": "Europe",
@@ -1310,11 +1310,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Banks - Regional",
-      "price": 224.39999389648438,
+      "price": 224.60000610351562,
       "signal": "Strong Hold",
-      "rsi": 44.8,
-      "perf_3m": 12.28,
-      "rs3m_vs_bm": 9.86,
+      "rsi": 45.1,
+      "perf_3m": 12.38,
+      "rs3m_vs_bm": 9.96,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 235.9,
@@ -1322,7 +1322,7 @@
       "roic": null,
       "fcf_margin": null,
       "fwd_pe": 14.2,
-      "market_cap": 436326989824.0
+      "market_cap": 436715913216.0
     },
     {
       "ticker": "EXPD",
@@ -1376,11 +1376,11 @@
       "country": "France",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 77.83000183105469,
+      "price": 77.80999755859375,
       "signal": "Strong Hold",
-      "rsi": 47.9,
-      "perf_3m": 11.81,
-      "rs3m_vs_bm": 9.39,
+      "rsi": 47.8,
+      "perf_3m": 11.78,
+      "rs3m_vs_bm": 9.36,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 80.116,
@@ -1388,7 +1388,7 @@
       "roic": null,
       "fcf_margin": 6.9,
       "fwd_pe": 8.0,
-      "market_cap": 171807752192.0
+      "market_cap": 171763597312.0
     },
     {
       "ticker": "BIIB",
@@ -1464,11 +1464,11 @@
       "country": "Norway",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas E&P",
-      "price": 348.0,
+      "price": 347.8999938964844,
       "signal": "Strong Hold",
-      "rsi": 44.3,
-      "perf_3m": 11.34,
-      "rs3m_vs_bm": 8.92,
+      "rsi": 44.2,
+      "perf_3m": 11.31,
+      "rs3m_vs_bm": 8.89,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 374.1,
@@ -1476,7 +1476,7 @@
       "roic": null,
       "fcf_margin": -3.0,
       "fwd_pe": 12.3,
-      "market_cap": 219494432768.0
+      "market_cap": 219431354368.0
     },
     {
       "ticker": "VER.VI",
@@ -1567,28 +1567,6 @@
       "market_cap": 55911243776.0
     },
     {
-      "ticker": "GLEN.L",
-      "name": "Glencore plc",
-      "region": "Europe",
-      "sector": "Basic Materials",
-      "country": "Switzerland",
-      "quoteType": "EQUITY",
-      "industry": "Other Industrial Metals & Mining",
-      "price": 566.7000122070312,
-      "signal": "Strong Hold",
-      "rsi": 55.0,
-      "perf_3m": 11.02,
-      "rs3m_vs_bm": 8.6,
-      "direction": "↑ Accelerating",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 629.0,
-      "low_52w": 334.9279,
-      "roic": null,
-      "fcf_margin": 1.0,
-      "fwd_pe": 12.2,
-      "market_cap": 66449489920.0
-    },
-    {
       "ticker": "DE",
       "name": "Deere & Company",
       "region": "USA",
@@ -1618,11 +1596,11 @@
       "country": "United Kingdom",
       "quoteType": "EQUITY",
       "industry": "Other Industrial Metals & Mining",
-      "price": 4020.0,
+      "price": 4022.0,
       "signal": "Strong Hold",
-      "rsi": 53.4,
-      "perf_3m": 11.02,
-      "rs3m_vs_bm": 8.6,
+      "rsi": 53.5,
+      "perf_3m": 11.08,
+      "rs3m_vs_bm": 8.66,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 4306.0,
@@ -1630,7 +1608,29 @@
       "roic": null,
       "fcf_margin": 13.4,
       "fwd_pe": 22.6,
-      "market_cap": 43073814528.0
+      "market_cap": 43095244800.0
+    },
+    {
+      "ticker": "GLEN.L",
+      "name": "Glencore plc",
+      "region": "Europe",
+      "sector": "Basic Materials",
+      "country": "Switzerland",
+      "quoteType": "EQUITY",
+      "industry": "Other Industrial Metals & Mining",
+      "price": 566.0,
+      "signal": "Strong Hold",
+      "rsi": 54.6,
+      "perf_3m": 10.88,
+      "rs3m_vs_bm": 8.46,
+      "direction": "↑ Accelerating",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 629.0,
+      "low_52w": 334.9279,
+      "roic": null,
+      "fcf_margin": 1.0,
+      "fwd_pe": 12.2,
+      "market_cap": 66367406080.0
     },
     {
       "ticker": "GDDY",
@@ -1662,11 +1662,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Banks - Regional",
-      "price": 1075.0,
+      "price": 1076.0,
       "signal": "Strong Hold",
-      "rsi": 41.0,
-      "perf_3m": 10.48,
-      "rs3m_vs_bm": 8.06,
+      "rsi": 41.4,
+      "perf_3m": 10.59,
+      "rs3m_vs_bm": 8.17,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 1115.0,
@@ -1674,7 +1674,7 @@
       "roic": null,
       "fcf_margin": null,
       "fwd_pe": 11.2,
-      "market_cap": 60275720192.0
+      "market_cap": 60331790336.0
     }
   ]
 }
