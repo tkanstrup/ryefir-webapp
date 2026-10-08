@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T00:01:26.855026+00:00",
+  "generated_at": "2026-10-08T00:06:15.770759+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 78,
@@ -880,9 +880,9 @@
       "high_52w": 109.6119,
       "low_52w": 54.854,
       "roic": null,
-      "fcf_margin": 20.4,
-      "fwd_pe": 11.5,
-      "market_cap": 15770790912.0
+      "fcf_margin": null,
+      "fwd_pe": null,
+      "market_cap": null
     },
     {
       "ticker": "XOM",
@@ -1032,7 +1032,7 @@
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 194.12,
-      "low_52w": 111.9601,
+      "low_52w": 111.96,
       "roic": null,
       "fcf_margin": 6.6,
       "fwd_pe": 23.7,
@@ -1317,7 +1317,7 @@
       "rs3m_vs_bm": 9.91,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 243.1211,
+      "high_52w": 243.1212,
       "low_52w": 141.0042,
       "roic": null,
       "fcf_margin": 2.8,
