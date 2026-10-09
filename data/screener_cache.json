@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T22:21:14.732482+00:00",
+  "generated_at": "2026-10-09T22:26:09.090412+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 64,
@@ -196,7 +196,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 174.9492,
-      "low_52w": 109.6144,
+      "low_52w": 109.6145,
       "roic": null,
       "fcf_margin": 14.4,
       "fwd_pe": 25.2,
@@ -353,7 +353,7 @@
       "low_52w": 38.3761,
       "roic": null,
       "fcf_margin": 8.3,
-      "fwd_pe": 17.2,
+      "fwd_pe": 17.1,
       "market_cap": 105820135424.0
     },
     {
