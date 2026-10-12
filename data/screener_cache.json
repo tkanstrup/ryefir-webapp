@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T20:01:33.817693+00:00",
+  "generated_at": "2026-10-12T20:06:10.924141+00:00",
   "universe_size": 715,
   "scanned": 708,
   "shortlisted": 82,
@@ -174,7 +174,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 174.9492,
-      "low_52w": 109.6145,
+      "low_52w": 109.6144,
       "roic": null,
       "fcf_margin": 14.4,
       "fwd_pe": 25.4,
@@ -305,7 +305,7 @@
       "rs3m_vs_bm": 21.71,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 243.1211,
+      "high_52w": 243.1212,
       "low_52w": 141.0042,
       "roic": null,
       "fcf_margin": 2.8,
@@ -943,7 +943,7 @@
       "rs3m_vs_bm": 12.31,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 401.7044,
+      "high_52w": 401.7045,
       "low_52w": 236.137,
       "roic": null,
       "fcf_margin": -21.2,
@@ -970,7 +970,7 @@
       "roic": null,
       "fcf_margin": 34.4,
       "fwd_pe": 17.7,
-      "market_cap": 88369111040.0
+      "market_cap": 88366301184.0
     },
     {
       "ticker": "LH",
@@ -1563,7 +1563,7 @@
       "low_52w": 225.716,
       "roic": null,
       "fcf_margin": -3.0,
-      "fwd_pe": 12.4,
+      "fwd_pe": 12.2,
       "market_cap": 222774247424.0
     },
     {
