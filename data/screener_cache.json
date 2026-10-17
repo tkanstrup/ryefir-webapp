@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-17T10:01:30.280642+00:00",
+  "generated_at": "2026-10-17T10:06:09.357178+00:00",
   "universe_size": 715,
-  "scanned": 706,
+  "scanned": 707,
   "shortlisted": 73,
   "candidates": [
     {
@@ -218,7 +218,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 175.55,
-      "low_52w": 109.6144,
+      "low_52w": 109.6145,
       "roic": null,
       "fcf_margin": 14.4,
       "fwd_pe": 25.6,
@@ -394,7 +394,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 193.76,
-      "low_52w": 135.2883,
+      "low_52w": 135.2882,
       "roic": null,
       "fcf_margin": 19.9,
       "fwd_pe": 14.4,
@@ -768,7 +768,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 852.03,
-      "low_52w": 566.2664,
+      "low_52w": 566.2663,
       "roic": null,
       "fcf_margin": 19.7,
       "fwd_pe": 12.8,
