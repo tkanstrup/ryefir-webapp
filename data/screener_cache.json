@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T15:01:54.266310+00:00",
+  "generated_at": "2026-10-17T15:06:11.753702+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 73,
@@ -22,9 +22,9 @@
       "high_52w": 236.5,
       "low_52w": 22.36,
       "roic": null,
-      "fcf_margin": null,
+      "fcf_margin": 13.4,
       "fwd_pe": null,
-      "market_cap": null
+      "market_cap": 87037419520.0
     },
     {
       "ticker": "MAERSK-B.CO",
@@ -44,9 +44,9 @@
       "high_52w": 24900.0,
       "low_52w": 11850.5967,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.8,
+      "fwd_pe": 21.9,
+      "market_cap": 349274505216.0
     },
     {
       "ticker": "RVTY",
@@ -66,9 +66,9 @@
       "high_52w": 157.36,
       "low_52w": 82.2085,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.8,
+      "fwd_pe": 25.9,
+      "market_cap": 17032548352.0
     },
     {
       "ticker": "TEP.PA",
@@ -88,9 +88,9 @@
       "high_52w": 76.36,
       "low_52w": 42.9141,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.6,
+      "fwd_pe": 5.3,
+      "market_cap": 4341419520.0
     },
     {
       "ticker": "ZBRA",
@@ -110,9 +110,9 @@
       "high_52w": 388.12,
       "low_52w": 199.3,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.9,
+      "fwd_pe": 16.6,
+      "market_cap": 17577197568.0
     },
     {
       "ticker": "PLTR",
@@ -132,9 +132,9 @@
       "high_52w": 209.05,
       "low_52w": 107.27,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 35.1,
+      "fwd_pe": 79.4,
+      "market_cap": 447040946176.0
     },
     {
       "ticker": "CRL",
@@ -154,9 +154,9 @@
       "high_52w": 310.77,
       "low_52w": 149.93,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.7,
+      "fwd_pe": 23.5,
+      "market_cap": 14328821760.0
     },
     {
       "ticker": "SWKS",
@@ -176,9 +176,9 @@
       "high_52w": 91.45,
       "low_52w": 52.0477,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.2,
+      "fwd_pe": 14.0,
+      "market_cap": 18742693888.0
     },
     {
       "ticker": "NEM",
@@ -198,9 +198,9 @@
       "high_52w": 134.8593,
       "low_52w": 77.8994,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 34.2,
+      "fwd_pe": 11.7,
+      "market_cap": 124967903232.0
     },
     {
       "ticker": "A",
@@ -220,9 +220,9 @@
       "high_52w": 175.55,
       "low_52w": 109.6145,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 14.4,
+      "fwd_pe": 25.6,
+      "market_cap": 48765235200.0
     },
     {
       "ticker": "SMCI",
@@ -242,9 +242,9 @@
       "high_52w": 55.04,
       "low_52w": 20.53,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -21.1,
+      "fwd_pe": 5.9,
+      "market_cap": 20460593152.0
     },
     {
       "ticker": "TMO",
@@ -264,9 +264,9 @@
       "high_52w": 696.49,
       "low_52w": 437.5656,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 13.5,
+      "fwd_pe": 25.0,
+      "market_cap": 255125635072.0
     },
     {
       "ticker": "IQV",
@@ -286,9 +286,9 @@
       "high_52w": 275.02,
       "low_52w": 156.66,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 12.7,
+      "fwd_pe": 18.5,
+      "market_cap": 43931738112.0
     },
     {
       "ticker": "WDAY",
@@ -308,9 +308,9 @@
       "high_52w": 245.67,
       "low_52w": 112.5,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 30.0,
+      "fwd_pe": 14.4,
+      "market_cap": 45985210368.0
     },
     {
       "ticker": "MTD",
@@ -330,9 +330,9 @@
       "high_52w": 1639.04,
       "low_52w": 1025.53,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 16.8,
+      "fwd_pe": 31.3,
+      "market_cap": 32505112576.0
     },
     {
       "ticker": "NTAP",
@@ -352,9 +352,9 @@
       "high_52w": 239.18,
       "low_52w": 93.1368,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 15.8,
+      "fwd_pe": 18.3,
+      "market_cap": 40030195712.0
     },
     {
       "ticker": "HPQ",
@@ -374,9 +374,9 @@
       "high_52w": 35.48,
       "low_52w": 17.5237,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.7,
+      "fwd_pe": 9.5,
+      "market_cap": 27062747136.0
     },
     {
       "ticker": "BDX",
@@ -396,9 +396,9 @@
       "high_52w": 193.76,
       "low_52w": 135.2883,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 19.9,
+      "fwd_pe": 14.4,
+      "market_cap": 52230172672.0
     },
     {
       "ticker": "HPE",
@@ -418,9 +418,9 @@
       "high_52w": 73.46,
       "low_52w": 19.6654,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.3,
+      "fwd_pe": 11.7,
+      "market_cap": 73183133696.0
     },
     {
       "ticker": "ELUX-B.ST",
@@ -440,9 +440,9 @@
       "high_52w": 87.4,
       "low_52w": 22.21,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -0.8,
+      "fwd_pe": 2.7,
+      "market_cap": 22397095936.0
     },
     {
       "ticker": "WAT",
@@ -462,9 +462,9 @@
       "high_52w": 444.15,
       "low_52w": 283.32,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -3.1,
+      "fwd_pe": 26.4,
+      "market_cap": 42902310912.0
     },
     {
       "ticker": "PFE",
@@ -484,9 +484,9 @@
       "high_52w": 29.58,
       "low_52w": 22.6421,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 19.6,
+      "fwd_pe": 10.2,
+      "market_cap": 168596340736.0
     },
     {
       "ticker": "ISRG",
@@ -506,9 +506,9 @@
       "high_52w": 592.85,
       "low_52w": 332.02,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 23.7,
+      "fwd_pe": 35.2,
+      "market_cap": 150743744512.0
     },
     {
       "ticker": "AAL.L",
@@ -528,9 +528,9 @@
       "high_52w": 4306.0,
       "low_52w": 2709.7883,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 13.4,
+      "fwd_pe": 22.8,
+      "market_cap": 43363115008.0
     },
     {
       "ticker": "SRT3.DE",
@@ -550,9 +550,9 @@
       "high_52w": 265.3,
       "low_52w": 204.9,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.1,
+      "fwd_pe": 41.2,
+      "market_cap": 18022647808.0
     },
     {
       "ticker": "SNPS",
@@ -572,9 +572,9 @@
       "high_52w": 534.56,
       "low_52w": 367.7,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 36.4,
+      "fwd_pe": 24.4,
+      "market_cap": 87123763200.0
     },
     {
       "ticker": "REP.MC",
@@ -594,9 +594,9 @@
       "high_52w": 31.54,
       "low_52w": 13.9927,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 0.6,
+      "fwd_pe": 6.8,
+      "market_cap": 32059160576.0
     },
     {
       "ticker": "SINCH.ST",
@@ -616,9 +616,9 @@
       "high_52w": 51.6,
       "low_52w": 20.14,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.1,
+      "fwd_pe": 62.3,
+      "market_cap": 32804542464.0
     },
     {
       "ticker": "AMGN",
@@ -638,9 +638,9 @@
       "high_52w": 444.12,
       "low_52w": 283.3011,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 22.7,
+      "fwd_pe": 17.7,
+      "market_cap": 233817931776.0
     },
     {
       "ticker": "EMR",
@@ -660,9 +660,9 @@
       "high_52w": 163.8244,
       "low_52w": 122.3354,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 19.9,
+      "fwd_pe": 22.2,
+      "market_cap": 90439344128.0
     },
     {
       "ticker": "FCX",
@@ -682,9 +682,9 @@
       "high_52w": 79.7378,
       "low_52w": 38.2934,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 8.3,
+      "fwd_pe": 16.1,
+      "market_cap": 99860660224.0
     },
     {
       "ticker": "DELL",
@@ -704,9 +704,9 @@
       "high_52w": 588.4,
       "low_52w": 110.5447,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 4.0,
+      "fwd_pe": 15.1,
+      "market_cap": 287202967552.0
     },
     {
       "ticker": "MRK",
@@ -726,9 +726,9 @@
       "high_52w": 155.5319,
       "low_52w": 80.1369,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 22.8,
+      "fwd_pe": 15.7,
+      "market_cap": 360083685376.0
     },
     {
       "ticker": "GILD",
@@ -748,9 +748,9 @@
       "high_52w": 157.37,
       "low_52w": 115.0077,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 32.1,
+      "fwd_pe": 15.7,
+      "market_cap": 193668612096.0
     },
     {
       "ticker": "REGN",
@@ -768,11 +768,11 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 852.03,
-      "low_52w": 566.2664,
+      "low_52w": 566.2663,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 19.7,
+      "fwd_pe": 12.8,
+      "market_cap": 81410629632.0
     },
     {
       "ticker": "LDOS",
@@ -792,9 +792,9 @@
       "high_52w": 197.2656,
       "low_52w": 99.6763,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.5,
+      "fwd_pe": 9.9,
+      "market_cap": 15704314880.0
     },
     {
       "ticker": "SIKA.SW",
@@ -814,9 +814,9 @@
       "high_52w": 195.5,
       "low_52w": 122.8455,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.2,
+      "fwd_pe": 21.8,
+      "market_cap": 29288185856.0
     },
     {
       "ticker": "OMV.VI",
@@ -836,9 +836,9 @@
       "high_52w": 74.25,
       "low_52w": 41.3558,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 29.1,
+      "fwd_pe": 8.5,
+      "market_cap": 24042577920.0
     },
     {
       "ticker": "MRVL",
@@ -858,9 +858,9 @@
       "high_52w": 316.2828,
       "low_52w": 73.6588,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 25.5,
+      "fwd_pe": 31.3,
+      "market_cap": 204751880192.0
     },
     {
       "ticker": "G1A.DE",
@@ -880,9 +880,9 @@
       "high_52w": 69.2,
       "low_52w": 53.6455,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.1,
+      "fwd_pe": 18.5,
+      "market_cap": 11265874944.0
     },
     {
       "ticker": "GRMN",
@@ -902,9 +902,9 @@
       "high_52w": 311.952,
       "low_52w": 184.0587,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 13.6,
+      "fwd_pe": 25.6,
+      "market_cap": 54923522048.0
     },
     {
       "ticker": "BIIB",
@@ -924,9 +924,9 @@
       "high_52w": 235.35,
       "low_52w": 142.26,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 12.6,
+      "fwd_pe": 14.1,
+      "market_cap": 34374967296.0
     },
     {
       "ticker": "QIA.DE",
@@ -946,9 +946,9 @@
       "high_52w": 45.9531,
       "low_52w": 27.8262,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 17.8,
+      "fwd_pe": 18.1,
+      "market_cap": 8472489984.0
     },
     {
       "ticker": "EVO.ST",
@@ -968,9 +968,9 @@
       "high_52w": 900.0,
       "low_52w": 515.8,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 44.6,
+      "fwd_pe": 11.2,
+      "market_cap": 145322950656.0
     },
     {
       "ticker": "GN.CO",
@@ -990,9 +990,9 @@
       "high_52w": 118.2,
       "low_52w": 86.5,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -50.3,
+      "fwd_pe": 22.0,
+      "market_cap": 15478614016.0
     },
     {
       "ticker": "GALP.LS",
@@ -1012,9 +1012,9 @@
       "high_52w": 23.18,
       "low_52w": 13.5079,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.1,
+      "fwd_pe": 10.6,
+      "market_cap": 17691435008.0
     },
     {
       "ticker": "MDT",
@@ -1034,9 +1034,9 @@
       "high_52w": 101.9702,
       "low_52w": 72.496,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 14.4,
+      "fwd_pe": 14.8,
+      "market_cap": 121198321664.0
     },
     {
       "ticker": "FAST",
@@ -1056,9 +1056,9 @@
       "high_52w": 52.38,
       "low_52w": 38.5169,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 10.1,
+      "fwd_pe": 36.2,
+      "market_cap": 58545328128.0
     },
     {
       "ticker": "CRWD",
@@ -1078,9 +1078,9 @@
       "high_52w": 278.86,
       "low_52w": 87.5625,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 37.0,
+      "fwd_pe": 141.1,
+      "market_cap": 232832548864.0
     },
     {
       "ticker": "DHR",
@@ -1100,9 +1100,9 @@
       "high_52w": 240.6087,
       "low_52w": 161.289,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 17.2,
+      "fwd_pe": 24.6,
+      "market_cap": 161011924992.0
     },
     {
       "ticker": "KOG.OL",
@@ -1122,9 +1122,9 @@
       "high_52w": 417.5994,
       "low_52w": 225.9572,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.0,
+      "fwd_pe": 27.9,
+      "market_cap": 277340782592.0
     },
     {
       "ticker": "ALLE",
@@ -1141,12 +1141,12 @@
       "rs3m_vs_bm": 11.12,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 177.7255,
-      "low_52w": 124.6913,
+      "high_52w": 177.7256,
+      "low_52w": 124.6912,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.3,
+      "fwd_pe": 16.0,
+      "market_cap": 13311657984.0
     },
     {
       "ticker": "DXCM",
@@ -1166,9 +1166,9 @@
       "high_52w": 92.34,
       "low_52w": 54.84,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.5,
+      "fwd_pe": 27.5,
+      "market_cap": 32468121600.0
     },
     {
       "ticker": "DGX",
@@ -1188,9 +1188,9 @@
       "high_52w": 246.5336,
       "low_52w": 170.6206,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 7.9,
+      "fwd_pe": 19.5,
+      "market_cap": 25937739776.0
     },
     {
       "ticker": "NDSN",
@@ -1210,9 +1210,9 @@
       "high_52w": 334.43,
       "low_52w": 223.9025,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.6,
+      "fwd_pe": 24.8,
+      "market_cap": 17958451200.0
     },
     {
       "ticker": "VER.VI",
@@ -1232,9 +1232,9 @@
       "high_52w": 67.1,
       "low_52w": 54.75,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 0.5,
+      "fwd_pe": 16.3,
+      "market_cap": 23172624384.0
     },
     {
       "ticker": "LH",
@@ -1254,9 +1254,9 @@
       "high_52w": 338.614,
       "low_52w": 244.1703,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.2,
+      "fwd_pe": 16.0,
+      "market_cap": 25785745408.0
     },
     {
       "ticker": "MSI",
@@ -1276,9 +1276,9 @@
       "high_52w": 489.973,
       "low_52w": 360.5166,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 16.2,
+      "fwd_pe": 23.8,
+      "market_cap": 76648448000.0
     },
     {
       "ticker": "TTE.PA",
@@ -1298,9 +1298,9 @@
       "high_52w": 80.71,
       "low_52w": 50.4577,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.9,
+      "fwd_pe": 8.3,
+      "market_cap": 177951735808.0
     },
     {
       "ticker": "FOXA",
@@ -1320,9 +1320,9 @@
       "high_52w": 75.4053,
       "low_52w": 48.5754,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 3.2,
+      "fwd_pe": 10.9,
+      "market_cap": 27050364928.0
     },
     {
       "ticker": "BOL.ST",
@@ -1342,9 +1342,9 @@
       "high_52w": 706.6422,
       "low_52w": 398.2074,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 1.6,
+      "fwd_pe": 17.5,
+      "market_cap": 151522361344.0
     },
     {
       "ticker": "TRMB",
@@ -1364,9 +1364,9 @@
       "high_52w": 83.52,
       "low_52w": 48.87,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 18.1,
+      "fwd_pe": 14.4,
+      "market_cap": 13864872960.0
     },
     {
       "ticker": "FOX",
@@ -1386,9 +1386,9 @@
       "high_52w": 67.0667,
       "low_52w": 44.1719,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 3.2,
+      "fwd_pe": 10.0,
+      "market_cap": 24128165888.0
     },
     {
       "ticker": "TGT",
@@ -1408,9 +1408,9 @@
       "high_52w": 169.89,
       "low_52w": 81.4371,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 3.2,
+      "fwd_pe": 16.2,
+      "market_cap": 70078996480.0
     },
     {
       "ticker": "AVY",
@@ -1430,9 +1430,9 @@
       "high_52w": 194.0973,
       "low_52w": 152.1259,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 10.9,
+      "fwd_pe": 15.7,
+      "market_cap": 13409528832.0
     },
     {
       "ticker": "WAB",
@@ -1452,9 +1452,9 @@
       "high_52w": 305.4747,
       "low_52w": 192.5304,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.2,
+      "fwd_pe": 23.0,
+      "market_cap": 48447008768.0
     },
     {
       "ticker": "NUE",
@@ -1474,9 +1474,9 @@
       "high_52w": 274.0887,
       "low_52w": 130.2556,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 1.9,
+      "fwd_pe": 12.3,
+      "market_cap": 58145968128.0
     },
     {
       "ticker": "AMS.MC",
@@ -1496,9 +1496,9 @@
       "high_52w": 67.0102,
       "low_52w": 45.7178,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 44.2,
+      "fwd_pe": 14.0,
+      "market_cap": 22847277056.0
     },
     {
       "ticker": "EPI-A.ST",
@@ -1518,9 +1518,9 @@
       "high_52w": 276.167,
       "low_52w": 186.2787,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.1,
+      "fwd_pe": 31.6,
+      "market_cap": 319666028544.0
     },
     {
       "ticker": "GM",
@@ -1540,9 +1540,9 @@
       "high_52w": 90.1136,
       "low_52w": 56.8495,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.8,
+      "fwd_pe": 5.6,
+      "market_cap": 73670828032.0
     },
     {
       "ticker": "PNDORA.CO",
@@ -1562,9 +1562,9 @@
       "high_52w": 870.0,
       "low_52w": 434.6,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 18.0,
+      "fwd_pe": 17.5,
+      "market_cap": 63356133376.0
     },
     {
       "ticker": "GEHC",
@@ -1584,9 +1584,9 @@
       "high_52w": 88.0324,
       "low_52w": 59.4514,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 7.4,
+      "fwd_pe": 12.9,
+      "market_cap": 31646820352.0
     },
     {
       "ticker": "VTRS",
@@ -1606,9 +1606,9 @@
       "high_52w": 18.66,
       "low_52w": 9.7542,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 18.2,
+      "fwd_pe": 7.0,
+      "market_cap": 21426962432.0
     }
   ]
 }
