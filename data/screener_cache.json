@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T01:21:21.027787+00:00",
+  "generated_at": "2026-10-17T01:26:09.400042+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 66,
@@ -178,7 +178,7 @@
       "roic": null,
       "fcf_margin": 14.4,
       "fwd_pe": 25.6,
-      "market_cap": 48771629056.0
+      "market_cap": 48765235200.0
     },
     {
       "ticker": "SWKS",
@@ -574,7 +574,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 10.6,
-      "market_cap": 16375933952.0
+      "market_cap": 17691435008.0
     },
     {
       "ticker": "REP.MC",
@@ -614,7 +614,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 444.12,
-      "low_52w": 283.3012,
+      "low_52w": 283.3011,
       "roic": null,
       "fcf_margin": 22.7,
       "fwd_pe": 17.7,
@@ -658,7 +658,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 157.37,
-      "low_52w": 115.0078,
+      "low_52w": 115.0077,
       "roic": null,
       "fcf_margin": 32.1,
       "fwd_pe": 15.7,
@@ -680,7 +680,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 852.03,
-      "low_52w": 566.2662,
+      "low_52w": 566.2663,
       "roic": null,
       "fcf_margin": 19.7,
       "fwd_pe": 12.8,
@@ -705,7 +705,7 @@
       "low_52w": 141.09,
       "roic": null,
       "fcf_margin": 44.2,
-      "fwd_pe": 58.0,
+      "fwd_pe": 57.5,
       "market_cap": 45686001664.0
     },
     {
@@ -1009,8 +1009,8 @@
       "rs3m_vs_bm": 10.99,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 177.7256,
-      "low_52w": 124.6912,
+      "high_52w": 177.7255,
+      "low_52w": 124.6913,
       "roic": null,
       "fcf_margin": 11.3,
       "fwd_pe": 16.0,
