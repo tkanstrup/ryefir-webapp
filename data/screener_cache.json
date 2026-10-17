@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T01:16:15.569348+00:00",
+  "generated_at": "2026-10-17T01:21:21.027787+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 66,
@@ -24,7 +24,7 @@
       "roic": null,
       "fcf_margin": -21.1,
       "fwd_pe": 5.9,
-      "market_cap": 20779814912.0
+      "market_cap": 20460593152.0
     },
     {
       "ticker": "MAERSK-B.CO",
@@ -68,7 +68,7 @@
       "roic": null,
       "fcf_margin": 9.9,
       "fwd_pe": 16.6,
-      "market_cap": 17458106368.0
+      "market_cap": 17577197568.0
     },
     {
       "ticker": "TEP.PA",
@@ -90,7 +90,7 @@
       "roic": null,
       "fcf_margin": 11.6,
       "fwd_pe": 5.3,
-      "market_cap": 4459460096.0
+      "market_cap": 4341419520.0
     },
     {
       "ticker": "RVTY",
@@ -134,7 +134,7 @@
       "roic": null,
       "fcf_margin": 11.7,
       "fwd_pe": 23.5,
-      "market_cap": 14457543680.0
+      "market_cap": 14328821760.0
     },
     {
       "ticker": "WDAY",
@@ -174,7 +174,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 175.55,
-      "low_52w": 109.6145,
+      "low_52w": 109.6144,
       "roic": null,
       "fcf_margin": 14.4,
       "fwd_pe": 25.6,
@@ -287,7 +287,7 @@
       "low_52w": 77.8994,
       "roic": null,
       "fcf_margin": 34.2,
-      "fwd_pe": 11.7,
+      "fwd_pe": 11.9,
       "market_cap": 124967903232.0
     },
     {
@@ -331,7 +331,7 @@
       "low_52w": 73.6588,
       "roic": null,
       "fcf_margin": 25.5,
-      "fwd_pe": 31.2,
+      "fwd_pe": 31.3,
       "market_cap": 204751880192.0
     },
     {
@@ -551,7 +551,7 @@
       "low_52w": 2709.7883,
       "roic": null,
       "fcf_margin": 13.4,
-      "fwd_pe": 22.3,
+      "fwd_pe": 22.8,
       "market_cap": 43363115008.0
     },
     {
@@ -680,7 +680,7 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 852.03,
-      "low_52w": 566.2663,
+      "low_52w": 566.2662,
       "roic": null,
       "fcf_margin": 19.7,
       "fwd_pe": 12.8,
@@ -728,7 +728,7 @@
       "roic": null,
       "fcf_margin": 6.5,
       "fwd_pe": 9.9,
-      "market_cap": 15667701760.0
+      "market_cap": 15704314880.0
     },
     {
       "ticker": "SIKA.SW",
@@ -772,7 +772,7 @@
       "roic": null,
       "fcf_margin": 29.1,
       "fwd_pe": 8.5,
-      "market_cap": 24053161984.0
+      "market_cap": 24042577920.0
     },
     {
       "ticker": "EMR",
@@ -794,7 +794,7 @@
       "roic": null,
       "fcf_margin": 19.9,
       "fwd_pe": 22.2,
-      "market_cap": 90067968000.0
+      "market_cap": 90439344128.0
     },
     {
       "ticker": "ELUX-B.ST",
@@ -860,7 +860,7 @@
       "roic": null,
       "fcf_margin": 13.6,
       "fwd_pe": 25.6,
-      "market_cap": 54922477568.0
+      "market_cap": 54923522048.0
     },
     {
       "ticker": "MRK",
@@ -948,7 +948,7 @@
       "roic": null,
       "fcf_margin": 20.6,
       "fwd_pe": 24.8,
-      "market_cap": 17952462848.0
+      "market_cap": 17958451200.0
     },
     {
       "ticker": "TTE.PA",
@@ -1101,7 +1101,7 @@
       "low_52w": 87.725,
       "roic": null,
       "fcf_margin": 16.0,
-      "fwd_pe": 11.6,
+      "fwd_pe": 11.7,
       "market_cap": 13612478464.0
     },
     {
@@ -1168,7 +1168,7 @@
       "roic": null,
       "fcf_margin": 3.2,
       "fwd_pe": 16.2,
-      "market_cap": 70079815680.0
+      "market_cap": 70078996480.0
     },
     {
       "ticker": "FTNT",
@@ -1256,7 +1256,7 @@
       "roic": null,
       "fcf_margin": 7.4,
       "fwd_pe": 12.9,
-      "market_cap": 31423811584.0
+      "market_cap": 31646820352.0
     },
     {
       "ticker": "EVO.ST",
