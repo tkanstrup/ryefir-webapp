@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T10:58:16.270961+00:00",
+ "generated_at": "2026-10-18T09:00:02.020889+00:00",
  "count": 746,
  "tickers": {
   "A": {
@@ -9,7 +9,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AAL.L": {
    "name": "Anglo American plc",
@@ -18,7 +18,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AAPL": {
    "name": "Apple Inc.",
@@ -27,7 +27,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ABBN.SW": {
    "name": "ABB Ltd",
@@ -36,7 +36,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ABBV": {
    "name": "AbbVie Inc.",
@@ -45,7 +45,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ABI.BR": {
    "name": "Anheuser-Busch InBev SA/NV",
@@ -54,7 +54,7 @@
    "currency": "EUR",
    "country": "Belgium",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ABNB": {
    "name": "Airbnb, Inc.",
@@ -63,7 +63,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ABT": {
    "name": "Abbott Laboratories",
@@ -72,7 +72,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ACA.PA": {
    "name": "Crédit Agricole S.A.",
@@ -81,7 +81,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ACGL": {
    "name": "Arch Capital Group Ltd.",
@@ -90,7 +90,7 @@
    "currency": "USD",
    "country": "Bermuda",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ACN": {
    "name": "Accenture plc",
@@ -99,7 +99,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AD.AS": {
    "name": "Koninklijke Ahold Delhaize N.V.",
@@ -108,7 +108,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ADBE": {
    "name": "Adobe Inc.",
@@ -117,7 +117,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ADI": {
    "name": "Analog Devices, Inc.",
@@ -126,7 +126,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ADM": {
    "name": "Archer-Daniels-Midland Company",
@@ -135,7 +135,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ADP": {
    "name": "Automatic Data Processing, Inc.",
@@ -144,7 +144,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ADS.DE": {
    "name": "adidas AG",
@@ -153,7 +153,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ADSK": {
    "name": "Autodesk, Inc.",
@@ -162,7 +162,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AEE": {
    "name": "Ameren Corporation",
@@ -171,7 +171,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AENA.MC": {
    "name": "Aena S.M.E., S.A.",
@@ -180,7 +180,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AEP": {
    "name": "American Electric Power Company, Inc.",
@@ -189,7 +189,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AES": {
    "name": "The AES Corporation",
@@ -198,7 +198,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AFL": {
    "name": "Aflac Incorporated",
@@ -207,7 +207,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AGN.AS": {
    "name": "Aegon Ltd.",
@@ -216,7 +216,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AGS.BR": {
    "name": "ageas SA/NV",
@@ -225,7 +225,7 @@
    "currency": "EUR",
    "country": "Belgium",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AI.PA": {
    "name": "L'Air Liquide S.A.",
@@ -234,7 +234,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AIG": {
    "name": "American International Group, Inc.",
@@ -243,7 +243,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AIR.PA": {
    "name": "Airbus SE",
@@ -252,7 +252,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AIZ": {
    "name": "Assurant, Inc.",
@@ -261,7 +261,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AJG": {
    "name": "Arthur J. Gallagher & Co.",
@@ -270,7 +270,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AKAM": {
    "name": "Akamai Technologies, Inc.",
@@ -279,7 +279,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AKRBP.OL": {
    "name": "Aker BP ASA",
@@ -288,7 +288,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AKZA.AS": {
    "name": "Akzo Nobel N.V.",
@@ -297,7 +297,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ALB": {
    "name": "Albemarle Corporation",
@@ -306,7 +306,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ALC.SW": {
    "name": "Alcon Inc.",
@@ -315,7 +315,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ALFA.ST": {
    "name": "Alfa Laval AB (publ)",
@@ -324,7 +324,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ALGN": {
    "name": "Align Technology, Inc.",
@@ -333,7 +333,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ALL": {
    "name": "The Allstate Corporation",
@@ -342,7 +342,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ALLE": {
    "name": "Allegion plc",
@@ -351,7 +351,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ALV.DE": {
    "name": "Allianz SE",
@@ -360,7 +360,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMAT": {
    "name": "Applied Materials, Inc.",
@@ -369,7 +369,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMBU": {
    "name": "Ambu A/S",
@@ -378,7 +378,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMBU-B": {
    "name": "Ambu A/S",
@@ -387,7 +387,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMCR": {
    "name": "Amcor plc",
@@ -396,7 +396,7 @@
    "currency": "USD",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMD": {
    "name": "Advanced Micro Devices, Inc.",
@@ -405,7 +405,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AME": {
    "name": "AMETEK, Inc.",
@@ -414,7 +414,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMGN": {
    "name": "Amgen Inc.",
@@ -423,7 +423,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMP": {
    "name": "Ameriprise Financial, Inc.",
@@ -432,7 +432,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMS.MC": {
    "name": "Amadeus IT Group, S.A.",
@@ -441,7 +441,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AMT": {
    "name": "American Tower Corporation",
@@ -450,7 +450,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ANDR.VI": {
    "name": "Andritz AG",
@@ -459,7 +459,7 @@
    "currency": "EUR",
    "country": "Austria",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ANET": {
    "name": "Arista Networks, Inc.",
@@ -468,7 +468,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ANTO.L": {
    "name": "Antofagasta plc",
@@ -477,7 +477,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AON": {
    "name": "Aon plc",
@@ -486,7 +486,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AOS": {
    "name": "A. O. Smith Corporation",
@@ -495,7 +495,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "APA": {
    "name": "APA Corporation",
@@ -504,7 +504,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "APD": {
    "name": "Air Products and Chemicals, Inc.",
@@ -513,7 +513,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "APH": {
    "name": "Amphenol Corporation",
@@ -522,7 +522,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "APO": {
    "name": "Apollo Global Management, Inc.",
@@ -531,7 +531,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "APP": {
    "name": "AppLovin Corporation",
@@ -540,7 +540,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "APTV": {
    "name": "Aptiv PLC",
@@ -549,7 +549,7 @@
    "currency": "USD",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ARE": {
    "name": "Alexandria Real Estate Equities, Inc.",
@@ -558,7 +558,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ARES": {
    "name": "Ares Management Corporation",
@@ -567,7 +567,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ASM.AS": {
    "name": "ASM International NV",
@@ -576,7 +576,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ASML": {
    "name": "ASML Holding N.V.",
@@ -585,7 +585,7 @@
    "currency": "USD",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ASSA-B.ST": {
    "name": "ASSA ABLOY AB (publ)",
@@ -594,7 +594,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ATO": {
    "name": "Atmos Energy Corporation",
@@ -603,7 +603,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AV.L": {
    "name": "Aviva plc",
@@ -612,7 +612,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AVB": {
    "name": "AvalonBay Communities Inc",
@@ -621,7 +621,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AVGO": {
    "name": "Broadcom Inc.",
@@ -630,7 +630,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AVY": {
    "name": "Avery Dennison Corporation",
@@ -639,7 +639,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AWK": {
    "name": "American Water Works Company, Inc.",
@@ -648,7 +648,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AXON": {
    "name": "Axon Enterprise, Inc.",
@@ -657,7 +657,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AXP": {
    "name": "American Express Company",
@@ -666,7 +666,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "AZO": {
    "name": "AutoZone, Inc.",
@@ -675,7 +675,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BA": {
    "name": "The Boeing Company",
@@ -684,7 +684,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BA.L": {
    "name": "BAE Systems plc",
@@ -693,7 +693,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BAC": {
    "name": "Bank of America Corporation",
@@ -702,7 +702,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BALL": {
    "name": "Ball Corporation",
@@ -711,7 +711,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BARC.L": {
    "name": "Barclays PLC",
@@ -720,7 +720,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BAS.DE": {
    "name": "BASF SE",
@@ -729,7 +729,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BATS.L": {
    "name": "British American Tobacco p.l.c.",
@@ -738,7 +738,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BAVA.CO": {
    "name": "Bavarian Nordic A/S",
@@ -747,7 +747,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BAX": {
    "name": "Baxter International Inc.",
@@ -756,7 +756,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BAYN.DE": {
    "name": "Bayer Aktiengesellschaft",
@@ -765,7 +765,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BBVA.MC": {
    "name": "Banco Bilbao Vizcaya Argentaria, S.A.",
@@ -774,7 +774,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BBY": {
    "name": "Best Buy Co., Inc.",
@@ -783,7 +783,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BDX": {
    "name": "Becton, Dickinson and Company",
@@ -792,7 +792,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BEI.DE": {
    "name": "Beiersdorf Aktiengesellschaft",
@@ -801,7 +801,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BEN": {
    "name": "Franklin Templeton Inc.",
@@ -810,7 +810,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BF-B": {
    "name": "Brown-Forman Corporation",
@@ -819,7 +819,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BG": {
    "name": "Bunge Global SA",
@@ -828,7 +828,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BIIB": {
    "name": "Biogen Inc.",
@@ -837,7 +837,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BKNG": {
    "name": "Booking Holdings Inc.",
@@ -846,7 +846,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BKR": {
    "name": "Baker Hughes Company",
@@ -855,7 +855,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BKT.MC": {
    "name": "Bankinter, S.A.",
@@ -864,7 +864,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BLDR": {
    "name": "Builders FirstSource, Inc.",
@@ -873,7 +873,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BLK": {
    "name": "BlackRock, Inc.",
@@ -882,7 +882,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BMW.DE": {
    "name": "Bayerische Motoren Werke Aktiengesellschaft",
@@ -891,7 +891,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BMY": {
    "name": "Bristol-Myers Squibb Company",
@@ -900,7 +900,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BN.PA": {
    "name": "Danone S.A.",
@@ -909,7 +909,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BNP.PA": {
    "name": "BNP Paribas SA",
@@ -918,7 +918,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BNR.DE": {
    "name": "Brenntag SE",
@@ -927,7 +927,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BNY": {
    "name": "The Bank of New York Mellon Corporation",
@@ -936,7 +936,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BOL.ST": {
    "name": "Boliden AB (publ)",
@@ -945,7 +945,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BOOZT": {
    "name": "Boozt AB (publ)",
@@ -954,7 +954,7 @@
    "currency": "SEK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BP.L": {
    "name": "BP p.l.c.",
@@ -963,7 +963,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BR": {
    "name": "Broadridge Financial Solutions, Inc.",
@@ -972,7 +972,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BRK-B": {
    "name": "Berkshire Hathaway Inc.",
@@ -981,7 +981,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BRO": {
    "name": "Brown & Brown, Inc.",
@@ -990,7 +990,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BSX": {
    "name": "Boston Scientific Corporation",
@@ -999,7 +999,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BX": {
    "name": "Blackstone Inc.",
@@ -1008,7 +1008,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "BXP": {
    "name": "BXP, Inc.",
@@ -1017,7 +1017,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "C": {
    "name": "Citigroup Inc.",
@@ -1026,7 +1026,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CA.PA": {
    "name": "Carrefour SA",
@@ -1035,7 +1035,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CABK.MC": {
    "name": "CaixaBank, S.A.",
@@ -1044,7 +1044,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CAH": {
    "name": "Cardinal Health, Inc.",
@@ -1053,7 +1053,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CAP.PA": {
    "name": "Capgemini SE",
@@ -1062,7 +1062,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CARL-B.CO": {
    "name": "Carlsberg A/S",
@@ -1071,7 +1071,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CARR": {
    "name": "Carrier Global Corporation",
@@ -1080,7 +1080,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CASY": {
    "name": "Casey's General Stores, Inc.",
@@ -1089,7 +1089,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CB": {
    "name": "Chubb Limited",
@@ -1098,7 +1098,7 @@
    "currency": "USD",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CBK.DE": {
    "name": "Commerzbank AG",
@@ -1107,7 +1107,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CBOE": {
    "name": "Cboe Global Markets, Inc.",
@@ -1116,7 +1116,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CBRE": {
    "name": "CBRE Group, Inc.",
@@ -1125,7 +1125,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CCI": {
    "name": "Crown Castle Inc.",
@@ -1134,7 +1134,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CCL": {
    "name": "Carnival Corporation Ltd.",
@@ -1143,7 +1143,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CDNS": {
    "name": "Cadence Design Systems, Inc.",
@@ -1152,7 +1152,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CDW": {
    "name": "CDW Corporation",
@@ -1161,7 +1161,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CEG": {
    "name": "Constellation Energy Corporation",
@@ -1170,7 +1170,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CF": {
    "name": "CF Industries Holdings, Inc.",
@@ -1179,7 +1179,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CFG": {
    "name": "Citizens Financial Group, Inc.",
@@ -1188,7 +1188,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CFR.SW": {
    "name": "Compagnie Financière Richemont SA",
@@ -1197,7 +1197,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CHD": {
    "name": "Church & Dwight Co., Inc.",
@@ -1206,7 +1206,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CHRW": {
    "name": "C.H. Robinson Worldwide, Inc.",
@@ -1215,7 +1215,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CHTR": {
    "name": "Charter Communications, Inc.",
@@ -1224,7 +1224,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CI": {
    "name": "The Cigna Group",
@@ -1233,7 +1233,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CIEN": {
    "name": "Ciena Corporation",
@@ -1242,7 +1242,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CINF": {
    "name": "Cincinnati Financial Corporation",
@@ -1251,7 +1251,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CL": {
    "name": "Colgate-Palmolive Company",
@@ -1260,7 +1260,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CLNX.MC": {
    "name": "Cellnex Telecom, S.A.",
@@ -1269,7 +1269,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CLX": {
    "name": "The Clorox Company",
@@ -1278,7 +1278,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CMCSA": {
    "name": "Comcast Corporation",
@@ -1287,7 +1287,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CME": {
    "name": "CME Group Inc.",
@@ -1296,7 +1296,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CMG": {
    "name": "Chipotle Mexican Grill, Inc.",
@@ -1305,7 +1305,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CMI": {
    "name": "Cummins Inc.",
@@ -1314,7 +1314,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CMS": {
    "name": "CMS Energy Corporation",
@@ -1323,7 +1323,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CNC": {
    "name": "Centene Corporation",
@@ -1332,7 +1332,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CNP": {
    "name": "CenterPoint Energy, Inc.",
@@ -1341,7 +1341,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "COF": {
    "name": "Capital One Financial Corporation",
@@ -1350,7 +1350,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "COHR": {
    "name": "Coherent Corp.",
@@ -1359,7 +1359,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "COIN": {
    "name": "Coinbase Global, Inc.",
@@ -1368,7 +1368,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CON.DE": {
    "name": "Continental Aktiengesellschaft",
@@ -1377,7 +1377,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "COO": {
    "name": "The Cooper Companies, Inc.",
@@ -1386,7 +1386,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "COP": {
    "name": "ConocoPhillips",
@@ -1395,7 +1395,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "COR": {
    "name": "Cencora, Inc.",
@@ -1404,7 +1404,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "COST": {
    "name": "Costco Wholesale Corporation",
@@ -1413,7 +1413,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CPAY": {
    "name": "Corpay, Inc.",
@@ -1422,7 +1422,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CPG.L": {
    "name": "Compass Group PLC",
@@ -1431,7 +1431,7 @@
    "currency": "USD",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CPR.MI": {
    "name": "Davide Campari-Milano N.V.",
@@ -1440,7 +1440,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CPRT": {
    "name": "Copart, Inc.",
@@ -1449,7 +1449,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CPT": {
    "name": "Camden Property Trust",
@@ -1458,7 +1458,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CRDA.L": {
    "name": "Croda International Plc",
@@ -1467,7 +1467,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CRH": {
    "name": "CRH plc",
@@ -1476,7 +1476,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CRL": {
    "name": "Charles River Laboratories International, Inc.",
@@ -1485,7 +1485,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CRM": {
    "name": "Salesforce, Inc.",
@@ -1494,7 +1494,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CRWD": {
    "name": "CrowdStrike Holdings, Inc.",
@@ -1503,7 +1503,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CS.PA": {
    "name": "AXA SA",
@@ -1512,7 +1512,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CSCO": {
    "name": "Cisco Systems, Inc.",
@@ -1521,7 +1521,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CSGP": {
    "name": "CoStar Group, Inc.",
@@ -1530,7 +1530,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CSU": {
    "name": "Constellation Software Inc.",
@@ -1539,7 +1539,7 @@
    "currency": "CAD",
    "country": "Canada",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CSX": {
    "name": "CSX Corporation",
@@ -1548,7 +1548,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CTAS": {
    "name": "Cintas Corporation",
@@ -1557,7 +1557,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CTSH": {
    "name": "Cognizant Technology Solutions Corporation",
@@ -1566,7 +1566,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CTVA": {
    "name": "Corteva, Inc.",
@@ -1575,7 +1575,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CVNA": {
    "name": "Carvana Co.",
@@ -1584,7 +1584,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CVS": {
    "name": "CVS Health Corporation",
@@ -1593,7 +1593,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "CVX": {
    "name": "Chevron Corporation",
@@ -1602,7 +1602,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "D": {
    "name": "Dominion Energy, Inc.",
@@ -1611,7 +1611,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DAL": {
    "name": "Delta Air Lines, Inc.",
@@ -1620,7 +1620,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DANSKE.CO": {
    "name": "Danske Bank A/S",
@@ -1629,7 +1629,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DASH": {
    "name": "DoorDash, Inc.",
@@ -1638,7 +1638,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DB1.DE": {
    "name": "Deutsche Börse AG",
@@ -1647,7 +1647,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DBK.DE": {
    "name": "Deutsche Bank Aktiengesellschaft",
@@ -1656,7 +1656,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DD": {
    "name": "DuPont de Nemours, Inc.",
@@ -1665,7 +1665,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DDOG": {
    "name": "Datadog, Inc.",
@@ -1674,7 +1674,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DE": {
    "name": "Deere & Company",
@@ -1683,7 +1683,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DECK": {
    "name": "Deckers Outdoor Corporation",
@@ -1692,7 +1692,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DELL": {
    "name": "Dell Technologies Inc.",
@@ -1701,7 +1701,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DEMANT.CO": {
    "name": "Demant A/S",
@@ -1710,7 +1710,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DG": {
    "name": "Dollar General Corporation",
@@ -1719,7 +1719,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DG.PA": {
    "name": "Vinci SA",
@@ -1728,7 +1728,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DGX": {
    "name": "Quest Diagnostics Incorporated",
@@ -1737,7 +1737,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DHI": {
    "name": "D.R. Horton, Inc.",
@@ -1746,7 +1746,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DHL.DE": {
    "name": "DHL AG",
@@ -1755,7 +1755,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DHR": {
    "name": "Danaher Corporation",
@@ -1764,7 +1764,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DIS": {
    "name": "The Walt Disney Company",
@@ -1773,7 +1773,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DLR": {
    "name": "Digital Realty Trust, Inc.",
@@ -1782,7 +1782,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DLTR": {
    "name": "Dollar Tree, Inc.",
@@ -1791,7 +1791,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DNB.OL": {
    "name": "DNB Bank ASA",
@@ -1800,7 +1800,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DOC": {
    "name": "Healthpeak Properties, Inc.",
@@ -1809,7 +1809,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DOV": {
    "name": "Dover Corporation",
@@ -1818,7 +1818,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DOW": {
    "name": "Dow Inc.",
@@ -1827,7 +1827,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DPZ": {
    "name": "Domino's Pizza, Inc.",
@@ -1836,7 +1836,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DRI": {
    "name": "Darden Restaurants, Inc.",
@@ -1845,7 +1845,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DSV.CO": {
    "name": "DSV A/S",
@@ -1854,7 +1854,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DSY.PA": {
    "name": "Dassault Systèmes SE",
@@ -1863,7 +1863,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DTE": {
    "name": "DTE Energy Company",
@@ -1872,7 +1872,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DTE.DE": {
    "name": "Deutsche Telekom AG",
@@ -1881,7 +1881,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DUK": {
    "name": "Duke Energy Corporation",
@@ -1890,7 +1890,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DVA": {
    "name": "DaVita Inc.",
@@ -1899,7 +1899,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DVN": {
    "name": "Devon Energy Corporation",
@@ -1908,7 +1908,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "DXCM": {
    "name": "DexCom, Inc.",
@@ -1917,7 +1917,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EBAY": {
    "name": "eBay Inc.",
@@ -1926,7 +1926,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EBS.VI": {
    "name": "Erste Group Bank AG",
@@ -1935,7 +1935,7 @@
    "currency": "EUR",
    "country": "Austria",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ECHO": {
    "name": "EchoStar Corporation",
@@ -1944,7 +1944,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ECL": {
    "name": "Ecolab Inc.",
@@ -1953,7 +1953,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ED": {
    "name": "Consolidated Edison, Inc.",
@@ -1962,7 +1962,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EDEN.PA": {
    "name": "Edenred SE",
@@ -1971,7 +1971,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EDP.LS": {
    "name": "EDP, S.A.",
@@ -1980,7 +1980,7 @@
    "currency": "EUR",
    "country": "Portugal",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EDPR.LS": {
    "name": "EDP Renewables, S.A.",
@@ -1989,7 +1989,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EFX": {
    "name": "Equifax Inc.",
@@ -1998,7 +1998,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EG": {
    "name": "Everest Group, Ltd.",
@@ -2007,7 +2007,7 @@
    "currency": "USD",
    "country": "Bermuda",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EIX": {
    "name": "Edison International",
@@ -2016,7 +2016,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EL": {
    "name": "The Estée Lauder Companies Inc.",
@@ -2025,7 +2025,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EL.PA": {
    "name": "EssilorLuxottica Société anonyme",
@@ -2034,7 +2034,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ELE.MC": {
    "name": "Endesa, S.A.",
@@ -2043,7 +2043,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ELI.BR": {
    "name": "Elia Group SA/NV",
@@ -2052,7 +2052,7 @@
    "currency": "EUR",
    "country": "Belgium",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ELUX-B.ST": {
    "name": "AB Electrolux (publ)",
@@ -2061,7 +2061,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ELV": {
    "name": "Elevance Health, Inc.",
@@ -2070,7 +2070,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EME": {
    "name": "EMCOR Group, Inc.",
@@ -2079,7 +2079,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EMR": {
    "name": "Emerson Electric Co.",
@@ -2088,7 +2088,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EN.PA": {
    "name": "Bouygues SA",
@@ -2097,7 +2097,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ENEL.MI": {
    "name": "Enel SpA",
@@ -2106,7 +2106,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ENGI.PA": {
    "name": "Engie SA",
@@ -2115,7 +2115,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ENI.MI": {
    "name": "Eni S.p.A.",
@@ -2124,7 +2124,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ENR.DE": {
    "name": "Siemens Energy AG",
@@ -2133,7 +2133,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EOAN.DE": {
    "name": "E.ON SE",
@@ -2142,7 +2142,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EOG": {
    "name": "EOG Resources, Inc.",
@@ -2151,7 +2151,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EPI-A.ST": {
    "name": "Epiroc AB (publ)",
@@ -2160,7 +2160,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EQIX": {
    "name": "Equinix, Inc.",
@@ -2169,7 +2169,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EQNR.OL": {
    "name": "Equinor ASA",
@@ -2178,7 +2178,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EQR": {
    "name": "Equity Residential",
@@ -2187,7 +2187,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EQT": {
    "name": "EQT Corporation",
@@ -2196,7 +2196,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EQT.ST": {
    "name": "EQT AB (publ)",
@@ -2205,7 +2205,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ERIC-B.ST": {
    "name": "Telefonaktiebolaget LM Ericsson (publ)",
@@ -2214,7 +2214,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ERIE": {
    "name": "Erie Indemnity Company",
@@ -2223,7 +2223,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ES": {
    "name": "Eversource Energy",
@@ -2232,7 +2232,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ESS": {
    "name": "Essex Property Trust, Inc.",
@@ -2241,7 +2241,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ESSITY-B.ST": {
    "name": "Essity AB (publ)",
@@ -2250,7 +2250,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ETL": {
    "name": "Eutelsat Communications S.A.",
@@ -2259,7 +2259,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ETN": {
    "name": "Eaton Corporation plc",
@@ -2268,7 +2268,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ETR": {
    "name": "Entergy Corporation",
@@ -2277,13 +2277,13 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EUNN.DE": {
    "name": "iShares Core MSCI Japan IMI UCITS ETF USD (Acc)",
    "currency": "EUR",
    "quoteType": "ETF",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EVO.ST": {
    "name": "Evolution AB (publ)",
@@ -2292,7 +2292,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EVRG": {
    "name": "Evergy, Inc.",
@@ -2301,7 +2301,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EW": {
    "name": "Edwards Lifesciences Corporation",
@@ -2310,7 +2310,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EXC": {
    "name": "Exelon Corporation",
@@ -2319,7 +2319,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EXE": {
    "name": "Expand Energy Corporation",
@@ -2328,7 +2328,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EXPD": {
    "name": "Expeditors International of Washington, Inc.",
@@ -2337,7 +2337,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EXPE": {
    "name": "Expedia Group, Inc.",
@@ -2346,7 +2346,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EXPN.L": {
    "name": "Experian plc",
@@ -2355,7 +2355,7 @@
    "currency": "GBp",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "EXR": {
    "name": "Extra Space Storage Inc.",
@@ -2364,7 +2364,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "F": {
    "name": "Ford Motor Company",
@@ -2373,7 +2373,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FANG": {
    "name": "Diamondback Energy, Inc.",
@@ -2382,7 +2382,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FAST": {
    "name": "Fastenal Company",
@@ -2391,7 +2391,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FCX": {
    "name": "Freeport-McMoRan Inc.",
@@ -2400,7 +2400,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FDS": {
    "name": "FactSet Research Systems Inc.",
@@ -2409,7 +2409,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FDX": {
    "name": "FedEx Corporation",
@@ -2418,7 +2418,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FDXF": {
    "name": "FedEx Freight Holding Company, Inc.",
@@ -2427,7 +2427,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FE": {
    "name": "FirstEnergy Corp.",
@@ -2436,7 +2436,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FER.MC": {
    "name": "Ferrovial N.V.",
@@ -2445,7 +2445,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FERG": {
    "name": "Ferguson Enterprises Inc.",
@@ -2454,7 +2454,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FFIV": {
    "name": "F5, Inc.",
@@ -2463,7 +2463,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FICO": {
    "name": "Fair Isaac Corporation",
@@ -2472,7 +2472,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FIS": {
    "name": "Fidelity National Information Services, Inc.",
@@ -2481,13 +2481,13 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FISV": {
    "name": "Fiserv, Inc.",
    "currency": "USD",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FITB": {
    "name": "Fifth Third Bancorp",
@@ -2496,7 +2496,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FIX": {
    "name": "Comfort Systems USA, Inc.",
@@ -2505,7 +2505,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FLEX": {
    "name": "Flex Ltd.",
@@ -2514,7 +2514,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FLTR.L": {
    "name": "Flutter Entertainment PLC",
@@ -2523,7 +2523,7 @@
    "currency": "GBp",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FME.DE": {
    "name": "Fresenius Medical Care AG",
@@ -2532,7 +2532,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FOX": {
    "name": "Fox Corporation",
@@ -2541,7 +2541,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FOXA": {
    "name": "Fox Corporation",
@@ -2550,7 +2550,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FRE.DE": {
    "name": "Fresenius SE & Co. KGaA",
@@ -2559,7 +2559,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FRT": {
    "name": "Federal Realty Investment Trust",
@@ -2568,7 +2568,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FSLR": {
    "name": "First Solar, Inc.",
@@ -2577,7 +2577,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FTNT": {
    "name": "Fortinet, Inc.",
@@ -2586,7 +2586,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "FTV": {
    "name": "Fortive Corporation",
@@ -2595,7 +2595,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "G.MI": {
    "name": "Assicurazioni Generali S.p.A.",
@@ -2604,7 +2604,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "G1A.DE": {
    "name": "GEA Group Aktiengesellschaft",
@@ -2613,7 +2613,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GALP.LS": {
    "name": "Galp Energia, SGPS, S.A.",
@@ -2622,7 +2622,7 @@
    "currency": "EUR",
    "country": "Portugal",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GBLB.BR": {
    "name": "Groupe Bruxelles Lambert SA",
@@ -2631,7 +2631,7 @@
    "currency": "EUR",
    "country": "Belgium",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GD": {
    "name": "General Dynamics Corporation",
@@ -2640,7 +2640,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GDDY": {
    "name": "GoDaddy Inc.",
@@ -2649,7 +2649,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GEBN.SW": {
    "name": "Geberit AG",
@@ -2658,7 +2658,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GEHC": {
    "name": "GE HealthCare Technologies Inc.",
@@ -2667,7 +2667,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GEN": {
    "name": "Gen Digital Inc.",
@@ -2676,7 +2676,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GETI-B.ST": {
    "name": "Getinge AB (publ)",
@@ -2685,7 +2685,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GEV": {
    "name": "GE Vernova Inc.",
@@ -2694,7 +2694,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GILD": {
    "name": "Gilead Sciences, Inc.",
@@ -2703,7 +2703,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GIS": {
    "name": "General Mills, Inc.",
@@ -2712,7 +2712,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GIVN.SW": {
    "name": "Givaudan SA",
@@ -2721,7 +2721,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GJF.OL": {
    "name": "Gjensidige Forsikring ASA",
@@ -2730,7 +2730,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GL": {
    "name": "Globe Life Inc.",
@@ -2739,7 +2739,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GLE.PA": {
    "name": "Société Générale Société anonyme",
@@ -2748,7 +2748,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GLEN.L": {
    "name": "Glencore plc",
@@ -2757,7 +2757,7 @@
    "currency": "GBp",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GLW": {
    "name": "Corning Incorporated",
@@ -2766,7 +2766,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GM": {
    "name": "General Motors Company",
@@ -2775,7 +2775,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GN.CO": {
    "name": "GN Store Nord A/S",
@@ -2784,7 +2784,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GNRC": {
    "name": "Generac Holdings Inc.",
@@ -2793,7 +2793,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GOMX": {
    "name": "GomSpace Group AB (publ)",
@@ -2802,7 +2802,7 @@
    "currency": "SEK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GOOG": {
    "name": "Alphabet Inc.",
@@ -2811,7 +2811,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GPC": {
    "name": "Genuine Parts Company",
@@ -2820,7 +2820,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GPN": {
    "name": "Global Payments Inc.",
@@ -2829,7 +2829,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GRF.MC": {
    "name": "Grifols, S.A.",
@@ -2838,7 +2838,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GRMN": {
    "name": "Garmin Ltd.",
@@ -2847,7 +2847,7 @@
    "currency": "USD",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GS": {
    "name": "The Goldman Sachs Group, Inc.",
@@ -2856,7 +2856,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GSK.L": {
    "name": "GSK plc",
@@ -2865,7 +2865,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "GWW": {
    "name": "W.W. Grainger, Inc.",
@@ -2874,7 +2874,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HAL": {
    "name": "Halliburton Company",
@@ -2883,7 +2883,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HAS": {
    "name": "Hasbro, Inc.",
@@ -2892,7 +2892,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HBAN": {
    "name": "Huntington Bancshares Incorporated",
@@ -2901,7 +2901,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HCA": {
    "name": "HCA Healthcare, Inc.",
@@ -2910,7 +2910,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HD": {
    "name": "The Home Depot, Inc.",
@@ -2919,7 +2919,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HEALTH.HE": {
    "name": "Nightingale Health Oyj",
@@ -2928,7 +2928,7 @@
    "currency": "EUR",
    "country": "Finland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HEI.DE": {
    "name": "Heidelberg Materials AG",
@@ -2937,7 +2937,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HEIA.AS": {
    "name": "Heineken N.V.",
@@ -2946,7 +2946,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HEN3.DE": {
    "name": "Henkel AG & Co. KGaA",
@@ -2955,7 +2955,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HFG": {
    "name": "HelloFresh SE",
@@ -2964,7 +2964,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HIG": {
    "name": "The Hartford Insurance Group, Inc.",
@@ -2973,7 +2973,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HII": {
    "name": "Huntington Ingalls Industries, Inc.",
@@ -2982,7 +2982,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HLT": {
    "name": "Hilton Worldwide Holdings Inc.",
@@ -2991,7 +2991,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HM-B.ST": {
    "name": "H & M Hennes & Mauritz AB (publ)",
@@ -3000,7 +3000,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HNR1.DE": {
    "name": "Hannover Rück SE",
@@ -3009,7 +3009,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HO.PA": {
    "name": "Thales S.A.",
@@ -3018,7 +3018,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HOLN.SW": {
    "name": "Holcim AG",
@@ -3027,7 +3027,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HON": {
    "name": "Honeywell International Inc.",
@@ -3036,7 +3036,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HONA": {
    "name": "Honeywell Aerospace Inc.",
@@ -3045,7 +3045,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HOOD": {
    "name": "Robinhood Markets, Inc.",
@@ -3054,7 +3054,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HPE": {
    "name": "Hewlett Packard Enterprise Company",
@@ -3063,7 +3063,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HPQ": {
    "name": "HP Inc.",
@@ -3072,7 +3072,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HRL": {
    "name": "Hormel Foods Corporation",
@@ -3081,7 +3081,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HSBA.L": {
    "name": "HSBC Holdings plc",
@@ -3090,7 +3090,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HSIC": {
    "name": "Henry Schein, Inc.",
@@ -3099,7 +3099,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HST": {
    "name": "Host Hotels & Resorts, Inc.",
@@ -3108,7 +3108,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HSY": {
    "name": "The Hershey Company",
@@ -3117,7 +3117,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HUBB": {
    "name": "Hubbell Incorporated",
@@ -3126,7 +3126,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HUM": {
    "name": "Humana Inc.",
@@ -3135,7 +3135,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "HWM": {
    "name": "Howmet Aerospace Inc.",
@@ -3144,7 +3144,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IBKR": {
    "name": "Interactive Brokers Group, Inc.",
@@ -3153,7 +3153,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IBM": {
    "name": "International Business Machines Corporation",
@@ -3162,7 +3162,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ICE": {
    "name": "Intercontinental Exchange, Inc.",
@@ -3171,7 +3171,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IDXX": {
    "name": "IDEXX Laboratories, Inc.",
@@ -3180,7 +3180,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IEX": {
    "name": "IDEX Corporation",
@@ -3189,7 +3189,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IFF": {
    "name": "International Flavors & Fragrances Inc.",
@@ -3198,7 +3198,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IFX.DE": {
    "name": "Infineon Technologies AG",
@@ -3207,7 +3207,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IHG.L": {
    "name": "InterContinental Hotels Group PLC",
@@ -3216,7 +3216,7 @@
    "currency": "USD",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IMCD.AS": {
    "name": "IMCD N.V.",
@@ -3225,13 +3225,13 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IMEU": {
    "name": "iShares Core MSCI Europe UCITS ETF EUR (Dist)",
    "currency": "GBp",
    "quoteType": "ETF",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "INCY": {
    "name": "Incyte Corporation",
@@ -3240,7 +3240,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "INGA.AS": {
    "name": "ING Groep N.V.",
@@ -3249,7 +3249,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "INTC": {
    "name": "Intel Corporation",
@@ -3258,7 +3258,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "INTU": {
    "name": "Intuit Inc.",
@@ -3267,7 +3267,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "INVE-B.ST": {
    "name": "Investor AB (publ)",
@@ -3276,7 +3276,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "INVH": {
    "name": "Invitation Homes Inc.",
@@ -3285,7 +3285,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IP": {
    "name": "International Paper Company",
@@ -3294,7 +3294,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IQV": {
    "name": "IQVIA Holdings Inc.",
@@ -3303,7 +3303,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IR": {
    "name": "Ingersoll Rand Inc.",
@@ -3312,7 +3312,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IRM": {
    "name": "Iron Mountain Incorporated",
@@ -3321,7 +3321,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ISP.MI": {
    "name": "Intesa Sanpaolo S.p.A.",
@@ -3330,7 +3330,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ISRG": {
    "name": "Intuitive Surgical, Inc.",
@@ -3339,7 +3339,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ISS.CO": {
    "name": "ISS A/S",
@@ -3348,7 +3348,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IT": {
    "name": "Gartner, Inc.",
@@ -3357,7 +3357,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ITW": {
    "name": "Illinois Tool Works Inc.",
@@ -3366,7 +3366,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ITX.MC": {
    "name": "Industria de Diseño Textil, S.A.",
@@ -3375,7 +3375,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IVZ": {
    "name": "Invesco Ltd.",
@@ -3384,13 +3384,13 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "IXUA": {
    "name": "iShares MSCI World ex-USA UCITS ETF USD (Acc)",
    "currency": "EUR",
    "quoteType": "ETF",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "J": {
    "name": "Jacobs Solutions Inc.",
@@ -3399,7 +3399,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "JBHT": {
    "name": "J.B. Hunt Transport Services, Inc.",
@@ -3408,7 +3408,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "JBL": {
    "name": "Jabil Inc.",
@@ -3417,7 +3417,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "JCI": {
    "name": "Johnson Controls International plc",
@@ -3426,7 +3426,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "JD.L": {
    "name": "JD Sports Fashion Plc",
@@ -3435,7 +3435,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "JKHY": {
    "name": "Jack Henry & Associates, Inc.",
@@ -3444,7 +3444,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "JMT.LS": {
    "name": "Jerónimo Martins, SGPS, S.A.",
@@ -3453,7 +3453,7 @@
    "currency": "EUR",
    "country": "Portugal",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "JYSK.CO": {
    "name": "Jyske Bank A/S",
@@ -3462,7 +3462,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KBC.BR": {
    "name": "KBC Group NV",
@@ -3471,7 +3471,7 @@
    "currency": "EUR",
    "country": "Belgium",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KDP": {
    "name": "Keurig Dr Pepper Inc.",
@@ -3480,7 +3480,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KEY": {
    "name": "KeyCorp",
@@ -3489,7 +3489,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KEYS": {
    "name": "Keysight Technologies, Inc.",
@@ -3498,7 +3498,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KHC": {
    "name": "The Kraft Heinz Company",
@@ -3507,7 +3507,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KIM": {
    "name": "Kimco Realty Corporation",
@@ -3516,7 +3516,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KING": {
    "name": "The Kingfish Company N.V.",
@@ -3525,7 +3525,7 @@
    "currency": "NOK",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KKR": {
    "name": "KKR & Co. Inc.",
@@ -3534,7 +3534,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KLAC": {
    "name": "KLA Corporation",
@@ -3543,7 +3543,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KMB": {
    "name": "Kimberly-Clark Corporation",
@@ -3552,7 +3552,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KMI": {
    "name": "Kinder Morgan, Inc.",
@@ -3561,7 +3561,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KNIN.SW": {
    "name": "Kuehne + Nagel International AG",
@@ -3570,7 +3570,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KOG.OL": {
    "name": "Kongsberg Gruppen ASA",
@@ -3579,7 +3579,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KPN.AS": {
    "name": "Koninklijke KPN N.V.",
@@ -3588,7 +3588,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KR": {
    "name": "The Kroger Co.",
@@ -3597,7 +3597,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "KVUE": {
    "name": "Kenvue Inc.",
@@ -3606,7 +3606,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "L": {
    "name": "Loews Corporation",
@@ -3615,7 +3615,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LDO.MI": {
    "name": "Leonardo S.p.a.",
@@ -3624,7 +3624,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LDOS": {
    "name": "Leidos Holdings, Inc.",
@@ -3633,7 +3633,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LEN": {
    "name": "Lennar Corporation",
@@ -3642,7 +3642,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LGEN.L": {
    "name": "Legal & General Group Plc",
@@ -3651,7 +3651,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LH": {
    "name": "Labcorp Holdings Inc.",
@@ -3660,7 +3660,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LHX": {
    "name": "L3Harris Technologies, Inc.",
@@ -3669,7 +3669,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LII": {
    "name": "Lennox International Inc.",
@@ -3678,7 +3678,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LIN": {
    "name": "Linde plc",
@@ -3687,7 +3687,7 @@
    "currency": "USD",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LITE": {
    "name": "Lumentum Holdings Inc.",
@@ -3696,7 +3696,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LLOY.L": {
    "name": "Lloyds Banking Group plc",
@@ -3705,7 +3705,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LMT": {
    "name": "Lockheed Martin Corporation",
@@ -3714,7 +3714,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LNT": {
    "name": "Alliant Energy Corporation",
@@ -3723,7 +3723,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LOGN.SW": {
    "name": "Logitech International S.A.",
@@ -3732,7 +3732,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LONN.SW": {
    "name": "Lonza Group AG",
@@ -3741,7 +3741,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LOW": {
    "name": "Lowe's Companies, Inc.",
@@ -3750,7 +3750,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LR.PA": {
    "name": "Legrand SA",
@@ -3759,7 +3759,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LRCX": {
    "name": "Lam Research Corporation",
@@ -3768,7 +3768,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LSEG.L": {
    "name": "London Stock Exchange Group plc",
@@ -3777,7 +3777,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LULU": {
    "name": "lululemon athletica inc.",
@@ -3786,7 +3786,7 @@
    "currency": "USD",
    "country": "Canada",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LUV": {
    "name": "Southwest Airlines Co.",
@@ -3795,7 +3795,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LVS": {
    "name": "Las Vegas Sands Corp.",
@@ -3804,7 +3804,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LYB": {
    "name": "LyondellBasell Industries N.V.",
@@ -3813,7 +3813,7 @@
    "currency": "USD",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "LYV": {
    "name": "Live Nation Entertainment, Inc.",
@@ -3822,7 +3822,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MA": {
    "name": "Mastercard Incorporated",
@@ -3831,7 +3831,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MAA": {
    "name": "Mid-America Apartment Communities, Inc.",
@@ -3840,7 +3840,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MAERSK-B.CO": {
    "name": "A.P. Møller - Mærsk A/S",
@@ -3849,7 +3849,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MAR": {
    "name": "Marriott International, Inc.",
@@ -3858,7 +3858,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MAS": {
    "name": "Masco Corporation",
@@ -3867,7 +3867,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MBG.DE": {
    "name": "Mercedes-Benz Group AG",
@@ -3876,7 +3876,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MC.PA": {
    "name": "LVMH Moët Hennessy - Louis Vuitton, Société Européenne",
@@ -3885,7 +3885,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MCD": {
    "name": "McDonald's Corporation",
@@ -3894,7 +3894,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MCHP": {
    "name": "Microchip Technology Incorporated",
@@ -3903,7 +3903,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MCK": {
    "name": "McKesson Corporation",
@@ -3912,7 +3912,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MCO": {
    "name": "Moody's Corporation",
@@ -3921,7 +3921,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MDLZ": {
    "name": "Mondelez International, Inc.",
@@ -3930,7 +3930,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MDT": {
    "name": "Medtronic plc",
@@ -3939,7 +3939,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MET": {
    "name": "MetLife, Inc.",
@@ -3948,7 +3948,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MGM": {
    "name": "MGM Resorts International",
@@ -3957,7 +3957,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MKC": {
    "name": "McCormick & Company, Incorporated",
@@ -3966,13 +3966,13 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ML.PA": {
    "name": "Compagnie Générale des Établissements Michelin Société en commandite par actions",
    "currency": "EUR",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MLM": {
    "name": "Martin Marietta Materials, Inc.",
@@ -3981,7 +3981,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MMM": {
    "name": "3M Company",
@@ -3990,7 +3990,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MNST": {
    "name": "Monster Beverage Corporation",
@@ -3999,7 +3999,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MO": {
    "name": "Altria Group, Inc.",
@@ -4008,7 +4008,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MOS": {
    "name": "The Mosaic Company",
@@ -4017,7 +4017,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MOWI.OL": {
    "name": "Mowi ASA",
@@ -4026,7 +4026,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MPC": {
    "name": "Marathon Petroleum Corporation",
@@ -4035,7 +4035,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MPWR": {
    "name": "Monolithic Power Systems, Inc.",
@@ -4044,7 +4044,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MRK": {
    "name": "Merck & Co., Inc.",
@@ -4053,7 +4053,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MRK.DE": {
    "name": "Merck KGaA",
@@ -4062,7 +4062,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MRNA": {
    "name": "Moderna, Inc.",
@@ -4071,7 +4071,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MRSH": {
    "name": "Marsh & McLennan Companies, Inc.",
@@ -4080,7 +4080,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MRVL": {
    "name": "Marvell Technology, Inc.",
@@ -4089,7 +4089,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MS": {
    "name": "Morgan Stanley",
@@ -4098,7 +4098,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MSCI": {
    "name": "MSCI Inc.",
@@ -4107,7 +4107,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MSFT": {
    "name": "Microsoft Corporation",
@@ -4116,7 +4116,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MSI": {
    "name": "Motorola Solutions, Inc.",
@@ -4125,7 +4125,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MTB": {
    "name": "M&T Bank Corporation",
@@ -4134,7 +4134,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MTD": {
    "name": "Mettler-Toledo International Inc.",
@@ -4143,7 +4143,7 @@
    "currency": "USD",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MTX.DE": {
    "name": "MTU Aero Engines AG",
@@ -4152,7 +4152,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MU": {
    "name": "Micron Technology, Inc.",
@@ -4161,7 +4161,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "MUV2.DE": {
    "name": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
@@ -4170,7 +4170,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NAS": {
    "name": "Norwegian Air Shuttle ASA",
@@ -4179,7 +4179,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NCLH": {
    "name": "Norwegian Cruise Line Holdings Ltd.",
@@ -4188,7 +4188,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NDA-SE.ST": {
    "name": "Nordea Bank Abp",
@@ -4197,7 +4197,7 @@
    "currency": "SEK",
    "country": "Finland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NDAQ": {
    "name": "Nasdaq, Inc.",
@@ -4206,7 +4206,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NDSN": {
    "name": "Nordson Corporation",
@@ -4215,7 +4215,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NEE": {
    "name": "NextEra Energy, Inc.",
@@ -4224,7 +4224,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NELLY": {
    "name": "Nelly Group AB (publ)",
@@ -4233,7 +4233,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NEM": {
    "name": "Newmont Corporation",
@@ -4242,7 +4242,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NETC.CO": {
    "name": "Netcompany Group A/S",
@@ -4251,7 +4251,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NEXI.MI": {
    "name": "Nexi S.p.A.",
@@ -4260,7 +4260,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NFLX": {
    "name": "Netflix, Inc.",
@@ -4269,7 +4269,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NG.L": {
    "name": "National Grid plc",
@@ -4278,7 +4278,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NHY.OL": {
    "name": "Norsk Hydro ASA",
@@ -4287,7 +4287,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NI": {
    "name": "NiSource Inc.",
@@ -4296,7 +4296,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NKE": {
    "name": "NIKE, Inc.",
@@ -4305,7 +4305,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NN.AS": {
    "name": "NN Group N.V.",
@@ -4314,7 +4314,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NOC": {
    "name": "Northrop Grumman Corporation",
@@ -4323,7 +4323,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NOD.OL": {
    "name": "Nordic Semiconductor ASA",
@@ -4332,7 +4332,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NOVN.SW": {
    "name": "Novartis AG",
@@ -4341,7 +4341,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NOVO-B": {
    "name": "Novo Nordisk A/S",
@@ -4350,7 +4350,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NOVO-B.CO": {
    "name": "Novo Nordisk A/S",
@@ -4359,7 +4359,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NOW": {
    "name": "ServiceNow, Inc.",
@@ -4368,7 +4368,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NRG": {
    "name": "NRG Energy, Inc.",
@@ -4377,7 +4377,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NSC": {
    "name": "Norfolk Southern Corporation",
@@ -4386,7 +4386,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NTAP": {
    "name": "NetApp, Inc.",
@@ -4395,7 +4395,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NTGY.MC": {
    "name": "Naturgy Energy Group, S.A.",
@@ -4404,7 +4404,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NTRS": {
    "name": "Northern Trust Corporation",
@@ -4413,7 +4413,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NUE": {
    "name": "Nucor Corporation",
@@ -4422,7 +4422,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NVDA": {
    "name": "NVIDIA Corporation",
@@ -4431,7 +4431,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NVO": {
    "name": "Novo Nordisk A/S",
@@ -4440,7 +4440,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NVR": {
    "name": "NVR, Inc.",
@@ -4449,7 +4449,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NWG.L": {
    "name": "NatWest Group plc",
@@ -4458,7 +4458,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NWS": {
    "name": "News Corporation",
@@ -4467,7 +4467,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NWSA": {
    "name": "News Corporation",
@@ -4476,7 +4476,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NXPI": {
    "name": "NXP Semiconductors N.V.",
@@ -4485,7 +4485,7 @@
    "currency": "USD",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "NXT.L": {
    "name": "NEXT plc",
@@ -4494,7 +4494,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "O": {
    "name": "Realty Income Corporation",
@@ -4503,7 +4503,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "OCDO.L": {
    "name": "Ocado Group plc",
@@ -4512,7 +4512,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ODFL": {
    "name": "Old Dominion Freight Line, Inc.",
@@ -4521,7 +4521,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "OKE": {
    "name": "ONEOK, Inc.",
@@ -4530,7 +4530,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "OMC": {
    "name": "Omnicom Group Inc.",
@@ -4539,7 +4539,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "OMV.VI": {
    "name": "OMV Aktiengesellschaft",
@@ -4548,7 +4548,7 @@
    "currency": "EUR",
    "country": "Austria",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ON": {
    "name": "ON Semiconductor Corporation",
@@ -4557,7 +4557,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ORA.PA": {
    "name": "Orange S.A.",
@@ -4566,7 +4566,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ORCL": {
    "name": "Oracle Corporation",
@@ -4575,7 +4575,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ORK.OL": {
    "name": "Orkla ASA",
@@ -4584,7 +4584,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ORLY": {
    "name": "O'Reilly Automotive, Inc.",
@@ -4593,7 +4593,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ORSTED": {
    "name": "Ørsted A/S",
@@ -4602,7 +4602,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "OTIS": {
    "name": "Otis Worldwide Corporation",
@@ -4611,7 +4611,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "OXY": {
    "name": "Occidental Petroleum Corporation",
@@ -4620,7 +4620,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PANW": {
    "name": "Palo Alto Networks, Inc.",
@@ -4629,7 +4629,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PAYX": {
    "name": "Paychex, Inc.",
@@ -4638,7 +4638,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PCAR": {
    "name": "PACCAR Inc",
@@ -4647,7 +4647,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PCG": {
    "name": "PG&E Corporation",
@@ -4656,7 +4656,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PEG": {
    "name": "Public Service Enterprise Group Incorporated",
@@ -4665,7 +4665,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PEP": {
    "name": "PepsiCo, Inc.",
@@ -4674,7 +4674,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PFE": {
    "name": "Pfizer Inc.",
@@ -4683,7 +4683,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PFG": {
    "name": "Principal Financial Group, Inc.",
@@ -4692,7 +4692,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PGHN.SW": {
    "name": "Partners Group Holding AG",
@@ -4701,7 +4701,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PGR": {
    "name": "The Progressive Corporation",
@@ -4710,7 +4710,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PH": {
    "name": "Parker-Hannifin Corporation",
@@ -4719,7 +4719,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PHIA.AS": {
    "name": "Koninklijke Philips N.V.",
@@ -4728,7 +4728,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PHM": {
    "name": "PulteGroup, Inc.",
@@ -4737,7 +4737,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PKG": {
    "name": "Packaging Corporation of America",
@@ -4746,7 +4746,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PLD": {
    "name": "Prologis, Inc.",
@@ -4755,7 +4755,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PLTR": {
    "name": "Palantir Technologies Inc.",
@@ -4764,7 +4764,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PM": {
    "name": "Philip Morris International Inc.",
@@ -4773,7 +4773,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PNC": {
    "name": "The PNC Financial Services Group, Inc.",
@@ -4782,7 +4782,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PNDORA.CO": {
    "name": "Pandora A/S",
@@ -4791,7 +4791,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PNR": {
    "name": "Pentair plc",
@@ -4800,7 +4800,7 @@
    "currency": "USD",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PNW": {
    "name": "Pinnacle West Capital Corporation",
@@ -4809,7 +4809,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PODD": {
    "name": "Insulet Corporation",
@@ -4818,7 +4818,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PPG": {
    "name": "PPG Industries, Inc.",
@@ -4827,7 +4827,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PPL": {
    "name": "PPL Corporation",
@@ -4836,7 +4836,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PRU": {
    "name": "Prudential Financial, Inc.",
@@ -4845,7 +4845,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PRU.L": {
    "name": "Prudential plc",
@@ -4854,7 +4854,7 @@
    "currency": "GBp",
    "country": "Hong Kong",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PRX.AS": {
    "name": "Prosus N.V.",
@@ -4863,7 +4863,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PRY.MI": {
    "name": "Prysmian S.p.A.",
@@ -4872,7 +4872,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PSA": {
    "name": "Public Storage",
@@ -4881,16 +4881,16 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PSKY": {
-   "name": "Skydance Corporation",
+   "name": "Paramount Skydance Corp",
    "sector": "Communication Services",
    "industry": "Entertainment",
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PSX": {
    "name": "Phillips 66",
@@ -4899,7 +4899,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PTC": {
    "name": "PTC Inc.",
@@ -4908,7 +4908,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PUB.PA": {
    "name": "Publicis Groupe S.A.",
@@ -4917,7 +4917,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PUM.DE": {
    "name": "PUMA SE",
@@ -4926,7 +4926,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PWR": {
    "name": "Quanta Services, Inc.",
@@ -4935,7 +4935,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "PYPL": {
    "name": "PayPal Holdings, Inc.",
@@ -4944,7 +4944,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "Q": {
    "name": "Qnity Electronics, Inc.",
@@ -4953,7 +4953,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "QCOM": {
    "name": "QUALCOMM Incorporated",
@@ -4962,7 +4962,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "QIA.DE": {
    "name": "Qiagen N.V.",
@@ -4971,7 +4971,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RACE.MI": {
    "name": "Ferrari N.V.",
@@ -4980,7 +4980,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RAND.AS": {
    "name": "Randstad N.V.",
@@ -4989,7 +4989,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RBI.VI": {
    "name": "Raiffeisen Bank International AG",
@@ -4998,7 +4998,7 @@
    "currency": "EUR",
    "country": "Austria",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RCL": {
    "name": "Royal Caribbean Cruises Ltd.",
@@ -5007,7 +5007,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "REC.MI": {
    "name": "Recordati Industria Chimica e Farmaceutica S.p.A.",
@@ -5016,7 +5016,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "REG": {
    "name": "Regency Centers Corporation",
@@ -5025,7 +5025,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "REGN": {
    "name": "Regeneron Pharmaceuticals, Inc.",
@@ -5034,7 +5034,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "REL.L": {
    "name": "RELX PLC",
@@ -5043,7 +5043,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "REP.MC": {
    "name": "Repsol, S.A.",
@@ -5052,7 +5052,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RF": {
    "name": "Regions Financial Corporation",
@@ -5061,7 +5061,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RHM.DE": {
    "name": "Rheinmetall AG",
@@ -5070,7 +5070,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RI.PA": {
    "name": "Pernod Ricard SA",
@@ -5079,7 +5079,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RIO.L": {
    "name": "Rio Tinto Group",
@@ -5088,7 +5088,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RJF": {
    "name": "Raymond James Financial, Inc.",
@@ -5097,7 +5097,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RKT.L": {
    "name": "Reckitt Benckiser Group plc",
@@ -5106,7 +5106,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RL": {
    "name": "Ralph Lauren Corporation",
@@ -5115,7 +5115,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RMD": {
    "name": "ResMed Inc.",
@@ -5124,7 +5124,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RNO.PA": {
    "name": "Renault SA",
@@ -5133,7 +5133,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ROCK-B.CO": {
    "name": "Rockwool A/S",
@@ -5142,7 +5142,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ROK": {
    "name": "Rockwell Automation, Inc.",
@@ -5151,7 +5151,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ROL": {
    "name": "Rollins, Inc.",
@@ -5160,7 +5160,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ROP": {
    "name": "Roper Technologies, Inc.",
@@ -5169,7 +5169,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ROST": {
    "name": "Ross Stores, Inc.",
@@ -5178,7 +5178,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RR.L": {
    "name": "Rolls-Royce Holdings plc",
@@ -5187,7 +5187,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RSG": {
    "name": "Republic Services, Inc.",
@@ -5196,7 +5196,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RTX": {
    "name": "RTX Corporation",
@@ -5205,7 +5205,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RVTY": {
    "name": "Revvity, Inc.",
@@ -5214,7 +5214,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "RWE.DE": {
    "name": "RWE Aktiengesellschaft",
@@ -5223,7 +5223,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SAF.PA": {
    "name": "Safran SA",
@@ -5232,7 +5232,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SAN.MC": {
    "name": "Banco Santander, S.A.",
@@ -5241,7 +5241,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SAN.PA": {
    "name": "Sanofi",
@@ -5250,7 +5250,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SAND.ST": {
    "name": "Sandvik AB (publ)",
@@ -5259,7 +5259,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SAP": {
    "name": "SAP SE",
@@ -5268,7 +5268,7 @@
    "currency": "USD",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SAP.DE": {
    "name": "SAP SE",
@@ -5277,7 +5277,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SBAC": {
    "name": "SBA Communications Corporation",
@@ -5286,7 +5286,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SBUX": {
    "name": "Starbucks Corporation",
@@ -5295,7 +5295,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SCHW": {
    "name": "The Charles Schwab Corporation",
@@ -5304,7 +5304,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SCMN.SW": {
    "name": "Swisscom AG",
@@ -5313,7 +5313,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SEB-A.ST": {
    "name": "Skandinaviska Enskilda Banken AB (publ)",
@@ -5322,7 +5322,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SGE.L": {
    "name": "The Sage Group plc",
@@ -5331,7 +5331,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SGO.PA": {
    "name": "Compagnie de Saint-Gobain S.A.",
@@ -5340,7 +5340,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SGSN.SW": {
    "name": "SGS SA",
@@ -5349,7 +5349,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SHB-A.ST": {
    "name": "Svenska Handelsbanken AB (publ)",
@@ -5358,7 +5358,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SHEL.L": {
    "name": "Shell plc",
@@ -5367,7 +5367,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SHL.DE": {
    "name": "Siemens Healthineers AG",
@@ -5376,7 +5376,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SHW": {
    "name": "The Sherwin-Williams Company",
@@ -5385,7 +5385,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SIE.DE": {
    "name": "Siemens Aktiengesellschaft",
@@ -5394,7 +5394,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SIKA.SW": {
    "name": "Sika AG",
@@ -5403,7 +5403,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SINCH.ST": {
    "name": "Sinch AB (publ)",
@@ -5412,7 +5412,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SJM": {
    "name": "The J. M. Smucker Company",
@@ -5421,7 +5421,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SKA-B.ST": {
    "name": "Skanska AB (publ)",
@@ -5430,7 +5430,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SKF-B.ST": {
    "name": "AB SKF (publ)",
@@ -5439,7 +5439,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SLB": {
    "name": "SLB N.V.",
@@ -5448,7 +5448,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SMCI": {
    "name": "Super Micro Computer, Inc.",
@@ -5457,7 +5457,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SN.L": {
    "name": "Smith & Nephew plc",
@@ -5466,7 +5466,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SNA": {
    "name": "Snap-on Incorporated",
@@ -5475,7 +5475,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SNDK": {
    "name": "Sandisk Corporation",
@@ -5484,7 +5484,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SNPS": {
    "name": "Synopsys, Inc.",
@@ -5493,7 +5493,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SO": {
    "name": "The Southern Company",
@@ -5502,7 +5502,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SOLB.BR": {
    "name": "Solvay SA",
@@ -5511,7 +5511,7 @@
    "currency": "EUR",
    "country": "Belgium",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SOLV": {
    "name": "Solventum Corporation",
@@ -5520,7 +5520,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SPG": {
    "name": "Simon Property Group, Inc.",
@@ -5529,7 +5529,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SPGI": {
    "name": "S&P Global Inc.",
@@ -5538,7 +5538,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SRE": {
    "name": "Sempra",
@@ -5547,7 +5547,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SREN.SW": {
    "name": "Swiss Re AG",
@@ -5556,7 +5556,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SRG.MI": {
    "name": "Snam S.p.A.",
@@ -5565,7 +5565,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SRT3.DE": {
    "name": "Sartorius Aktiengesellschaft",
@@ -5574,7 +5574,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "STB.OL": {
    "name": "Storebrand ASA",
@@ -5583,7 +5583,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "STE": {
    "name": "STERIS plc",
@@ -5592,7 +5592,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "STLAM.MI": {
    "name": "Stellantis N.V.",
@@ -5601,7 +5601,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "STLD": {
    "name": "Steel Dynamics, Inc.",
@@ -5610,16 +5610,16 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "STMPA.PA": {
    "name": "STMicroelectronics N.V.",
    "sector": "Technology",
    "industry": "Semiconductors",
    "currency": "EUR",
-   "country": "Netherlands",
+   "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "STT": {
    "name": "State Street Corporation",
@@ -5628,7 +5628,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "STX": {
    "name": "Seagate Technology Holdings plc",
@@ -5637,7 +5637,7 @@
    "currency": "USD",
    "country": "Singapore",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "STZ": {
    "name": "Constellation Brands, Inc.",
@@ -5646,7 +5646,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SUBC.OL": {
    "name": "Subsea 7 S.A.",
@@ -5655,7 +5655,7 @@
    "currency": "NOK",
    "country": "Luxembourg",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SW": {
    "name": "Smurfit Westrock Plc",
@@ -5664,7 +5664,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SWED-A.ST": {
    "name": "Swedbank AB (publ)",
@@ -5673,7 +5673,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SWK": {
    "name": "Stanley Black & Decker, Inc.",
@@ -5682,7 +5682,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SWKS": {
    "name": "Skyworks Solutions, Inc.",
@@ -5691,7 +5691,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SY1.DE": {
    "name": "Symrise AG",
@@ -5700,7 +5700,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SYF": {
    "name": "Synchrony Financial",
@@ -5709,7 +5709,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SYK": {
    "name": "Stryker Corporation",
@@ -5718,7 +5718,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "SYY": {
    "name": "Sysco Corporation",
@@ -5727,7 +5727,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "T": {
    "name": "AT&T Inc.",
@@ -5736,7 +5736,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TAP": {
    "name": "Molson Coors Beverage Company",
@@ -5745,7 +5745,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TDG": {
    "name": "TransDigm Group Incorporated",
@@ -5754,7 +5754,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TDY": {
    "name": "Teledyne Technologies Incorporated",
@@ -5763,7 +5763,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TEAM": {
    "name": "Atlassian Corporation",
@@ -5772,7 +5772,7 @@
    "currency": "USD",
    "country": "Australia",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TECH": {
    "name": "Bio-Techne Corporation",
@@ -5781,7 +5781,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TEF.MC": {
    "name": "Telefónica, S.A.",
@@ -5790,7 +5790,7 @@
    "currency": "EUR",
    "country": "Spain",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TEL": {
    "name": "TE Connectivity plc",
@@ -5799,7 +5799,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TEL.OL": {
    "name": "Telenor ASA",
@@ -5808,7 +5808,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TELIA.ST": {
    "name": "Telia Company AB (publ)",
@@ -5817,7 +5817,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TEP.PA": {
    "name": "Teleperformance SE",
@@ -5826,7 +5826,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TER": {
    "name": "Teradyne, Inc.",
@@ -5835,7 +5835,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TFC": {
    "name": "Truist Financial Corporation",
@@ -5844,7 +5844,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TGT": {
    "name": "Target Corporation",
@@ -5853,7 +5853,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TJX": {
    "name": "The TJX Companies, Inc.",
@@ -5862,7 +5862,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TKO": {
    "name": "TKO Group Holdings, Inc.",
@@ -5871,7 +5871,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TMO": {
    "name": "Thermo Fisher Scientific Inc.",
@@ -5880,7 +5880,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TMUS": {
    "name": "T-Mobile US, Inc.",
@@ -5889,7 +5889,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TOM.OL": {
    "name": "Tomra Systems ASA",
@@ -5898,7 +5898,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TPL": {
    "name": "Texas Pacific Land Corporation",
@@ -5907,7 +5907,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TPR": {
    "name": "Tapestry, Inc.",
@@ -5916,7 +5916,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TRGP": {
    "name": "Targa Resources Corp.",
@@ -5925,7 +5925,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TRMB": {
    "name": "Trimble Inc.",
@@ -5934,7 +5934,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TRN.MI": {
    "name": "Terna S.p.A.",
@@ -5943,7 +5943,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TROW": {
    "name": "T. Rowe Price Group, Inc.",
@@ -5952,7 +5952,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TRV": {
    "name": "The Travelers Companies, Inc.",
@@ -5961,7 +5961,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TRYG.CO": {
    "name": "Tryg A/S",
@@ -5970,7 +5970,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TSCO": {
    "name": "Tractor Supply Company",
@@ -5979,7 +5979,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TSLA": {
    "name": "Tesla, Inc.",
@@ -5988,7 +5988,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TSM": {
    "name": "Taiwan Semiconductor Manufacturing Company Limited",
@@ -5997,7 +5997,7 @@
    "currency": "USD",
    "country": "Taiwan",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TSN": {
    "name": "Tyson Foods, Inc.",
@@ -6006,7 +6006,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TT": {
    "name": "Trane Technologies plc",
@@ -6015,7 +6015,7 @@
    "currency": "USD",
    "country": "Ireland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TTD": {
    "name": "The Trade Desk, Inc.",
@@ -6024,7 +6024,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TTE.PA": {
    "name": "TotalEnergies SE",
@@ -6033,7 +6033,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TTWO": {
    "name": "Take-Two Interactive Software, Inc.",
@@ -6042,7 +6042,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TXN": {
    "name": "Texas Instruments Incorporated",
@@ -6051,7 +6051,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TXT": {
    "name": "Textron Inc.",
@@ -6060,7 +6060,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "TYL": {
    "name": "Tyler Technologies, Inc.",
@@ -6069,7 +6069,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UAL": {
    "name": "United Airlines Holdings, Inc.",
@@ -6078,7 +6078,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UBER": {
    "name": "Uber Technologies, Inc.",
@@ -6087,7 +6087,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UBSG.SW": {
    "name": "UBS Group AG",
@@ -6096,7 +6096,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UCB.BR": {
    "name": "UCB SA",
@@ -6105,7 +6105,7 @@
    "currency": "EUR",
    "country": "Belgium",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UCG.MI": {
    "name": "UniCredit S.p.A.",
@@ -6114,7 +6114,7 @@
    "currency": "EUR",
    "country": "Italy",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UDR": {
    "name": "UDR, Inc.",
@@ -6123,7 +6123,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UHS": {
    "name": "Universal Health Services, Inc.",
@@ -6132,7 +6132,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ULTA": {
    "name": "Ulta Beauty, Inc.",
@@ -6141,7 +6141,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ULVR.L": {
    "name": "Unilever PLC",
@@ -6150,7 +6150,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UMG.AS": {
    "name": "Universal Music Group N.V.",
@@ -6159,7 +6159,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UNH": {
    "name": "UnitedHealth Group Incorporated",
@@ -6168,7 +6168,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UNP": {
    "name": "Union Pacific Corporation",
@@ -6177,7 +6177,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "UPS": {
    "name": "United Parcel Service, Inc.",
@@ -6186,7 +6186,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "URI": {
    "name": "United Rentals, Inc.",
@@ -6195,7 +6195,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "USB": {
    "name": "U.S. Bancorp",
@@ -6204,7 +6204,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VACN.SW": {
    "name": "VAT Group AG",
@@ -6213,7 +6213,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VEEV": {
    "name": "Veeva Systems Inc.",
@@ -6222,7 +6222,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VER.VI": {
    "name": "VERBUND AG",
@@ -6231,7 +6231,7 @@
    "currency": "EUR",
    "country": "Austria",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VICI": {
    "name": "VICI Properties Inc.",
@@ -6240,7 +6240,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VIE.PA": {
    "name": "Veolia Environnement SA",
@@ -6249,7 +6249,7 @@
    "currency": "EUR",
    "country": "France",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VLO": {
    "name": "Valero Energy Corporation",
@@ -6258,7 +6258,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VLTO": {
    "name": "Veralto Corporation",
@@ -6267,7 +6267,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VMC": {
    "name": "Vulcan Materials Company",
@@ -6276,7 +6276,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VNA.DE": {
    "name": "Vonovia SE",
@@ -6285,7 +6285,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VOD.L": {
    "name": "Vodafone Group Public Limited Company",
@@ -6294,7 +6294,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VOE.VI": {
    "name": "Voestalpine AG",
@@ -6303,7 +6303,7 @@
    "currency": "EUR",
    "country": "Austria",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VOLV-B.ST": {
    "name": "AB Volvo (publ)",
@@ -6312,7 +6312,7 @@
    "currency": "SEK",
    "country": "Sweden",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VOW3.DE": {
    "name": "Volkswagen AG",
@@ -6321,7 +6321,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VRSK": {
    "name": "Verisk Analytics, Inc.",
@@ -6330,7 +6330,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VRSN": {
    "name": "VeriSign, Inc.",
@@ -6339,7 +6339,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VRT": {
    "name": "Vertiv Holdings Co",
@@ -6348,7 +6348,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VRTX": {
    "name": "Vertex Pharmaceuticals Incorporated",
@@ -6357,7 +6357,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VST": {
    "name": "Vistra Corp.",
@@ -6366,7 +6366,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VSURE": {
    "name": "Verisure plc",
@@ -6375,7 +6375,7 @@
    "currency": "EUR",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VTR": {
    "name": "Ventas, Inc.",
@@ -6384,7 +6384,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VTRS": {
    "name": "Viatris Inc.",
@@ -6393,7 +6393,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VWS": {
    "name": "Vestas Wind Systems A/S",
@@ -6402,7 +6402,7 @@
    "currency": "DKK",
    "country": "Denmark",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "VZ": {
    "name": "Verizon Communications Inc.",
@@ -6411,7 +6411,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WAB": {
    "name": "Westinghouse Air Brake Technologies Corporation",
@@ -6420,7 +6420,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WAT": {
    "name": "Waters Corporation",
@@ -6429,16 +6429,16 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WBD": {
-   "name": "Warner Bros. Discovery, Inc.",
+   "name": "Warner Bros. Discovery Inc",
    "sector": "Communication Services",
    "industry": "Entertainment",
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WDAY": {
    "name": "Workday, Inc.",
@@ -6447,7 +6447,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WDC": {
    "name": "Western Digital Corporation",
@@ -6456,13 +6456,13 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WEBN": {
    "name": "Amundi Prime All Country World UCITS ETF Acc",
    "currency": "EUR",
    "quoteType": "ETF",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WEC": {
    "name": "WEC Energy Group, Inc.",
@@ -6471,7 +6471,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WELL": {
    "name": "Welltower Inc.",
@@ -6480,7 +6480,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WFC": {
    "name": "Wells Fargo & Company",
@@ -6489,7 +6489,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WKL.AS": {
    "name": "Wolters Kluwer N.V.",
@@ -6498,7 +6498,7 @@
    "currency": "EUR",
    "country": "Netherlands",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WM": {
    "name": "Waste Management, Inc.",
@@ -6507,7 +6507,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WMB": {
    "name": "The Williams Companies, Inc.",
@@ -6516,7 +6516,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WMT": {
    "name": "Walmart Inc.",
@@ -6525,7 +6525,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WRB": {
    "name": "W. R. Berkley Corporation",
@@ -6534,7 +6534,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WSM": {
    "name": "Williams-Sonoma, Inc.",
@@ -6543,7 +6543,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WST": {
    "name": "West Pharmaceutical Services, Inc.",
@@ -6552,7 +6552,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WTB.L": {
    "name": "Whitbread plc",
@@ -6561,7 +6561,7 @@
    "currency": "GBp",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WTW": {
    "name": "Willis Towers Watson Public Limited Company",
@@ -6570,7 +6570,7 @@
    "currency": "USD",
    "country": "United Kingdom",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WY": {
    "name": "Weyerhaeuser Company",
@@ -6579,7 +6579,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "WYNN": {
    "name": "Wynn Resorts, Limited",
@@ -6588,7 +6588,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "XEL": {
    "name": "Xcel Energy Inc.",
@@ -6597,7 +6597,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "XOM": {
    "name": "ExxonMobil Holdings Corporation",
@@ -6606,13 +6606,13 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "XUSE": {
    "name": "iShares MSCI World ex-USA UCITS ETF USD (Acc)",
    "currency": "USD",
    "quoteType": "ETF",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "XYL": {
    "name": "Xylem Inc.",
@@ -6621,7 +6621,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "XYZ": {
    "name": "Block, Inc.",
@@ -6630,7 +6630,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "YAR.OL": {
    "name": "Yara International ASA",
@@ -6639,7 +6639,7 @@
    "currency": "NOK",
    "country": "Norway",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "YUM": {
    "name": "Yum! Brands, Inc.",
@@ -6648,7 +6648,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ZAL": {
    "name": "Zalando SE",
@@ -6657,7 +6657,7 @@
    "currency": "EUR",
    "country": "Germany",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ZBH": {
    "name": "Zimmer Biomet Holdings, Inc.",
@@ -6666,7 +6666,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ZBRA": {
    "name": "Zebra Technologies Corporation",
@@ -6675,7 +6675,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ZTS": {
    "name": "Zoetis Inc.",
@@ -6684,7 +6684,7 @@
    "currency": "USD",
    "country": "United States",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   },
   "ZURN.SW": {
    "name": "Zurich Insurance Group AG",
@@ -6693,7 +6693,7 @@
    "currency": "CHF",
    "country": "Switzerland",
    "quoteType": "EQUITY",
-   "as_of": "2026-10-11T10:58:16.270961+00:00"
+   "as_of": "2026-10-18T09:00:02.020889+00:00"
   }
  }
 }
