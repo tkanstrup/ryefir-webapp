@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-19T23:31:18.792875+00:00",
+  "generated_at": "2026-10-19T23:36:15.981607+00:00",
   "universe_size": 715,
   "scanned": 707,
-  "shortlisted": 77,
+  "shortlisted": 78,
   "candidates": [
     {
       "ticker": "MRNA",
@@ -240,7 +240,7 @@
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 175.55,
-      "low_52w": 109.6145,
+      "low_52w": 109.6144,
       "roic": null,
       "fcf_margin": 14.4,
       "fwd_pe": 25.2,
@@ -1059,6 +1059,28 @@
       "fcf_margin": 6.2,
       "fwd_pe": 16.1,
       "market_cap": 25857112064.0
+    },
+    {
+      "ticker": "LONN.SW",
+      "name": "Lonza Group AG",
+      "region": "Europe",
+      "sector": "Healthcare",
+      "country": "Switzerland",
+      "quoteType": "EQUITY",
+      "industry": "Diagnostics & Research",
+      "price": 613.2000122070312,
+      "signal": "Hold",
+      "rsi": 62.3,
+      "perf_3m": 14.32,
+      "rs3m_vs_bm": 12.59,
+      "direction": "↑ Accelerating",
+      "confirmed_state": "Hold",
+      "high_52w": 613.2,
+      "low_52w": 461.8567,
+      "roic": null,
+      "fcf_margin": -22.8,
+      "fwd_pe": 27.5,
+      "market_cap": 42828484608.0
     },
     {
       "ticker": "MRVL",
