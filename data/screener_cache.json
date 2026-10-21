@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T08:36:15.030277+00:00",
+  "generated_at": "2026-10-21T08:41:16.222024+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 52,
@@ -22,9 +22,9 @@
       "high_52w": 209.05,
       "low_52w": 107.27,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 35.1,
+      "fwd_pe": 81.9,
+      "market_cap": 462829060096.0
     },
     {
       "ticker": "WDAY",
@@ -44,9 +44,9 @@
       "high_52w": 245.67,
       "low_52w": 112.5,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 30.0,
+      "fwd_pe": 15.4,
+      "market_cap": 49159180288.0
     },
     {
       "ticker": "ZBRA",
@@ -66,9 +66,9 @@
       "high_52w": 388.12,
       "low_52w": 199.3,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.9,
+      "fwd_pe": 17.2,
+      "market_cap": 18295031808.0
     },
     {
       "ticker": "CRL",
@@ -88,9 +88,9 @@
       "high_52w": 315.45,
       "low_52w": 149.93,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.7,
+      "fwd_pe": 24.7,
+      "market_cap": 15059227648.0
     },
     {
       "ticker": "RVTY",
@@ -110,9 +110,9 @@
       "high_52w": 157.36,
       "low_52w": 82.2085,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.8,
+      "fwd_pe": 26.5,
+      "market_cap": 17408593920.0
     },
     {
       "ticker": "MAERSK-B.CO",
@@ -122,19 +122,19 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Marine Shipping",
-      "price": 23650.0,
+      "price": 23700.0,
       "signal": "Strong Hold",
-      "rsi": 50.0,
-      "perf_3m": 38.22,
-      "rs3m_vs_bm": 36.1,
+      "rsi": 50.6,
+      "perf_3m": 38.52,
+      "rs3m_vs_bm": 36.4,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 24900.0,
       "low_52w": 11904.0215,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.8,
+      "fwd_pe": 21.4,
+      "market_cap": 341071495168.0
     },
     {
       "ticker": "IQV",
@@ -154,9 +154,9 @@
       "high_52w": 275.02,
       "low_52w": 156.66,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 12.7,
+      "fwd_pe": 18.6,
+      "market_cap": 44088111104.0
     },
     {
       "ticker": "TMO",
@@ -176,9 +176,9 @@
       "high_52w": 696.49,
       "low_52w": 437.5656,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 13.5,
+      "fwd_pe": 24.9,
+      "market_cap": 254153195520.0
     },
     {
       "ticker": "A",
@@ -196,11 +196,11 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 175.55,
-      "low_52w": 109.6145,
+      "low_52w": 109.6144,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 14.4,
+      "fwd_pe": 25.6,
+      "market_cap": 48776511488.0
     },
     {
       "ticker": "SINCH.ST",
@@ -210,19 +210,19 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 46.9900016784668,
+      "price": 47.04999923706055,
       "signal": "Strong Hold",
-      "rsi": 58.3,
-      "perf_3m": 29.48,
-      "rs3m_vs_bm": 27.36,
+      "rsi": 58.5,
+      "perf_3m": 29.65,
+      "rs3m_vs_bm": 27.53,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 51.6,
       "low_52w": 20.14,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.1,
+      "fwd_pe": 62.7,
+      "market_cap": 33057480704.0
     },
     {
       "ticker": "SWKS",
@@ -242,9 +242,9 @@
       "high_52w": 91.45,
       "low_52w": 52.0477,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.2,
+      "fwd_pe": 14.3,
+      "market_cap": 19118960640.0
     },
     {
       "ticker": "NTAP",
@@ -264,9 +264,9 @@
       "high_52w": 239.18,
       "low_52w": 93.1368,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 15.8,
+      "fwd_pe": 18.8,
+      "market_cap": 41242099712.0
     },
     {
       "ticker": "HPQ",
@@ -286,9 +286,9 @@
       "high_52w": 35.48,
       "low_52w": 17.5237,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.7,
+      "fwd_pe": 9.9,
+      "market_cap": 28144896000.0
     },
     {
       "ticker": "DHR",
@@ -308,9 +308,9 @@
       "high_52w": 240.6087,
       "low_52w": 161.289,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 17.2,
+      "fwd_pe": 24.1,
+      "market_cap": 157637591040.0
     },
     {
       "ticker": "REGN",
@@ -328,11 +328,11 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 852.03,
-      "low_52w": 572.753,
+      "low_52w": 572.7531,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 19.7,
+      "fwd_pe": 13.0,
+      "market_cap": 83134095360.0
     },
     {
       "ticker": "NEM",
@@ -352,9 +352,9 @@
       "high_52w": 134.8593,
       "low_52w": 77.8994,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 34.2,
+      "fwd_pe": 11.5,
+      "market_cap": 123081793536.0
     },
     {
       "ticker": "GRMN",
@@ -374,9 +374,9 @@
       "high_52w": 311.952,
       "low_52w": 184.0587,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 13.6,
+      "fwd_pe": 26.1,
+      "market_cap": 55995801600.0
     },
     {
       "ticker": "GILD",
@@ -396,9 +396,9 @@
       "high_52w": 157.37,
       "low_52w": 115.037,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 32.1,
+      "fwd_pe": 15.7,
+      "market_cap": 194065383424.0
     },
     {
       "ticker": "CRWD",
@@ -418,9 +418,9 @@
       "high_52w": 278.86,
       "low_52w": 87.5625,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 37.0,
+      "fwd_pe": 141.1,
+      "market_cap": 232812068864.0
     },
     {
       "ticker": "AMGN",
@@ -438,11 +438,11 @@
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 444.12,
-      "low_52w": 283.3011,
+      "low_52w": 283.3012,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 22.7,
+      "fwd_pe": 17.9,
+      "market_cap": 237305004032.0
     },
     {
       "ticker": "DXCM",
@@ -462,9 +462,9 @@
       "high_52w": 92.34,
       "low_52w": 54.84,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.5,
+      "fwd_pe": 27.5,
+      "market_cap": 32354912256.0
     },
     {
       "ticker": "WAT",
@@ -484,9 +484,9 @@
       "high_52w": 444.15,
       "low_52w": 283.32,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -3.1,
+      "fwd_pe": 26.8,
+      "market_cap": 43479642112.0
     },
     {
       "ticker": "LDOS",
@@ -506,9 +506,9 @@
       "high_52w": 197.2656,
       "low_52w": 99.6763,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.5,
+      "fwd_pe": 10.2,
+      "market_cap": 16057773056.0
     },
     {
       "ticker": "SRT3.DE",
@@ -518,19 +518,19 @@
       "country": "Germany",
       "quoteType": "EQUITY",
       "industry": "Medical Instruments & Supplies",
-      "price": 263.29998779296875,
+      "price": 264.1000061035156,
       "signal": "Strong Hold",
-      "rsi": 53.7,
-      "perf_3m": 18.71,
-      "rs3m_vs_bm": 16.59,
+      "rsi": 54.4,
+      "perf_3m": 19.07,
+      "rs3m_vs_bm": 16.95,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 265.3,
       "low_52w": 204.9,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.1,
+      "fwd_pe": 41.7,
+      "market_cap": 18236708864.0
     },
     {
       "ticker": "SNPS",
@@ -550,9 +550,9 @@
       "high_52w": 534.56,
       "low_52w": 367.7,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 36.4,
+      "fwd_pe": 23.9,
+      "market_cap": 85780389888.0
     },
     {
       "ticker": "ELUX-B.ST",
@@ -562,19 +562,19 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Furnishings, Fixtures & Appliances",
-      "price": 26.34000015258789,
+      "price": 26.309999465942383,
       "signal": "Strong Hold",
-      "rsi": 50.9,
-      "perf_3m": 18.6,
-      "rs3m_vs_bm": 16.48,
+      "rsi": 50.7,
+      "perf_3m": 18.46,
+      "rs3m_vs_bm": 16.34,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 87.4,
       "low_52w": 22.21,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -0.8,
+      "fwd_pe": 2.6,
+      "market_cap": 21350275072.0
     },
     {
       "ticker": "SIKA.SW",
@@ -584,19 +584,19 @@
       "country": "Switzerland",
       "quoteType": "EQUITY",
       "industry": "Specialty Chemicals",
-      "price": 184.14999389648438,
+      "price": 184.5,
       "signal": "Strong Hold",
-      "rsi": 57.7,
-      "perf_3m": 18.16,
-      "rs3m_vs_bm": 16.04,
+      "rsi": 58.3,
+      "perf_3m": 18.38,
+      "rs3m_vs_bm": 16.26,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 195.5,
       "low_52w": 122.8455,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.2,
+      "fwd_pe": 22.0,
+      "market_cap": 29601040384.0
     },
     {
       "ticker": "ADBE",
@@ -616,9 +616,9 @@
       "high_52w": 359.91,
       "low_52w": 193.41,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 36.0,
+      "fwd_pe": 9.3,
+      "market_cap": 99919323136.0
     },
     {
       "ticker": "MRK",
@@ -638,9 +638,9 @@
       "high_52w": 155.5319,
       "low_52w": 80.1369,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 22.8,
+      "fwd_pe": 16.0,
+      "market_cap": 365881556992.0
     },
     {
       "ticker": "HPE",
@@ -660,9 +660,9 @@
       "high_52w": 73.46,
       "low_52w": 19.6654,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.3,
+      "fwd_pe": 11.9,
+      "market_cap": 74457505792.0
     },
     {
       "ticker": "EVO.ST",
@@ -682,9 +682,9 @@
       "high_52w": 900.0,
       "low_52w": 515.8,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 44.6,
+      "fwd_pe": 11.2,
+      "market_cap": 146194890752.0
     },
     {
       "ticker": "GN.CO",
@@ -694,19 +694,19 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Medical Devices",
-      "price": 106.19999694824219,
+      "price": 106.30000305175781,
       "signal": "Strong Hold",
-      "rsi": 37.3,
-      "perf_3m": 15.91,
-      "rs3m_vs_bm": 13.79,
+      "rsi": 37.6,
+      "perf_3m": 16.02,
+      "rs3m_vs_bm": 13.9,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 118.2,
       "low_52w": 86.5,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -50.3,
+      "fwd_pe": 22.0,
+      "market_cap": 15478614016.0
     },
     {
       "ticker": "EMR",
@@ -726,9 +726,9 @@
       "high_52w": 163.8244,
       "low_52w": 122.3354,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 19.9,
+      "fwd_pe": 22.0,
+      "market_cap": 89873645568.0
     },
     {
       "ticker": "FAST",
@@ -748,9 +748,9 @@
       "high_52w": 52.38,
       "low_52w": 38.5169,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 10.1,
+      "fwd_pe": 36.6,
+      "market_cap": 59268251648.0
     },
     {
       "ticker": "OMV.VI",
@@ -760,19 +760,19 @@
       "country": "Austria",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 74.1500015258789,
+      "price": 74.05000305175781,
       "signal": "Strong Hold",
-      "rsi": 61.8,
-      "perf_3m": 14.43,
-      "rs3m_vs_bm": 12.31,
+      "rsi": 61.3,
+      "perf_3m": 14.27,
+      "rs3m_vs_bm": 12.15,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 74.4,
       "low_52w": 42.1562,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 29.1,
+      "fwd_pe": 8.5,
+      "market_cap": 24140380160.0
     },
     {
       "ticker": "FFIV",
@@ -792,9 +792,9 @@
       "high_52w": 479.83,
       "low_52w": 223.99,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 21.7,
+      "fwd_pe": 25.3,
+      "market_cap": 25862201344.0
     },
     {
       "ticker": "MRVL",
@@ -814,9 +814,9 @@
       "high_52w": 316.2828,
       "low_52w": 73.6588,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 25.5,
+      "fwd_pe": 32.8,
+      "market_cap": 216066572288.0
     },
     {
       "ticker": "DGX",
@@ -836,9 +836,9 @@
       "high_52w": 246.5336,
       "low_52w": 170.6206,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 7.9,
+      "fwd_pe": 19.7,
+      "market_cap": 26171729920.0
     },
     {
       "ticker": "TSCO",
@@ -858,9 +858,9 @@
       "high_52w": 55.0448,
       "low_52w": 28.9401,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 0.7,
+      "fwd_pe": 16.1,
+      "market_cap": 17147430912.0
     },
     {
       "ticker": "BAX",
@@ -880,9 +880,9 @@
       "high_52w": 28.3391,
       "low_52w": 15.7857,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 8.7,
+      "fwd_pe": 12.0,
+      "market_cap": 12671571968.0
     },
     {
       "ticker": "RACE.MI",
@@ -892,19 +892,19 @@
       "country": "Italy",
       "quoteType": "EQUITY",
       "industry": "Auto Manufacturers",
-      "price": 355.20001220703125,
+      "price": 355.6499938964844,
       "signal": "Hold",
-      "rsi": 61.3,
-      "perf_3m": 12.6,
-      "rs3m_vs_bm": 10.48,
+      "rsi": 61.8,
+      "perf_3m": 12.74,
+      "rs3m_vs_bm": 10.62,
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
       "high_52w": 371.1,
       "low_52w": 270.7175,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 13.6,
+      "fwd_pe": 32.3,
+      "market_cap": 62380998656.0
     },
     {
       "ticker": "ALLE",
@@ -924,9 +924,9 @@
       "high_52w": 177.7256,
       "low_52w": 124.6912,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.3,
+      "fwd_pe": 16.0,
+      "market_cap": 13353326592.0
     },
     {
       "ticker": "IMCD.AS",
@@ -946,9 +946,9 @@
       "high_52w": 104.7,
       "low_52w": 68.8675,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.4,
+      "fwd_pe": 15.4,
+      "market_cap": 5941654528.0
     },
     {
       "ticker": "TGT",
@@ -968,9 +968,9 @@
       "high_52w": 169.89,
       "low_52w": 81.4371,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 3.2,
+      "fwd_pe": 16.1,
+      "market_cap": 69960884224.0
     },
     {
       "ticker": "NDSN",
@@ -990,9 +990,9 @@
       "high_52w": 334.43,
       "low_52w": 223.9025,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.6,
+      "fwd_pe": 25.2,
+      "market_cap": 18220326912.0
     },
     {
       "ticker": "ICE",
@@ -1012,31 +1012,9 @@
       "high_52w": 173.314,
       "low_52w": 122.5027,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
-    },
-    {
-      "ticker": "REP.MC",
-      "name": "Repsol, S.A.",
-      "region": "Europe",
-      "sector": "Energy",
-      "country": "Spain",
-      "quoteType": "EQUITY",
-      "industry": "Oil & Gas Integrated",
-      "price": 29.399999618530273,
-      "signal": "Strong Hold",
-      "rsi": 45.4,
-      "perf_3m": 11.32,
-      "rs3m_vs_bm": 9.2,
-      "direction": "↓ Declining",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 31.54,
-      "low_52w": 14.5034,
-      "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 34.4,
+      "fwd_pe": 17.8,
+      "market_cap": 89020325888.0
     },
     {
       "ticker": "SOLV",
@@ -1056,9 +1034,31 @@
       "high_52w": 92.44,
       "low_52w": 62.49,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.9,
+      "fwd_pe": 11.9,
+      "market_cap": 14705628160.0
+    },
+    {
+      "ticker": "REP.MC",
+      "name": "Repsol, S.A.",
+      "region": "Europe",
+      "sector": "Energy",
+      "country": "Spain",
+      "quoteType": "EQUITY",
+      "industry": "Oil & Gas Integrated",
+      "price": 29.290000915527344,
+      "signal": "Strong Hold",
+      "rsi": 44.6,
+      "perf_3m": 10.9,
+      "rs3m_vs_bm": 8.78,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 31.54,
+      "low_52w": 14.5034,
+      "roic": null,
+      "fcf_margin": 0.6,
+      "fwd_pe": 6.7,
+      "market_cap": 31510499328.0
     },
     {
       "ticker": "PNDORA.CO",
@@ -1068,19 +1068,19 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Luxury Goods",
-      "price": 832.4000244140625,
+      "price": 835.0,
       "signal": "Hold",
-      "rsi": 50.6,
-      "perf_3m": 10.46,
-      "rs3m_vs_bm": 8.34,
+      "rsi": 51.4,
+      "perf_3m": 10.8,
+      "rs3m_vs_bm": 8.68,
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
       "high_52w": 870.0,
       "low_52w": 434.6,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 18.0,
+      "fwd_pe": 17.2,
+      "market_cap": 62458527744.0
     },
     {
       "ticker": "VTRS",
@@ -1100,9 +1100,9 @@
       "high_52w": 18.66,
       "low_52w": 9.7638,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 18.2,
+      "fwd_pe": 6.9,
+      "market_cap": 21421219840.0
     },
     {
       "ticker": "NEXI.MI",
@@ -1112,19 +1112,19 @@
       "country": "Italy",
       "quoteType": "EQUITY",
       "industry": "Software - Infrastructure",
-      "price": 4.361000061035156,
+      "price": 4.355999946594238,
       "signal": "Hold",
-      "rsi": 61.9,
-      "perf_3m": 10.43,
-      "rs3m_vs_bm": 8.31,
+      "rsi": 61.5,
+      "perf_3m": 10.31,
+      "rs3m_vs_bm": 8.19,
       "direction": "↑ Accelerating",
       "confirmed_state": "Hold",
       "high_52w": 4.471,
       "low_52w": 2.559,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 12.4,
+      "fwd_pe": 6.6,
+      "market_cap": 5117083648.0
     },
     {
       "ticker": "FTNT",
@@ -1144,9 +1144,9 @@
       "high_52w": 194.75,
       "low_52w": 75.23,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 30.1,
+      "fwd_pe": 45.2,
+      "market_cap": 125413670912.0
     }
   ]
 }
