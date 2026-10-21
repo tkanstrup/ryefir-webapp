@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T20:16:08.451884+00:00",
+  "generated_at": "2026-10-21T20:21:11.351138+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 39,
@@ -305,7 +305,7 @@
       "rs3m_vs_bm": 17.1,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 243.1211,
+      "high_52w": 243.1212,
       "low_52w": 141.0042,
       "roic": null,
       "fcf_margin": 2.8,
@@ -804,11 +804,11 @@
       "country": "United States",
       "quoteType": "EQUITY",
       "industry": "Specialty Industrial Machinery",
-      "price": 163.1699981689453,
+      "price": 163.11000061035156,
       "signal": "Strong Hold",
-      "rsi": 61.9,
-      "perf_3m": 12.99,
-      "rs3m_vs_bm": 9.06,
+      "rsi": 61.8,
+      "perf_3m": 12.95,
+      "rs3m_vs_bm": 9.02,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 163.8244,
@@ -816,7 +816,7 @@
       "roic": null,
       "fcf_margin": 19.9,
       "fwd_pe": 22.4,
-      "market_cap": 91391508480.0
+      "market_cap": 91357904896.0
     },
     {
       "ticker": "BBY",
