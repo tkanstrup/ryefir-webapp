@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T09:31:25.198559+00:00",
+  "generated_at": "2026-10-22T09:36:05.497095+00:00",
   "universe_size": 715,
   "scanned": 707,
-  "shortlisted": 36,
+  "shortlisted": 37,
   "candidates": [
     {
       "ticker": "PLTR",
@@ -78,11 +78,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Marine Shipping",
-      "price": 23200.0,
+      "price": 23190.0,
       "signal": "Strong Hold",
-      "rsi": 35.5,
-      "perf_3m": 39.34,
-      "rs3m_vs_bm": 35.41,
+      "rsi": 35.4,
+      "perf_3m": 39.28,
+      "rs3m_vs_bm": 35.35,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 24900.0,
@@ -90,7 +90,7 @@
       "roic": null,
       "fcf_margin": 5.8,
       "fwd_pe": 18.2,
-      "market_cap": 333875904512.0
+      "market_cap": 333731987456.0
     },
     {
       "ticker": "RVTY",
@@ -342,11 +342,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 46.290000915527344,
+      "price": 46.2400016784668,
       "signal": "Strong Hold",
-      "rsi": 52.8,
-      "perf_3m": 18.81,
-      "rs3m_vs_bm": 14.88,
+      "rsi": 52.6,
+      "perf_3m": 18.69,
+      "rs3m_vs_bm": 14.76,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 51.6,
@@ -354,7 +354,7 @@
       "roic": null,
       "fcf_margin": 6.1,
       "fwd_pe": 61.7,
-      "market_cap": 32523503616.0
+      "market_cap": 32488372224.0
     },
     {
       "ticker": "GALP.LS",
@@ -364,11 +364,11 @@
       "country": "Portugal",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 22.540000915527344,
+      "price": 22.559999465942383,
       "signal": "Strong Hold",
-      "rsi": 64.3,
-      "perf_3m": 18.23,
-      "rs3m_vs_bm": 14.3,
+      "rsi": 64.6,
+      "perf_3m": 18.34,
+      "rs3m_vs_bm": 14.41,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 23.18,
@@ -376,7 +376,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 10.5,
-      "market_cap": 17605517312.0
+      "market_cap": 17621137408.0
     },
     {
       "ticker": "FFIV",
@@ -489,6 +489,28 @@
       "market_cap": 369779703808.0
     },
     {
+      "ticker": "KNIN.SW",
+      "name": "Kuehne + Nagel International AG",
+      "region": "Europe",
+      "sector": "Industrials",
+      "country": "Switzerland",
+      "quoteType": "EQUITY",
+      "industry": "Integrated Freight & Logistics",
+      "price": 232.60000610351562,
+      "signal": "Strong Hold",
+      "rsi": 64.8,
+      "perf_3m": 15.32,
+      "rs3m_vs_bm": 11.39,
+      "direction": "↑ Accelerating",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 232.6,
+      "low_52w": 145.2051,
+      "roic": null,
+      "fcf_margin": 1.4,
+      "fwd_pe": 24.4,
+      "market_cap": 27623593984.0
+    },
+    {
       "ticker": "GN.CO",
       "name": "GN Store Nord A/S",
       "region": "Europe",
@@ -496,11 +518,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Medical Devices",
-      "price": 108.30000305175781,
+      "price": 108.19999694824219,
       "signal": "Strong Hold",
-      "rsi": 59.9,
-      "perf_3m": 15.34,
-      "rs3m_vs_bm": 11.41,
+      "rsi": 59.7,
+      "perf_3m": 15.23,
+      "rs3m_vs_bm": 11.3,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 118.2,
@@ -508,7 +530,7 @@
       "roic": null,
       "fcf_margin": -50.3,
       "fwd_pe": 22.4,
-      "market_cap": 15769838592.0
+      "market_cap": 15755277312.0
     },
     {
       "ticker": "REP.MC",
@@ -518,11 +540,11 @@
       "country": "Spain",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 29.40999984741211,
+      "price": 29.420000076293945,
       "signal": "Strong Hold",
-      "rsi": 53.3,
-      "perf_3m": 15.15,
-      "rs3m_vs_bm": 11.22,
+      "rsi": 53.4,
+      "perf_3m": 15.19,
+      "rs3m_vs_bm": 11.26,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 31.54,
@@ -530,7 +552,7 @@
       "roic": null,
       "fcf_margin": 0.6,
       "fwd_pe": 6.7,
-      "market_cap": 31639595008.0
+      "market_cap": 31650355200.0
     },
     {
       "ticker": "FTNT",
@@ -599,6 +621,28 @@
       "market_cap": 69224931328.0
     },
     {
+      "ticker": "SIKA.SW",
+      "name": "Sika AG",
+      "region": "Europe",
+      "sector": "Basic Materials",
+      "country": "Switzerland",
+      "quoteType": "EQUITY",
+      "industry": "Specialty Chemicals",
+      "price": 183.89999389648438,
+      "signal": "Strong Hold",
+      "rsi": 50.2,
+      "perf_3m": 14.05,
+      "rs3m_vs_bm": 10.12,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 195.5,
+      "low_52w": 122.8455,
+      "roic": null,
+      "fcf_margin": 9.2,
+      "fwd_pe": 22.0,
+      "market_cap": 29504776192.0
+    },
+    {
       "ticker": "BAX",
       "name": "Baxter International Inc.",
       "region": "USA",
@@ -619,28 +663,6 @@
       "fcf_margin": 8.7,
       "fwd_pe": 12.1,
       "market_cap": 12769801216.0
-    },
-    {
-      "ticker": "SIKA.SW",
-      "name": "Sika AG",
-      "region": "Europe",
-      "sector": "Basic Materials",
-      "country": "Switzerland",
-      "quoteType": "EQUITY",
-      "industry": "Specialty Chemicals",
-      "price": 183.85000610351562,
-      "signal": "Strong Hold",
-      "rsi": 50.1,
-      "perf_3m": 14.02,
-      "rs3m_vs_bm": 10.09,
-      "direction": "↓ Declining",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 195.5,
-      "low_52w": 122.8455,
-      "roic": null,
-      "fcf_margin": 9.2,
-      "fwd_pe": 21.9,
-      "market_cap": 29496756224.0
     },
     {
       "ticker": "SMCI",
