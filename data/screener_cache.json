@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T10:46:11.160049+00:00",
+  "generated_at": "2026-10-22T10:51:09.621215+00:00",
   "universe_size": 715,
   "scanned": 707,
-  "shortlisted": 38,
+  "shortlisted": 39,
   "candidates": [
     {
       "ticker": "PLTR",
@@ -210,19 +210,19 @@
       "country": "Germany",
       "quoteType": "EQUITY",
       "industry": "Medical Instruments & Supplies",
-      "price": 267.6499938964844,
+      "price": 267.29998779296875,
       "signal": "Strong Hold",
-      "rsi": 64.5,
-      "perf_3m": 24.9,
-      "rs3m_vs_bm": 20.97,
+      "rsi": 64.3,
+      "perf_3m": 24.73,
+      "rs3m_vs_bm": 20.8,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 267.65,
+      "high_52w": 267.3,
       "low_52w": 204.9,
       "roic": null,
       "fcf_margin": 9.1,
-      "fwd_pe": 42.3,
-      "market_cap": 18481844224.0
+      "fwd_pe": 42.2,
+      "market_cap": 18457675776.0
     },
     {
       "ticker": "NEM",
@@ -364,11 +364,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 46.36000061035156,
+      "price": 46.31999969482422,
       "signal": "Strong Hold",
-      "rsi": 53.0,
-      "perf_3m": 18.99,
-      "rs3m_vs_bm": 15.06,
+      "rsi": 52.9,
+      "perf_3m": 18.89,
+      "rs3m_vs_bm": 14.96,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 51.6,
@@ -376,7 +376,7 @@
       "roic": null,
       "fcf_margin": 6.1,
       "fwd_pe": 61.8,
-      "market_cap": 32572684288.0
+      "market_cap": 32544579584.0
     },
     {
       "ticker": "GALP.LS",
@@ -386,11 +386,11 @@
       "country": "Portugal",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 22.549999237060547,
+      "price": 22.559999465942383,
       "signal": "Strong Hold",
-      "rsi": 64.5,
-      "perf_3m": 18.29,
-      "rs3m_vs_bm": 14.36,
+      "rsi": 64.6,
+      "perf_3m": 18.34,
+      "rs3m_vs_bm": 14.41,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 23.18,
@@ -398,7 +398,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 10.5,
-      "market_cap": 17613326336.0
+      "market_cap": 17621137408.0
     },
     {
       "ticker": "FFIV",
@@ -518,11 +518,11 @@
       "country": "Spain",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 29.450000762939453,
+      "price": 29.459999084472656,
       "signal": "Strong Hold",
-      "rsi": 53.7,
-      "perf_3m": 15.31,
-      "rs3m_vs_bm": 11.38,
+      "rsi": 53.8,
+      "perf_3m": 15.35,
+      "rs3m_vs_bm": 11.42,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 31.54,
@@ -530,7 +530,7 @@
       "roic": null,
       "fcf_margin": 0.6,
       "fwd_pe": 6.7,
-      "market_cap": 31682629632.0
+      "market_cap": 31693385728.0
     },
     {
       "ticker": "FTNT",
@@ -562,11 +562,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Medical Devices",
-      "price": 107.69999694824219,
+      "price": 107.75,
       "signal": "Strong Hold",
-      "rsi": 58.0,
-      "perf_3m": 14.7,
-      "rs3m_vs_bm": 10.77,
+      "rsi": 58.2,
+      "perf_3m": 14.75,
+      "rs3m_vs_bm": 10.82,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 118.2,
@@ -574,7 +574,7 @@
       "roic": null,
       "fcf_margin": -50.3,
       "fwd_pe": 22.3,
-      "market_cap": 15682470912.0
+      "market_cap": 15689751552.0
     },
     {
       "ticker": "FAST",
@@ -599,28 +599,6 @@
       "market_cap": 60232151040.0
     },
     {
-      "ticker": "KNIN.SW",
-      "name": "Kuehne + Nagel International AG",
-      "region": "Europe",
-      "sector": "Industrials",
-      "country": "Switzerland",
-      "quoteType": "EQUITY",
-      "industry": "Integrated Freight & Logistics",
-      "price": 230.60000610351562,
-      "signal": "Strong Hold",
-      "rsi": 62.1,
-      "perf_3m": 14.33,
-      "rs3m_vs_bm": 10.4,
-      "direction": "↑ Accelerating",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 231.8,
-      "low_52w": 145.2051,
-      "roic": null,
-      "fcf_margin": 1.4,
-      "fwd_pe": 24.2,
-      "market_cap": 27386073088.0
-    },
-    {
       "ticker": "TGT",
       "name": "Target Corporation",
       "region": "USA",
@@ -641,6 +619,28 @@
       "fcf_margin": 3.2,
       "fwd_pe": 16.0,
       "market_cap": 69224931328.0
+    },
+    {
+      "ticker": "KNIN.SW",
+      "name": "Kuehne + Nagel International AG",
+      "region": "Europe",
+      "sector": "Industrials",
+      "country": "Switzerland",
+      "quoteType": "EQUITY",
+      "industry": "Integrated Freight & Logistics",
+      "price": 230.3000030517578,
+      "signal": "Strong Hold",
+      "rsi": 61.6,
+      "perf_3m": 14.18,
+      "rs3m_vs_bm": 10.25,
+      "direction": "→ Stable",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 231.8,
+      "low_52w": 145.2051,
+      "roic": null,
+      "fcf_margin": 1.4,
+      "fwd_pe": 24.2,
+      "market_cap": 27350444032.0
     },
     {
       "ticker": "BAX",
@@ -694,11 +694,11 @@
       "country": "Switzerland",
       "quoteType": "EQUITY",
       "industry": "Specialty Chemicals",
-      "price": 183.6999969482422,
+      "price": 183.8000030517578,
       "signal": "Strong Hold",
-      "rsi": 49.8,
-      "perf_3m": 13.92,
-      "rs3m_vs_bm": 9.99,
+      "rsi": 50.0,
+      "perf_3m": 13.98,
+      "rs3m_vs_bm": 10.05,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 195.5,
@@ -706,7 +706,7 @@
       "roic": null,
       "fcf_margin": 9.2,
       "fwd_pe": 21.9,
-      "market_cap": 29472690176.0
+      "market_cap": 29488734208.0
     },
     {
       "ticker": "DXCM",
@@ -760,11 +760,11 @@
       "country": "Austria",
       "quoteType": "EQUITY",
       "industry": "Utilities - Renewable",
-      "price": 66.1500015258789,
+      "price": 66.0999984741211,
       "signal": "Strong Hold",
-      "rsi": 62.4,
-      "perf_3m": 13.66,
-      "rs3m_vs_bm": 9.73,
+      "rsi": 62.3,
+      "perf_3m": 13.57,
+      "rs3m_vs_bm": 9.64,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 67.1,
@@ -772,7 +772,7 @@
       "roic": null,
       "fcf_margin": 0.5,
       "fwd_pe": 16.2,
-      "market_cap": 22981548032.0
+      "market_cap": 22964176896.0
     },
     {
       "ticker": "EMR",
@@ -839,6 +839,28 @@
       "fcf_margin": 5.9,
       "fwd_pe": 12.0,
       "market_cap": 14753290240.0
+    },
+    {
+      "ticker": "IMCD.AS",
+      "name": "IMCD N.V.",
+      "region": "Europe",
+      "sector": "Basic Materials",
+      "country": "Netherlands",
+      "quoteType": "EQUITY",
+      "industry": "Specialty Chemicals",
+      "price": 98.5199966430664,
+      "signal": "Strong Hold",
+      "rsi": 58.9,
+      "perf_3m": 12.11,
+      "rs3m_vs_bm": 8.18,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 104.7,
+      "low_52w": 68.8675,
+      "roic": null,
+      "fcf_margin": 5.4,
+      "fwd_pe": 15.1,
+      "market_cap": 5815914496.0
     }
   ]
 }
