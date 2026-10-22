@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T10:21:12.100306+00:00",
+  "generated_at": "2026-10-22T10:26:08.489010+00:00",
   "universe_size": 715,
   "scanned": 707,
-  "shortlisted": 38,
+  "shortlisted": 39,
   "candidates": [
     {
       "ticker": "PLTR",
@@ -78,11 +78,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Marine Shipping",
-      "price": 23050.0,
+      "price": 23080.0,
       "signal": "Strong Hold",
-      "rsi": 34.0,
-      "perf_3m": 38.44,
-      "rs3m_vs_bm": 34.51,
+      "rsi": 34.3,
+      "perf_3m": 38.62,
+      "rs3m_vs_bm": 34.69,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 24900.0,
@@ -90,7 +90,7 @@
       "roic": null,
       "fcf_margin": 5.8,
       "fwd_pe": 18.1,
-      "market_cap": 331717214208.0
+      "market_cap": 332148965376.0
     },
     {
       "ticker": "RVTY",
@@ -210,19 +210,19 @@
       "country": "Germany",
       "quoteType": "EQUITY",
       "industry": "Medical Instruments & Supplies",
-      "price": 267.8999938964844,
+      "price": 268.0,
       "signal": "Strong Hold",
-      "rsi": 64.7,
-      "perf_3m": 25.01,
-      "rs3m_vs_bm": 21.08,
+      "rsi": 64.8,
+      "perf_3m": 25.06,
+      "rs3m_vs_bm": 21.13,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
-      "high_52w": 267.9,
+      "high_52w": 268.0,
       "low_52w": 204.9,
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 42.3,
-      "market_cap": 18499106816.0
+      "market_cap": 18506012672.0
     },
     {
       "ticker": "NEM",
@@ -364,19 +364,19 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 46.290000915527344,
+      "price": 46.349998474121094,
       "signal": "Strong Hold",
-      "rsi": 52.8,
-      "perf_3m": 18.81,
-      "rs3m_vs_bm": 14.88,
+      "rsi": 53.0,
+      "perf_3m": 18.97,
+      "rs3m_vs_bm": 15.04,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 51.6,
       "low_52w": 20.14,
       "roic": null,
       "fcf_margin": 6.1,
-      "fwd_pe": 61.7,
-      "market_cap": 32523503616.0
+      "fwd_pe": 61.8,
+      "market_cap": 32565657600.0
     },
     {
       "ticker": "GALP.LS",
@@ -386,11 +386,11 @@
       "country": "Portugal",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 22.579999923706055,
+      "price": 22.56999969482422,
       "signal": "Strong Hold",
-      "rsi": 64.8,
-      "perf_3m": 18.44,
-      "rs3m_vs_bm": 14.51,
+      "rsi": 64.7,
+      "perf_3m": 18.39,
+      "rs3m_vs_bm": 14.46,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 23.18,
@@ -398,7 +398,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 10.5,
-      "market_cap": 17636759552.0
+      "market_cap": 17628948480.0
     },
     {
       "ticker": "FFIV",
@@ -496,19 +496,19 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Medical Devices",
-      "price": 108.80000305175781,
+      "price": 108.55000305175781,
       "signal": "Strong Hold",
-      "rsi": 61.3,
-      "perf_3m": 15.87,
-      "rs3m_vs_bm": 11.94,
+      "rsi": 60.6,
+      "perf_3m": 15.6,
+      "rs3m_vs_bm": 11.67,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 118.2,
       "low_52w": 86.5,
       "roic": null,
       "fcf_margin": -50.3,
-      "fwd_pe": 22.5,
-      "market_cap": 15842644992.0
+      "fwd_pe": 22.4,
+      "market_cap": 15806241792.0
     },
     {
       "ticker": "MRK",
@@ -738,11 +738,11 @@
       "country": "Switzerland",
       "quoteType": "EQUITY",
       "industry": "Specialty Chemicals",
-      "price": 183.5500030517578,
+      "price": 183.60000610351562,
       "signal": "Strong Hold",
-      "rsi": 49.6,
-      "perf_3m": 13.83,
-      "rs3m_vs_bm": 9.9,
+      "rsi": 49.7,
+      "perf_3m": 13.86,
+      "rs3m_vs_bm": 9.93,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 195.5,
@@ -750,7 +750,7 @@
       "roic": null,
       "fcf_margin": 9.2,
       "fwd_pe": 21.9,
-      "market_cap": 29448624128.0
+      "market_cap": 29456646144.0
     },
     {
       "ticker": "VER.VI",
@@ -839,6 +839,28 @@
       "fcf_margin": 5.9,
       "fwd_pe": 12.0,
       "market_cap": 14753290240.0
+    },
+    {
+      "ticker": "IMCD.AS",
+      "name": "IMCD N.V.",
+      "region": "Europe",
+      "sector": "Basic Materials",
+      "country": "Netherlands",
+      "quoteType": "EQUITY",
+      "industry": "Specialty Chemicals",
+      "price": 98.54000091552734,
+      "signal": "Strong Hold",
+      "rsi": 59.0,
+      "perf_3m": 12.13,
+      "rs3m_vs_bm": 8.2,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 104.7,
+      "low_52w": 68.8675,
+      "roic": null,
+      "fcf_margin": 5.4,
+      "fwd_pe": 15.1,
+      "market_cap": 5817095168.0
     }
   ]
 }
