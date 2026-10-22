@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T08:26:03.444870+00:00",
+  "generated_at": "2026-10-22T08:31:06.832600+00:00",
   "universe_size": 715,
   "scanned": 707,
-  "shortlisted": 38,
+  "shortlisted": 39,
   "candidates": [
     {
       "ticker": "PLTR",
@@ -100,11 +100,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Marine Shipping",
-      "price": 23310.0,
+      "price": 23300.0,
       "signal": "Strong Hold",
-      "rsi": 49.4,
-      "perf_3m": 36.92,
-      "rs3m_vs_bm": 32.99,
+      "rsi": 49.3,
+      "perf_3m": 36.86,
+      "rs3m_vs_bm": 32.93,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 24900.0,
@@ -112,7 +112,7 @@
       "roic": null,
       "fcf_margin": 5.8,
       "fwd_pe": 18.3,
-      "market_cap": 335458926592.0
+      "market_cap": 335315042304.0
     },
     {
       "ticker": "SWKS",
@@ -247,28 +247,6 @@
       "market_cap": 77218627584.0
     },
     {
-      "ticker": "SINCH.ST",
-      "name": "Sinch AB (publ)",
-      "region": "Europe",
-      "sector": "Communication Services",
-      "country": "Sweden",
-      "quoteType": "EQUITY",
-      "industry": "Telecom Services",
-      "price": 46.5,
-      "signal": "Strong Hold",
-      "rsi": 54.1,
-      "perf_3m": 21.76,
-      "rs3m_vs_bm": 17.83,
-      "direction": "→ Stable",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 51.6,
-      "low_52w": 20.14,
-      "roic": null,
-      "fcf_margin": 6.1,
-      "fwd_pe": 62.0,
-      "market_cap": 32671049728.0
-    },
-    {
       "ticker": "GRMN",
       "name": "Garmin Ltd.",
       "region": "USA",
@@ -289,6 +267,28 @@
       "fcf_margin": 13.6,
       "fwd_pe": 26.1,
       "market_cap": 56146227200.0
+    },
+    {
+      "ticker": "SINCH.ST",
+      "name": "Sinch AB (publ)",
+      "region": "Europe",
+      "sector": "Communication Services",
+      "country": "Sweden",
+      "quoteType": "EQUITY",
+      "industry": "Telecom Services",
+      "price": 46.41999816894531,
+      "signal": "Strong Hold",
+      "rsi": 53.7,
+      "perf_3m": 21.55,
+      "rs3m_vs_bm": 17.62,
+      "direction": "→ Stable",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 51.6,
+      "low_52w": 20.14,
+      "roic": null,
+      "fcf_margin": 6.1,
+      "fwd_pe": 61.9,
+      "market_cap": 32614838272.0
     },
     {
       "ticker": "UHS",
@@ -364,11 +364,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Medical Devices",
-      "price": 108.3499984741211,
+      "price": 108.1500015258789,
       "signal": "Strong Hold",
-      "rsi": 50.3,
-      "perf_3m": 18.52,
-      "rs3m_vs_bm": 14.59,
+      "rsi": 49.7,
+      "perf_3m": 18.3,
+      "rs3m_vs_bm": 14.37,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 118.2,
@@ -376,7 +376,7 @@
       "roic": null,
       "fcf_margin": -50.3,
       "fwd_pe": 22.4,
-      "market_cap": 15777119232.0
+      "market_cap": 15747996672.0
     },
     {
       "ticker": "FFIV",
@@ -430,11 +430,11 @@
       "country": "Switzerland",
       "quoteType": "EQUITY",
       "industry": "Specialty Chemicals",
-      "price": 183.75,
+      "price": 183.85000610351562,
       "signal": "Strong Hold",
-      "rsi": 57.0,
-      "perf_3m": 17.9,
-      "rs3m_vs_bm": 13.97,
+      "rsi": 57.1,
+      "perf_3m": 17.97,
+      "rs3m_vs_bm": 14.04,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 195.5,
@@ -442,7 +442,7 @@
       "roic": null,
       "fcf_margin": 9.2,
       "fwd_pe": 21.9,
-      "market_cap": 29480712192.0
+      "market_cap": 29496756224.0
     },
     {
       "ticker": "LDOS",
@@ -496,11 +496,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Furnishings, Fixtures & Appliances",
-      "price": 26.530000686645508,
+      "price": 26.520000457763672,
       "signal": "Strong Hold",
-      "rsi": 59.9,
-      "perf_3m": 16.21,
-      "rs3m_vs_bm": 12.28,
+      "rsi": 59.8,
+      "perf_3m": 16.16,
+      "rs3m_vs_bm": 12.23,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 87.4,
@@ -508,7 +508,7 @@
       "roic": null,
       "fcf_margin": -0.8,
       "fwd_pe": 2.6,
-      "market_cap": 21528803328.0
+      "market_cap": 21520687104.0
     },
     {
       "ticker": "MRK",
@@ -584,11 +584,11 @@
       "country": "Portugal",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 22.559999465942383,
+      "price": 22.59000015258789,
       "signal": "Strong Hold",
-      "rsi": 59.4,
-      "perf_3m": 14.5,
-      "rs3m_vs_bm": 10.57,
+      "rsi": 59.8,
+      "perf_3m": 14.65,
+      "rs3m_vs_bm": 10.72,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 23.18,
@@ -596,7 +596,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 10.5,
-      "market_cap": 17621137408.0
+      "market_cap": 17644570624.0
     },
     {
       "ticker": "FAST",
@@ -804,11 +804,11 @@
       "country": "France",
       "quoteType": "EQUITY",
       "industry": "Advertising Agencies",
-      "price": 99.4800033569336,
+      "price": 99.27999877929688,
       "signal": "Strong Hold",
-      "rsi": 62.3,
-      "perf_3m": 12.51,
-      "rs3m_vs_bm": 8.58,
+      "rsi": 61.6,
+      "perf_3m": 12.28,
+      "rs3m_vs_bm": 8.35,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 104.1,
@@ -816,7 +816,7 @@
       "roic": null,
       "fcf_margin": 11.4,
       "fwd_pe": 11.6,
-      "market_cap": 24842252288.0
+      "market_cap": 24792307712.0
     },
     {
       "ticker": "SOLV",
@@ -839,6 +839,28 @@
       "fcf_margin": 5.9,
       "fwd_pe": 12.0,
       "market_cap": 14753290240.0
+    },
+    {
+      "ticker": "IMCD.AS",
+      "name": "IMCD N.V.",
+      "region": "Europe",
+      "sector": "Basic Materials",
+      "country": "Netherlands",
+      "quoteType": "EQUITY",
+      "industry": "Specialty Chemicals",
+      "price": 98.81999969482422,
+      "signal": "Strong Hold",
+      "rsi": 57.4,
+      "perf_3m": 12.02,
+      "rs3m_vs_bm": 8.09,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 104.7,
+      "low_52w": 68.8675,
+      "roic": null,
+      "fcf_margin": 5.4,
+      "fwd_pe": 15.1,
+      "market_cap": 5833624576.0
     }
   ]
 }
