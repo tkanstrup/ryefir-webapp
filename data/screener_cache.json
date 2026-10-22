@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:31:16.630702+00:00",
+  "generated_at": "2026-10-22T12:36:06.689344+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 38,
@@ -22,9 +22,9 @@
       "high_52w": 209.05,
       "low_52w": 107.27,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 35.1,
+      "fwd_pe": 85.8,
+      "market_cap": 484744953856.0
     },
     {
       "ticker": "ZBRA",
@@ -44,9 +44,9 @@
       "high_52w": 391.0,
       "low_52w": 199.3,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.9,
+      "fwd_pe": 17.5,
+      "market_cap": 18624655360.0
     },
     {
       "ticker": "VLO",
@@ -66,9 +66,9 @@
       "high_52w": 459.78,
       "low_52w": 154.4161,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.4,
+      "fwd_pe": 8.9,
+      "market_cap": 125752320000.0
     },
     {
       "ticker": "RVTY",
@@ -88,9 +88,9 @@
       "high_52w": 157.36,
       "low_52w": 82.2085,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.8,
+      "fwd_pe": 26.6,
+      "market_cap": 17475547136.0
     },
     {
       "ticker": "MAERSK-B.CO",
@@ -100,19 +100,19 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Marine Shipping",
-      "price": 22900.0,
+      "price": 22820.0,
       "signal": "Strong Hold",
-      "rsi": 32.7,
-      "perf_3m": 37.54,
-      "rs3m_vs_bm": 33.61,
+      "rsi": 32.1,
+      "perf_3m": 37.06,
+      "rs3m_vs_bm": 33.13,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 24900.0,
       "low_52w": 11904.0215,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.8,
+      "fwd_pe": 17.9,
+      "market_cap": 328407252992.0
     },
     {
       "ticker": "SWKS",
@@ -132,9 +132,9 @@
       "high_52w": 91.45,
       "low_52w": 52.0477,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.2,
+      "fwd_pe": 14.0,
+      "market_cap": 19335311360.0
     },
     {
       "ticker": "NTAP",
@@ -154,9 +154,9 @@
       "high_52w": 239.18,
       "low_52w": 93.1368,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 15.8,
+      "fwd_pe": 19.5,
+      "market_cap": 42664173568.0
     },
     {
       "ticker": "CRWD",
@@ -176,9 +176,9 @@
       "high_52w": 278.86,
       "low_52w": 87.5625,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 37.0,
+      "fwd_pe": 148.5,
+      "market_cap": 245068562432.0
     },
     {
       "ticker": "HPQ",
@@ -198,9 +198,9 @@
       "high_52w": 35.48,
       "low_52w": 17.5237,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.7,
+      "fwd_pe": 9.9,
+      "market_cap": 28244092928.0
     },
     {
       "ticker": "NEM",
@@ -220,9 +220,9 @@
       "high_52w": 134.8593,
       "low_52w": 77.8994,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 34.2,
+      "fwd_pe": 11.6,
+      "market_cap": 123471659008.0
     },
     {
       "ticker": "HPE",
@@ -242,9 +242,9 @@
       "high_52w": 73.46,
       "low_52w": 19.6654,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 11.3,
+      "fwd_pe": 12.4,
+      "market_cap": 77218627584.0
     },
     {
       "ticker": "GRMN",
@@ -264,9 +264,9 @@
       "high_52w": 311.952,
       "low_52w": 184.0587,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 13.6,
+      "fwd_pe": 26.1,
+      "market_cap": 56146227200.0
     },
     {
       "ticker": "UHS",
@@ -283,12 +283,12 @@
       "rs3m_vs_bm": 17.1,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
-      "high_52w": 243.1211,
+      "high_52w": 243.1212,
       "low_52w": 141.0042,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 2.8,
+      "fwd_pe": 7.6,
+      "market_cap": 10777720832.0
     },
     {
       "ticker": "SNPS",
@@ -308,9 +308,9 @@
       "high_52w": 534.56,
       "low_52w": 367.7,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 36.4,
+      "fwd_pe": 24.1,
+      "market_cap": 86464536576.0
     },
     {
       "ticker": "SINCH.ST",
@@ -320,19 +320,19 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 47.0099983215332,
+      "price": 46.970001220703125,
       "signal": "Strong Hold",
-      "rsi": 55.8,
-      "perf_3m": 20.66,
-      "rs3m_vs_bm": 16.73,
+      "rsi": 55.6,
+      "perf_3m": 20.56,
+      "rs3m_vs_bm": 16.63,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 51.6,
       "low_52w": 20.14,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.1,
+      "fwd_pe": 62.6,
+      "market_cap": 33001273344.0
     },
     {
       "ticker": "ADBE",
@@ -352,9 +352,9 @@
       "high_52w": 359.91,
       "low_52w": 193.41,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 36.0,
+      "fwd_pe": 9.3,
+      "market_cap": 99269353472.0
     },
     {
       "ticker": "GALP.LS",
@@ -374,9 +374,9 @@
       "high_52w": 23.18,
       "low_52w": 13.5079,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.1,
+      "fwd_pe": 10.5,
+      "market_cap": 17597706240.0
     },
     {
       "ticker": "FFIV",
@@ -396,9 +396,9 @@
       "high_52w": 479.83,
       "low_52w": 223.99,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 21.7,
+      "fwd_pe": 25.4,
+      "market_cap": 25968660480.0
     },
     {
       "ticker": "GILD",
@@ -418,9 +418,9 @@
       "high_52w": 157.37,
       "low_52w": 115.037,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 32.1,
+      "fwd_pe": 15.4,
+      "market_cap": 190419927040.0
     },
     {
       "ticker": "LDOS",
@@ -440,9 +440,9 @@
       "high_52w": 197.2656,
       "low_52w": 99.6763,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 6.5,
+      "fwd_pe": 10.3,
+      "market_cap": 16255254528.0
     },
     {
       "ticker": "MRVL",
@@ -462,9 +462,9 @@
       "high_52w": 316.2828,
       "low_52w": 73.6588,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 25.5,
+      "fwd_pe": 33.4,
+      "market_cap": 219966947328.0
     },
     {
       "ticker": "GN.CO",
@@ -474,19 +474,19 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Medical Devices",
-      "price": 108.80000305175781,
+      "price": 108.6500015258789,
       "signal": "Strong Hold",
-      "rsi": 61.3,
-      "perf_3m": 15.87,
-      "rs3m_vs_bm": 11.94,
+      "rsi": 60.9,
+      "perf_3m": 15.71,
+      "rs3m_vs_bm": 11.78,
       "direction": "→ Stable",
       "confirmed_state": "Strong Hold",
       "high_52w": 118.2,
       "low_52w": 86.5,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -50.3,
+      "fwd_pe": 22.5,
+      "market_cap": 15820803072.0
     },
     {
       "ticker": "MRK",
@@ -506,9 +506,9 @@
       "high_52w": 155.5319,
       "low_52w": 80.1369,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 22.8,
+      "fwd_pe": 16.2,
+      "market_cap": 369779703808.0
     },
     {
       "ticker": "REP.MC",
@@ -518,19 +518,19 @@
       "country": "Spain",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 29.3799991607666,
+      "price": 29.399999618530273,
       "signal": "Strong Hold",
-      "rsi": 53.1,
-      "perf_3m": 15.04,
-      "rs3m_vs_bm": 11.11,
+      "rsi": 53.3,
+      "perf_3m": 15.11,
+      "rs3m_vs_bm": 11.18,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 31.54,
       "low_52w": 14.5034,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 0.6,
+      "fwd_pe": 6.7,
+      "market_cap": 31628836864.0
     },
     {
       "ticker": "FTNT",
@@ -550,9 +550,9 @@
       "high_52w": 194.75,
       "low_52w": 75.23,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 30.1,
+      "fwd_pe": 45.9,
+      "market_cap": 127702867968.0
     },
     {
       "ticker": "FAST",
@@ -572,9 +572,9 @@
       "high_52w": 52.49,
       "low_52w": 38.5169,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 10.1,
+      "fwd_pe": 37.2,
+      "market_cap": 60232151040.0
     },
     {
       "ticker": "SIKA.SW",
@@ -584,19 +584,19 @@
       "country": "Switzerland",
       "quoteType": "EQUITY",
       "industry": "Specialty Chemicals",
-      "price": 184.3000030517578,
+      "price": 184.39999389648438,
       "signal": "Strong Hold",
-      "rsi": 50.8,
-      "perf_3m": 14.29,
-      "rs3m_vs_bm": 10.36,
+      "rsi": 51.0,
+      "perf_3m": 14.36,
+      "rs3m_vs_bm": 10.43,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 195.5,
       "low_52w": 122.8455,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 9.2,
+      "fwd_pe": 22.0,
+      "market_cap": 29584996352.0
     },
     {
       "ticker": "TGT",
@@ -616,9 +616,9 @@
       "high_52w": 169.89,
       "low_52w": 81.4371,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 3.2,
+      "fwd_pe": 16.0,
+      "market_cap": 69224931328.0
     },
     {
       "ticker": "BAX",
@@ -638,9 +638,9 @@
       "high_52w": 28.3391,
       "low_52w": 15.7857,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 8.7,
+      "fwd_pe": 12.1,
+      "market_cap": 12769801216.0
     },
     {
       "ticker": "SMCI",
@@ -660,31 +660,9 @@
       "high_52w": 54.82,
       "low_52w": 20.53,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
-    },
-    {
-      "ticker": "KNIN.SW",
-      "name": "Kuehne + Nagel International AG",
-      "region": "Europe",
-      "sector": "Industrials",
-      "country": "Switzerland",
-      "quoteType": "EQUITY",
-      "industry": "Integrated Freight & Logistics",
-      "price": 229.60000610351562,
-      "signal": "Strong Hold",
-      "rsi": 60.3,
-      "perf_3m": 13.83,
-      "rs3m_vs_bm": 9.9,
-      "direction": "→ Stable",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 231.8,
-      "low_52w": 145.2051,
-      "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": -21.1,
+      "fwd_pe": 6.4,
+      "market_cap": 23009273856.0
     },
     {
       "ticker": "DXCM",
@@ -704,9 +682,9 @@
       "high_52w": 92.34,
       "low_52w": 54.84,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.5,
+      "fwd_pe": 25.7,
+      "market_cap": 30286977024.0
     },
     {
       "ticker": "NDSN",
@@ -726,9 +704,9 @@
       "high_52w": 334.43,
       "low_52w": 223.9025,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 20.6,
+      "fwd_pe": 25.5,
+      "market_cap": 18472728576.0
     },
     {
       "ticker": "VER.VI",
@@ -748,9 +726,31 @@
       "high_52w": 67.1,
       "low_52w": 54.75,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 0.5,
+      "fwd_pe": 16.2,
+      "market_cap": 22981548032.0
+    },
+    {
+      "ticker": "KNIN.SW",
+      "name": "Kuehne + Nagel International AG",
+      "region": "Europe",
+      "sector": "Industrials",
+      "country": "Switzerland",
+      "quoteType": "EQUITY",
+      "industry": "Integrated Freight & Logistics",
+      "price": 228.1999969482422,
+      "signal": "Strong Hold",
+      "rsi": 57.1,
+      "perf_3m": 13.14,
+      "rs3m_vs_bm": 9.21,
+      "direction": "→ Stable",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 231.8,
+      "low_52w": 145.2051,
+      "roic": null,
+      "fcf_margin": 1.4,
+      "fwd_pe": 23.9,
+      "market_cap": 27101048832.0
     },
     {
       "ticker": "EMR",
@@ -770,9 +770,9 @@
       "high_52w": 163.8244,
       "low_52w": 122.3354,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 19.9,
+      "fwd_pe": 22.4,
+      "market_cap": 91357904896.0
     },
     {
       "ticker": "BBY",
@@ -792,9 +792,9 @@
       "high_52w": 94.82,
       "low_52w": 54.2219,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 3.3,
+      "fwd_pe": 13.0,
+      "market_cap": 19739572224.0
     },
     {
       "ticker": "IMCD.AS",
@@ -804,19 +804,19 @@
       "country": "Netherlands",
       "quoteType": "EQUITY",
       "industry": "Specialty Chemicals",
-      "price": 98.68000030517578,
+      "price": 99.19999694824219,
       "signal": "Strong Hold",
-      "rsi": 59.4,
-      "perf_3m": 12.29,
-      "rs3m_vs_bm": 8.36,
+      "rsi": 61.1,
+      "perf_3m": 12.88,
+      "rs3m_vs_bm": 8.95,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 104.7,
       "low_52w": 68.8675,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.4,
+      "fwd_pe": 15.2,
+      "market_cap": 5856056832.0
     },
     {
       "ticker": "SOLV",
@@ -836,9 +836,9 @@
       "high_52w": 92.44,
       "low_52w": 62.49,
       "roic": null,
-      "fcf_margin": null,
-      "fwd_pe": null,
-      "market_cap": null
+      "fcf_margin": 5.9,
+      "fwd_pe": 12.0,
+      "market_cap": 14753290240.0
     }
   ]
 }
