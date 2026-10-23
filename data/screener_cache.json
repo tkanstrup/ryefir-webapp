@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-23T12:36:02.178677+00:00",
+  "generated_at": "2026-10-23T12:41:03.990250+00:00",
   "universe_size": 715,
   "scanned": 707,
-  "shortlisted": 33,
+  "shortlisted": 34,
   "candidates": [
     {
       "ticker": "MRNA",
@@ -240,7 +240,7 @@
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 177.75,
-      "low_52w": 109.6145,
+      "low_52w": 109.6144,
       "roic": null,
       "fcf_margin": 14.4,
       "fwd_pe": 25.8,
@@ -298,11 +298,11 @@
       "country": "Austria",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 74.1500015258789,
+      "price": 74.25,
       "signal": "Strong Hold",
-      "rsi": 60.5,
-      "perf_3m": 20.67,
-      "rs3m_vs_bm": 18.04,
+      "rsi": 60.7,
+      "perf_3m": 20.83,
+      "rs3m_vs_bm": 18.2,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 74.4,
@@ -310,7 +310,7 @@
       "roic": null,
       "fcf_margin": 29.1,
       "fwd_pe": 8.5,
-      "market_cap": 24172978176.0
+      "market_cap": 24205578240.0
     },
     {
       "ticker": "GALP.LS",
@@ -320,11 +320,11 @@
       "country": "Portugal",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 22.809999465942383,
+      "price": 22.829999923706055,
       "signal": "Strong Hold",
-      "rsi": 60.8,
-      "perf_3m": 20.08,
-      "rs3m_vs_bm": 17.45,
+      "rsi": 61.1,
+      "perf_3m": 20.19,
+      "rs3m_vs_bm": 17.56,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 23.18,
@@ -332,7 +332,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 10.6,
-      "market_cap": 17816406016.0
+      "market_cap": 17832028160.0
     },
     {
       "ticker": "TSLA",
@@ -386,11 +386,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Medical Devices",
-      "price": 111.1500015258789,
+      "price": 111.30000305175781,
       "signal": "Strong Hold",
-      "rsi": 63.2,
-      "perf_3m": 18.6,
-      "rs3m_vs_bm": 15.97,
+      "rsi": 63.6,
+      "perf_3m": 18.76,
+      "rs3m_vs_bm": 16.13,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 118.2,
@@ -398,7 +398,29 @@
       "roic": null,
       "fcf_margin": -50.3,
       "fwd_pe": 23.0,
-      "market_cap": 16184834048.0
+      "market_cap": 16206676992.0
+    },
+    {
+      "ticker": "VER.VI",
+      "name": "VERBUND AG",
+      "region": "Europe",
+      "sector": "Utilities",
+      "country": "Austria",
+      "quoteType": "EQUITY",
+      "industry": "Utilities - Renewable",
+      "price": 67.55000305175781,
+      "signal": "Strong Hold",
+      "rsi": 64.7,
+      "perf_3m": 17.48,
+      "rs3m_vs_bm": 14.85,
+      "direction": "↑ Accelerating",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 67.55,
+      "low_52w": 54.75,
+      "roic": null,
+      "fcf_margin": 0.5,
+      "fwd_pe": 16.6,
+      "market_cap": 23467929600.0
     },
     {
       "ticker": "HPE",
@@ -474,11 +496,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 45.900001525878906,
+      "price": 45.880001068115234,
       "signal": "Strong Hold",
       "rsi": 47.8,
-      "perf_3m": 15.33,
-      "rs3m_vs_bm": 12.7,
+      "perf_3m": 15.28,
+      "rs3m_vs_bm": 12.65,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 51.6,
@@ -486,7 +508,7 @@
       "roic": null,
       "fcf_margin": 6.1,
       "fwd_pe": 61.2,
-      "market_cap": 32249487360.0
+      "market_cap": 32235436032.0
     },
     {
       "ticker": "MRVL",
@@ -716,11 +738,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Gambling",
-      "price": 829.0,
+      "price": 831.0,
       "signal": "Strong Hold",
-      "rsi": 58.7,
-      "perf_3m": 10.77,
-      "rs3m_vs_bm": 8.14,
+      "rsi": 59.7,
+      "perf_3m": 11.04,
+      "rs3m_vs_bm": 8.41,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 900.0,
@@ -728,7 +750,7 @@
       "roic": null,
       "fcf_margin": 44.6,
       "fwd_pe": 11.6,
-      "market_cap": 150590914560.0
+      "market_cap": 150954213376.0
     }
   ]
 }
