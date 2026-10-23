@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-23T10:41:02.952603+00:00",
+  "generated_at": "2026-10-23T10:46:04.390356+00:00",
   "universe_size": 715,
   "scanned": 707,
-  "shortlisted": 32,
+  "shortlisted": 31,
   "candidates": [
     {
       "ticker": "MRNA",
@@ -379,28 +379,6 @@
       "market_cap": 250148831232.0
     },
     {
-      "ticker": "VER.VI",
-      "name": "VERBUND AG",
-      "region": "Europe",
-      "sector": "Utilities",
-      "country": "Austria",
-      "quoteType": "EQUITY",
-      "industry": "Utilities - Renewable",
-      "price": 67.5999984741211,
-      "signal": "Strong Hold",
-      "rsi": 64.8,
-      "perf_3m": 17.57,
-      "rs3m_vs_bm": 14.94,
-      "direction": "↑ Accelerating",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 67.6,
-      "low_52w": 54.75,
-      "roic": null,
-      "fcf_margin": 0.5,
-      "fwd_pe": 16.6,
-      "market_cap": 23485298688.0
-    },
-    {
       "ticker": "HPE",
       "name": "Hewlett Packard Enterprise Company",
       "region": "USA",
@@ -452,11 +430,11 @@
       "country": "Spain",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 29.239999771118164,
+      "price": 29.15999984741211,
       "signal": "Strong Hold",
-      "rsi": 50.4,
-      "perf_3m": 15.62,
-      "rs3m_vs_bm": 12.99,
+      "rsi": 49.9,
+      "perf_3m": 15.3,
+      "rs3m_vs_bm": 12.67,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 31.54,
@@ -464,7 +442,7 @@
       "roic": null,
       "fcf_margin": 0.6,
       "fwd_pe": 6.6,
-      "market_cap": 31456708608.0
+      "market_cap": 31370643456.0
     },
     {
       "ticker": "MRVL",
@@ -518,19 +496,19 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 45.63999938964844,
+      "price": 45.630001068115234,
       "signal": "Strong Hold",
-      "rsi": 46.9,
-      "perf_3m": 14.67,
-      "rs3m_vs_bm": 12.04,
+      "rsi": 46.8,
+      "perf_3m": 14.65,
+      "rs3m_vs_bm": 12.02,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 51.6,
       "low_52w": 20.14,
       "roic": null,
       "fcf_margin": 6.1,
-      "fwd_pe": 60.9,
-      "market_cap": 32066809856.0
+      "fwd_pe": 60.8,
+      "market_cap": 32059785216.0
     },
     {
       "ticker": "FTNT",
