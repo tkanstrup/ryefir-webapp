@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T12:56:02.752834+00:00",
+  "generated_at": "2026-10-23T13:01:15.618086+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 34,
@@ -166,19 +166,19 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Marine Shipping",
-      "price": 22620.0,
+      "price": 22560.0,
       "signal": "Strong Hold",
-      "rsi": 32.4,
-      "perf_3m": 32.28,
-      "rs3m_vs_bm": 29.65,
+      "rsi": 31.9,
+      "perf_3m": 31.93,
+      "rs3m_vs_bm": 29.3,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 24900.0,
       "low_52w": 11904.0215,
       "roic": null,
       "fcf_margin": 5.8,
-      "fwd_pe": 17.8,
-      "market_cap": 325529010176.0
+      "fwd_pe": 17.7,
+      "market_cap": 324665540608.0
     },
     {
       "ticker": "CRWD",
@@ -298,11 +298,11 @@
       "country": "Austria",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 74.19999694824219,
+      "price": 74.0999984741211,
       "signal": "Strong Hold",
-      "rsi": 60.6,
-      "perf_3m": 20.75,
-      "rs3m_vs_bm": 18.12,
+      "rsi": 60.3,
+      "perf_3m": 20.59,
+      "rs3m_vs_bm": 17.96,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 74.4,
@@ -310,7 +310,7 @@
       "roic": null,
       "fcf_margin": 29.1,
       "fwd_pe": 8.5,
-      "market_cap": 24189278208.0
+      "market_cap": 24156678144.0
     },
     {
       "ticker": "GALP.LS",
@@ -386,11 +386,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Medical Devices",
-      "price": 111.05000305175781,
+      "price": 111.19999694824219,
       "signal": "Strong Hold",
-      "rsi": 63.0,
-      "perf_3m": 18.49,
-      "rs3m_vs_bm": 15.86,
+      "rsi": 63.3,
+      "perf_3m": 18.65,
+      "rs3m_vs_bm": 16.02,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 118.2,
@@ -398,7 +398,7 @@
       "roic": null,
       "fcf_margin": -50.3,
       "fwd_pe": 23.0,
-      "market_cap": 16170273792.0
+      "market_cap": 16192114688.0
     },
     {
       "ticker": "HPE",
@@ -467,28 +467,6 @@
       "market_cap": 31499741184.0
     },
     {
-      "ticker": "SINCH.ST",
-      "name": "Sinch AB (publ)",
-      "region": "Europe",
-      "sector": "Communication Services",
-      "country": "Sweden",
-      "quoteType": "EQUITY",
-      "industry": "Telecom Services",
-      "price": 45.81999969482422,
-      "signal": "Strong Hold",
-      "rsi": 47.5,
-      "perf_3m": 15.13,
-      "rs3m_vs_bm": 12.5,
-      "direction": "↓ Declining",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 51.6,
-      "low_52w": 20.14,
-      "roic": null,
-      "fcf_margin": 6.1,
-      "fwd_pe": 61.1,
-      "market_cap": 32193277952.0
-    },
-    {
       "ticker": "MRVL",
       "name": "Marvell Technology, Inc.",
       "region": "USA",
@@ -509,6 +487,28 @@
       "fcf_margin": 25.5,
       "fwd_pe": 30.5,
       "market_cap": 200833531904.0
+    },
+    {
+      "ticker": "SINCH.ST",
+      "name": "Sinch AB (publ)",
+      "region": "Europe",
+      "sector": "Communication Services",
+      "country": "Sweden",
+      "quoteType": "EQUITY",
+      "industry": "Telecom Services",
+      "price": 45.77000045776367,
+      "signal": "Strong Hold",
+      "rsi": 47.4,
+      "perf_3m": 15.0,
+      "rs3m_vs_bm": 12.37,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 51.6,
+      "low_52w": 20.14,
+      "roic": null,
+      "fcf_margin": 6.1,
+      "fwd_pe": 61.0,
+      "market_cap": 32158148608.0
     },
     {
       "ticker": "FFIV",
@@ -562,11 +562,11 @@
       "country": "Netherlands",
       "quoteType": "EQUITY",
       "industry": "Specialty Chemicals",
-      "price": 100.3499984741211,
+      "price": 100.4000015258789,
       "signal": "Strong Hold",
-      "rsi": 64.3,
-      "perf_3m": 13.36,
-      "rs3m_vs_bm": 10.73,
+      "rsi": 64.5,
+      "perf_3m": 13.42,
+      "rs3m_vs_bm": 10.79,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 104.7,
@@ -574,7 +574,7 @@
       "roic": null,
       "fcf_margin": 5.4,
       "fwd_pe": 15.4,
-      "market_cap": 5923944448.0
+      "market_cap": 5926896640.0
     },
     {
       "ticker": "SNPS",
@@ -738,11 +738,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Gambling",
-      "price": 830.7999877929688,
+      "price": 830.2000122070312,
       "signal": "Strong Hold",
-      "rsi": 59.6,
-      "perf_3m": 11.01,
-      "rs3m_vs_bm": 8.38,
+      "rsi": 59.3,
+      "perf_3m": 10.93,
+      "rs3m_vs_bm": 8.3,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 900.0,
@@ -750,7 +750,7 @@
       "roic": null,
       "fcf_margin": 44.6,
       "fwd_pe": 11.6,
-      "market_cap": 150917890048.0
+      "market_cap": 150808903680.0
     }
   ]
 }
