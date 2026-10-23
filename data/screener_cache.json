@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T12:46:17.880959+00:00",
+  "generated_at": "2026-10-23T12:51:08.460209+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 34,
@@ -144,11 +144,11 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Marine Shipping",
-      "price": 22700.0,
+      "price": 22710.0,
       "signal": "Strong Hold",
-      "rsi": 33.1,
-      "perf_3m": 32.75,
-      "rs3m_vs_bm": 30.12,
+      "rsi": 33.2,
+      "perf_3m": 32.81,
+      "rs3m_vs_bm": 30.18,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 24900.0,
@@ -156,7 +156,7 @@
       "roic": null,
       "fcf_margin": 5.8,
       "fwd_pe": 17.8,
-      "market_cap": 326680313856.0
+      "market_cap": 326824230912.0
     },
     {
       "ticker": "HPQ",
@@ -298,11 +298,11 @@
       "country": "Austria",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 74.1500015258789,
+      "price": 74.19999694824219,
       "signal": "Strong Hold",
-      "rsi": 60.5,
-      "perf_3m": 20.67,
-      "rs3m_vs_bm": 18.04,
+      "rsi": 60.6,
+      "perf_3m": 20.75,
+      "rs3m_vs_bm": 18.12,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 74.4,
@@ -310,7 +310,7 @@
       "roic": null,
       "fcf_margin": 29.1,
       "fwd_pe": 8.5,
-      "market_cap": 24172978176.0
+      "market_cap": 24189278208.0
     },
     {
       "ticker": "GALP.LS",
@@ -320,11 +320,11 @@
       "country": "Portugal",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 22.799999237060547,
+      "price": 22.780000686645508,
       "signal": "Strong Hold",
-      "rsi": 60.7,
-      "perf_3m": 20.03,
-      "rs3m_vs_bm": 17.4,
+      "rsi": 60.5,
+      "perf_3m": 19.92,
+      "rs3m_vs_bm": 17.29,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 23.18,
@@ -332,7 +332,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 10.6,
-      "market_cap": 17808594944.0
+      "market_cap": 17792974848.0
     },
     {
       "ticker": "TSLA",
@@ -452,11 +452,11 @@
       "country": "Spain",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 29.360000610351562,
+      "price": 29.350000381469727,
       "signal": "Strong Hold",
-      "rsi": 51.2,
-      "perf_3m": 16.09,
-      "rs3m_vs_bm": 13.46,
+      "rsi": 51.1,
+      "perf_3m": 16.05,
+      "rs3m_vs_bm": 13.42,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 31.54,
@@ -464,7 +464,29 @@
       "roic": null,
       "fcf_margin": 0.6,
       "fwd_pe": 6.7,
-      "market_cap": 31585806336.0
+      "market_cap": 31575048192.0
+    },
+    {
+      "ticker": "SINCH.ST",
+      "name": "Sinch AB (publ)",
+      "region": "Europe",
+      "sector": "Communication Services",
+      "country": "Sweden",
+      "quoteType": "EQUITY",
+      "industry": "Telecom Services",
+      "price": 45.880001068115234,
+      "signal": "Strong Hold",
+      "rsi": 47.8,
+      "perf_3m": 15.28,
+      "rs3m_vs_bm": 12.65,
+      "direction": "↓ Declining",
+      "confirmed_state": "Strong Hold",
+      "high_52w": 51.6,
+      "low_52w": 20.14,
+      "roic": null,
+      "fcf_margin": 6.1,
+      "fwd_pe": 61.2,
+      "market_cap": 32235436032.0
     },
     {
       "ticker": "MRVL",
@@ -487,28 +509,6 @@
       "fcf_margin": 25.5,
       "fwd_pe": 30.5,
       "market_cap": 200833531904.0
-    },
-    {
-      "ticker": "SINCH.ST",
-      "name": "Sinch AB (publ)",
-      "region": "Europe",
-      "sector": "Communication Services",
-      "country": "Sweden",
-      "quoteType": "EQUITY",
-      "industry": "Telecom Services",
-      "price": 45.790000915527344,
-      "signal": "Strong Hold",
-      "rsi": 47.4,
-      "perf_3m": 15.05,
-      "rs3m_vs_bm": 12.42,
-      "direction": "↓ Declining",
-      "confirmed_state": "Strong Hold",
-      "high_52w": 51.6,
-      "low_52w": 20.14,
-      "roic": null,
-      "fcf_margin": 6.1,
-      "fwd_pe": 61.1,
-      "market_cap": 32172201984.0
     },
     {
       "ticker": "FFIV",
@@ -562,11 +562,11 @@
       "country": "Netherlands",
       "quoteType": "EQUITY",
       "industry": "Specialty Chemicals",
-      "price": 100.5,
+      "price": 100.30000305175781,
       "signal": "Strong Hold",
-      "rsi": 64.9,
-      "perf_3m": 13.53,
-      "rs3m_vs_bm": 10.9,
+      "rsi": 64.1,
+      "perf_3m": 13.31,
+      "rs3m_vs_bm": 10.68,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 104.7,
@@ -574,7 +574,7 @@
       "roic": null,
       "fcf_margin": 5.4,
       "fwd_pe": 15.4,
-      "market_cap": 5932799488.0
+      "market_cap": 5920993280.0
     },
     {
       "ticker": "SNPS",
@@ -738,11 +738,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Gambling",
-      "price": 830.2000122070312,
+      "price": 832.0,
       "signal": "Strong Hold",
-      "rsi": 59.3,
-      "perf_3m": 10.93,
-      "rs3m_vs_bm": 8.3,
+      "rsi": 60.2,
+      "perf_3m": 11.17,
+      "rs3m_vs_bm": 8.54,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 900.0,
@@ -750,7 +750,7 @@
       "roic": null,
       "fcf_margin": 44.6,
       "fwd_pe": 11.6,
-      "market_cap": 150808903680.0
+      "market_cap": 151135879168.0
     }
   ]
 }
