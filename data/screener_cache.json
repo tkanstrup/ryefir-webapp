@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T11:16:15.230295+00:00",
+  "generated_at": "2026-10-23T11:21:07.146492+00:00",
   "universe_size": 715,
   "scanned": 707,
   "shortlisted": 33,
@@ -144,19 +144,19 @@
       "country": "Denmark",
       "quoteType": "EQUITY",
       "industry": "Marine Shipping",
-      "price": 22730.0,
+      "price": 22700.0,
       "signal": "Strong Hold",
-      "rsi": 33.3,
-      "perf_3m": 32.92,
-      "rs3m_vs_bm": 30.29,
+      "rsi": 33.1,
+      "perf_3m": 32.75,
+      "rs3m_vs_bm": 30.12,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 24900.0,
       "low_52w": 11904.0215,
       "roic": null,
       "fcf_margin": 5.8,
-      "fwd_pe": 17.9,
-      "market_cap": 327112032256.0
+      "fwd_pe": 17.8,
+      "market_cap": 326680313856.0
     },
     {
       "ticker": "HPQ",
@@ -320,11 +320,11 @@
       "country": "Portugal",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 22.739999771118164,
+      "price": 22.75,
       "signal": "Strong Hold",
-      "rsi": 60.0,
-      "perf_3m": 19.71,
-      "rs3m_vs_bm": 17.08,
+      "rsi": 60.1,
+      "perf_3m": 19.77,
+      "rs3m_vs_bm": 17.14,
       "direction": "↑ Accelerating",
       "confirmed_state": "Strong Hold",
       "high_52w": 23.18,
@@ -332,7 +332,7 @@
       "roic": null,
       "fcf_margin": 9.1,
       "fwd_pe": 10.6,
-      "market_cap": 17761730560.0
+      "market_cap": 17769541632.0
     },
     {
       "ticker": "TSLA",
@@ -452,11 +452,11 @@
       "country": "Spain",
       "quoteType": "EQUITY",
       "industry": "Oil & Gas Integrated",
-      "price": 29.290000915527344,
+      "price": 29.309999465942383,
       "signal": "Strong Hold",
-      "rsi": 50.7,
-      "perf_3m": 15.82,
-      "rs3m_vs_bm": 13.19,
+      "rsi": 50.9,
+      "perf_3m": 15.9,
+      "rs3m_vs_bm": 13.27,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 31.54,
@@ -464,7 +464,7 @@
       "roic": null,
       "fcf_margin": 0.6,
       "fwd_pe": 6.7,
-      "market_cap": 31510499328.0
+      "market_cap": 31532013568.0
     },
     {
       "ticker": "MRVL",
@@ -496,11 +496,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Telecom Services",
-      "price": 45.70000076293945,
+      "price": 45.689998626708984,
       "signal": "Strong Hold",
       "rsi": 47.1,
-      "perf_3m": 14.82,
-      "rs3m_vs_bm": 12.19,
+      "perf_3m": 14.8,
+      "rs3m_vs_bm": 12.17,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 51.6,
@@ -508,7 +508,7 @@
       "roic": null,
       "fcf_margin": 6.1,
       "fwd_pe": 60.9,
-      "market_cap": 32108965888.0
+      "market_cap": 32101939200.0
     },
     {
       "ticker": "FFIV",
@@ -716,11 +716,11 @@
       "country": "Sweden",
       "quoteType": "EQUITY",
       "industry": "Gambling",
-      "price": 830.2000122070312,
+      "price": 829.2000122070312,
       "signal": "Strong Hold",
-      "rsi": 59.3,
-      "perf_3m": 10.93,
-      "rs3m_vs_bm": 8.3,
+      "rsi": 58.8,
+      "perf_3m": 10.8,
+      "rs3m_vs_bm": 8.17,
       "direction": "↓ Declining",
       "confirmed_state": "Strong Hold",
       "high_52w": 900.0,
@@ -728,7 +728,7 @@
       "roic": null,
       "fcf_margin": 44.6,
       "fwd_pe": 11.6,
-      "market_cap": 150808903680.0
+      "market_cap": 150627254272.0
     }
   ]
 }
